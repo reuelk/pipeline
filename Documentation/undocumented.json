@@ -1,0 +1,789 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLEvent.swift",
+      "line": 18,
+      "symbol": "FCPXMLEvent.xml",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLEvent.swift",
+      "line": 19,
+      "symbol": "FCPXMLEvent.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLEvent.swift",
+      "line": 21,
+      "symbol": "FCPXMLEvent.init(xml:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLEvent.swift",
+      "line": 26,
+      "symbol": "FCPXMLEvent.init(xml:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 13,
+      "symbol": "FCPXMLGap",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 15,
+      "symbol": "FCPXMLGap.xml",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 17,
+      "symbol": "FCPXMLGap.offset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 18,
+      "symbol": "FCPXMLGap.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 19,
+      "symbol": "FCPXMLGap.start",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 21,
+      "symbol": "FCPXMLGap.init(offset:duration:start:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLGap.swift",
+      "line": 29,
+      "symbol": "FCPXMLGap.xmlElement()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLRefClip.swift",
+      "line": 13,
+      "symbol": "FCPXMLRefClip",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLRefClip.swift",
+      "line": 15,
+      "symbol": "FCPXMLRefClip.compoundClip",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLRefClip.swift",
+      "line": 16,
+      "symbol": "FCPXMLRefClip.originalEvent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLRefClip.swift",
+      "line": 17,
+      "symbol": "FCPXMLRefClip.clipMetadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLRefClip.swift",
+      "line": 19,
+      "symbol": "FCPXMLRefClip.init(compoundClip:originalEvent:clipMetadata:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 20,
+      "symbol": "FCPXMLTitle.xml",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 23,
+      "symbol": "FCPXMLTitle.titleName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 24,
+      "symbol": "FCPXMLTitle.lane",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 25,
+      "symbol": "FCPXMLTitle.offset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 26,
+      "symbol": "FCPXMLTitle.offsetString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 29,
+      "symbol": "FCPXMLTitle.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 30,
+      "symbol": "FCPXMLTitle.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 31,
+      "symbol": "FCPXMLTitle.durationString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 34,
+      "symbol": "FCPXMLTitle.start",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 35,
+      "symbol": "FCPXMLTitle.startString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 39,
+      "symbol": "FCPXMLTitle.role",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 40,
+      "symbol": "FCPXMLTitle.textStyleID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 41,
+      "symbol": "FCPXMLTitle.newTextStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 47,
+      "symbol": "FCPXMLTitle.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 48,
+      "symbol": "FCPXMLTitle.font",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 49,
+      "symbol": "FCPXMLTitle.fontSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 50,
+      "symbol": "FCPXMLTitle.fontFace",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 51,
+      "symbol": "FCPXMLTitle.fontColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 52,
+      "symbol": "FCPXMLTitle.strokeColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 53,
+      "symbol": "FCPXMLTitle.strokeWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 54,
+      "symbol": "FCPXMLTitle.shadowColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 55,
+      "symbol": "FCPXMLTitle.shadowOffset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 56,
+      "symbol": "FCPXMLTitle.shadowBlurRadius",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 57,
+      "symbol": "FCPXMLTitle.alignment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 58,
+      "symbol": "FCPXMLTitle.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 60,
+      "symbol": "FCPXMLTitle.TextAlignment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 61,
+      "symbol": "FCPXMLTitle.TextAlignment.Left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 62,
+      "symbol": "FCPXMLTitle.TextAlignment.Center",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 63,
+      "symbol": "FCPXMLTitle.TextAlignment.Right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 64,
+      "symbol": "FCPXMLTitle.TextAlignment.Justified",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 96,
+      "symbol": "FCPXMLTitle.init(titleName:lane:offset:ref:duration:start:role:text:textStyleID:newTextStyle:font:fontSize:fontFace:fontColor:strokeColor:strokeWidth:shadowColor:shadowDistance:shadowAngle:shadowBlurRadius:alignment:xPosition:yPosition:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/ElementClasses/FCPXMLTitle.swift",
+      "line": 126,
+      "symbol": "FCPXMLTitle.xmlElement()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 25,
+      "symbol": "FCPXMLElementType.assetResource",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 26,
+      "symbol": "FCPXMLElementType.formatResource",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 27,
+      "symbol": "FCPXMLElementType.mediaResource",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 28,
+      "symbol": "FCPXMLElementType.effectResource",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 31,
+      "symbol": "FCPXMLElementType.event",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 32,
+      "symbol": "FCPXMLElementType.project",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 33,
+      "symbol": "FCPXMLElementType.multicamClip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 34,
+      "symbol": "FCPXMLElementType.compoundClip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 35,
+      "symbol": "FCPXMLElementType.synchronizedClip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 36,
+      "symbol": "FCPXMLElementType.assetClip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 39,
+      "symbol": "FCPXMLElementType.clip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 40,
+      "symbol": "FCPXMLElementType.audio",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 41,
+      "symbol": "FCPXMLElementType.video",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 42,
+      "symbol": "FCPXMLElementType.gap",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 43,
+      "symbol": "FCPXMLElementType.transition",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 44,
+      "symbol": "FCPXMLElementType.title",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 45,
+      "symbol": "FCPXMLElementType.spine",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 46,
+      "symbol": "FCPXMLElementType.audition",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 47,
+      "symbol": "FCPXMLElementType.sequence",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 50,
+      "symbol": "FCPXMLElementType.marker",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 51,
+      "symbol": "FCPXMLElementType.keyword",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 52,
+      "symbol": "FCPXMLElementType.rating",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 53,
+      "symbol": "FCPXMLElementType.chapterMarker",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 54,
+      "symbol": "FCPXMLElementType.analysisMarker",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 55,
+      "symbol": "FCPXMLElementType.note",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLUtility.swift",
+      "line": 15,
+      "symbol": "FCPXMLUtility",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLUtility.swift",
+      "line": 17,
+      "symbol": "FCPXMLUtility.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/CMTimeExtension.swift",
+      "line": 15,
+      "symbol": "CMTime.fcpxmlString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/CMTimeExtension.swift",
+      "line": 26,
+      "symbol": "CMTime.timeAsCounter()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/CMTimeExtension.swift",
+      "line": 54,
+      "symbol": "CMTime.timeAsTimecode(usingFrameDuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLDocumentExtension.swift",
+      "line": 16,
+      "symbol": "XMLDocument.fcpxResourceList",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLDocumentExtension.swift",
+      "line": 202,
+      "symbol": "XMLDocument.fcpxmlVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 21,
+      "symbol": "XMLElement.fcpxType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 35,
+      "symbol": "XMLElement.fcpxName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 53,
+      "symbol": "XMLElement.fcpxDuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 72,
+      "symbol": "XMLElement.fcpxTCStart",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 91,
+      "symbol": "XMLElement.fcpxStart",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 110,
+      "symbol": "XMLElement.fcpxOffset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 129,
+      "symbol": "XMLElement.fcpxTCFormat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 147,
+      "symbol": "XMLElement.fcpxFormatRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 165,
+      "symbol": "XMLElement.fcpxRefOrID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 177,
+      "symbol": "XMLElement.fcpxRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 195,
+      "symbol": "XMLElement.fcpxID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 213,
+      "symbol": "XMLElement.fcpxRole",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 231,
+      "symbol": "XMLElement.fcpxLane",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 249,
+      "symbol": "XMLElement.fcpxNote",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 267,
+      "symbol": "XMLElement.fcpxValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 285,
+      "symbol": "XMLElement.fcpxSrc",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 303,
+      "symbol": "XMLElement.fcpxFrameDuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 322,
+      "symbol": "XMLElement.fcpxWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 345,
+      "symbol": "XMLElement.fcpxHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 368,
+      "symbol": "XMLElement.fcpxUID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 386,
+      "symbol": "XMLElement.fcpxParentInPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 402,
+      "symbol": "XMLElement.fcpxParentOutPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 428,
+      "symbol": "XMLElement.fcpxLocalInPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 444,
+      "symbol": "XMLElement.fcpxLocalOutPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 473,
+      "symbol": "XMLElement.isEventItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 488,
+      "symbol": "XMLElement.isResource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 502,
+      "symbol": "XMLElement.fcpxEvent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 523,
+      "symbol": "XMLElement.fcpxResource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 538,
+      "symbol": "XMLElement.fcpxAnnotations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 681,
+      "symbol": "XMLElement.eventClips(containingAsset:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 1334,
+      "symbol": "XMLElement.clipRangeIncludes(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 1353,
+      "symbol": "XMLElement.clipRangeIsEnclosedBetween(_:outPoint:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/reuelkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project"
+}

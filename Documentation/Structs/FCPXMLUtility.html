@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FCPXMLUtility Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/FCPXMLUtility" class="dashAnchor"></a>
+    <a title="FCPXMLUtility Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (34% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        FCPXMLUtility Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/FCPXMLEvent.html">FCPXMLEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FCPXMLGap.html">FCPXMLGap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FCPXMLRefClip.html">FCPXMLRefClip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FCPXMLTitle.html">FCPXMLTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FCPXMLTitle/TextAlignment.html">– TextAlignment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FCPXMLElementType.html">FCPXMLElementType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CMTime.html">CMTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLDocument.html">XMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement.html">XMLElement</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FCPXMLUtility.html">FCPXMLUtility</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>FCPXMLUtility</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtilitycFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtilitycFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Retrieval%20functions"></a>
+                <a name="//apple_ref/swift/Section/Retrieval functions" class="dashAnchor"></a>
+                <a href="#/Retrieval%20functions">
+                  <h3 class="section-name">Retrieval functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility6filterFT12fcpxElementsGSaCSo10XMLElement_7ofTypesGSaOS_17FCPXMLElementType__GSaS1__"></a>
+                    <a name="//apple_ref/swift/Method/filter(fcpxElements:ofTypes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility6filterFT12fcpxElementsGSaCSo10XMLElement_7ofTypesGSaOS_17FCPXMLElementType__GSaS1__">filter(fcpxElements:ofTypes:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of elements that match specified FCPXML element types.</p>
+
+<p><li>Parameters:</p>
+
+<p><ul>
+<li>elements: An array of XMLElement instances</li>
+<li>types: An array of FCPXMLElementType enumeration values</li>
+</ul></li>
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    A filtered array of XMLElement instances</p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="n">fcpxElements</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">],</span> <span class="n">ofTypes</span> <span class="nv">types</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/FCPXMLElementType.html">FCPXMLElementType</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of XMLElement instances</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>types</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of FCPXMLElementType enumeration values</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A filtered array of XMLElement instances</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20conversion%20functions"></a>
+                <a name="//apple_ref/swift/Section/Time conversion functions" class="dashAnchor"></a>
+                <a href="#/Time%20conversion%20functions">
+                  <h3 class="section-name">Time conversion functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility10CMTimeFromFT13timecodeHoursSi15timecodeMinutesSi15timecodeSecondsSi14timecodeFramesSi13frameDurationVSC6CMTime_S1_"></a>
+                    <a name="//apple_ref/swift/Method/CMTimeFrom(timecodeHours:timecodeMinutes:timecodeSeconds:timecodeFrames:frameDuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility10CMTimeFromFT13timecodeHoursSi15timecodeMinutesSi15timecodeSecondsSi14timecodeFramesSi13frameDurationVSC6CMTime_S1_">CMTimeFrom(timecodeHours:timecodeMinutes:timecodeSeconds:timecodeFrames:frameDuration:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a CMTime value that represents real time from timecode values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">CMTimeFrom</span><span class="p">(</span><span class="nv">timecodeHours</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">timecodeMinutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">timecodeSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">timecodeFrames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">frameDuration</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timecodeHours</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The hours element of the timecode value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timecodeMinutes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The minutes element of the timecode value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timecodeSeconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The seconds element of the timecode value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timecodeFrames</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frames element of the timecode value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frameDuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The duration of a single frame as a CMTime value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMTime value equivalent to the timecode value in real time.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility6CMTimeFT14fromFCPXMLTimeSS_VSC6CMTime"></a>
+                    <a name="//apple_ref/swift/Method/CMTime(fromFCPXMLTime:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility6CMTimeFT14fromFCPXMLTimeSS_VSC6CMTime">CMTime(fromFCPXMLTime:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts an FCPXML time value to a CMTime value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">CMTime</span><span class="p">(</span><span class="n">fromFCPXMLTime</span> <span class="nv">timeString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromFCPXMLTimeString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The FCPXML time value as a string.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The equivalent CMTime value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility10fcpxmlTimeFT10fromCMTimeVSC6CMTime_SS"></a>
+                    <a name="//apple_ref/swift/Method/fcpxmlTime(fromCMTime:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility10fcpxmlTimeFT10fromCMTimeVSC6CMTime_SS">fcpxmlTime(fromCMTime:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a CMTime value to an FCPXML time value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fcpxmlTime</span><span class="p">(</span><span class="n">fromCMTime</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMTime value to convert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The FCPXML time value as a string.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility7conformFT4timeVSC6CMTime15toFrameDurationS1__S1_"></a>
+                    <a name="//apple_ref/swift/Method/conform(time:toFrameDuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility7conformFT4timeVSC6CMTime15toFrameDurationS1__S1_">conform(time:toFrameDuration:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Conforms a given CMTime value to the frameDuration so that the value falls on an edit frame boundary. The function rounds the edit frame down.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">conform</span><span class="p">(</span><span class="nv">time</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="n">toFrameDuration</span> <span class="nv">frameDuration</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMTime value to conform.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frameDuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame duration to conform to, represented as a CMTime.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMTime of the conformed value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility15projectTimecodeFT16fromCounterValueVSC6CMTime9inProjectCSo10XMLElement_GSqS1__"></a>
+                    <a name="//apple_ref/swift/Method/projectTimecode(fromCounterValue:inProject:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility15projectTimecodeFT16fromCounterValueVSC6CMTime9inProjectCSo10XMLElement_GSqS1__">projectTimecode(fromCounterValue:inProject:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a project counter value to the project&rsquo;s timecode.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">projectTimecode</span><span class="p">(</span><span class="n">fromCounterValue</span> <span class="nv">counterValue</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="n">inProject</span> <span class="nv">project</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>counterValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The counter value to convert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>project</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The project to convert against, as an NSXMLElement.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An optional CMTime value of the timecode value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility18projectCounterTimeFT17fromTimecodeValueVSC6CMTime9inProjectCSo10XMLElement_GSqS1__"></a>
+                    <a name="//apple_ref/swift/Method/projectCounterTime(fromTimecodeValue:inProject:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility18projectCounterTimeFT17fromTimecodeValueVSC6CMTime9inProjectCSo10XMLElement_GSqS1__">projectCounterTime(fromTimecodeValue:inProject:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a project timecode value to the project&rsquo;s counter time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">projectCounterTime</span><span class="p">(</span><span class="n">fromTimecodeValue</span> <span class="nv">timecodeValue</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="n">inProject</span> <span class="nv">project</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timecodeValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The timecode value to convert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>project</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The project to convert against, as an NSXMLElement.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An optional CMTime value of the counter time.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility10parentTimeFT13fromLocalTimeVSC6CMTime7forClipCSo10XMLElement_GSqS1__"></a>
+                    <a name="//apple_ref/swift/Method/parentTime(fromLocalTime:forClip:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility10parentTimeFT13fromLocalTimeVSC6CMTime7forClipCSo10XMLElement_GSqS1__">parentTime(fromLocalTime:forClip:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a local time value to a clip&rsquo;s parent time value. In FCPXML, this would be converting a time value that is in the start value timescale to the offset value timescale.</p>
+
+<p>For example, if a clip on the primary storyline has an attached clip, this will convert the attached clip&rsquo;s offset value to its parent clip&rsquo;s offset value timescale.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">parentTime</span><span class="p">(</span><span class="n">fromLocalTime</span> <span class="nv">localTimeValue</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="n">forClip</span> <span class="nv">clip</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromLocalTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local time value to convert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forClip</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The clip to convert against.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMTime value of the resulting parent time value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility9localTimeFT14fromParentTimeVSC6CMTime7forClipCSo10XMLElement_GSqS1__"></a>
+                    <a name="//apple_ref/swift/Method/localTime(fromParentTime:forClip:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility9localTimeFT14fromParentTimeVSC6CMTime7forClipCSo10XMLElement_GSqS1__">localTime(fromParentTime:forClip:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a parent time value to a clip&rsquo;s local time value. In FCPXML, this would be converting a time value that is in the offset value timescale to the start value timescale.</p>
+
+<p>For example, if a clip on the primary storyline has an attached clip, this will tell you what the attached clip&rsquo;s offset should be based on where you want it to be placed along the primary storyline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localTime</span><span class="p">(</span><span class="n">fromParentTime</span> <span class="nv">parentTimeValue</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="n">forClip</span> <span class="nv">clip</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromParentTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The parent time value to convert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forClip</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The clip to convert against.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMTime value of the resulting parent time value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility11projectTimeFT7forClipCSo10XMLElement9inProjectS1__GSqVSC6CMTime_"></a>
+                    <a name="//apple_ref/swift/Method/projectTime(forClip:inProject:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility11projectTimeFT7forClipCSo10XMLElement9inProjectS1__GSqVSC6CMTime_">projectTime(forClip:inProject:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides the start time of the given clip within the project timeline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">projectTime</span><span class="p">(</span><span class="n">forClip</span> <span class="nv">clip</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">,</span> <span class="n">inProject</span> <span class="nv">project</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forClip</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The clip on the timeline to return the start time value for. The clip can be a clip on the primary storyline, a secondary storyline or it can be a connected clip.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inProject</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The project that the clip resides in.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMTime value of the resulting project time value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Other%20conversion%20functions"></a>
+                <a name="//apple_ref/swift/Section/Other conversion functions" class="dashAnchor"></a>
+                <a href="#/Other%20conversion%20functions">
+                  <h3 class="section-name">Other conversion functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility29convertLineBreaksInAttributesFT16inXMLDocumentURLV10Foundation3URL_GSqCSo11XMLDocument_"></a>
+                    <a name="//apple_ref/swift/Method/convertLineBreaksInAttributes(inXMLDocumentURL:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility29convertLineBreaksInAttributesFT16inXMLDocumentURLV10Foundation3URL_GSqCSo11XMLDocument_">convertLineBreaksInAttributes(inXMLDocumentURL:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts line breaks in attributes to safe XML entities in an XML file, returning an NSXMLDocument.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">convertLineBreaksInAttributes</span><span class="p">(</span><span class="n">inXMLDocumentURL</span> <span class="kt">URL</span><span class="p">:</span> <span class="kt">Foundation</span><span class="o">.</span><span class="kt">URL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">XMLDocument</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>XMLDocumentURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An NSURL pointing to the XML file to convert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSXMLDocument or nil if there was a file read or conversion error.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV8Pipeline13FCPXMLUtility13FFVideoFormatFT9fromWidthSi6heightSi9frameRateSf12isInterlacedSb8isSD16x9Sb_SS"></a>
+                    <a name="//apple_ref/swift/Method/FFVideoFormat(fromWidth:height:frameRate:isInterlaced:isSD16x9:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV8Pipeline13FCPXMLUtility13FFVideoFormatFT9fromWidthSi6heightSi9frameRateSf12isInterlacedSb8isSD16x9Sb_SS">FFVideoFormat(fromWidth:height:frameRate:isInterlaced:isSD16x9:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the FFVideoFormat identifier based on the given parameters. If the parameters don&rsquo;t match a defined identifier according to FCPXML v1.5, the method will return the string <q>FFVideoFormatRateUndefined</q>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">FFVideoFormat</span><span class="p">(</span><span class="n">fromWidth</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">frameRate</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">isInterlaced</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">isSD16x9</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromWidth</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The width of the frame as an integer.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The height of the frame as an integer.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frameRate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame rate as a float.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isInterlaced</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value indicating if the format is interlaced.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>is16x9</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value indicating if the format has an aspect ratio of 16:9.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string of the FFVideoFormat identifier.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
