@@ -19,6 +19,128 @@ extension XMLElement {
 		case notAnAnnotation
 	}
 	
+	public enum TextAlignment: String {
+		case Left = "left"
+		case Center = "center"
+		case Right = "right"
+		case Justified = "justified"
+	}
+	
+	
+	// MARK: - Creating FCPXML XMLElement objects
+	
+	/// Creates a new ref-clip FCPXML XMLElement object
+	///
+	/// - Parameters:
+	///   - name: The name of the clip.
+	///   - ref: The reference ID for the resource that this clip refers to.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - start: The start time of the clip's local timeline as a CMTime value.
+	///   - useAudioSubroles: A boolean value indicating if the clip's audio subroles are accessible.
+	/// - Returns: An XMLElement object of the ref-clip.
+	public func fcpxCompoundClip(name: String, ref: String, offset: CMTime?, duration: CMTime, start: CMTime?, useAudioSubroles: Bool) -> XMLElement {
+		
+		self.name = "ref-clip"
+		
+		self.fcpxName = name
+		self.fcpxRef = ref
+		self.fcpxOffset = offset
+		self.fcpxDuration = duration
+		self.fcpxStart = start
+		
+		if useAudioSubroles == true {
+			setElementAttribute("useAudioSubroles", value: "1")
+		} else {
+			setElementAttribute("useAudioSubroles", value: "0")
+		}
+		
+		return self
+	}
+	
+	
+	public func fcpxGap(offset: CMTime?, duration: CMTime, start: CMTime?) -> XMLElement {
+		
+		self.name = "gap"
+		
+		self.fcpxOffset = offset
+		self.fcpxDuration = duration
+		self.fcpxStart = start
+		
+		return self
+	}
+	
+	
+	public func fcpxTitle(titleName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, role: String?, titleText: String, textStyleID: Int, newTextStyle: Bool, font: String = "Helvetica", fontSize: CGFloat = 62, fontFace: String = "Regular", fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), strokeColor: NSColor? = nil, strokeWidth: Float = 2.0, shadowColor: NSColor? = nil, shadowDistance: Float = 5.0, shadowAngle: Float = 315.0, shadowBlurRadius: Float = 1.0, alignment: TextAlignment = TextAlignment.Center, xPosition: Float = 0, yPosition: Float = -40) -> XMLElement {
+		
+		self.name = "title"
+		
+		self.fcpxName = titleName
+		self.fcpxLane = lane
+		self.fcpxOffset = offset
+		self.fcpxRef = ref
+		self.fcpxDuration = duration
+		self.fcpxStart = start
+		self.fcpxRole = role
+		
+		let text = Foundation.XMLElement(name: "text")
+		let textTextStyle = Foundation.XMLElement(name: "text-style", stringValue: titleText)
+		
+		
+		// Add the text content and its style
+		textTextStyle.fcpxRef = "ts\(textStyleID)"  // Reference the new text style definition reference number
+		
+		text.addChild(textTextStyle)
+		self.addChild(text)
+		
+		// Text Style Definition
+		if newTextStyle == true {  // If a new text style definition hasn't been created yet
+			
+			let textStyleDef = Foundation.XMLElement(name: "text-style-def")
+			
+			textStyleDef.setElementAttribute("id", value: "ts\(textStyleID)")
+			
+			let textStyleDefTextStyle = Foundation.XMLElement(name: "text-style")
+			
+			textStyleDefTextStyle.setElementAttribute("font", value: font)
+			textStyleDefTextStyle.setElementAttribute("fontSize", value: String(describing: fontSize))
+			textStyleDefTextStyle.setElementAttribute("fontFace", value: fontFace)
+			textStyleDefTextStyle.setElementAttribute("fontColor", value: "\(fontColor.redComponent) \(fontColor.greenComponent) \(fontColor.blueComponent) \(fontColor.alphaComponent)")
+			
+			if let strokeColor = strokeColor {
+				
+				textStyleDefTextStyle.setElementAttribute("strokeColor", value: "\(strokeColor.redComponent) \(strokeColor.greenComponent) \(strokeColor.blueComponent) \(strokeColor.alphaComponent)")
+				
+				textStyleDefTextStyle.setElementAttribute("strokeWidth", value: String(strokeWidth))
+			}
+			
+			if let shadowColor = shadowColor {
+				
+				textStyleDefTextStyle.setElementAttribute("shadowColor", value: "\(shadowColor.redComponent) \(shadowColor.greenComponent) \(shadowColor.blueComponent) \(shadowColor.alphaComponent)")
+				
+				textStyleDefTextStyle.setElementAttribute("shadowOffset", value: "\(shadowDistance) \(shadowAngle)")
+				textStyleDefTextStyle.setElementAttribute("shadowBlurRadius", value: String(shadowBlurRadius))
+			}
+			
+			textStyleDefTextStyle.setElementAttribute("alignment", value: alignment.rawValue)
+			
+			textStyleDef.addChild(textStyleDefTextStyle)
+			
+			self.addChild(textStyleDef)
+		}
+		
+		// Add the transform
+		let adjustTransform = Foundation.XMLElement(name: "adjust-transform")
+		
+		adjustTransform.setElementAttribute("position", value: "\(xPosition) \(yPosition)")
+		
+		self.addChild(adjustTransform)
+		
+		return self
+	}
+	
+	
+	
 	// MARK: - Properties for attribute nodes within element tags
 	public var fcpxType: FCPXMLElementType {
 		get {
