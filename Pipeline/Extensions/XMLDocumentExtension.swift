@@ -18,9 +18,11 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	
 	// MARK: - Properties
 
-	public var fcpxResourceList: XMLElement {
+	public var fcpxResourceList: XMLElement? {
 		get {
-			let rootElement = self.child(at: 0) as! XMLElement
+			guard let rootElement = self.rootElement() else {
+				return nil
+			}
 			return rootElement.elements(forName: "resources")[0]
 		}
 	}
@@ -28,7 +30,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// An array of all resources in the FCPXML document.
 	public var fcpxResources: [XMLElement] {
 		get {
-			if let resourceNodes = self.fcpxResourceList.children {
+			if let resourceNodes = self.fcpxResourceList?.children {
 				return resourceNodes as! [XMLElement]
 			} else {
 				return []
@@ -37,9 +39,11 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	/// The library XMLElement in the FCPXML document.
-	public var fcpxLibrary: XMLElement {
+	public var fcpxLibrary: XMLElement? {
 		get {
-			let rootElement = self.child(at: 0) as! XMLElement
+			guard let rootElement = self.rootElement() else {
+				return nil
+			}
 			return rootElement.elements(forName: "library")[0]
 		}
 	}
@@ -185,6 +189,16 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 			}
 			
 			return nil
+		}
+		
+		set (value){
+			
+			if value != nil {
+				let version = XMLNode.attribute(withName: "version", stringValue: String(value!)) // TODO: This is a good model for initializing XMLElements of different types
+				self.rootElement()?.addAttribute(version as! XMLNode)
+			} else {
+				self.rootElement()?.removeAttribute(forName: "version")
+			}
 		}
 	}
 	
@@ -352,6 +366,30 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	
+	/// Initializes a new XMLDocument as FCPXML.
+	///
+	/// - Parameters:
+	///   - resources: Resources an array of XMLElement instances
+	///   - events: Events as an array of XMLElement instances
+	///   - fcpxmlVersion: The FCPXML version of the document to use.
+	public convenience init(resources: [XMLElement], events: [XMLElement], fcpxmlVersion: Float) {
+		
+		self.init()
+		self.documentContentKind = XMLDocument.ContentKind.xml
+		self.characterEncoding = "UTF-8"
+		self.version = "1.0"
+		
+		self.dtd = XMLDTD()
+		self.dtd!.name = "fcpxml"
+		self.isStandalone = false
+		
+		self.setRootElement(XMLElement(name: "fcpxml"))
+		self.fcpxmlVersion = 1.6
+		
+		self.add(resourceElements: resources)
+		self.add(events: events)
+		
+	}
 
 	
 	// MARK: - Parsing Functions
@@ -508,18 +546,60 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	
 	// MARK: - Modification Functions
 	
-	/// Adds a resource element to the FCPXML document.
+	/// Adds a resource XMLElement to the FCPXML document.
 	///
 	/// - Parameter resourceElement: The XMLElement of the resource to be added.
 	public func add(resourceElement: XMLElement) {
-		self.fcpxResourceList.addChild(resourceElement)
+		if self.fcpxResourceList == nil {
+			self.rootElement()?.addChild(XMLElement(name: "resources"))
+		}
+		
+		self.fcpxResourceList?.addChild(resourceElement)
+	}
+	
+	
+	/// Adds an array of resource XMLElements to the FCPXML document.
+	///
+	/// - Parameter resourceElements: An array of resource XMLElement instances.
+	public func add(resourceElements: [XMLElement]) {
+		for resource in resourceElements {
+			self.add(resourceElement: resource)
+		}
+	}
+	
+	
+	/// Removes all resources from the FCPXML document.
+	public func removeAllResources() {
+		self.fcpxResourceList?.setChildren(nil)
+	}
+	
+	
+	/// Adds an event to the library XMLElement of the FCPXML document.
+	///
+	/// - Parameter event: The XMLElement of the event to be added.
+	public func add(event: XMLElement) {
+		if self.fcpxLibrary == nil {
+			self.rootElement()?.addChild(XMLElement(name: "library"))
+		}
+		
+		self.fcpxLibrary?.addChild(event)
+	}
+	
+	
+	/// Adds an array of event XMLElements to the FCPXML document.
+	///
+	/// - Parameter events: An array of event XMLElement instances.
+	public func add(events: [XMLElement]) {
+		for event in events {
+			self.add(event: event)
+		}
 	}
 	
 	
 	/// Removes all events from the library.
 	public func removeAllEvents() {
 		for event in self.fcpxEvents {
-			self.fcpxLibrary.removeChild(at: event.index)
+			self.fcpxLibrary?.removeChild(at: event.index)
 		}
 		
 	}
