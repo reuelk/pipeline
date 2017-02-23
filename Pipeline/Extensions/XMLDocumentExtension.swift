@@ -17,6 +17,13 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	// MARK: - Properties
+	
+	/// The FCPXML document as a properly formatted string.
+	public var fcpxmlString: String {
+		let formattedData = self.xmlData(withOptions: 131076)
+		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
+		return formattedString as! String
+	}
 
 	public var fcpxResourceList: XMLElement? {
 		get {
@@ -542,6 +549,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		return matchingAssets
 		
 	}
+
 	
 	
 	// MARK: - Modification Functions
