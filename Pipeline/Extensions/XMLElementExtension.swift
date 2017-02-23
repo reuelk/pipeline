@@ -29,6 +29,35 @@ extension XMLElement {
 	
 	// MARK: - Creating FCPXML XMLElement objects
 	
+	
+	/// Creates a new event FCPXML XMLElement object.
+	///
+	/// - Parameter name: The name of the event in Final Cut Pro X.
+	/// - Returns: An XMLElement object of the event.
+	public func fcpxEvent(name: String) -> XMLElement {
+		let element = XMLElement(name: "event")
+		element.fcpxName = name
+		return element
+	}
+
+	
+	/// Creates a new event FCPXML XMLElement object and adds items to it.
+	///
+	/// - Parameters:
+	///   - name: The name of the event in Final Cut Pro X.
+	///   - items: Items to add to the event.
+	/// - Returns: An XMLElement object of the event.
+	public func fcpxEvent(name: String, items: [XMLElement]) -> XMLElement {
+		let element = XMLElement(name: "event")
+		element.fcpxName = name
+		do {
+			try element.addToEvent(items: items)
+		} catch {
+			return element
+		}
+		return element
+	}
+	
 	/// Creates a new ref-clip FCPXML XMLElement object
 	///
 	/// - Parameters:
@@ -41,66 +70,101 @@ extension XMLElement {
 	/// - Returns: An XMLElement object of the ref-clip.
 	public func fcpxCompoundClip(name: String, ref: String, offset: CMTime?, duration: CMTime, start: CMTime?, useAudioSubroles: Bool) -> XMLElement {
 		
-		self.name = "ref-clip"
+		let element = XMLElement(name: "ref-clip")
 		
-		self.fcpxName = name
-		self.fcpxRef = ref
-		self.fcpxOffset = offset
-		self.fcpxDuration = duration
-		self.fcpxStart = start
+		element.fcpxName = name
+		element.fcpxRef = ref
+		element.fcpxOffset = offset
+		element.fcpxDuration = duration
+		element.fcpxStart = start
 		
 		if useAudioSubroles == true {
-			setElementAttribute("useAudioSubroles", value: "1")
+			element.setElementAttribute("useAudioSubroles", value: "1")
 		} else {
-			setElementAttribute("useAudioSubroles", value: "0")
+			element.setElementAttribute("useAudioSubroles", value: "0")
 		}
 		
-		return self
+		return element
 	}
 	
 	
+	/// Creates a new gap to be used in a timeline.
+	///
+	/// - Parameters:
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - start: The start time of the clip's local timeline as a CMTime value.
+	/// - Returns: An XMLElement object of the gap.
 	public func fcpxGap(offset: CMTime?, duration: CMTime, start: CMTime?) -> XMLElement {
 		
-		self.name = "gap"
+		let element = XMLElement(name: "gap")
 		
-		self.fcpxOffset = offset
-		self.fcpxDuration = duration
-		self.fcpxStart = start
+		element.fcpxOffset = offset
+		element.fcpxDuration = duration
+		element.fcpxStart = start
 		
-		return self
+		return element
 	}
 	
 	
+	/// Creates a new title to be used in a timeline.
+	/// - Note: The font, fontSize, fontFace, fontColor, strokeColor, strokeWidth, shadowColor, shadowDistance, shadowAngle, shadowBlurRadius, and alignment properties affect the text style only if the newTextStyle property is true.
+	///
+	/// - Parameters:
+	///   - titleName: The name of the title clip on the timeline.
+	///   - lane: The preferred timeline lane to place the clip into.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - ref: The reference ID for the title effect resource that this clip refers to.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - start: The start time of the clip's local timeline as a CMTime value.
+	///   - role: The role assigned to the clip.
+	///   - titleText: The text displayed by this title clip.
+	///   - textStyleID: The ID to assign to a newly generated text style definition or the ID to reference for an existing text style definition.
+	///   - newTextStyle: True if this title clip should contain a newly generated text style definition.
+	///   - font: The font family name to use for the title text.
+	///   - fontSize: The font size.
+	///   - fontFace: The font face.
+	///   - fontColor: The color of the font.
+	///   - strokeColor: The color of the stroke used on the title text.
+	///   - strokeWidth: The width of the stroke.
+	///   - shadowColor: The color of the shadow used underneath the title text.
+	///   - shadowDistance: The distance of the shadow from the title text.
+	///   - shadowAngle: The angle of the shadow offset.
+	///   - shadowBlurRadius: The blur radius of the shadow.
+	///   - alignment: The text paragraph alignment.
+	///   - xPosition: The X position of the text on the screen.
+	///   - yPosition: The Y position of the text on the screen.
+	/// - Returns: An XMLElement object of the title, which will contain the text style definition, if specified.
 	public func fcpxTitle(titleName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, role: String?, titleText: String, textStyleID: Int, newTextStyle: Bool, font: String = "Helvetica", fontSize: CGFloat = 62, fontFace: String = "Regular", fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), strokeColor: NSColor? = nil, strokeWidth: Float = 2.0, shadowColor: NSColor? = nil, shadowDistance: Float = 5.0, shadowAngle: Float = 315.0, shadowBlurRadius: Float = 1.0, alignment: TextAlignment = TextAlignment.Center, xPosition: Float = 0, yPosition: Float = -40) -> XMLElement {
 		
-		self.name = "title"
+		let element = XMLElement(name: "title")
 		
-		self.fcpxName = titleName
-		self.fcpxLane = lane
-		self.fcpxOffset = offset
-		self.fcpxRef = ref
-		self.fcpxDuration = duration
-		self.fcpxStart = start
-		self.fcpxRole = role
+		element.fcpxName = titleName
+		element.fcpxLane = lane
+		element.fcpxOffset = offset
+		element.fcpxRef = ref
+		element.fcpxDuration = duration
+		element.fcpxStart = start
+		element.fcpxRole = role
 		
-		let text = Foundation.XMLElement(name: "text")
-		let textTextStyle = Foundation.XMLElement(name: "text-style", stringValue: titleText)
+		let text = XMLElement(name: "text")
+		let textTextStyle = XMLElement(name: "text-style", stringValue: titleText)
 		
 		
 		// Add the text content and its style
 		textTextStyle.fcpxRef = "ts\(textStyleID)"  // Reference the new text style definition reference number
 		
 		text.addChild(textTextStyle)
-		self.addChild(text)
+		element.addChild(text)
 		
 		// Text Style Definition
 		if newTextStyle == true {  // If a new text style definition hasn't been created yet
 			
-			let textStyleDef = Foundation.XMLElement(name: "text-style-def")
+			let textStyleDef = XMLElement(name: "text-style-def")
 			
-			textStyleDef.setElementAttribute("id", value: "ts\(textStyleID)")
+			textStyleDef.fcpxID = "ts\(textStyleID)"
 			
-			let textStyleDefTextStyle = Foundation.XMLElement(name: "text-style")
+			let textStyleDefTextStyle = XMLElement(name: "text-style")
 			
 			textStyleDefTextStyle.setElementAttribute("font", value: font)
 			textStyleDefTextStyle.setElementAttribute("fontSize", value: String(describing: fontSize))
@@ -110,14 +174,12 @@ extension XMLElement {
 			if let strokeColor = strokeColor {
 				
 				textStyleDefTextStyle.setElementAttribute("strokeColor", value: "\(strokeColor.redComponent) \(strokeColor.greenComponent) \(strokeColor.blueComponent) \(strokeColor.alphaComponent)")
-				
 				textStyleDefTextStyle.setElementAttribute("strokeWidth", value: String(strokeWidth))
 			}
 			
 			if let shadowColor = shadowColor {
 				
 				textStyleDefTextStyle.setElementAttribute("shadowColor", value: "\(shadowColor.redComponent) \(shadowColor.greenComponent) \(shadowColor.blueComponent) \(shadowColor.alphaComponent)")
-				
 				textStyleDefTextStyle.setElementAttribute("shadowOffset", value: "\(shadowDistance) \(shadowAngle)")
 				textStyleDefTextStyle.setElementAttribute("shadowBlurRadius", value: String(shadowBlurRadius))
 			}
@@ -126,17 +188,17 @@ extension XMLElement {
 			
 			textStyleDef.addChild(textStyleDefTextStyle)
 			
-			self.addChild(textStyleDef)
+			element.addChild(textStyleDef)
 		}
 		
 		// Add the transform
-		let adjustTransform = Foundation.XMLElement(name: "adjust-transform")
+		let adjustTransform = XMLElement(name: "adjust-transform")
 		
 		adjustTransform.setElementAttribute("position", value: "\(xPosition) \(yPosition)")
 		
-		self.addChild(adjustTransform)
+		element.addChild(adjustTransform)
 		
-		return self
+		return element
 	}
 	
 	
@@ -709,7 +771,7 @@ extension XMLElement {
 	
 	
 	/// If this is an event item, the event that contains it. Returns nil if it is not an event item.
-	public var fcpxEvent: XMLElement? {
+	public var fcpxParentEvent: XMLElement? {
 		get {
 			guard self.isFCPXEventItem == true else { // If this is a clip inside an event
 				return nil
@@ -1104,26 +1166,70 @@ extension XMLElement {
 	
 
 	
-	/// Adds a clip XMLElement to this event. If this XMLElement is not an event, an error is thrown.
+	/// Adds an item to this event. If this XMLElement is not an event, an error is thrown.
 	///
 	/// - Parameters:
-	///   - clip: The clip to add as an XMLElement.
+	///   - item: The item to add as an XMLElement.
 	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
-	public func addToEvent(clip: XMLElement) throws {
+	public func addToEvent(item: XMLElement) throws {
 		
 		guard self.fcpxType == .event else {
 			throw FCPXMLElementError.notAnEvent
 		}
 		
-		let clipCopy = clip.copy() as! XMLElement
+		let itemCopy = item.copy() as! XMLElement
 		
-		self.addChild(clipCopy)
+		self.addChild(itemCopy)
 		
 	}
 	
+	/// Adds multiple items to this event. If this XMLElement is not an event, an error is thrown.
+	///
+	/// - Parameters:
+	///   - items: An array of XMLElement items to add.
+	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
+	public func addToEvent(items: [XMLElement]) throws {
+		
+		guard self.fcpxType == .event else {
+			throw FCPXMLElementError.notAnEvent
+		}
+		
+		for item in items {
+			let itemCopy = item.copy() as! XMLElement
+			self.addChild(itemCopy)
+		}
+	}
 	
+	
+	/// Removes an item from this event. If this XMLElement is not an event, an error is thrown.
+	/// - Note: Use XMLElement.index to obtain the index value to use in the itemIndex parameter.
+	///
+	/// - Parameter itemIndex: The index of the XMLElement to remove.
+	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
+	public func removeFromEvent(itemIndex: Int) throws {
+		guard self.fcpxType == .event else {
+			throw FCPXMLElementError.notAnEvent
+		}
+		
+		self.removeChild(at: itemIndex)
+	}
+	
+	/// Removes a group of items from this event. If this XMLElement is not an event, an error is thrown.
+	/// - Note: Use XMLElement.index to obtain the index values to use in the itemIndex parameter.
+	///
+	/// - Parameter itemIndexes: An array of the indexes of the XMLElements to remove.
+	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
+	public func removeFromEvent(itemIndexes: [Int]) throws {
+		guard self.fcpxType == .event else {
+			throw FCPXMLElementError.notAnEvent
+		}
+		
+		for index in itemIndexes.sorted().reversed() {
+			self.removeChild(at: index)
+		}
+	}
 
-	// MARK: - Methods for event items
+	// MARK: - Methods for event clips
 	
 	/// Adds an annotation XMLElement to this item, maintaining the proper order of the DTD. Conforms to FCPXML DTD v1.6.
 	///
@@ -1287,7 +1393,7 @@ extension XMLElement {
 	
 	
 	
-	// MARK: -
+	// MARK: - Miscellaneous
 	
 
 	
@@ -1355,7 +1461,7 @@ extension XMLElement {
 	A recursive function that goes through an element and all its children, finding clips that match the given name.
 	
 	- parameter forName: A String of the name to match clips with.
-	- parameter inElement: The NSXMLElement to recursively search.
+	- parameter inElement: The XMLElement to recursively search. This is usually self.
 	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether clip names containing the string will yield a match.
 	
 	- returns: An array of matching clips as NSXMLElement instances.
@@ -1416,7 +1522,7 @@ extension XMLElement {
 	A recursive function that goes through an element and all its children, finding clips that match the given type.
 	
 	- parameter elementType: A type of FCPXML element as FCPXMLElementType enumeration.
-	- parameter inElement: The NSXMLElement to recursively search.
+	- parameter inElement: The XMLElement to recursively search. This is usually self.
 	
 	- returns: An array of matching clips as NSXMLElement instances.
 	*/
