@@ -20,7 +20,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 
 	public var fcpxResourceList: XMLElement? {
 		get {
-			guard let rootElement = self.rootElement() else {
+			guard let rootElement = self.rootElement(), rootElement.elements(forName: "resources").count > 0 else {
 				return nil
 			}
 			return rootElement.elements(forName: "resources")[0]
@@ -41,7 +41,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The library XMLElement in the FCPXML document.
 	public var fcpxLibrary: XMLElement? {
 		get {
-			guard let rootElement = self.rootElement() else {
+			guard let rootElement = self.rootElement(), rootElement.elements(forName: "library").count > 0 else {
 				return nil
 			}
 			return rootElement.elements(forName: "library")[0]
@@ -194,7 +194,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		set (value){
 			
 			if value != nil {
-				let version = XMLNode.attribute(withName: "version", stringValue: String(value!)) // TODO: This is a good model for initializing XMLElements of different types
+				let version = XMLNode.attribute(withName: "version", stringValue: String(value!))
 				self.rootElement()?.addAttribute(version as! XMLNode)
 			} else {
 				self.rootElement()?.removeAttribute(forName: "version")
@@ -551,7 +551,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// - Parameter resourceElement: The XMLElement of the resource to be added.
 	public func add(resourceElement: XMLElement) {
 		if self.fcpxResourceList == nil {
-			self.rootElement()?.addChild(XMLElement(name: "resources"))
+			self.rootElement()?.insertChild(XMLElement(name: "resources"), at: 0)
 		}
 		
 		self.fcpxResourceList?.addChild(resourceElement)
