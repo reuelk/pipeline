@@ -58,7 +58,9 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// An array of all event elements in the FCPXML document.
 	public var fcpxEvents: [XMLElement] {
 		get {
-			let rootElement = self.child(at: 0) as! XMLElement
+			guard let rootElement = self.rootElement(), rootElement.elements(forName: "library").count > 0 else {
+				return []
+			}
 			let libraryElement = rootElement.elements(forName: "library")[0]
 			return libraryElement.elements(forName: "event")
 		}
