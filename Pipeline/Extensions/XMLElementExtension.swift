@@ -1080,15 +1080,16 @@ extension XMLElement {
 	}
 	
 	
+
 	/// Returns all clips in an event that match the given resource ID. If this method is called on an XMLElement that is not an event, nil will be returned. If there are no clips that match the resourceID, an empty array will be returned.
 	///
-	/// - Parameters:
-	///   - resourceID: A string of the resourceID value.
+	/// - Parameter resourceID: A string of the resourceID value.
 	/// - Returns: An array of XMLElement objects that refer to the matching clips. Note that multiple clips in an event can refer to a single resource ID.
-	public func eventClips(forResourceID resourceID: String) -> [XMLElement]? {
+	/// - Throws: An error if this element is not an event.
+	public func eventClips(forResourceID resourceID: String) throws -> [XMLElement] {
 		
 		guard self.fcpxType == .event else {
-			return nil
+			throw FCPXMLElementError.notAnEvent
 		}
 		
 		var matchingClips: [XMLElement] = []
