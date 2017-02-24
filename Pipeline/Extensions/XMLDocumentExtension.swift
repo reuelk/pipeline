@@ -578,6 +578,34 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	
+	/// Removes the resource at the specified index.
+	/// - Important: This method will remove all associated clips from all events in the FCPXML document. However, it will not remove synchronized clips, compound clips and multicams that contain the resource.
+	///
+	/// - Parameter index: The index of the resource within the resources element.
+	public func remove(resourceAtIndex index: Int) {
+		let resource = self.fcpxResourceList?.child(at: index) as! XMLElement
+		guard let resourceID = resource.fcpxID else {
+			return
+		}
+		
+		for event in fcpxEvents {
+			
+			let eventClips: [XMLElement]
+			do {
+				eventClips = try event.eventClips(forResourceID: resourceID)
+			} catch {
+				continue
+			}
+			
+			for clip in eventClips {
+				event.removeChild(at: clip.index)
+			}
+		}
+		
+		self.fcpxResourceList?.removeChild(at: index)
+	}
+	
+	
 	/// Removes all resources from the FCPXML document.
 	public func removeAllResources() {
 		self.fcpxResourceList?.setChildren(nil)
@@ -613,6 +641,8 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		}
 		
 	}
+	
+	
 	
 	// TODO: Add functions for adding a resource and event clip in one swoop. Also add functions for removing a resource, event clip, and associated clips in a project in one swoop.
 	
