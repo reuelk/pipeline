@@ -378,8 +378,8 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// Initializes a new XMLDocument as FCPXML.
 	///
 	/// - Parameters:
-	///   - resources: Resources an array of XMLElement instances
-	///   - events: Events as an array of XMLElement instances
+	///   - resources: Resources an array of XMLElement objects
+	///   - events: Events as an array of XMLElement objects
 	///   - fcpxmlVersion: The FCPXML version of the document to use.
 	public convenience init(resources: [XMLElement], events: [XMLElement], fcpxmlVersion: Float) {
 		
@@ -490,7 +490,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	///   - usingFilenameOnly: True if matching with just the filename, false if matching with the entire URL path.
 	///   - omittingExtension: True if matching without the extension in the filename, false if matching with the entire filename.
 	///   - caseSensitive: True if the search should be case sensitive, false if it should not.
-	/// - Returns: An array of XMLElement instances that are matching asset resources.
+	/// - Returns: An array of XMLElement objects that are matching asset resources.
 	public func assetResources(matchingURL url: URL, usingFilenameOnly: Bool, omittingExtension: Bool, caseSensitive: Bool) -> [XMLElement] {
 		
 		let matchURL: URL
@@ -570,7 +570,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	
 	/// Adds an array of resource XMLElements to the FCPXML document.
 	///
-	/// - Parameter resourceElements: An array of resource XMLElement instances.
+	/// - Parameter resourceElements: An array of resource XMLElement objects.
 	public func add(resourceElements: [XMLElement]) {
 		for resource in resourceElements {
 			self.add(resourceElement: resource)
@@ -598,7 +598,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	
 	/// Adds an array of event XMLElements to the FCPXML document.
 	///
-	/// - Parameter events: An array of event XMLElement instances.
+	/// - Parameter events: An array of event XMLElement objects.
 	public func add(events: [XMLElement]) {
 		for event in events {
 			self.add(event: event)
@@ -620,7 +620,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	
 	/// Returns the version numbers of the DTD documents included in this framework bundle.
 	///
-	/// - Returns: An array of String instances.
+	/// - Returns: An array of String objects.
 	public func fcpxmlDTDVersions() -> [String] {
 		var versions: [String] = []
 		
