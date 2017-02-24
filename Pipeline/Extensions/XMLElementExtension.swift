@@ -26,6 +26,34 @@ extension XMLElement {
 		case Justified = "justified"
 	}
 	
+	public enum TimecodeFormat: String {
+		case dropFrame = "DF"
+		case nonDropFrame = "NDF"
+	}
+	
+	public enum AudioLayout: String {
+		case mono = "mono"
+		case stereo = "stereo"
+		case surround = "surround"
+	}
+	
+	public enum AudioRate: String {
+		case rate32kHz = "32k"
+		case rate44_1kHz = "44.1k"
+		case rate48kHz = "48k"
+		case rate88_2kHz = "88.2k"
+		case rate96kHz = "96k"
+		case rate176_4kHz = "176.4k"
+		case rate192kHz = "192k"
+	}
+	
+	public enum RenderColorSpace: String {
+		case rec601NTSC = "Rec. 601 (NTSC)"
+		case rec601PAL = "Rec. 601 (PAL)"
+		case rec709 = "Rec. 709"
+		case rec2020 = "Rec. 2020"
+	}
+	
 	
 	// MARK: - Creating FCPXML XMLElement objects
 	
@@ -57,6 +85,48 @@ extension XMLElement {
 		}
 		return element
 	}
+	
+	
+	/// Creates a new project FCPXML XMLElement object and adds clips to it.
+	///
+	/// - Parameters:
+	///   - name: The name of the project in Final Cut Pro X.
+	///   - formatRef: The reference ID for the format resource that matches this project.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - tcStart: The starting timecode of the project timeline as a CMTime value.
+	///   - tcFormat: The TimecodeFormat enum value describing whether the project timecode is drop-frame or non-drop-frame.
+	///   - audioLayout: The project audio channel layout as an AudioLayout enum value.
+	///   - audioRate: The project audio sampling rate as an AudioRate enum value.
+	///   - renderColorSpace: The project render color space as a RenderColorSpace enum value.
+	///   - clips: Clip XMLElement objects to add to the timeline of the project.
+	/// - Returns: The XMLElement object of the project.
+	public func fcpxProject(name: String, formatRef: String, duration: CMTime, tcStart: CMTime, tcFormat: TimecodeFormat, audioLayout: AudioLayout, audioRate: AudioRate, renderColorSpace: RenderColorSpace, clips: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "project")
+		element.fcpxName = name
+		
+		let sequence = XMLElement(name: "sequence")
+		sequence.fcpxFormatRef = formatRef
+		sequence.fcpxDuration = duration
+		sequence.fcpxTCStart = tcStart
+		sequence.fcpxTCFormat = tcFormat
+		sequence.fcpxAudioLayout = audioLayout
+		sequence.fcpxAudioRate = audioRate
+		sequence.fcpxRenderColorSpace = renderColorSpace
+		
+		let spine = XMLElement(name: "spine")
+		for clip in clips {
+			let clipCopy = clip.copy() as! XMLElement
+			spine.addChild(clipCopy)
+		}
+		
+		sequence.addChild(spine)
+		element.addChild(sequence)
+		
+		return element
+		
+	}
+	
 	
 	/// Creates a new ref-clip FCPXML XMLElement object
 	///
@@ -340,10 +410,17 @@ extension XMLElement {
 		}
 	}
 	
-	public var fcpxTCFormat: String? {
+	public var fcpxTCFormat: TimecodeFormat? {
 		get {
 			if let attributeString = getElementAttribute("tcFormat") {
-				return attributeString
+				switch attributeString {
+				case TimecodeFormat.dropFrame.rawValue:
+					return TimecodeFormat.dropFrame
+				case TimecodeFormat.nonDropFrame.rawValue:
+					return TimecodeFormat.nonDropFrame
+				default:
+					return nil
+				}
 			} else {
 				return nil
 			}
@@ -351,7 +428,7 @@ extension XMLElement {
 		
 		set(value) {
 			if let value = value {
-				setElementAttribute("tcFormat", value: value)
+				setElementAttribute("tcFormat", value: value.rawValue)
 			} else {
 				self.removeAttribute(forName: "tcFormat")
 			}
@@ -575,6 +652,98 @@ extension XMLElement {
 				setElementAttribute("height", value: value.description)
 			} else {
 				self.removeAttribute(forName: "height")
+			}
+		}
+	}
+	
+	public var fcpxAudioLayout: AudioLayout? {
+		get {
+			if let attributeString = getElementAttribute("audioLayout") {
+				switch attributeString {
+				case AudioLayout.mono.rawValue:
+					return AudioLayout.mono
+				case AudioLayout.stereo.rawValue:
+					return AudioLayout.stereo
+				case AudioLayout.surround.rawValue:
+					return AudioLayout.surround
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("audioLayout", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "audioLayout")
+			}
+		}
+	}
+	
+	public var fcpxAudioRate: AudioRate? {
+		get {
+			if let attributeString = getElementAttribute("audioRate") {
+				switch attributeString {
+				case AudioRate.rate32kHz.rawValue:
+					return AudioRate.rate32kHz
+				case AudioRate.rate44_1kHz.rawValue:
+					return AudioRate.rate44_1kHz
+				case AudioRate.rate48kHz.rawValue:
+					return AudioRate.rate48kHz
+				case AudioRate.rate88_2kHz.rawValue:
+					return AudioRate.rate88_2kHz
+				case AudioRate.rate96kHz.rawValue:
+					return AudioRate.rate96kHz
+				case AudioRate.rate176_4kHz.rawValue:
+					return AudioRate.rate176_4kHz
+				case AudioRate.rate192kHz.rawValue:
+					return AudioRate.rate192kHz
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("audioRate", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "audioRate")
+			}
+		}
+	}
+	
+	public var fcpxRenderColorSpace: RenderColorSpace? {
+		get {
+			if let attributeString = getElementAttribute("renderColorSpace") {
+				switch attributeString {
+				case RenderColorSpace.rec601NTSC.rawValue:
+					return RenderColorSpace.rec601NTSC
+				case RenderColorSpace.rec601PAL.rawValue:
+					return RenderColorSpace.rec601PAL
+				case RenderColorSpace.rec709.rawValue:
+					return RenderColorSpace.rec709
+				case RenderColorSpace.rec2020.rawValue:
+					return RenderColorSpace.rec2020
+
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("renderColorSpace", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "renderColorSpace")
 			}
 		}
 	}
@@ -840,7 +1009,7 @@ extension XMLElement {
 	/// Returns clips from an event that match this resource. If this method is called on an XMLElement that is not a resource, nil will be returned. If there are no matching clips in the event, an empty array will be returned.
 	///
 	/// - Parameter event: The event XMLElement to search.
-	/// - Returns: An optional array of XMLElement instances.
+	/// - Returns: An optional array of XMLElement objects.
 	public func referencingClips(inEvent event: XMLElement) -> [XMLElement]? {
 	
 		guard let resourceID = self.fcpxID else {
@@ -915,7 +1084,7 @@ extension XMLElement {
 	///
 	/// - Parameters:
 	///   - resourceID: A string of the resourceID value.
-	/// - Returns: An array of XMLElement instances that refer to the matching clips. Note that multiple clips in an event can refer to a single resource ID.
+	/// - Returns: An array of XMLElement objects that refer to the matching clips. Note that multiple clips in an event can refer to a single resource ID.
 	public func eventClips(forResourceID resourceID: String) -> [XMLElement]? {
 		
 		guard self.fcpxType == .event else {
@@ -954,7 +1123,7 @@ extension XMLElement {
 	/// Searches for items in an event that match a given asset resource. This method will also search inside synchronized clips, multicams, and compound clips for matches, but not inside projects. If this XMLElement is not an event, the method will return nil. Updated for FCPXML v1.6. ** NOTE: Currently only searches for matching video clips of all clip types.
 	///
 	/// - Parameter resource: The resource XMLElement to match with.
-	/// - Returns: An array of XMLElement instances of the event clip matching the asset.
+	/// - Returns: An array of XMLElement objects of the event clip matching the asset.
 	public func eventClips(containingResource resource: XMLElement) throws -> [XMLElement] {
 		
 		guard self.fcpxType == .event else {
@@ -1233,7 +1402,7 @@ extension XMLElement {
 	
 	/// Adds an annotation XMLElement to this item, maintaining the proper order of the DTD. Conforms to FCPXML DTD v1.6.
 	///
-	/// - Parameter annotationElements: The annotations to add as an array of XMLElement instances.
+	/// - Parameter annotationElements: The annotations to add as an array of XMLElement objects.
 	/// - Throws: Throws an error if an annotation cannot be added to this type of FCPXML element or if the element to add is not an annotation.
 	public func addToClip(annotationElements elements: [XMLElement]) throws {
 		
@@ -1464,7 +1633,7 @@ extension XMLElement {
 	- parameter inElement: The XMLElement to recursively search. This is usually self.
 	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether clip names containing the string will yield a match.
 	
-	- returns: An array of matching clips as NSXMLElement instances.
+	- returns: An array of matching clips as XMLElement objects.
 	*/
 	public func clips(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
 		
@@ -1524,7 +1693,7 @@ extension XMLElement {
 	- parameter elementType: A type of FCPXML element as FCPXMLElementType enumeration.
 	- parameter inElement: The XMLElement to recursively search. This is usually self.
 	
-	- returns: An array of matching clips as NSXMLElement instances.
+	- returns: An array of matching clips as XMLElement objects.
 	*/
 	public func clips(forElementType elementType: FCPXMLElementType, inElement element: XMLElement) -> [XMLElement] {
 		
