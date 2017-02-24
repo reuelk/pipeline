@@ -23,9 +23,9 @@ public struct FCPXMLUtility {
 	/// Returns an array of elements that match specified FCPXML element types.
 	///
 	/// - Parameters:
-	///   - elements: An array of XMLElement instances
+	///   - elements: An array of XMLElement objects
 	///   - types: An array of FCPXMLElementType enumeration values
-	/// - Returns: A filtered array of XMLElement instances
+	/// - Returns: A filtered array of XMLElement objects
 	public func filter(fcpxElements elements: [XMLElement], ofTypes types: [FCPXMLElementType]) -> [XMLElement] {
 		
 		var filteredElements: [XMLElement] = []
