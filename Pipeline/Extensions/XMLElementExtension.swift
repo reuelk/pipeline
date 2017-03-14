@@ -1416,6 +1416,21 @@ extension XMLElement {
 			self.removeChild(at: index)
 		}
 	}
+	
+	
+	/// Removes a group of items from this event. If this XMLElement is not an event, an error is thrown.
+	///
+	/// - Parameter items: An array of event item XMLElement objects.
+	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
+	public func removeFromEvent(items: [XMLElement]) throws {
+		guard self.fcpxType == .event else {
+			throw FCPXMLElementError.notAnEvent(element: self)
+		}
+		
+		for item in items {
+			self.removeChild(at: item.index)
+		}
+	}
 
 	// MARK: - Methods for event clips
 	
