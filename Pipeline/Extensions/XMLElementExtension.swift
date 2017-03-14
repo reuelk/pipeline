@@ -89,8 +89,7 @@ extension XMLElement {
 	///   - items: Items to add to the event.
 	/// - Returns: An XMLElement object of the event.
 	public func fcpxEvent(name: String, items: [XMLElement]) -> XMLElement {
-		let element = XMLElement(name: "event")
-		element.fcpxName = name
+		let element = self.fcpxEvent(name: name)
 		do {
 			try element.addToEvent(items: items)
 		} catch {
