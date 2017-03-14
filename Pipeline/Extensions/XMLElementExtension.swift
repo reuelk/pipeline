@@ -13,10 +13,23 @@ import CoreMedia
 // MARK: - XMLELEMENT EXTENSION -
 extension XMLElement {
 	
-	enum FCPXMLElementError: Error {
-		case notAnEvent
-		case notAnAnnotatableItem
-		case notAnAnnotation
+	enum FCPXMLElementError: Error, CustomStringConvertible {
+		case notAnEvent(element: XMLElement)
+		case notAnAnnotatableItem(element: XMLElement)
+		case notAnAnnotation(element: XMLElement)
+		
+		var description: String {
+			switch self {
+			case .notAnEvent(let element):
+				return "The \"\(element.name)\" element is not an event."
+			case .notAnAnnotatableItem(let element):
+				return "The \"\(element.name)\" element cannot be annotated."
+			case .notAnAnnotation(let element):
+				return "The \"\(element.name)\" element is not an annotation."
+			default:
+				return "An error has occurred with an FCPXML element."
+			}
+		}
 	}
 	
 	public enum TextAlignment: String {
@@ -341,7 +354,7 @@ extension XMLElement {
 			} else {
 				return nil
 			}
-		}
+		} // TODO: When this is a compound resource or multicam resource, or project, this should be the duration of the sequence element.
 		
 		set(value) {
 			if let value = value {
@@ -1016,7 +1029,14 @@ extension XMLElement {
 			return nil
 		}
 		
-		return event.eventClips(forResourceID: resourceID)
+		let clips: [XMLElement]
+		do {
+			clips = try event.eventClips(forResourceID: resourceID)
+		} catch {
+			return nil
+		}
+		
+		return clips
 
 	}
 	
@@ -1079,7 +1099,6 @@ extension XMLElement {
 		}
 	}
 	
-	
 
 	/// Returns all clips in an event that match the given resource ID. If this method is called on an XMLElement that is not an event, nil will be returned. If there are no clips that match the resourceID, an empty array will be returned.
 	///
@@ -1089,7 +1108,7 @@ extension XMLElement {
 	public func eventClips(forResourceID resourceID: String) throws -> [XMLElement] {
 		
 		guard self.fcpxType == .event else {
-			throw FCPXMLElementError.notAnEvent
+			throw FCPXMLElementError.notAnEvent(element: self)
 		}
 		
 		var matchingClips: [XMLElement] = []
@@ -1128,7 +1147,7 @@ extension XMLElement {
 	public func eventClips(containingResource resource: XMLElement) throws -> [XMLElement] {
 		
 		guard self.fcpxType == .event else {
-			throw FCPXMLElementError.notAnEvent
+			throw FCPXMLElementError.notAnEvent(element: self)
 		}
 		
 		var matchingItems: [XMLElement] = []
@@ -1344,7 +1363,7 @@ extension XMLElement {
 	public func addToEvent(item: XMLElement) throws {
 		
 		guard self.fcpxType == .event else {
-			throw FCPXMLElementError.notAnEvent
+			throw FCPXMLElementError.notAnEvent(element: self)
 		}
 		
 		let itemCopy = item.copy() as! XMLElement
@@ -1361,7 +1380,7 @@ extension XMLElement {
 	public func addToEvent(items: [XMLElement]) throws {
 		
 		guard self.fcpxType == .event else {
-			throw FCPXMLElementError.notAnEvent
+			throw FCPXMLElementError.notAnEvent(element: self)
 		}
 		
 		for item in items {
@@ -1378,7 +1397,7 @@ extension XMLElement {
 	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
 	public func removeFromEvent(itemIndex: Int) throws {
 		guard self.fcpxType == .event else {
-			throw FCPXMLElementError.notAnEvent
+			throw FCPXMLElementError.notAnEvent(element: self)
 		}
 		
 		self.removeChild(at: itemIndex)
@@ -1391,7 +1410,7 @@ extension XMLElement {
 	/// - Throws: FCPXMLElementError.notAnEvent if the element is not an event.
 	public func removeFromEvent(itemIndexes: [Int]) throws {
 		guard self.fcpxType == .event else {
-			throw FCPXMLElementError.notAnEvent
+			throw FCPXMLElementError.notAnEvent(element: self)
 		}
 		
 		for index in itemIndexes.sorted().reversed() {
@@ -1408,7 +1427,7 @@ extension XMLElement {
 	public func addToClip(annotationElements elements: [XMLElement]) throws {
 		
 		guard self.fcpxType == .project || self.fcpxType == .synchronizedClip || self.fcpxType == .compoundClip || self.fcpxType == .multicamClip || self.fcpxType == .assetClip else {
-			throw FCPXMLElementError.notAnAnnotatableItem
+			throw FCPXMLElementError.notAnAnnotatableItem(element: self)
 		}
 		
 		if let children = self.children {  // If there are children, insert the annotations at the appropriate point
@@ -1429,7 +1448,7 @@ extension XMLElement {
 			for element in elements {
 				
 				guard element.fcpxType == .note || element.fcpxType == .marker || element.fcpxType == .chapterMarker || element.fcpxType == .rating || element.fcpxType == .keyword || element.fcpxType == .analysisMarker else {
-					throw FCPXMLElementError.notAnAnnotation
+					throw FCPXMLElementError.notAnAnnotation(element: element)
 				}
 				
 				element.detach()
@@ -1442,7 +1461,7 @@ extension XMLElement {
 			for element in elements {
 				
 				guard element.fcpxType == .note || element.fcpxType == .marker || element.fcpxType == .chapterMarker || element.fcpxType == .rating || element.fcpxType == .keyword || element.fcpxType == .analysisMarker else {
-					throw FCPXMLElementError.notAnAnnotation
+					throw FCPXMLElementError.notAnAnnotation(element: element)
 				}
 				
 				element.detach()
