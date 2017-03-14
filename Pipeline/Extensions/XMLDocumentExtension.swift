@@ -588,6 +588,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 			return
 		}
 		
+		// Remove associated clips from all events
 		for event in fcpxEvents {
 			
 			let eventClips: [XMLElement]
@@ -631,6 +632,14 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		for event in events {
 			self.add(event: event)
 		}
+	}
+	
+	
+	/// Removes the event at the specified index.
+	///
+	/// - Parameter index: The index of the event within the library element.
+	public func remove(eventAtIndex index: Int) {
+		self.fcpxLibrary?.removeChild(at: index)
 	}
 	
 	
