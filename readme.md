@@ -40,10 +40,10 @@ Subsequent examples use the `fcpxmlDoc` object declared here.
 	
 	do {
 		fcpxmlDoc = try XMLDocument(contentsOfFCPXML: fileURL)  // Load the FCPXML file using the fileURL object
-		} catch {
-			print("Error loading FCPXML file.")
-			return
-		}
+	} catch {
+		print("Error loading FCPXML file.")
+		return
+	}
 
 ### List the Names of All Events
 
@@ -64,9 +64,9 @@ Subsequent examples use the `fcpxmlDoc` object declared here.
 		
 	try! firstEvent.removeFromEvent(items: matchingClips)  // Remove the clips that reference resource "r1".
 		
-	guard let resource = fcpxmlDoc.resource(matchingID: "r1") else {
+	guard let resource = fcpxmlDoc.resource(matchingID: "r1") else {  // Get the "r1" resource
 		return
-	}  // Get the "r1" resource
+	}
 	fcpxmlDoc.remove(resourceAtIndex: resource.index)  // Remove the "r1" resource from the FCPXML document
 
 ### Display the Duration of a Clip
