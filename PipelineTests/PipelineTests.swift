@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreMedia
 @testable import Pipeline
 
 class PipelineTests: XCTestCase {
@@ -18,7 +19,7 @@ class PipelineTests: XCTestCase {
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 		
 		let testBundle = Bundle(for: type(of: self))
-		guard let resourceURL = testBundle.url(forResource: "JFK_Moon_Demo_START", withExtension: "fcpxml") else {
+		guard let resourceURL = testBundle.url(forResource: "PCBang_FromGrace_20160202", withExtension: "fcpxml") else {
 			// file does not exist
 			print("file doesn't exist")
 			return
@@ -33,7 +34,7 @@ class PipelineTests: XCTestCase {
 		}
 		
 		do {
-			try xmlDoc = XMLDocument(contentsOfFCPXML: resourceURL)
+			xmlDoc = try XMLDocument(contentsOfFCPXML: resourceURL)
 			print("File loaded.")
 		} catch {
 			print("Error loading XML data.")
@@ -46,6 +47,19 @@ class PipelineTests: XCTestCase {
 	override func tearDown() {
 		// Put teardown code here. This method is called after the invocation of each test method in the class.
 		super.tearDown()
+	}
+	
+	func testNewDoc() {
+		let zero = CMTime(value: 0, timescale: 2400)
+		let compound = XMLElement().fcpxCompoundClip(name: "compound", ref: "r1", offset: zero, duration: CMTime(value: 60, timescale: 2400) , start: zero, useAudioSubroles: false)
+		let project = XMLElement().fcpxProject(name: "new project", formatRef: "r2", duration: zero, tcStart: zero, tcFormat: .nonDropFrame, audioLayout: .stereo, audioRate: .rate48kHz, renderColorSpace: .rec709, clips: [compound])
+		let event = XMLElement().fcpxEvent(name: "My event", items: [project])
+		
+		
+		
+		let doc = XMLDocument(resources: [compound], events: [event], fcpxmlVersion: 1.6)
+		
+		print(doc.fcpxmlString)
 	}
 	
 	func testEventItemsForAsset() {
@@ -72,20 +86,22 @@ class PipelineTests: XCTestCase {
 		print("Roles: \(testDoc.fcpxRoles.count)")
 		
 		print("Searching for resource: \(testDoc.fcpxResources[4])")
-		let matchingEventClips = testDoc.fcpxEvents[0].eventClips(containingAsset: testDoc.fcpxResources[2])
 		
-		guard let matchingClips = matchingEventClips else {
+		let matchingEventClips: [XMLElement]
+		do {
+			matchingEventClips = try testDoc.fcpxEvents[0].eventClips(containingResource: testDoc.fcpxResources[2])
+		} catch {
 			print("Element is not an event.")
-			XCTFail()
+			XCTAssert(false)
 			return
 		}
+
+		print("matchingEventClips: \(matchingEventClips)")
 		
-		print("matchingClips: \(matchingClips)")
-		
-		if matchingClips.count > 0 {
-			for clip in matchingClips {
-				print("MATCHING CLIP: \(clip.element.fcpxName!)")
-				print(clip.element)
+		if matchingEventClips.count > 0 {
+			for clip in matchingEventClips {
+				print("MATCHING CLIP: \(clip.fcpxName!)")
+				print(clip)
 			}
 		}
 		
@@ -99,7 +115,52 @@ class PipelineTests: XCTestCase {
 		
 		print("--- End Results ---")
 		
-		XCTAssert(matchingClips.count > 0)
+		XCTAssert(matchingEventClips.count > 0)
+		
+	}
+	
+	func testTimeValues() {
+		guard let testDoc = xmlDoc else {
+			XCTFail()
+			return
+		}
+		
+		let eventItem = testDoc.fcpxEvents[0].eventItems![0]
+		print(eventItem.fcpxDuration)
+		
+		print(eventItem.fcpxDuration!.timeAsCounter())
+		
+		dump(testDoc.fcpxEventNames)
+		
+		let newEvent = XMLElement().fcpxEvent(name: "My New Event")
+		testDoc.add(event: newEvent)
+		
+		dump(testDoc.fcpxEventNames)
+		
+		let firstEvent = testDoc.fcpxEvents[0]
+		
+		guard let eventClips = firstEvent.eventClips else {
+			return
+		}
+		
+		if eventClips.count > 0 {
+			let firstClip = eventClips[0]
+			let duration = firstClip.fcpxDuration
+			let timeDisplay = duration?.timeAsCounter().counterString
+			print(timeDisplay)
+		}
+		
+		let matchingClips = try! firstEvent.eventClips(forResourceID: "r1")
+		
+		try! firstEvent.removeFromEvent(items: matchingClips)
+		
+		guard let resource = testDoc.resource(matchingID: "r1") else {
+			return
+		}
+		testDoc.remove(resourceAtIndex: resource.index)
+		
+		dump(firstEvent.eventClips)
+		dump(testDoc.fcpxResources)
 		
 	}
 	
@@ -122,7 +183,7 @@ class PipelineTests: XCTestCase {
 		
 		
 	}
-	
+
 	func testLastResourceIDs() {
 		
 		guard let testDoc = xmlDoc else {
@@ -135,24 +196,24 @@ class PipelineTests: XCTestCase {
 		
 		XCTAssert(testDoc.fcpxLastTextStyleID != 0)
 	}
-	
-	func testMatchingClips() {
-		
-		guard let testDoc = xmlDoc else {
-			XCTFail()
-			return
-		}
-		
-		let clipResource = testDoc.fcpxResources[4]
-		print(clipResource.fcpxName!)
-		
-		let matchingClips = testDoc.fcpxEvents[0].eventClips(containingAsset: clipResource)
-		
-		print(matchingClips?.count)
-		
-		XCTAssert((matchingClips?.count)! > 1)
-		
-	}
+//
+//	func testMatchingClips() {
+//		
+//		guard let testDoc = xmlDoc else {
+//			XCTFail()
+//			return
+//		}
+//		
+//		let clipResource = testDoc.fcpxResources[4]
+//		print(clipResource.fcpxName!)
+//		
+//		let matchingClips = testDoc.fcpxEvents[0].eventClips(containingAsset: clipResource)
+//		
+//		print(matchingClips?.count)
+//		
+//		XCTAssert((matchingClips?.count)! > 1)
+//		
+//	}
 	
 	func testPerformanceExample() {
 		// This is an example of a performance test case.

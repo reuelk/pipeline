@@ -22,7 +22,6 @@
 		05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */; };
 		05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */; };
 		7676560F1E36BADA0003D9E7 /* DTDs in Resources */ = {isa = PBXBuildFile; fileRef = 7676560E1E36BADA0003D9E7 /* DTDs */; };
-		76B365041E4C0D140091FB77 /* FCPXMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B365031E4C0D140091FB77 /* FCPXMLElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		05C3D79A1CF272B800DEE915 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFK_Moon_Demo_START.fcpxml; sourceTree = "<group>"; };
 		7676560E1E36BADA0003D9E7 /* DTDs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DTDs; sourceTree = "<group>"; };
-		76B365031E4C0D140091FB77 /* FCPXMLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FCPXMLElement.swift; path = Pipeline/Classes/FCPXMLElement.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */,
-				76B365031E4C0D140091FB77 /* FCPXMLElement.swift */,
 				0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */,
 				0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */,
 			);
@@ -266,7 +263,6 @@
 				0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */,
 				0515A10F1E2AF84F00E7DEA9 /* FCPXMLUtility.swift in Sources */,
 				0515A1081E2AF84F00E7DEA9 /* AttributeParser.swift in Sources */,
-				76B365041E4C0D140091FB77 /* FCPXMLElement.swift in Sources */,
 				0531AB6B1E2B6BD8006F191F /* XMLDocumentExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
