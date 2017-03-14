@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (34% documented)</p>
+        <p><a href="index.html"> Docs</a> (47% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -26,26 +26,6 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
-          <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Classes/FCPXMLEvent.html">FCPXMLEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/FCPXMLGap.html">FCPXMLGap</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/FCPXMLRefClip.html">FCPXMLRefClip</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/FCPXMLTitle.html">FCPXMLTitle</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/FCPXMLTitle/TextAlignment.html">– TextAlignment</a>
-              </li>
-            </ul>
-          </li>
           <li class="nav-group-name">
             <a href="Enums.html">Enums</a>
             <ul class="nav-group-tasks">
@@ -65,6 +45,21 @@
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/XMLElement.html">XMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/XMLElement/TextAlignment.html">– TextAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/XMLElement/TimecodeFormat.html">– TimecodeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/XMLElement/AudioLayout.html">– AudioLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/XMLElement/AudioRate.html">– AudioRate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/XMLElement/RenderColorSpace.html">– RenderColorSpace</a>
               </li>
             </ul>
           </li>
@@ -87,7 +82,85 @@
 <p>Pipeline is a Swift framework for working with FCPXML files easily.</p>
 <a href='#about' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='about'>About</h2>
 
-<p>Pipeline is used mostly through the XMLDocument and XMLElement classes from the Foundation library. Through Swift extensions, Pipeline adds onto those classes and allows you to work with the XML file easily in an object-oriented way without managing the XML itself.</p>
+<p>Pipeline extends the XMLDocument and XMLElement classes in the Foundation framework. It adds properties and methods that simplify the creation and management of FCPXML document structure.</p>
+
+<p>Pipeline also includes supplemental classes and a CMTime extension to help in the processing of FCPXML data. For example, you can easily convert a timing value that looks like <q>59983924/30000s</q> in the XML to <q>00:33:19,464</q> for easy display in an app.</p>
+<a href='#key-features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='key-features'>Key Features</h2>
+
+<ul>
+<li>Access an FCPXML document&rsquo;s resources, events, clips, and projects through simple object properties.</li>
+<li>Create and modify resources, events, clips, and projects with included properties and methods.</li>
+<li>Easily manipulate timing values.</li>
+<li>Output FCPXML files with proper text formatting.</li>
+<li>Validate FCPXML documents with the DTD.</li>
+</ul>
+<a href='#documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='documentation'>Documentation</h2>
+
+<p>The framework documentation is included in the <code>Documentation</code> folder as HTML files.</p>
+<a href='#adding-the-framework-to-a-project' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='adding-the-framework-to-a-project'>Adding the Framework to a Project</h2>
+
+<p>To add the framework to your Xcode project:</p>
+
+<ol>
+<li>Clone or download the repository.</li>
+<li>Open the <code>Pipeline.xcodeproj</code> file in Xcode.</li>
+<li>Build the project by pressing Command-B.</li>
+<li>Right-click on the <code>Pipeline.framework</code> framework in the <q>Products</q> folder in the Navigator pane. Select <q>Show in Finder</q>.</li>
+<li>Drag the selected folder into your Xcode project&rsquo;s Navigator pane.</li>
+<li>Xcode will prompt you to set some options for adding the folder. Generally, <q>Copy items if needed</q>, <q>Create groups</q> and your application target should be selected.</li>
+<li>Select your project in the Navigator pane and go to <q>Build Phases</q>. Under <q>Copy Files</q>, select <q>Frameworks</q> as the destination.</li>
+<li>Click on the plus sign and add the Pipeline framework.</li>
+<li>Add <code>import Pipeline</code> to the top of all Swift files that need to use the framework.</li>
+</ol>
+<a href='#usage-examples' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage-examples'>Usage Examples</h2>
+<a href='#open-an-fcpxml-file' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='open-an-fcpxml-file'>Open an FCPXML File</h3>
+
+<p>Subsequent examples use the <code>fcpxmlDoc</code> object declared here.</p>
+<pre class="highlight plaintext"><code>let fileURL = URL(fileURLWithPath: "~/Documents/sample.fcpxml")  // Create a new URL object that points to the FCPXML file's path
+let fcpxmlDoc: XMLDocument  // Declare the fcpxmlDoc constant as an XMLDocument object
+
+do {
+    fcpxmlDoc = try XMLDocument(contentsOfFCPXML: fileURL)  // Load the FCPXML file using the fileURL object
+} catch {
+    print("Error loading FCPXML file.")
+    return
+}
+</code></pre>
+<a href='#list-the-names-of-all-events' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='list-the-names-of-all-events'>List the Names of All Events</h3>
+<pre class="highlight plaintext"><code>let eventNames = fcpxmlDoc.fcpxEventNames  // Get the event names in the FCPXML document
+dump(eventNames)  // Neatly display all of the event names
+</code></pre>
+<a href='#create-and-add-a-new-event' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='create-and-add-a-new-event'>Create and Add a New Event</h3>
+<pre class="highlight plaintext"><code>let newEvent = XMLElement().fcpxEvent(name: "My New Event")  // Create a new empty event
+fcpxmlDoc.add(event: newEvent)  // Add the new event to the FCPXML document
+</code></pre>
+<a href='#get-clips-that-match-a-resource-id-and-delete-them' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='get-clips-that-match-a-resource-id-and-delete-them'>Get Clips That Match a Resource ID and Delete Them</h3>
+<pre class="highlight plaintext"><code>let firstEvent = fcpxmlDoc.fcpxEvents[0]  // Get the first event in the FCPXML document
+let matchingClips = try! firstEvent.eventClips(forResourceID: "r1")  // Get any clips that match resource ID "r1".
+
+// The eventClips(forResourceID:) method throws an error if the XMLElement that calls it is not an event. Since we know that firstEvent is an event, it is safe to use "try!" to override the error handling.
+
+try! firstEvent.removeFromEvent(items: matchingClips)  // Remove the clips that reference resource "r1".
+
+guard let resource = fcpxmlDoc.resource(matchingID: "r1") else {  // Get the "r1" resource
+    return
+}
+fcpxmlDoc.remove(resourceAtIndex: resource.index)  // Remove the "r1" resource from the FCPXML document
+</code></pre>
+<a href='#display-the-duration-of-a-clip' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='display-the-duration-of-a-clip'>Display the Duration of a Clip</h3>
+<pre class="highlight plaintext"><code>let firstEvent = fcpxmlDoc.fcpxEvents[0]  // Get the first event in the FCPXML document
+
+guard let eventClips = firstEvent.eventClips else {  // Get the event clips while guarding against a potential nil value
+    return
+}
+
+if eventClips.count &gt; 0 {  // Make sure there's at least one clip in the event
+    let firstClip = eventClips[0]  // Get the first clip in the event
+    let duration = firstClip.fcpxDuration  // Get the duration of the clip
+    let timeDisplay = duration?.timeAsCounter().counterString  // Convert the duration, which is a CMTime value, to a String formatted as HH:MM:SS,MMM
+    print(timeDisplay) 
+}
+</code></pre>
 <a href='#authors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='authors'>Authors</h2>
 
 <p>Reuel Kim</p>
@@ -95,8 +168,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-15)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-03-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
