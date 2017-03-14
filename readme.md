@@ -1,4 +1,4 @@
-# Pipeline
+![Alt text](pipeline.png?raw=true "Pipeline for Final Cut Pro X")
 
 Pipeline is a Swift framework for working with FCPXML files easily.
 
