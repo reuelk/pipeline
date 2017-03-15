@@ -17,7 +17,7 @@ Pipeline currently works with FCPXML v1.6 files only.
 * Validate FCPXML documents with the DTD.
 
 ## Documentation
-The framework documentation is included in the `Documentation` folder as HTML files.
+The latest framework documentation is viewable at [reuelk.github.io/pipeline](https://reuelk.github.io/pipeline) and is also included in the project's `docs` folder as HTML files.
 
 ## Adding the Framework to a Project
 To add the framework to your Xcode project:
