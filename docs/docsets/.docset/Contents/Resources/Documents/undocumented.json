@@ -639,14 +639,14 @@
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 1803,
+      "line": 1824,
       "symbol": "XMLElement.clipRangeIncludes(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 1822,
+      "line": 1843,
       "symbol": "XMLElement.clipRangeIsEnclosedBetween(_:outPoint:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
