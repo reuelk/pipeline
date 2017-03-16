@@ -1654,14 +1654,22 @@ extension XMLElement {
 	}
 	
 	
+	/**
+	A recursive function that goes through the element and all its children, finding clips that match the given name.
 	
+	- parameter forName: A String of the name to match clips with.
+	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether clip names containing the string will yield a match.
 	
-	
-
+	- returns: An array of matching clips as XMLElement objects.
+	*/
+	public func clips(forName name: String, usingAbsoluteMatch: Bool) -> [XMLElement] {
+		
+		return self.clips(forName: name, inElement: self, usingAbsoluteMatch: usingAbsoluteMatch)
+	}
 	
 	
 	/**
-	A recursive function that goes through an element and all its children, finding clips that match the given name.
+	A recursive function that goes through an element and all its children, finding clips that match the given name. This function is used by the clips(forName name:usingAbsoluteMatch:) function and should not be called publicly.
 	
 	- parameter forName: A String of the name to match clips with.
 	- parameter inElement: The XMLElement to recursively search. This is usually self.
@@ -1669,7 +1677,7 @@ extension XMLElement {
 	
 	- returns: An array of matching clips as XMLElement objects.
 	*/
-	public func clips(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
+	private func clips(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
 		
 		var matchingElements: [XMLElement] = []
 		
@@ -1680,13 +1688,13 @@ extension XMLElement {
 				if child.kind == XMLNode.Kind.element {
 					
 					let childElement = child as! XMLElement
-					let nameAttribute = childElement.attribute(forName: "name")
+					let nameAttribute = childElement.fcpxName
 					
 					if let nameAttribute = nameAttribute {
 						
 						if usingAbsoluteMatch == true {
 							
-							if nameAttribute.stringValue! == name {
+							if nameAttribute == name {
 								
 								matchingElements.append(childElement)
 								
@@ -1694,7 +1702,7 @@ extension XMLElement {
 							
 						} else { // Lookes for a match within the string
 							
-							if nameAttribute.stringValue!.contains(name) == true {
+							if nameAttribute.contains(name) == true {
 								
 								matchingElements.append(childElement)
 								
