@@ -1655,7 +1655,7 @@ extension XMLElement {
 	
 	
 	/**
-	A recursive function that goes through the element and all its children, finding clips that match the given name.
+	This function goes through the element and all its children, finding clips that match the given name.
 	
 	- parameter forName: A String of the name to match clips with.
 	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether clip names containing the string will yield a match.
@@ -1730,7 +1730,20 @@ extension XMLElement {
 	
 	
 	/**
-	A recursive function that goes through an element and all its children, finding clips that match the given type.
+	This function goes through the element and all its children, finding clips that match the given type.
+	
+	- parameter elementType: A type of FCPXML element as FCPXMLElementType enumeration.
+	
+	- returns: An array of matching clips as XMLElement objects.
+	*/
+	public func clips(forElementType elementType: FCPXMLElementType) -> [XMLElement] {
+		return self.clips(forElementType: elementType, inElement: self)
+	}
+	
+	
+	/**
+	A recursive function that goes through an element and all its children, finding clips that match the given type. This function is used by the clips(forElementType:) function and should not be called publicly.
+
 	
 	- parameter elementType: A type of FCPXML element as FCPXMLElementType enumeration.
 	- parameter inElement: The XMLElement to recursively search. This is usually self.
