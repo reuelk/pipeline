@@ -1655,16 +1655,16 @@ extension XMLElement {
 	
 	
 	/**
-	This function goes through the element and all its children, finding clips that match the given name.
+	This function goes through the element and all its children, finding elements that match the given name.
 	
-	- parameter forName: A String of the name to match clips with.
-	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether clip names containing the string will yield a match.
+	- parameter forName: A String of the element name to match with.
+	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether element names containing the string will yield a match.
 	
-	- returns: An array of matching clips as XMLElement objects.
+	- returns: An array of matching elements as XMLElement objects.
 	*/
-	public func clips(forName name: String, usingAbsoluteMatch: Bool) -> [XMLElement] {
+	public func elements(forName name: String, usingAbsoluteMatch: Bool) -> [XMLElement] {
 		
-		return self.clips(forName: name, inElement: self, usingAbsoluteMatch: usingAbsoluteMatch)
+		return self.elements(forName: name, inElement: self, usingAbsoluteMatch: usingAbsoluteMatch)
 	}
 	
 	
@@ -1677,7 +1677,7 @@ extension XMLElement {
 	
 	- returns: An array of matching clips as XMLElement objects.
 	*/
-	private func clips(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
+	private func elements(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
 		
 		var matchingElements: [XMLElement] = []
 		
@@ -1688,33 +1688,33 @@ extension XMLElement {
 				if child.kind == XMLNode.Kind.element {
 					
 					let childElement = child as! XMLElement
-					let nameAttribute = childElement.fcpxName
 					
-					if let nameAttribute = nameAttribute {
+					guard let nameAttribute = childElement.fcpxName else {
+						continue
+					}
+					
+					if usingAbsoluteMatch == true {
 						
-						if usingAbsoluteMatch == true {
+						if nameAttribute.uppercased() == name.uppercased() {
 							
-							if nameAttribute == name {
-								
-								matchingElements.append(childElement)
-								
-							}
+							matchingElements.append(childElement)
 							
-						} else { // Lookes for a match within the string
-							
-							if nameAttribute.contains(name) == true {
-								
-								matchingElements.append(childElement)
-								
-							}
 						}
 						
+					} else { // Lookes for a match within the string
+						
+						if nameAttribute.uppercased().contains(name.uppercased()) == true {
+							
+							matchingElements.append(childElement)
+							
+						}
 					}
+					
 					
 					// Recurse through children
 					if childElement.children != nil {
 						
-						let items = clips(forName: name, inElement: childElement, usingAbsoluteMatch: usingAbsoluteMatch)
+						let items = elements(forName: name, inElement: childElement, usingAbsoluteMatch: usingAbsoluteMatch)
 						
 						matchingElements.append(contentsOf: items)
 					}
@@ -1728,6 +1728,62 @@ extension XMLElement {
 		
 	}
 	
+	
+	/**
+	This function returns all clips within an element and its sub-elements.
+	- Note: The clips in the resulting array are not ordered by where they appear in the XML document.
+	
+	- returns: An array of clips as XMLElement objects.
+	*/
+	public func clips() -> [XMLElement] {
+		
+		let clipTypes = [FCPXMLElementType.clip, FCPXMLElementType.audio, FCPXMLElementType.video, FCPXMLElementType.gap, FCPXMLElementType.transition, FCPXMLElementType.title, FCPXMLElementType.audition, FCPXMLElementType.multicamClip, FCPXMLElementType.compoundClip, FCPXMLElementType.synchronizedClip, FCPXMLElementType.assetClip]
+		
+		var matchingClips: [XMLElement] = []
+		
+		for clipType in clipTypes {
+			matchingClips.append(contentsOf: self.elements(forName: clipType.rawValue, inElement: self, usingAbsoluteMatch: true))
+		}
+		
+		return matchingClips
+	}
+	
+	
+	/// This function goes through the element and all its children, returning all clips that match the given FCPX clip name.
+	///
+	/// - Parameters:
+	///   - fcpxName: A String of the clip name in FCPX to match with.
+	///   - usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether clip names containing the string will yield a match.
+	/// - Returns: An array of matching clips as XMLElement objects.
+	public func clips(forFCPXName fcpxName: String, usingAbsoluteMatch: Bool) -> [XMLElement] {
+		
+		let allClips = self.clips()
+		
+		var matchingClips: [XMLElement] = []
+		
+		for clip in allClips {
+			
+			guard let clipName = clip.fcpxName else {
+				continue
+			}
+			
+			if usingAbsoluteMatch == true {
+				
+				if clipName.uppercased() == fcpxName.uppercased() {
+					matchingClips.append(clip)
+				}
+				
+			} else {
+				
+				if clipName.uppercased().contains(fcpxName.uppercased()) == true {
+					matchingClips.append(clip)
+				}
+			}
+		}
+		
+		return matchingClips
+		
+	}
 	
 	/**
 	This function goes through the element and all its children, finding clips that match the given type.
@@ -1750,7 +1806,7 @@ extension XMLElement {
 	
 	- returns: An array of matching clips as XMLElement objects.
 	*/
-	public func clips(forElementType elementType: FCPXMLElementType, inElement element: XMLElement) -> [XMLElement] {
+	private func clips(forElementType elementType: FCPXMLElementType, inElement element: XMLElement) -> [XMLElement] {
 		
 		var matchingElements: [XMLElement] = []
 		
