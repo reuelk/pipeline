@@ -1655,21 +1655,21 @@ extension XMLElement {
 	
 	
 	/**
-	This function goes through the element and all its children, finding elements that match the given name.
+	This function goes through the element and all of its sub-elements, finding elements that match the given name. For example, this function can search a sequence and any embedded secondary storylines for matching elements.
 	
 	- parameter forName: A String of the element name to match with.
 	- parameter usingAbsoluteMatch: A boolean value of whether names must match absolutely or whether element names containing the string will yield a match.
 	
 	- returns: An array of matching elements as XMLElement objects.
 	*/
-	public func elements(forName name: String, usingAbsoluteMatch: Bool) -> [XMLElement] {
+	public func subelements(forName name: String, usingAbsoluteMatch: Bool) -> [XMLElement] {
 		
-		return self.elements(forName: name, inElement: self, usingAbsoluteMatch: usingAbsoluteMatch)
+		return self.subelements(forName: name, inElement: self, usingAbsoluteMatch: usingAbsoluteMatch)
 	}
 	
 	
 	/**
-	A recursive function that goes through an element and all its children, finding clips that match the given name. This function is used by the clips(forName name:usingAbsoluteMatch:) function and should not be called publicly.
+	A recursive function that goes through an element and all its sub-elements, finding clips that match the given name. This function is used by the clips(forName name:usingAbsoluteMatch:) function and should not be called publicly.
 	
 	- parameter forName: A String of the name to match clips with.
 	- parameter inElement: The XMLElement to recursively search. This is usually self.
@@ -1677,7 +1677,7 @@ extension XMLElement {
 	
 	- returns: An array of matching clips as XMLElement objects.
 	*/
-	private func elements(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
+	private func subelements(forName name: String, inElement element: XMLElement, usingAbsoluteMatch: Bool) -> [XMLElement] {
 		
 		var matchingElements: [XMLElement] = []
 		
@@ -1714,7 +1714,7 @@ extension XMLElement {
 					// Recurse through children
 					if childElement.children != nil {
 						
-						let items = elements(forName: name, inElement: childElement, usingAbsoluteMatch: usingAbsoluteMatch)
+						let items = subelements(forName: name, inElement: childElement, usingAbsoluteMatch: usingAbsoluteMatch)
 						
 						matchingElements.append(contentsOf: items)
 					}
@@ -1742,14 +1742,14 @@ extension XMLElement {
 		var matchingClips: [XMLElement] = []
 		
 		for clipType in clipTypes {
-			matchingClips.append(contentsOf: self.elements(forName: clipType.rawValue, inElement: self, usingAbsoluteMatch: true))
+			matchingClips.append(contentsOf: self.subelements(forName: clipType.rawValue, inElement: self, usingAbsoluteMatch: true))
 		}
 		
 		return matchingClips
 	}
 	
 	
-	/// This function goes through the element and all its children, returning all clips that match the given FCPX clip name.
+	/// This function goes through the element and all its sub-elements, returning all clips that match the given FCPX clip name.
 	///
 	/// - Parameters:
 	///   - fcpxName: A String of the clip name in FCPX to match with.
@@ -1786,7 +1786,7 @@ extension XMLElement {
 	}
 	
 	/**
-	This function goes through the element and all its children, finding clips that match the given type.
+	This function goes through the element and all its sub-elements, finding clips that match the given type.
 	
 	- parameter elementType: A type of FCPXML element as FCPXMLElementType enumeration.
 	
@@ -1798,7 +1798,7 @@ extension XMLElement {
 	
 	
 	/**
-	A recursive function that goes through an element and all its children, finding clips that match the given type. This function is used by the clips(forElementType:) function and should not be called publicly.
+	A recursive function that goes through an element and all its sub-elements, finding clips that match the given type. This function is used by the clips(forElementType:) function and should not be called publicly.
 
 	
 	- parameter elementType: A type of FCPXML element as FCPXMLElementType enumeration.
