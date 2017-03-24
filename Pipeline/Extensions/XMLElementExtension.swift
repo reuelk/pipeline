@@ -1685,39 +1685,39 @@ extension XMLElement {
 			
 			for child in children {
 				
-				if child.kind == XMLNode.Kind.element {
+				guard child.kind == XMLNode.Kind.element else {
+					continue
+				}
 					
-					let childElement = child as! XMLElement
+				let childElement = child as! XMLElement
+				guard let childElementName = childElement.name else {
+					continue
+				}
+				
+				if usingAbsoluteMatch == true {
 					
-					guard let nameAttribute = childElement.fcpxName else {
-						continue
+					if childElementName.uppercased() == name.uppercased() {
+						
+						matchingElements.append(childElement)
+						
 					}
 					
-					if usingAbsoluteMatch == true {
-						
-						if nameAttribute.uppercased() == name.uppercased() {
-							
-							matchingElements.append(childElement)
-							
-						}
-						
-					} else { // Lookes for a match within the string
-						
-						if nameAttribute.uppercased().contains(name.uppercased()) == true {
-							
-							matchingElements.append(childElement)
-							
-						}
-					}
+				} else { // Lookes for a match within the string
 					
-					
-					// Recurse through children
-					if childElement.children != nil {
+					if childElementName.uppercased().contains(name.uppercased()) == true {
 						
-						let items = subelements(forName: name, inElement: childElement, usingAbsoluteMatch: usingAbsoluteMatch)
+						matchingElements.append(childElement)
 						
-						matchingElements.append(contentsOf: items)
 					}
+				}
+				
+				
+				// Recurse through children
+				if childElement.children != nil {
+					
+					let items = subelements(forName: name, inElement: childElement, usingAbsoluteMatch: usingAbsoluteMatch)
+					
+					matchingElements.append(contentsOf: items)
 				}
 				
 			}
@@ -1742,7 +1742,7 @@ extension XMLElement {
 		var matchingClips: [XMLElement] = []
 		
 		for clipType in clipTypes {
-			matchingClips.append(contentsOf: self.subelements(forName: clipType.rawValue, inElement: self, usingAbsoluteMatch: true))
+			matchingClips.append(contentsOf: self.clips(forElementType: clipType))
 		}
 		
 		return matchingClips
