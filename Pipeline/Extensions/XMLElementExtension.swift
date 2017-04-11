@@ -1038,6 +1038,93 @@ extension XMLElement {
 	}
 	
 	
+	/// An array of this element's metadata elements. Returns nil if this element is not a resource or event item.
+	public var fcpxMetadata: [XMLElement]? {
+		
+		guard self.isFCPXResource == true || self.isFCPXEventItem == true else {
+			return nil
+		}
+		
+		if self.isFCPXResource == true {
+			
+			switch self.fcpxType {
+			case .multicamResource, .compoundResource:
+				
+				var subElement = self.elements(forName: "sequence")
+				if subElement.count == 0 {
+					subElement = self.elements(forName: "multicam")
+				}
+				
+				guard subElement.count > 0 else {
+					return nil
+				}
+				
+				let metadataElement = subElement[0].elements(forName: "metadata")
+				
+				guard metadataElement.count > 0 else {
+					return []
+				}
+				
+				return metadataElement[0].elements(forName: "md")
+				
+			default:
+				
+				let metadataElement = self.elements(forName: "metadata")
+				
+				guard metadataElement.count > 0 else {
+					return []
+				}
+				
+				return metadataElement[0].elements(forName: "md")
+				
+			}
+			
+		} else if self.isFCPXEventItem == true {
+			
+			let metadataElement = self.elements(forName: "metadata")
+			
+			guard metadataElement.count > 0 else {
+				return []
+			}
+			
+			return metadataElement[0].elements(forName: "md")
+			
+		} else {  // Not a resource or event item element
+			
+			return nil
+		}
+		
+		/*
+		
+		com.apple.proapps.mio.cameraName							String
+		com.apple.proapps.studio.alphaHandling						Integer
+		com.apple.proapps.studio.angle								String
+		com.apple.proapps.studio.metadataAnamorphicType				Integer
+		com.apple.proapps.studio.metadataDeinterlaceType			Boolean
+		com.apple.proapps.studio.metadataFieldDominanceOverride		Integer
+		com.apple.proapps.studio.metadataLocation					String
+		com.apple.proapps.studio.reel								String
+		com.apple.proapps.studio.scene								String
+		com.apple.proapps.studio.shot								String
+		
+		Alpha Handling
+		0	Premultiply
+		1	Straight
+		2	None/Ignore Alpha
+		Anamorphic Override
+		0	None Set
+		1	Standard
+		2	Widescreen
+		Field Dominance Override
+		0	None Set
+		1	Progressive
+		2	Upper First
+		3	Lower First
+		
+		*/
+		
+	}
+	
 	
 	/// Returns clips from an event that match this resource. If this method is called on an XMLElement that is not a resource, nil will be returned. If there are no matching clips in the event, an empty array will be returned.
 	///
