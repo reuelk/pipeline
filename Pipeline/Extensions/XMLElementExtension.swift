@@ -1094,35 +1094,6 @@ extension XMLElement {
 			return nil
 		}
 		
-		/*
-		
-		com.apple.proapps.mio.cameraName							String
-		com.apple.proapps.studio.alphaHandling						Integer
-		com.apple.proapps.studio.angle								String
-		com.apple.proapps.studio.metadataAnamorphicType				Integer
-		com.apple.proapps.studio.metadataDeinterlaceType			Boolean
-		com.apple.proapps.studio.metadataFieldDominanceOverride		Integer
-		com.apple.proapps.studio.metadataLocation					String
-		com.apple.proapps.studio.reel								String
-		com.apple.proapps.studio.scene								String
-		com.apple.proapps.studio.shot								String
-		
-		Alpha Handling
-		0	Premultiply
-		1	Straight
-		2	None/Ignore Alpha
-		Anamorphic Override
-		0	None Set
-		1	Standard
-		2	Widescreen
-		Field Dominance Override
-		0	None Set
-		1	Progressive
-		2	Upper First
-		3	Lower First
-		
-		*/
-		
 	}
 	
 	
