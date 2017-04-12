@@ -21,6 +21,7 @@
 		05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567BA921D4334DC0039F518 /* Pipeline.framework */; };
 		05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */; };
 		05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */; };
+		7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */; };
 		7676560F1E36BADA0003D9E7 /* DTDs in Resources */ = {isa = PBXBuildFile; fileRef = 7676560E1E36BADA0003D9E7 /* DTDs */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		05C3D7981CF272B100DEE915 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		05C3D79A1CF272B800DEE915 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFK_Moon_Demo_START.fcpxml; sourceTree = "<group>"; };
+		7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "JFK_Moon_Demo_multicam with metadata.fcpxml"; sourceTree = "<group>"; };
 		7676560E1E36BADA0003D9E7 /* DTDs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DTDs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 		05AF395D1E1A3B6100319908 /* PipelineTests */ = {
 			isa = PBXGroup;
 			children = (
+				7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */,
 				0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */,
 				05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */,
 				05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */,
@@ -247,6 +250,7 @@
 			files = (
 				05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */,
 				0515A7D21E1DBE1F00C05F5F /* JFKmedia.fcpxml in Resources */,
+				7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */,
 				05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
