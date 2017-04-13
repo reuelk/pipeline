@@ -1717,42 +1717,6 @@ extension XMLElement {
 	// MARK: - Miscellaneous
 	
 	
-	/// Returns the next element in document order.
-	///
-	/// - Returns: An XMLElement object or nil if there is no other element after the current one.
-	public var nextElement: XMLElement? {
-		get {
-			guard let nextElement = self.nextElement(afterNode: self) else {
-				return nil
-			}
-			
-			return nextElement
-		}
-	}
-	
-	
-	/// Returns the next element in document order after the specified node. Used by the nextElement property.
-	///
-	/// - Parameter node: The XMLNode to check after.
-	/// - Returns: The next XMLElement object, or nil if there is none.
-	private func nextElement(afterNode node: XMLNode) -> XMLElement? {
-		
-		guard let nextNode = node.next else {
-			return nil
-		}
-		
-		guard nextNode.kind == .element else {
-			if let nextElementUnwrapped = self.nextElement(afterNode: nextNode) {
-				return nextElementUnwrapped
-			} else {
-				return nil
-			}
-		}
-		
-		return (nextNode as! XMLElement)
-	}
-
-	
 	/**
 	Retrieves the URLs from the elements contained within this resource.
 	
@@ -2001,8 +1965,8 @@ extension XMLElement {
 	
 	
 	
-	// MARK: - Internal functions
-	internal func getElementAttribute(_ name: String) -> String? {
+	// MARK: - XMLElement helper properties and functions
+	public func getElementAttribute(_ name: String) -> String? {
 		
 		if let elementAttribute = self.attribute(forName: name) {
 			
@@ -2015,7 +1979,8 @@ extension XMLElement {
 		return nil
 	}
 	
-	internal func setElementAttribute(_ name: String, value: String) {
+	
+	public func setElementAttribute(_ name: String, value: String) {
 		
 		let attribute = XMLNode(kind: XMLNode.Kind.attribute)
 		
@@ -2025,6 +1990,43 @@ extension XMLElement {
 		self.addAttribute(attribute)
 		
 	}
+
+	
+	/// Returns the next element in document order.
+	///
+	/// - Returns: An XMLElement object or nil if there is no other element after the current one.
+	public var nextElement: XMLElement? {
+		get {
+			guard let nextElement = self.nextElement(afterNode: self) else {
+				return nil
+			}
+			
+			return nextElement
+		}
+	}
+	
+	
+	/// Returns the next element in document order after the specified node. Used by the nextElement property.
+	///
+	/// - Parameter node: The XMLNode to check after.
+	/// - Returns: The next XMLElement object, or nil if there is none.
+	private func nextElement(afterNode node: XMLNode) -> XMLElement? {
+		
+		guard let nextNode = node.next else {
+			return nil
+		}
+		
+		guard nextNode.kind == .element else {
+			if let nextElementUnwrapped = self.nextElement(afterNode: nextNode) {
+				return nextElementUnwrapped
+			} else {
+				return nil
+			}
+		}
+		
+		return (nextNode as! XMLElement)
+	}
+	
 
 	
 	// MARK: - Timing methods
