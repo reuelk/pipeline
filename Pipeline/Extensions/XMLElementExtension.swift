@@ -1716,6 +1716,41 @@ extension XMLElement {
 	
 	// MARK: - Miscellaneous
 	
+	
+	/// Returns the next element in document order.
+	///
+	/// - Returns: An XMLElement object or nil if there is no other element after the current one.
+	public var nextElement: XMLElement? {
+		get {
+			guard let nextElement = self.nextElement(afterNode: self) else {
+				return nil
+			}
+			
+			return nextElement
+		}
+	}
+	
+	
+	/// Returns the next element in document order after the specified node. Used by the nextElement property.
+	///
+	/// - Parameter node: The XMLNode to check after.
+	/// - Returns: The next XMLElement object, or nil if there is none.
+	private func nextElement(afterNode node: XMLNode) -> XMLElement? {
+		
+		guard let nextNode = node.next else {
+			return nil
+		}
+		
+		guard nextNode.kind == .element else {
+			if let nextElementUnwrapped = self.nextElement(afterNode: nextNode) {
+				return nextElementUnwrapped
+			} else {
+				return nil
+			}
+		}
+		
+		return (nextNode as! XMLElement)
+	}
 
 	
 	/**
