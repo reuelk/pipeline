@@ -170,6 +170,42 @@ extension XMLElement {
 	}
 	
 	
+	
+	/// Creates a new FCPXML multicam reference XMLElement object
+	///
+	/// - Parameters:
+	///   - name: The name of the resource.
+	///   - id: The reference ID.
+	///   - formatRef: The reference ID of the format that this resource uses.
+	///   - tcStart: The starting timecode value of this resource.
+	///   - tcFormat: The timecode format as an XMLElement.TimecodeFormat enumeration value.
+	///   - renderColorSpace: The color space of this multicam as an XMLElement.TimecodeFormat enumeration value.
+	///   - angles: The mc-angle elements to embed in this multicam resource.
+	/// - Returns: An XMLElement object of the multicam <media> resource.
+	public func fcpxMulticamResource(name: String, id: String, formatRef: String, tcStart: CMTime?, tcFormat: XMLElement.TimecodeFormat, renderColorSpace: XMLElement.RenderColorSpace, angles: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "media")
+		
+		element.fcpxName = name
+		element.fcpxID = id
+		
+		let multicamElement = XMLElement(name: "multicam")
+		
+		multicamElement.fcpxFormatRef = formatRef
+		multicamElement.fcpxRenderColorSpace = renderColorSpace
+		multicamElement.fcpxTCStart = tcStart
+		multicamElement.fcpxTCFormat = tcFormat
+		
+		angles.forEach { (angle) in
+			multicamElement.addChild(angle)
+		}
+		
+		element.addChild(multicamElement)
+		
+		return element
+	}
+	
+	
 	/// Creates a new gap to be used in a timeline.
 	///
 	/// - Parameters:
@@ -1017,25 +1053,6 @@ extension XMLElement {
 		}
 	}
 	
-	/// An array of mc-angle elements within a multicam media resource. Returns nil if this element is not a multicam media resource.
-	public var fcpxMulticamAngles: [XMLElement]? {
-		get {
-			guard self.fcpxType == FCPXMLElementType.multicamResource else {
-				return nil
-			}
-			
-			let multicamElement = self.elements(forName: "multicam")
-			
-			guard multicamElement.count > 0 else {
-				return nil
-			}
-			
-			let angles = multicamElement[0].elements(forName: "mc-angle")
-			
-			return angles
-			
-		}
-	}
 	
 	
 	/// An array of this element's metadata elements. Returns nil if this element is not a resource or event item.
@@ -1094,6 +1111,28 @@ extension XMLElement {
 			return nil
 		}
 		
+	}
+	
+
+	
+	/// An array of mc-angle elements within a multicam media resource. Returns nil if this element is not a multicam media resource.
+	public var fcpxMulticamAngles: [XMLElement]? {
+		get {
+			guard self.fcpxType == FCPXMLElementType.multicamResource else {
+				return nil
+			}
+			
+			let multicamElement = self.elements(forName: "multicam")
+			
+			guard multicamElement.count > 0 else {
+				return nil
+			}
+			
+			let angles = multicamElement[0].elements(forName: "mc-angle")
+			
+			return angles
+			
+		}
 	}
 	
 	
