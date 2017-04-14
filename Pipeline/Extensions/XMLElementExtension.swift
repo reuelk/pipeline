@@ -171,11 +171,11 @@ extension XMLElement {
 	
 	
 	
-	/// Creates a new FCPXML multicam reference XMLElement object
+	/// Creates a new FCPXML multicam reference XMLElement object.
 	///
 	/// - Parameters:
 	///   - name: The name of the resource.
-	///   - id: The reference ID.
+	///   - id: The unique reference ID of this resource.
 	///   - formatRef: The reference ID of the format that this resource uses.
 	///   - tcStart: The starting timecode value of this resource.
 	///   - tcFormat: The timecode format as an XMLElement.TimecodeFormat enumeration value.
@@ -201,6 +201,33 @@ extension XMLElement {
 		}
 		
 		element.addChild(multicamElement)
+		
+		return element
+	}
+	
+	
+	/// Creates a new multicam event clip XMLElement object.
+	///
+	/// - Parameters:
+	///   - name: The name of the clip.
+	///   - refID: The reference ID.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - mcSources: An array of mc-source elements to place in this element.
+	/// - Returns: An XMLElement object of the multicam <mc-clip> resource.
+	public func fcpxMulticamClip(name: String, refID: String, offset: CMTime?, start: CMTime?, duration: CMTime, mcSources: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "mc-clip")
+		
+		element.fcpxName = name
+		element.fcpxRef = refID
+		element.fcpxOffset = offset
+		element.fcpxStart = start
+		element.fcpxDuration = duration
+		
+		mcSources.forEach { (source) in
+			element.addChild(source)
+		}
 		
 		return element
 	}
