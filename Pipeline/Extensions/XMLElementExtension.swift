@@ -875,6 +875,24 @@ extension XMLElement {
 		}
 	}
 	
+	public var fcpxAngleID: String? {
+		get {
+			if let attributeString = getElementAttribute("angleID") {
+				return attributeString
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("angleID", value: value)
+			} else {
+				self.removeAttribute(forName: "angleID")
+			}
+		}
+	}
+	
 	public var fcpxUID: String? {
 		get {
 			if let attributeString = getElementAttribute("uid") {
