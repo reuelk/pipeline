@@ -369,8 +369,6 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		
 		do {
 			try self.init(contentsOf: URL, options: 0)
-		} catch {
-			throw error
 		}
 	}
 	
