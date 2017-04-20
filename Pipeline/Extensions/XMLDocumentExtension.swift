@@ -619,7 +619,11 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 			self.rootElement()?.addChild(XMLElement(name: "library"))
 		}
 		
-		self.fcpxLibrary?.addChild(event)
+		if let lastEvent = self.fcpxEvents.last {
+			self.fcpxLibrary?.insertChild(event, at: lastEvent.index + 1)
+		} else {
+			self.fcpxLibrary?.insertChild(event, at: 0)
+		}
 	}
 	
 	
