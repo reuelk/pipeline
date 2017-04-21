@@ -67,6 +67,13 @@ extension XMLElement {
 		case rec2020 = "Rec. 2020"
 	}
 	
+	public enum MulticamSourceEnable: String {
+		case audio = "audio"
+		case video = "video"
+		case all = "all"
+		case none = "none"
+	}
+	
 	
 	// MARK: - Creating FCPXML XMLElement objects
 	
@@ -889,6 +896,37 @@ extension XMLElement {
 				setElementAttribute("angleID", value: value)
 			} else {
 				self.removeAttribute(forName: "angleID")
+			}
+		}
+	}
+	
+	
+	/// The "srcEnable" attribute for "mc-source" multicam clip angles
+	public var fcpxSrcEnable: MulticamSourceEnable? {
+		get {
+			if let attributeString = getElementAttribute("srcEnable") {
+				switch attributeString {
+				case MulticamSourceEnable.audio.rawValue:
+					return MulticamSourceEnable.audio
+				case MulticamSourceEnable.video.rawValue:
+					return MulticamSourceEnable.video
+				case MulticamSourceEnable.all.rawValue:
+					return MulticamSourceEnable.all
+				case MulticamSourceEnable.none.rawValue:
+					return MulticamSourceEnable.none
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("srcEnable", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "srcEnable")
 			}
 		}
 	}
