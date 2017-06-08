@@ -240,6 +240,31 @@ extension XMLElement {
 	}
 	
 	
+	
+	/// Creates a new secondary storyline XMLElement object.
+	///
+	/// - Parameters:
+	///   - lane: The lane for the secondary storyline as an Int value.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - formatRef: The reference ID of the format that this resource uses.
+	///   - clips: An array of XMLElement objects of the clips to be placed inside the secondary storyline.
+	/// - Returns: An XMLElement object of the secondary storyline <spine> element.
+	public func fcpxSecondaryStoryline(lane: Int, offset: CMTime, formatRef: String?, clips: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "spine")
+		
+		element.fcpxLane = lane
+		element.fcpxOffset = offset
+		element.fcpxFormatRef = formatRef
+		
+		clips.forEach { (clip) in
+			element.addChild(clip)
+		}
+		
+		return element
+	}
+	
+	
 	/// Creates a new gap to be used in a timeline.
 	///
 	/// - Parameters:
