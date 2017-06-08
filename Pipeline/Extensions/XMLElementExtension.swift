@@ -2110,6 +2110,27 @@ extension XMLElement {
 		return (nextNode as! XMLElement)
 	}
 	
+	
+	/// Returns the parent XMLElement.
+	public var parentElement: XMLElement? {
+		get {
+			guard let parent = self.parent else {
+				return nil
+			}
+			
+			return parent as? XMLElement
+		}
+	}
+	
+	
+	/// Adds an element as a child to this element, placing it in proper order according to the DTD.
+	///
+	/// - Parameters:
+	///   - element: The child element to insert.
+	///   - overrideDTDVersion: A string of the DTD filename to override with. The DTD must be stored in the framework. If nil, the function uses the latest DTD version.
+	public func addChildConformingToDTD(element: XMLElement, overrideDTDVersion: String?) {
+		// TODO: Add this function
+	}
 
 	
 	// MARK: - Timing methods
