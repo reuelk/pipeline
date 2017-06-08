@@ -12,6 +12,9 @@ import CoreMedia
 
 // MARK: - CMTIME EXTENSION -
 extension CMTime {
+	
+	
+	/// The CMTime value as an FCPXML time string using the format "[value]/[timescale]s" or "0s" if the value is zero.
 	public var fcpxmlString: String {
 		get {
 			if self.value == 0 {
@@ -23,6 +26,20 @@ extension CMTime {
 	}
 	
 	
+	/// Returns a CMTime value with a value of zero and timescale of 1000.
+	///
+	/// - Returns: A CMTime object.
+	public func zero() -> CMTime {
+		
+		let newCMTime = CMTime(value: 0, timescale: 1000)
+		
+		return newCMTime
+	}
+	
+	
+	/// Returns the CMTime value as a tuple containing components of time as separate values.
+	///
+	/// - Returns: A tuple with hours, minutes, seconds, and milliseconds as Int, Double, and String values.
 	public func timeAsCounter() -> (hours: Int, minutes: Int, seconds: Int, milliseconds: Double, hoursString: String, minutesString: String, secondsString: String, framesString: String, counterString: String) {
 		
 			let hours = Int((self.seconds / 60.0) / 60.0)
@@ -51,6 +68,11 @@ extension CMTime {
 			return (hours, minutes, seconds, milliseconds, hoursString, minutesString, secondsString, millisecondsString, counter)
 	}
 	
+	
+	/// Returns the CMTime value as a tuple containing components of SMPTE timecode as separate values.
+	///
+	/// - Parameter frameDuration: The duration of a single frame as a CMTime value.
+	/// - Returns: A tuple with hours, minutes, seconds, and frames as Int and String values.
 	public func timeAsTimecode(usingFrameDuration frameDuration: CMTime) -> (hours: Int, minutes: Int, seconds: Int, frames: Int, hoursString: String, minutesString: String, secondsString: String, framesString: String, timecodeString: String) {
 		
 		let framerate: Double
