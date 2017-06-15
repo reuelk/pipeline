@@ -149,9 +149,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The highest resource ID number used in the FCPXML document.
 	public var fcpxLastResourceID: Int {
 		get {
-			if self.fcpxResourceIDs == [] {
-				self.parseFCPXIDsAndRoles()
-			}
+			self.parseFCPXIDsAndRoles()
 			
 			if let last = self.fcpxResourceIDs.last {
 				return last
@@ -164,9 +162,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The highest text style ID number used in the FCPXML document.
 	public var fcpxLastTextStyleID: Int {
 		get {
-			if self.fcpxTextStyleIDs == [] {
-				self.parseFCPXIDsAndRoles()
-			}
+			self.parseFCPXIDsAndRoles()
 			
 			if let last = self.fcpxTextStyleIDs.last {
 				return last
