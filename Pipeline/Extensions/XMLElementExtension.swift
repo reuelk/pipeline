@@ -974,6 +974,7 @@ extension XMLElement {
         }
 	}
 	
+	/// The start of this element on its parent timeline. For example, if this is a video clip on the primary storyline, this value would be the in point of the clip on the project timeline. If this is a clip on a secondary storyline, this value would be the in point of the clip on the secondary storyline's timeline.
 	public var fcpxParentInPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxOffset else {
@@ -990,6 +991,8 @@ extension XMLElement {
 		}
 	}
 	
+	
+	/// The end of this element on its parent timeline. For example, if this is a video clip on the primary storyline, this value would be the out point of the clip on the project timeline. If this is a clip on a secondary storyline, this value would be the out point of the clip on the secondary storyline's timeline.
 	public var fcpxParentOutPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxOffset else {
@@ -1016,6 +1019,7 @@ extension XMLElement {
 		}
 	}
 	
+	/// The start of this element's local timeline. For example, if this is a video clip, this value would be the in point of the clip's source footage.
 	public var fcpxLocalInPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxStart else {
@@ -1032,6 +1036,7 @@ extension XMLElement {
 		}
 	}
 	
+	/// The end of this element's local timeline. For example, if this is a video clip, this value would be the out point of the clip's source footage.
 	public var fcpxLocalOutPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxStart else {
@@ -1054,6 +1059,110 @@ extension XMLElement {
 				
 			} else {
 				self.fcpxDuration = nil
+			}
+		}
+	}
+	
+	
+	/// The start time of this element on the project timeline.
+	public var fcpxTimelineInPoint: CMTime? {
+		get {
+			print("Getting timeline in point...")
+			// If this element does not have an offset, it is not a clip element on the project timeline
+			guard self.fcpxOffset != nil else {
+				print("No offset. Returning nil.")
+				return nil
+			}
+			
+			guard let parentElement = self.parentElement else {
+				print("No parent element. Returning nil.")
+				return nil
+			}
+			
+			if parentElement.name == "spine" && parentElement.fcpxOffset == nil {  // This is a clip on the primary storyline.
+				print("This is a clip on the primary storyline.")
+				return self.fcpxOffset
+				
+			} else if parentElement.name == "spine" {  // This is a clip on a secondary storyline.
+				print("This is a clip on a secondary storyline.")
+				let spineIn = self.fcpxOffset!
+				
+				guard let spineOffset = parentElement.fcpxOffset else {
+					print("The parent has no offset. Returning nil.")
+					return nil
+				}
+				
+				return CMTimeAdd(spineIn, spineOffset)
+				
+			} else {  // This is a connected clip.
+				print("This is a connected clip.")
+				let clipIn = self.fcpxOffset!
+				
+				guard let clipStart = parentElement.fcpxLocalInPoint else {
+					print("The parent has no local in point. Returning nil.")
+					return nil
+				}
+				
+				let startDifference = CMTimeSubtract(clipIn, clipStart)
+				
+				guard let clipParentStart = parentElement.fcpxParentInPoint else {
+					print("The parent has no parent in point. Returning nil.")
+					return nil
+				}
+				
+				return CMTimeAdd(clipParentStart, startDifference)
+				
+			}
+		}
+	}
+	
+	/// The end time of this element on the project timeline.
+	public var fcpxTimelineOutPoint: CMTime? {
+		get {
+			
+			// If this element does not have an offset, it is not a clip element on the project timeline
+			guard self.fcpxOffset != nil else {
+				return nil
+			}
+			
+			guard let parentElement = self.parentElement else {
+				return nil
+			}
+			
+			if parentElement.name == "spine" && parentElement.fcpxOffset == nil {  // This is a clip on the primary storyline.
+				
+				return self.fcpxParentOutPoint
+				
+			} else if parentElement.name == "spine" {  // This is a clip on a secondary storyline.
+				
+				guard let spineOut = self.fcpxParentOutPoint else {
+					return nil
+				}
+				
+				guard let spineOffset = parentElement.fcpxOffset else {
+					return nil
+				}
+				
+				return CMTimeAdd(spineOut, spineOffset)
+				
+			} else {  // This is a connected clip.
+				
+				guard let clipOut = self.fcpxParentOutPoint else {
+					return nil
+				}
+				
+				guard let clipStart = parentElement.fcpxLocalInPoint else {
+					return nil
+				}
+				
+				let startDifference = CMTimeSubtract(clipOut, clipStart)
+				
+				guard let clipParentStart = fcpxParentInPoint else {
+					return nil
+				}
+				
+				return CMTimeAdd(clipParentStart, startDifference)
+				
 			}
 		}
 	}
