@@ -608,6 +608,30 @@ extension XMLElement {
 		}
 	}
 	
+	
+	/// This value indicates whether the clip is enabled or disabled. By default, the element attribute is not included in FCPXML exports when the clip is enabled.
+	public var fcpxEnabled: Bool {
+		get {
+			if let attributeString = getElementAttribute("enabled") {
+				if attributeString == "0" {
+					return false
+				} else {
+					return true
+				}
+			} else {
+				return true
+			}
+		}
+		
+		set(value) {
+			if value == false {
+				setElementAttribute("enabled", value: "0")
+			} else {
+				setElementAttribute("enabled", value: "1")
+			}
+		}
+	}
+	
 	public var fcpxRole: String? {
 		get {
 			if let attributeString = getElementAttribute("role") {
