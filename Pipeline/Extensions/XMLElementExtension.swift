@@ -1503,7 +1503,7 @@ extension XMLElement {
 	/// - Parameter resource: The resource XMLElement to match with.
 	/// - Returns: An array of XMLElement objects of the event clip matching the asset.
 	public func eventClips(containingResource resource: XMLElement) throws -> [XMLElement] {
-		
+		print("Checking for matching event clips...")
 		guard self.fcpxType == .event else {
 			throw FCPXMLElementError.notAnEvent(element: self)
 		}
@@ -1514,19 +1514,52 @@ extension XMLElement {
 			return matchingItems
 		}
 		
+		print("Parsing through event items...")
+		
 		for item in items {
 			
 			switch item.fcpxType {
 				
 			case .assetClip:  // Check for matching regular clips
-				print("Checking a regular clip in the event...")
+				print("Checking an asset clip in the event...")
 				
 				if item.fcpxRef == resource.fcpxID { // Found regular clip
 					matchingItems.append(item)
 					
-					print("Matching regular clip found: \(item.fcpxName)")
+					print("Matching asset clip found: \(item.fcpxName)")
 				}
 				
+			case .clip:  // Check for matching regular clips
+				print("Checking a clip in the event...")
+				
+				let videoElements = item.elements(forName: "video")
+				if videoElements.count > 0 {
+					
+					let videoElement = videoElements[0]
+					if videoElement.fcpxRef == resource.fcpxID {
+						matchingItems.append(item)
+						
+						print("Matching video clip found: \(item.fcpxName)")
+					}
+					
+				} else {
+					
+					let audioElements = item.elements(forName: "audio")
+					if audioElements.count > 0 {
+						
+						let audioElement = audioElements[0]
+						if audioElement.fcpxRef == resource.fcpxID {
+							matchingItems.append(item)
+							
+							print("Matching audio clip found: \(item.fcpxName)")
+						}
+						
+					} else {
+						continue
+					}
+				}
+					
+					
 			case .synchronizedClip:  // Check for matching synchronized clips
 				print("Checking a synchronized clip in the event...")
 				
@@ -1882,7 +1915,7 @@ extension XMLElement {
 	private func formatID(forElement element: XMLElement) -> String? {
 		
 		switch element.fcpxType {
-		case .assetResource, .assetClip, .synchronizedClip:  // These elements will have the format reference ID in the top level element.
+		case .assetResource, .assetClip, .clip, .synchronizedClip:  // These elements will have the format reference ID in the top level element.
 			
 			return element.fcpxFormatRef
 			
