@@ -1194,6 +1194,19 @@ extension XMLElement {
 	
 	// MARK: - Other element properties that are beyond the element itself
 	
+	/// The FCPXML document as a properly formatted string.
+	public var fcpxmlString: String {
+		let xmlDocument = XMLDocument(rootElement: self)
+		let formattedData = xmlDocument.xmlData(withOptions: 131076)
+		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
+		
+		guard formattedString != nil else {
+			return ""
+		}
+		
+		return formattedString! as String
+	}
+	
 	/// True if this XMLElement is an item in an event, not a resource.
 	public var isFCPXEventItem: Bool {
 		get {
