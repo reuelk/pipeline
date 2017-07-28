@@ -1235,15 +1235,20 @@ extension XMLElement {
 				return nil
 			}
 			
+			guard self.parent != nil else {
+				return nil
+			}
+			
 			var parentElement = self.parent as! XMLElement
 			
 			while parentElement.name != "event" {
-				parentElement = parentElement.parent as! XMLElement
-				
 				// If the parent is the top of the document, return nil
-				if parentElement.name == "fcpxml" {
+				guard parentElement.parent != nil else {
 					return nil
 				}
+				
+				parentElement = parentElement.parent as! XMLElement
+				
 			}
 			return parentElement
 		}
