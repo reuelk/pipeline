@@ -1198,6 +1198,7 @@ extension XMLElement {
 	public var isFCPXEventItem: Bool {
 		get {
 			if self.fcpxType == .assetClip ||
+				self.fcpxType == .clip ||
 				self.fcpxType == .multicamClip ||
 				self.fcpxType == .compoundClip ||
 				self.fcpxType == .synchronizedClip ||
