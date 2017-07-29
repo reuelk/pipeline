@@ -1196,7 +1196,7 @@ extension XMLElement {
 	
 	/// The FCPXML document as a properly formatted string.
 	public var fcpxmlString: String {
-		let xmlDocument = XMLDocument(rootElement: self)
+		let xmlDocument = XMLDocument(rootElement: self.copy() as! XMLElement)
 		let formattedData = xmlDocument.xmlData(withOptions: 131076)
 		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
 		
@@ -1470,7 +1470,7 @@ extension XMLElement {
 			
 			let clipElements = clipNodes as! [XMLElement]
 			
-			let clips = FCPXMLUtility().filter(fcpxElements: clipElements, ofTypes: [.assetClip, .compoundClip, .multicamClip, .synchronizedClip])
+			let clips = FCPXMLUtility().filter(fcpxElements: clipElements, ofTypes: [.assetClip, .clip, .compoundClip, .multicamClip, .synchronizedClip])
 			
 			return clips
 		}
@@ -1588,7 +1588,7 @@ extension XMLElement {
 					let itemChildElement = itemChild as! XMLElement
 					
 					// Find regular synchronized clips
-					if itemChildElement.fcpxType == .assetClip { // Normal synchronized clip
+					if itemChildElement.fcpxType == .assetClip || itemChildElement.fcpxType == .clip { // Normal synchronized clip
 						
 						if itemChildElement.fcpxRef == resource.fcpxID {  // Match found on a primary storyline clip
 							print("Matching synchronized clip found: \(item.attribute(forName: "name")?.stringValue)")
@@ -1680,7 +1680,7 @@ extension XMLElement {
 								
 								let multicamAngleChildElement = multicamAngleChild as! XMLElement
 								
-								guard multicamAngleChildElement.fcpxType == .assetClip else {
+								guard multicamAngleChildElement.fcpxType == .assetClip || multicamAngleChildElement.fcpxType == .clip else {
 									continue
 								}
 								
@@ -1849,7 +1849,7 @@ extension XMLElement {
 	/// - Throws: Throws an error if an annotation cannot be added to this type of FCPXML element or if the element to add is not an annotation.
 	public func addToClip(annotationElements elements: [XMLElement]) throws {
 		
-		guard self.fcpxType == .project || self.fcpxType == .synchronizedClip || self.fcpxType == .compoundClip || self.fcpxType == .multicamClip || self.fcpxType == .assetClip else {
+		guard self.fcpxType == .project || self.fcpxType == .synchronizedClip || self.fcpxType == .compoundClip || self.fcpxType == .multicamClip || self.fcpxType == .assetClip || self.fcpxType == .clip else {
 			throw FCPXMLElementError.notAnAnnotatableItem(element: self)
 		}
 		
