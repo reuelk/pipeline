@@ -1522,7 +1522,7 @@ extension XMLElement {
 	/// - Parameter resource: The resource XMLElement to match with.
 	/// - Returns: An array of XMLElement objects of the event clip matching the asset.
 	public func eventClips(containingResource resource: XMLElement) throws -> [XMLElement] {
-		print("Checking for matching event clips...")
+		
 		guard self.fcpxType == .event else {
 			throw FCPXMLElementError.notAnEvent(element: self)
 		}
@@ -1533,14 +1533,12 @@ extension XMLElement {
 			return matchingItems
 		}
 		
-		print("Parsing through event items...")
-		
 		for item in items {
 			
 			switch item.fcpxType {
 				
 			case .assetClip:  // Check for matching regular clips
-				print("Checking an asset clip in the event...")
+//				print("Checking an asset clip in the event...")
 				
 				if item.fcpxRef == resource.fcpxID { // Found regular clip
 					matchingItems.append(item)
@@ -1549,7 +1547,7 @@ extension XMLElement {
 				}
 				
 			case .clip:  // Check for matching regular clips
-				print("Checking a clip in the event...")
+//				print("Checking a clip in the event...")
 				
 				let videoElements = item.elements(forName: "video")
 				if videoElements.count > 0 {
@@ -1580,7 +1578,7 @@ extension XMLElement {
 					
 					
 			case .synchronizedClip:  // Check for matching synchronized clips
-				print("Checking a synchronized clip in the event...")
+//				print("Checking a synchronized clip in the event...")
 				
 				guard let itemChildren = item.children else {
 					continue
@@ -1642,7 +1640,7 @@ extension XMLElement {
 				}
 				
 			case .multicamClip:  // Check for matching multicam clips
-				print("Checking a multicam in the event...")
+//				print("Checking a multicam in the event...")
 				
 				if item.fcpxRef == resource.fcpxID { // The asset ID matches this multicam so add it immediately to the matchingItems array.
 					
@@ -1703,7 +1701,7 @@ extension XMLElement {
 				
 				
 			case .compoundClip:  // Check for matching compound clips
-				print("Checking a compound clip in the event...")
+//				print("Checking a compound clip in the event...")
 				
 				// Use the reference to find the matching resource media
 				// Check inside the media and see if the video references the matchingAsset
