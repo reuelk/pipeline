@@ -572,20 +572,92 @@ extension XMLElement {
 		}
 	}
 	
+	
+	/// Returns and sets the "ref" attribute of an element. If the element fcpxType is FCPXMLElementType.clip, this will return or set its video or audio child element's "ref" attribute.
 	public var fcpxRef: String? {
 		get {
-			if let attributeString = getElementAttribute("ref") {
-				return attributeString
+			
+			if self.fcpxType == .clip {  // If the element type is "clip" then get the ref from a video or audio sub-element.
+				
+				let videoElements = self.elements(forName: "video")
+				if videoElements.count > 0 {
+					return videoElements[0].fcpxRef
+				} else {  // Check for audio elements
+					let audioElements = self.elements(forName: "audio")
+					if audioElements.count > 0 {
+						return audioElements[0].fcpxRef
+					} else {
+						return nil
+					}
+				}
+				
 			} else {
-				return nil
+			
+				if let attributeString = getElementAttribute("ref") {
+					return attributeString
+				} else {
+					return nil
+				}
 			}
 		}
 		
 		set(value) {
 			if let value = value {
-				setElementAttribute("ref", value: value)
+				
+				if self.fcpxType == .clip {  // If the element type is "clip" then change the ref in a video or audio sub-element.
+					
+					let videoElements = self.elements(forName: "video")
+					if videoElements.count > 0 {
+						
+						let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+						attribute.name = "ref"
+						attribute.stringValue = value
+						
+						videoElements[0].addAttribute(attribute)
+						
+					} else {  // Check for audio elements
+						let audioElements = self.elements(forName: "audio")
+						if audioElements.count > 0 {
+							
+							let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+							attribute.name = "ref"
+							attribute.stringValue = value
+							
+							audioElements[0].addAttribute(attribute)
+							
+						} else {
+							setElementAttribute("ref", value: value)
+						}
+					}
+					
+				} else {
+				
+					setElementAttribute("ref", value: value)
+				}
+				
 			} else {
-				self.removeAttribute(forName: "ref")
+				
+				if self.fcpxType == .clip {  // If the element type is "clip" then remove the ref from a video or audio sub-element.
+					
+					let videoElements = self.elements(forName: "video")
+					if videoElements.count > 0 {
+						
+						videoElements[0].removeAttribute(forName: "ref")
+						
+					} else {  // Check for audio elements
+						let audioElements = self.elements(forName: "audio")
+						if audioElements.count > 0 {
+							
+							audioElements[0].removeAttribute(forName: "ref")
+							
+						} else {
+							self.removeAttribute(forName: "ref")
+						}
+					}
+					
+				} else {
+					self.removeAttribute(forName: "ref")
+				}
 			}
 		}
 	}
