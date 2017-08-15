@@ -129,7 +129,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 				
 				let eventChildrenElements = eventChildren as! [XMLElement]
 				
-				clips.append(contentsOf: FCPXMLUtility().filter(fcpxElements: eventChildrenElements, ofTypes: [.assetClip, .compoundClip, .multicamClip, .synchronizedClip]))
+				clips.append(contentsOf: FCPXMLUtility().filter(fcpxElements: eventChildrenElements, ofTypes: [.clip, .assetClip, .compoundClip, .multicamClip, .synchronizedClip]))
 			}
 			return clips
 		}
