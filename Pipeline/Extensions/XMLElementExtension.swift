@@ -2343,14 +2343,22 @@ extension XMLElement {
 	}
 	
 	
-	public func setElementAttribute(_ name: String, value: String) {
+	public func setElementAttribute(_ name: String, value: String?) {
 		
-		let attribute = XMLNode(kind: XMLNode.Kind.attribute)
-		
-		attribute.name = name
-		attribute.stringValue = value
-		
-		self.addAttribute(attribute)
+		if value != nil {
+			
+			let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+			
+			attribute.name = name
+			attribute.stringValue = value
+			
+			self.addAttribute(attribute)
+			
+		} else {
+			
+			self.removeAttribute(forName: name)
+			
+		}
 		
 	}
 
