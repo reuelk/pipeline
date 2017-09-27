@@ -28,8 +28,9 @@ To add the framework to your Xcode project:
 4. Right-click on the `Pipeline.framework` framework in the "Products" folder in the Navigator pane. Select "Show in Finder".
 5. Drag the selected folder into your Xcode project's Navigator pane.
 6. Xcode will prompt you to set some options for adding the folder. Generally, "Copy items if needed", "Create groups" and your application target should be selected.
-7. Select your project in the Navigator pane and go to "Build Phases". Under "Copy Files", select "Frameworks" as the destination.
-8. Click on the plus sign and add the Pipeline framework.
+7. Select your project in the Navigator pane and go to "Build Phases". Above "Target Dependencies", click the + icon and select "New Copy Files Phase"
+8. Under "Copy Files", select "Frameworks" as the destination.
+8. Click on the plus sign below and add the Pipeline framework.
 9. Add `import Pipeline` to the top of all Swift files that need to use the framework.
 
 ## Usage Examples
@@ -37,7 +38,16 @@ To add the framework to your Xcode project:
 ### Open an FCPXML File
 Subsequent examples use the `fcpxmlDoc` object declared here.
 
-	let fileURL = URL(fileURLWithPath: "~/Documents/sample.fcpxml")  // Create a new URL object that points to the FCPXML file's path
+	// Change the path below to your FCPXML file's path
+	let fileURL = URL(fileURLWithPath: "/Users/[username]/Documents/sample.fcpxml")  // Create a new URL object that points to the FCPXML file's path.
+	
+	do {
+		try fileURL.checkResourceIsReachable()
+	} catch {
+		print("The file cannot be found at the given path.")
+		return
+	}
+
 	let fcpxmlDoc: XMLDocument  // Declare the fcpxmlDoc constant as an XMLDocument object
 	
 	do {
@@ -56,6 +66,7 @@ Subsequent examples use the `fcpxmlDoc` object declared here.
 
 	let newEvent = XMLElement().fcpxEvent(name: "My New Event")  // Create a new empty event
 	fcpxmlDoc.add(event: newEvent)  // Add the new event to the FCPXML document
+	dump(fcpxmlDoc.fcpxEventNames) // Neatly display all of the event names
 	
 ### Get Clips That Match a Resource ID and Delete Them
 
@@ -84,6 +95,16 @@ Subsequent examples use the `fcpxmlDoc` object declared here.
 		let duration = firstClip.fcpxDuration  // Get the duration of the clip
 		let timeDisplay = duration?.timeAsCounter().counterString  // Convert the duration, which is a CMTime value, to a String formatted as HH:MM:SS,MMM
 		print(timeDisplay) 
+	}
+
+### Save the FCPXML File
+		
+	do {
+		// Change the path below to your new FCPXML file's path
+		try fcpxmlDoc.fcpxmlString.write(toFile: "/Users/[username]/Documents/sample-output.fcpxml", atomically: false, encoding: String.Encoding.utf8)
+		print("Wrote FCPXML file.")
+	} catch {
+		print("Error writing to file.")
 	}
 
 ## Authors

@@ -67,6 +67,13 @@ extension XMLElement {
 		case rec2020 = "Rec. 2020"
 	}
 	
+	public enum MulticamSourceEnable: String {
+		case audio = "audio"
+		case video = "video"
+		case all = "all"
+		case none = "none"
+	}
+	
 	
 	// MARK: - Creating FCPXML XMLElement objects
 	
@@ -170,6 +177,94 @@ extension XMLElement {
 	}
 	
 	
+	
+	/// Creates a new FCPXML multicam reference XMLElement object.
+	///
+	/// - Parameters:
+	///   - name: The name of the resource.
+	///   - id: The unique reference ID of this resource.
+	///   - formatRef: The reference ID of the format that this resource uses.
+	///   - tcStart: The starting timecode value of this resource.
+	///   - tcFormat: The timecode format as an XMLElement.TimecodeFormat enumeration value.
+	///   - renderColorSpace: The color space of this multicam as an XMLElement.TimecodeFormat enumeration value.
+	///   - angles: The mc-angle elements to embed in this multicam resource.
+	/// - Returns: An XMLElement object of the multicam <media> resource.
+	public func fcpxMulticamResource(name: String, id: String, formatRef: String, tcStart: CMTime?, tcFormat: XMLElement.TimecodeFormat, renderColorSpace: XMLElement.RenderColorSpace, angles: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "media")
+		
+		element.fcpxName = name
+		element.fcpxID = id
+		
+		let multicamElement = XMLElement(name: "multicam")
+		
+		multicamElement.fcpxFormatRef = formatRef
+		multicamElement.fcpxRenderColorSpace = renderColorSpace
+		multicamElement.fcpxTCStart = tcStart
+		multicamElement.fcpxTCFormat = tcFormat
+		
+		angles.forEach { (angle) in
+			multicamElement.addChild(angle)
+		}
+		
+		element.addChild(multicamElement)
+		
+		return element
+	}
+	
+	
+	/// Creates a new multicam event clip XMLElement object.
+	///
+	/// - Parameters:
+	///   - name: The name of the clip.
+	///   - refID: The reference ID.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - mcSources: An array of mc-source elements to place in this element.
+	/// - Returns: An XMLElement object of the multicam <mc-clip> resource.
+	public func fcpxMulticamClip(name: String, refID: String, offset: CMTime?, start: CMTime?, duration: CMTime, mcSources: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "mc-clip")
+		
+		element.fcpxName = name
+		element.fcpxRef = refID
+		element.fcpxOffset = offset
+		element.fcpxStart = start
+		element.fcpxDuration = duration
+		
+		mcSources.forEach { (source) in
+			element.addChild(source)
+		}
+		
+		return element
+	}
+	
+	
+	
+	/// Creates a new secondary storyline XMLElement object.
+	///
+	/// - Parameters:
+	///   - lane: The lane for the secondary storyline as an Int value.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - formatRef: The reference ID of the format that this resource uses.
+	///   - clips: An array of XMLElement objects of the clips to be placed inside the secondary storyline.
+	/// - Returns: An XMLElement object of the secondary storyline <spine> element.
+	public func fcpxSecondaryStoryline(lane: Int, offset: CMTime, formatRef: String?, clips: [XMLElement]) -> XMLElement {
+		
+		let element = XMLElement(name: "spine")
+		
+		element.fcpxLane = lane
+		element.fcpxOffset = offset
+		element.fcpxFormatRef = formatRef
+		
+		clips.forEach { (clip) in
+			element.addChild(clip)
+		}
+		
+		return element
+	}
+	
+	
 	/// Creates a new gap to be used in a timeline.
 	///
 	/// - Parameters:
@@ -217,7 +312,7 @@ extension XMLElement {
 	///   - xPosition: The X position of the text on the screen.
 	///   - yPosition: The Y position of the text on the screen.
 	/// - Returns: An XMLElement object of the title, which will contain the text style definition, if specified.
-	public func fcpxTitle(titleName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, role: String?, titleText: String, textStyleID: Int, newTextStyle: Bool, font: String = "Helvetica", fontSize: CGFloat = 62, fontFace: String = "Regular", fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), strokeColor: NSColor? = nil, strokeWidth: Float = 2.0, shadowColor: NSColor? = nil, shadowDistance: Float = 5.0, shadowAngle: Float = 315.0, shadowBlurRadius: Float = 1.0, alignment: TextAlignment = TextAlignment.Center, xPosition: Float = 0, yPosition: Float = -40) -> XMLElement {
+	public func fcpxTitle(titleName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, role: String?, titleText: String, textStyleID: Int, newTextStyle: Bool, font: String = "Helvetica", fontSize: CGFloat = 62, fontFace: String = "Regular", fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), strokeColor: NSColor? = nil, strokeWidth: Float = 2.0, shadowColor: NSColor? = nil, shadowDistance: Float = 5.0, shadowAngle: Float = 315.0, shadowBlurRadius: Float = 1.0, alignment: TextAlignment = TextAlignment.Center, xPosition: Float = 0, yPosition: Float = 0) -> XMLElement {
 		
 		let element = XMLElement(name: "title")
 		
@@ -477,20 +572,92 @@ extension XMLElement {
 		}
 	}
 	
+	
+	/// Returns and sets the "ref" attribute of an element. If the element fcpxType is FCPXMLElementType.clip, this will return or set its video or audio child element's "ref" attribute.
 	public var fcpxRef: String? {
 		get {
-			if let attributeString = getElementAttribute("ref") {
-				return attributeString
+			
+			if self.fcpxType == .clip {  // If the element type is "clip" then get the ref from a video or audio sub-element.
+				
+				let videoElements = self.elements(forName: "video")
+				if videoElements.count > 0 {
+					return videoElements[0].fcpxRef
+				} else {  // Check for audio elements
+					let audioElements = self.elements(forName: "audio")
+					if audioElements.count > 0 {
+						return audioElements[0].fcpxRef
+					} else {
+						return nil
+					}
+				}
+				
 			} else {
-				return nil
+			
+				if let attributeString = getElementAttribute("ref") {
+					return attributeString
+				} else {
+					return nil
+				}
 			}
 		}
 		
 		set(value) {
 			if let value = value {
-				setElementAttribute("ref", value: value)
+				
+				if self.fcpxType == .clip {  // If the element type is "clip" then change the ref in a video or audio sub-element.
+					
+					let videoElements = self.elements(forName: "video")
+					if videoElements.count > 0 {
+						
+						let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+						attribute.name = "ref"
+						attribute.stringValue = value
+						
+						videoElements[0].addAttribute(attribute)
+						
+					} else {  // Check for audio elements
+						let audioElements = self.elements(forName: "audio")
+						if audioElements.count > 0 {
+							
+							let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+							attribute.name = "ref"
+							attribute.stringValue = value
+							
+							audioElements[0].addAttribute(attribute)
+							
+						} else {
+							setElementAttribute("ref", value: value)
+						}
+					}
+					
+				} else {
+				
+					setElementAttribute("ref", value: value)
+				}
+				
 			} else {
-				self.removeAttribute(forName: "ref")
+				
+				if self.fcpxType == .clip {  // If the element type is "clip" then remove the ref from a video or audio sub-element.
+					
+					let videoElements = self.elements(forName: "video")
+					if videoElements.count > 0 {
+						
+						videoElements[0].removeAttribute(forName: "ref")
+						
+					} else {  // Check for audio elements
+						let audioElements = self.elements(forName: "audio")
+						if audioElements.count > 0 {
+							
+							audioElements[0].removeAttribute(forName: "ref")
+							
+						} else {
+							self.removeAttribute(forName: "ref")
+						}
+					}
+					
+				} else {
+					self.removeAttribute(forName: "ref")
+				}
 			}
 		}
 	}
@@ -509,6 +676,30 @@ extension XMLElement {
 				setElementAttribute("id", value: value)
 			} else {
 				self.removeAttribute(forName: "id")
+			}
+		}
+	}
+	
+	
+	/// This value indicates whether the clip is enabled or disabled. By default, the element attribute is not included in FCPXML exports when the clip is enabled.
+	public var fcpxEnabled: Bool {
+		get {
+			if let attributeString = getElementAttribute("enabled") {
+				if attributeString == "0" {
+					return false
+				} else {
+					return true
+				}
+			} else {
+				return true
+			}
+		}
+		
+		set(value) {
+			if value == false {
+				setElementAttribute("enabled", value: "0")
+			} else {
+				setElementAttribute("enabled", value: "1")
 			}
 		}
 	}
@@ -812,6 +1003,55 @@ extension XMLElement {
 		}
 	}
 	
+	public var fcpxAngleID: String? {
+		get {
+			if let attributeString = getElementAttribute("angleID") {
+				return attributeString
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("angleID", value: value)
+			} else {
+				self.removeAttribute(forName: "angleID")
+			}
+		}
+	}
+	
+	
+	/// The "srcEnable" attribute for "mc-source" multicam clip angles
+	public var fcpxSrcEnable: MulticamSourceEnable? {
+		get {
+			if let attributeString = getElementAttribute("srcEnable") {
+				switch attributeString {
+				case MulticamSourceEnable.audio.rawValue:
+					return MulticamSourceEnable.audio
+				case MulticamSourceEnable.video.rawValue:
+					return MulticamSourceEnable.video
+				case MulticamSourceEnable.all.rawValue:
+					return MulticamSourceEnable.all
+				case MulticamSourceEnable.none.rawValue:
+					return MulticamSourceEnable.none
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("srcEnable", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "srcEnable")
+			}
+		}
+	}
+	
 	public var fcpxUID: String? {
 		get {
 			if let attributeString = getElementAttribute("uid") {
@@ -830,6 +1070,7 @@ extension XMLElement {
         }
 	}
 	
+	/// The start of this element on its parent timeline. For example, if this is a video clip on the primary storyline, this value would be the in point of the clip on the project timeline. If this is a clip on a secondary storyline, this value would be the in point of the clip on the secondary storyline's timeline.
 	public var fcpxParentInPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxOffset else {
@@ -846,6 +1087,8 @@ extension XMLElement {
 		}
 	}
 	
+	
+	/// The end of this element on its parent timeline. For example, if this is a video clip on the primary storyline, this value would be the out point of the clip on the project timeline. If this is a clip on a secondary storyline, this value would be the out point of the clip on the secondary storyline's timeline.
 	public var fcpxParentOutPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxOffset else {
@@ -872,6 +1115,7 @@ extension XMLElement {
 		}
 	}
 	
+	/// The start of this element's local timeline. For example, if this is a video clip, this value would be the in point of the clip's source footage.
 	public var fcpxLocalInPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxStart else {
@@ -888,6 +1132,7 @@ extension XMLElement {
 		}
 	}
 	
+	/// The end of this element's local timeline. For example, if this is a video clip, this value would be the out point of the clip's source footage.
 	public var fcpxLocalOutPoint: CMTime? {
 		get {
 			guard let inPoint = self.fcpxStart else {
@@ -915,12 +1160,130 @@ extension XMLElement {
 	}
 	
 	
+	/// The start time of this element on the project timeline.
+	public var fcpxTimelineInPoint: CMTime? {
+		get {
+			print("Getting timeline in point...")
+			// If this element does not have an offset, it is not a clip element on the project timeline
+			guard self.fcpxOffset != nil else {
+				print("No offset. Returning nil.")
+				return nil
+			}
+			
+			guard let parentElement = self.parentElement else {
+				print("No parent element. Returning nil.")
+				return nil
+			}
+			
+			if parentElement.name == "spine" && parentElement.fcpxOffset == nil {  // This is a clip on the primary storyline.
+				print("This is a clip on the primary storyline.")
+				return self.fcpxOffset
+				
+			} else if parentElement.name == "spine" {  // This is a clip on a secondary storyline.
+				print("This is a clip on a secondary storyline.")
+				let spineIn = self.fcpxOffset!
+				
+				guard let spineOffset = parentElement.fcpxOffset else {
+					print("The parent has no offset. Returning nil.")
+					return nil
+				}
+				
+				return CMTimeAdd(spineIn, spineOffset)
+				
+			} else {  // This is a connected clip.
+				print("This is a connected clip.")
+				let clipIn = self.fcpxOffset!
+				
+				guard let clipStart = parentElement.fcpxLocalInPoint else {
+					print("The parent has no local in point. Returning nil.")
+					return nil
+				}
+				
+				let startDifference = CMTimeSubtract(clipIn, clipStart)
+				
+				guard let clipParentStart = parentElement.fcpxParentInPoint else {
+					print("The parent has no parent in point. Returning nil.")
+					return nil
+				}
+				
+				return CMTimeAdd(clipParentStart, startDifference)
+				
+			}
+		}
+	}
+	
+	/// The end time of this element on the project timeline.
+	public var fcpxTimelineOutPoint: CMTime? {
+		get {
+			
+			// If this element does not have an offset, it is not a clip element on the project timeline
+			guard self.fcpxOffset != nil else {
+				return nil
+			}
+			
+			guard let parentElement = self.parentElement else {
+				return nil
+			}
+			
+			if parentElement.name == "spine" && parentElement.fcpxOffset == nil {  // This is a clip on the primary storyline.
+				
+				return self.fcpxParentOutPoint
+				
+			} else if parentElement.name == "spine" {  // This is a clip on a secondary storyline.
+				
+				guard let spineOut = self.fcpxParentOutPoint else {
+					return nil
+				}
+				
+				guard let spineOffset = parentElement.fcpxOffset else {
+					return nil
+				}
+				
+				return CMTimeAdd(spineOut, spineOffset)
+				
+			} else {  // This is a connected clip.
+				
+				guard let clipOut = self.fcpxParentOutPoint else {
+					return nil
+				}
+				
+				guard let clipStart = parentElement.fcpxLocalInPoint else {
+					return nil
+				}
+				
+				let startDifference = CMTimeSubtract(clipOut, clipStart)
+				
+				guard let clipParentStart = fcpxParentInPoint else {
+					return nil
+				}
+				
+				return CMTimeAdd(clipParentStart, startDifference)
+				
+			}
+		}
+	}
+	
+	
 	// MARK: - Other element properties that are beyond the element itself
+	
+	/// The FCPXML document as a properly formatted string.
+	public var fcpxmlString: String {
+		let xmlDocument = XMLDocument(rootElement: self.copy() as! XMLElement)
+		let formattedData = xmlDocument.xmlData(withOptions: 131076)
+		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
+		
+		guard formattedString != nil else {
+			return ""
+		}
+		
+		return formattedString! as String
+	}
 	
 	/// True if this XMLElement is an item in an event, not a resource.
 	public var isFCPXEventItem: Bool {
 		get {
 			if self.fcpxType == .assetClip ||
+				self.fcpxType == .clip ||
 				self.fcpxType == .multicamClip ||
 				self.fcpxType == .compoundClip ||
 				self.fcpxType == .synchronizedClip ||
@@ -958,15 +1321,20 @@ extension XMLElement {
 				return nil
 			}
 			
+			guard self.parent != nil else {
+				return nil
+			}
+			
 			var parentElement = self.parent as! XMLElement
 			
 			while parentElement.name != "event" {
-				parentElement = parentElement.parent as! XMLElement
-				
 				// If the parent is the top of the document, return nil
-				if parentElement.name == "fcpxml" {
+				guard parentElement.parent != nil else {
 					return nil
 				}
+				
+				parentElement = parentElement.parent as! XMLElement
+				
 			}
 			return parentElement
 		}
@@ -1014,6 +1382,88 @@ extension XMLElement {
 				}
 				
 				return annotationElements
+		}
+	}
+	
+	
+	
+	/// An array of this element's metadata elements. Returns nil if this element is not a resource or event item.
+	public var fcpxMetadata: [XMLElement]? {
+		
+		guard self.isFCPXResource == true || self.isFCPXEventItem == true else {
+			return nil
+		}
+		
+		if self.isFCPXResource == true {
+			
+			switch self.fcpxType {
+			case .multicamResource, .compoundResource:
+				
+				var subElement = self.elements(forName: "sequence")
+				if subElement.count == 0 {
+					subElement = self.elements(forName: "multicam")
+				}
+				
+				guard subElement.count > 0 else {
+					return nil
+				}
+				
+				let metadataElement = subElement[0].elements(forName: "metadata")
+				
+				guard metadataElement.count > 0 else {
+					return []
+				}
+				
+				return metadataElement[0].elements(forName: "md")
+				
+			default:
+				
+				let metadataElement = self.elements(forName: "metadata")
+				
+				guard metadataElement.count > 0 else {
+					return []
+				}
+				
+				return metadataElement[0].elements(forName: "md")
+				
+			}
+			
+		} else if self.isFCPXEventItem == true {
+			
+			let metadataElement = self.elements(forName: "metadata")
+			
+			guard metadataElement.count > 0 else {
+				return []
+			}
+			
+			return metadataElement[0].elements(forName: "md")
+			
+		} else {  // Not a resource or event item element
+			
+			return nil
+		}
+		
+	}
+	
+
+	
+	/// An array of mc-angle elements within a multicam media resource. Returns nil if this element is not a multicam media resource.
+	public var fcpxMulticamAngles: [XMLElement]? {
+		get {
+			guard self.fcpxType == FCPXMLElementType.multicamResource else {
+				return nil
+			}
+			
+			let multicamElement = self.elements(forName: "multicam")
+			
+			guard multicamElement.count > 0 else {
+				return nil
+			}
+			
+			let angles = multicamElement[0].elements(forName: "mc-angle")
+			
+			return angles
+			
 		}
 	}
 	
@@ -1092,7 +1542,7 @@ extension XMLElement {
 			
 			let clipElements = clipNodes as! [XMLElement]
 			
-			let clips = FCPXMLUtility().filter(fcpxElements: clipElements, ofTypes: [.assetClip, .compoundClip, .multicamClip, .synchronizedClip])
+			let clips = FCPXMLUtility().filter(fcpxElements: clipElements, ofTypes: [.assetClip, .clip, .compoundClip, .multicamClip, .synchronizedClip])
 			
 			return clips
 		}
@@ -1160,16 +1610,47 @@ extension XMLElement {
 			switch item.fcpxType {
 				
 			case .assetClip:  // Check for matching regular clips
-				print("Checking a regular clip in the event...")
+//				print("Checking an asset clip in the event...")
 				
 				if item.fcpxRef == resource.fcpxID { // Found regular clip
 					matchingItems.append(item)
 					
-					print("Matching regular clip found: \(item.fcpxName)")
+					print("Matching asset clip found: \(item.fcpxName)")
 				}
 				
+			case .clip:  // Check for matching regular clips
+//				print("Checking a clip in the event...")
+				
+				let videoElements = item.elements(forName: "video")
+				if videoElements.count > 0 {
+					
+					let videoElement = videoElements[0]
+					if videoElement.fcpxRef == resource.fcpxID {
+						matchingItems.append(item)
+						
+						print("Matching video clip found: \(item.fcpxName)")
+					}
+					
+				} else {
+					
+					let audioElements = item.elements(forName: "audio")
+					if audioElements.count > 0 {
+						
+						let audioElement = audioElements[0]
+						if audioElement.fcpxRef == resource.fcpxID {
+							matchingItems.append(item)
+							
+							print("Matching audio clip found: \(item.fcpxName)")
+						}
+						
+					} else {
+						continue
+					}
+				}
+					
+					
 			case .synchronizedClip:  // Check for matching synchronized clips
-				print("Checking a synchronized clip in the event...")
+//				print("Checking a synchronized clip in the event...")
 				
 				guard let itemChildren = item.children else {
 					continue
@@ -1179,7 +1660,7 @@ extension XMLElement {
 					let itemChildElement = itemChild as! XMLElement
 					
 					// Find regular synchronized clips
-					if itemChildElement.fcpxType == .assetClip { // Normal synchronized clip
+					if itemChildElement.fcpxType == .assetClip || itemChildElement.fcpxType == .clip { // Normal synchronized clip
 						
 						if itemChildElement.fcpxRef == resource.fcpxID {  // Match found on a primary storyline clip
 							print("Matching synchronized clip found: \(item.attribute(forName: "name")?.stringValue)")
@@ -1231,7 +1712,7 @@ extension XMLElement {
 				}
 				
 			case .multicamClip:  // Check for matching multicam clips
-				print("Checking a multicam in the event...")
+//				print("Checking a multicam in the event...")
 				
 				if item.fcpxRef == resource.fcpxID { // The asset ID matches this multicam so add it immediately to the matchingItems array.
 					
@@ -1271,7 +1752,7 @@ extension XMLElement {
 								
 								let multicamAngleChildElement = multicamAngleChild as! XMLElement
 								
-								guard multicamAngleChildElement.fcpxType == .assetClip else {
+								guard multicamAngleChildElement.fcpxType == .assetClip || multicamAngleChildElement.fcpxType == .clip else {
 									continue
 								}
 								
@@ -1292,7 +1773,7 @@ extension XMLElement {
 				
 				
 			case .compoundClip:  // Check for matching compound clips
-				print("Checking a compound clip in the event...")
+//				print("Checking a compound clip in the event...")
 				
 				// Use the reference to find the matching resource media
 				// Check inside the media and see if the video references the matchingAsset
@@ -1440,7 +1921,7 @@ extension XMLElement {
 	/// - Throws: Throws an error if an annotation cannot be added to this type of FCPXML element or if the element to add is not an annotation.
 	public func addToClip(annotationElements elements: [XMLElement]) throws {
 		
-		guard self.fcpxType == .project || self.fcpxType == .synchronizedClip || self.fcpxType == .compoundClip || self.fcpxType == .multicamClip || self.fcpxType == .assetClip else {
+		guard self.fcpxType == .project || self.fcpxType == .synchronizedClip || self.fcpxType == .compoundClip || self.fcpxType == .multicamClip || self.fcpxType == .assetClip || self.fcpxType == .clip else {
 			throw FCPXMLElementError.notAnAnnotatableItem(element: self)
 		}
 		
@@ -1523,7 +2004,7 @@ extension XMLElement {
 	private func formatID(forElement element: XMLElement) -> String? {
 		
 		switch element.fcpxType {
-		case .assetResource, .assetClip, .synchronizedClip:  // These elements will have the format reference ID in the top level element.
+		case .assetResource, .assetClip, .clip, .synchronizedClip:  // These elements will have the format reference ID in the top level element.
 			
 			return element.fcpxFormatRef
 			
@@ -1598,7 +2079,6 @@ extension XMLElement {
 	
 	// MARK: - Miscellaneous
 	
-
 	
 	/**
 	Retrieves the URLs from the elements contained within this resource.
@@ -1848,8 +2328,8 @@ extension XMLElement {
 	
 	
 	
-	// MARK: - Internal functions
-	internal func getElementAttribute(_ name: String) -> String? {
+	// MARK: - XMLElement helper properties and functions
+	public func getElementAttribute(_ name: String) -> String? {
 		
 		if let elementAttribute = self.attribute(forName: name) {
 			
@@ -1862,15 +2342,82 @@ extension XMLElement {
 		return nil
 	}
 	
-	internal func setElementAttribute(_ name: String, value: String) {
+	
+	public func setElementAttribute(_ name: String, value: String?) {
 		
-		let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+		if value != nil {
+			
+			let attribute = XMLNode(kind: XMLNode.Kind.attribute)
+			
+			attribute.name = name
+			attribute.stringValue = value
+			
+			self.addAttribute(attribute)
+			
+		} else {
+			
+			self.removeAttribute(forName: name)
+			
+		}
 		
-		attribute.name = name
-		attribute.stringValue = value
+	}
+
+	
+	/// Returns the next element in document order.
+	///
+	/// - Returns: An XMLElement object or nil if there is no other element after the current one.
+	public var nextElement: XMLElement? {
+		get {
+			guard let nextElement = self.nextElement(afterNode: self) else {
+				return nil
+			}
+			
+			return nextElement
+		}
+	}
+	
+	
+	/// Returns the next element in document order after the specified node. Used by the nextElement property.
+	///
+	/// - Parameter node: The XMLNode to check after.
+	/// - Returns: The next XMLElement object, or nil if there is none.
+	private func nextElement(afterNode node: XMLNode) -> XMLElement? {
 		
-		self.addAttribute(attribute)
+		guard let nextNode = node.next else {
+			return nil
+		}
 		
+		guard nextNode.kind == .element else {
+			if let nextElementUnwrapped = self.nextElement(afterNode: nextNode) {
+				return nextElementUnwrapped
+			} else {
+				return nil
+			}
+		}
+		
+		return (nextNode as! XMLElement)
+	}
+	
+	
+	/// Returns the parent XMLElement.
+	public var parentElement: XMLElement? {
+		get {
+			guard let parent = self.parent else {
+				return nil
+			}
+			
+			return parent as? XMLElement
+		}
+	}
+	
+	
+	/// Adds an element as a child to this element, placing it in proper order according to the DTD.
+	///
+	/// - Parameters:
+	///   - element: The child element to insert.
+	///   - overrideDTDVersion: A string of the DTD filename to override with. The DTD must be stored in the framework. If nil, the function uses the latest DTD version.
+	public func addChildConformingToDTD(element: XMLElement, overrideDTDVersion: String?) {
+		// TODO: Add this function
 	}
 
 	

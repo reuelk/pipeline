@@ -43,10 +43,16 @@ public enum FCPXMLElementType: String {
 	case video = "video"
 	case gap = "gap"
 	case transition = "transition"
-	case title = "title"
 	case spine = "spine"
 	case audition = "audition"
 	case sequence = "sequence"
+	case title = "title"
+	case param = "param"
+	
+	// MARK: Text elements
+	case text = "text"
+	case textStyleDef = "text-style-def"
+	case textStyle = "text-style"
 	
 	// MARK: - Clip annotation
 	case marker = "marker"

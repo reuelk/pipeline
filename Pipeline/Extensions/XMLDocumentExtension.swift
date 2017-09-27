@@ -129,7 +129,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 				
 				let eventChildrenElements = eventChildren as! [XMLElement]
 				
-				clips.append(contentsOf: FCPXMLUtility().filter(fcpxElements: eventChildrenElements, ofTypes: [.assetClip, .compoundClip, .multicamClip, .synchronizedClip]))
+				clips.append(contentsOf: FCPXMLUtility().filter(fcpxElements: eventChildrenElements, ofTypes: [.clip, .assetClip, .compoundClip, .multicamClip, .synchronizedClip]))
 			}
 			return clips
 		}
@@ -149,9 +149,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The highest resource ID number used in the FCPXML document.
 	public var fcpxLastResourceID: Int {
 		get {
-			if self.fcpxResourceIDs == [] {
-				self.parseFCPXIDsAndRoles()
-			}
+			self.parseFCPXIDsAndRoles()
 			
 			if let last = self.fcpxResourceIDs.last {
 				return last
@@ -164,9 +162,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The highest text style ID number used in the FCPXML document.
 	public var fcpxLastTextStyleID: Int {
 		get {
-			if self.fcpxTextStyleIDs == [] {
-				self.parseFCPXIDsAndRoles()
-			}
+			self.parseFCPXIDsAndRoles()
 			
 			if let last = self.fcpxTextStyleIDs.last {
 				return last
@@ -369,8 +365,6 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		
 		do {
 			try self.init(contentsOf: URL, options: 0)
-		} catch {
-			throw error
 		}
 	}
 	
@@ -621,7 +615,11 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 			self.rootElement()?.addChild(XMLElement(name: "library"))
 		}
 		
-		self.fcpxLibrary?.addChild(event)
+		if let lastEvent = self.fcpxEvents.last {
+			self.fcpxLibrary?.insertChild(event, at: lastEvent.index + 1)
+		} else {
+			self.fcpxLibrary?.insertChild(event, at: 0)
+		}
 	}
 	
 	

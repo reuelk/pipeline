@@ -118,8 +118,8 @@ public struct FCPXMLUtility {
 	- returns: The FCPXML time value as a string.
 	*/
 	public func fcpxmlTime(fromCMTime time: CMTime) -> String {
-		let FCPXMLTime = "\(time.value)/\(time.timescale)s"
-		return FCPXMLTime
+		
+		return time.fcpxmlString
 	}
 	
 	
