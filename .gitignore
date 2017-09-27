@@ -1,3 +1,4 @@
 .DS_Store
 build/
 PipelineTests/
+Pipeline.xcodeproj/project.xcworkspace/xcuserdata/
