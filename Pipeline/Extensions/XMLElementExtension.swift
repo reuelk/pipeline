@@ -1270,6 +1270,17 @@ extension XMLElement {
 		return formattedString! as String
 	}
 	
+	/// True if this XMLElement is an event.
+	public var isFCPXEvent: Bool {
+		get {
+			if self.name == "event" {
+				return true
+			} else {
+				return false
+			}
+		}
+	}
+	
 	/// True if this XMLElement is an item in an event, not a resource.
 	public var isFCPXEventItem: Bool {
 		get {
@@ -1300,6 +1311,54 @@ extension XMLElement {
 				return true
 			} else {
 				return false
+			}
+		}
+	}
+	
+	/// True if this XMLElement is a project in an event.
+	public var isFCPXProject: Bool {
+		get {
+			if self.name == "project" {
+				return true
+			} else {
+				return false
+			}
+		}
+	}
+	
+	/// If this is a project element, its sequence element. Returns nil if there is no sequence element.
+	public var fcpxProjectSequence: XMLElement? {
+		get {
+			if self.isFCPXProject == true {
+				let sequenceElements = self.elements(forName: "sequence")
+				
+				guard sequenceElements.count > 0 else {
+					return nil
+				}
+				
+				return sequenceElements[0]
+			} else {
+				return nil
+			}
+		}
+	}
+	
+	/// If this is a project element, the spine of the primary storyline. Returns nil if there is no spine.
+	public var fcpxProjectSpine: XMLElement? {
+		get {
+			if self.isFCPXProject == true {
+				guard let sequence = self.fcpxProjectSequence else {
+					return nil
+				}
+				let spineElements = sequence.elements(forName: "spine")
+				
+				guard spineElements.count > 0 else {
+					return nil
+				}
+				
+				return spineElements[0]
+			} else {
+				return nil
 			}
 		}
 	}
