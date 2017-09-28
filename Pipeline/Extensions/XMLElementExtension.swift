@@ -1186,7 +1186,6 @@ extension XMLElement {
 				let spineIn = self.fcpxOffset!
 				
 				guard let spineOffset = parentElement.fcpxOffset else {
-					print("The parent has no offset. Returning nil.")
 					return nil
 				}
 				
@@ -1196,15 +1195,9 @@ extension XMLElement {
 				print("This is a connected clip.")
 				let clipIn = self.fcpxOffset!
 				
-				guard let clipStart = parentElement.fcpxLocalInPoint else {
-					print("The parent has no local in point. Returning nil.")
-					return nil
-				}
-				
-				let startDifference = CMTimeSubtract(clipIn, clipStart)
+				let startDifference = CMTimeSubtract(clipIn, parentElement.fcpxLocalInPoint)
 				
 				guard let clipParentStart = parentElement.fcpxParentInPoint else {
-					print("The parent has no parent in point. Returning nil.")
 					return nil
 				}
 				
@@ -1249,11 +1242,7 @@ extension XMLElement {
 					return nil
 				}
 				
-				guard let clipStart = parentElement.fcpxLocalInPoint else {
-					return nil
-				}
-				
-				let startDifference = CMTimeSubtract(clipOut, clipStart)
+				let startDifference = CMTimeSubtract(clipOut, parentElement.fcpxLocalInPoint)
 				
 				guard let clipParentStart = fcpxParentInPoint else {
 					return nil

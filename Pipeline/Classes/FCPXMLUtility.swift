@@ -205,20 +205,11 @@ public struct FCPXMLUtility {
 	*/
 	public func parentTime(fromLocalTime localTimeValue: CMTime, forClip clip: XMLElement) -> CMTime? {
 		
-		var localInPoint: CMTime
-		
-		if clip.fcpxLocalInPoint != nil {
-			localInPoint = clip.fcpxLocalInPoint!
-		} else {
-			localInPoint = CMTimeMake(0, 2400)
-		}
-		
-		
 		guard let parentInPoint = clip.fcpxParentInPoint else {
 			return nil
 		}
 		
-		let localTimeOffset = CMTimeSubtract(localTimeValue, localInPoint)
+		let localTimeOffset = CMTimeSubtract(localTimeValue, clip.fcpxLocalInPoint)
 		
 		let localTimeAsParentTime = CMTimeAdd(parentInPoint, localTimeOffset)
 		
@@ -238,21 +229,13 @@ public struct FCPXMLUtility {
 	*/
 	public func localTime(fromParentTime parentTimeValue: CMTime, forClip clip: XMLElement) -> CMTime? {
 		
-		var localInPoint: CMTime
-		
-		if clip.fcpxLocalInPoint != nil {
-			localInPoint = clip.fcpxLocalInPoint!
-		} else {
-			localInPoint = CMTimeMake(0, 2400)
-		}
-		
 		guard let parentInPoint = clip.fcpxParentInPoint else {
 			return nil
 		}
 		
 		let parentTimeOffset = CMTimeSubtract(parentTimeValue, parentInPoint)
 		
-		let parentTimeAsLocalTime = CMTimeAdd(localInPoint, parentTimeOffset)
+		let parentTimeAsLocalTime = CMTimeAdd(clip.fcpxLocalInPoint, parentTimeOffset)
 		
 		return parentTimeAsLocalTime
 	}
