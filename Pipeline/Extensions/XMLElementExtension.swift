@@ -498,6 +498,18 @@ extension XMLElement {
 		}
 	}
 	
+	
+	/// If this element's fcpxStart property is nil, fcpxStartValue returns a CMTime value of zero. Otherwise, it returns the same value as fcpxStart. This property is used when you want the value of the "start" attribute whether or not it exists. Final Cut Pro X omits the "start" attribute when the element starts at 0.
+	public var fcpxStartValue: CMTime {
+		get {
+			if let start = self.fcpxStart {
+				return start
+			} else {
+				return CMTime().zero()
+			}
+		}
+	}
+	
 	public var fcpxOffset: CMTime? {
 		get {
 			if let attributeString = getElementAttribute("offset") {
