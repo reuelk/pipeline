@@ -1128,32 +1128,22 @@ extension XMLElement {
 	}
 	
 	/// The start of this element's local timeline. For example, if this is a video clip, this value would be the in point of the clip's source footage.
-	public var fcpxLocalInPoint: CMTime? {
+	public var fcpxLocalInPoint: CMTime {
 		get {
-			guard let inPoint = self.fcpxStart else {
-				return nil
-			}
-			return inPoint
+			return self.fcpxStartValue
 		}
 		set(value) {
-			if let value = value {
-				self.fcpxStart = value
-			} else {
-				self.fcpxStart = nil
-			}
+			self.fcpxStart = value
 		}
 	}
 	
-	/// The end of this element's local timeline. For example, if this is a video clip, this value would be the out point of the clip's source footage.
+	/// The end of this element's local timeline. For example, if this is a video clip, this value would be the out point of the clip's source footage. If this element has no duration, this property will return nil.
 	public var fcpxLocalOutPoint: CMTime? {
 		get {
-			guard let inPoint = self.fcpxStart else {
-				return nil
-			}
 			guard let duration = self.fcpxDuration else {
 				return nil
 			}
-			return CMTimeAdd(inPoint, duration)
+			return CMTimeAdd(self.fcpxStartValue, duration)
 		}
 		
 		set(value) {
