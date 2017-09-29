@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (47% documented)</p>
+        <p><a href="index.html"> Docs</a> (54% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -60,6 +60,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/XMLElement/RenderColorSpace.html">– RenderColorSpace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/XMLElement/MulticamSourceEnable.html">– MulticamSourceEnable</a>
               </li>
             </ul>
           </li>
@@ -110,15 +113,25 @@
 <li>Right-click on the <code>Pipeline.framework</code> framework in the <q>Products</q> folder in the Navigator pane. Select <q>Show in Finder</q>.</li>
 <li>Drag the selected folder into your Xcode project&rsquo;s Navigator pane.</li>
 <li>Xcode will prompt you to set some options for adding the folder. Generally, <q>Copy items if needed</q>, <q>Create groups</q> and your application target should be selected.</li>
-<li>Select your project in the Navigator pane and go to <q>Build Phases</q>. Under <q>Copy Files</q>, select <q>Frameworks</q> as the destination.</li>
-<li>Click on the plus sign and add the Pipeline framework.</li>
+<li>Select your project in the Navigator pane and go to <q>Build Phases</q>. Above <q>Target Dependencies</q>, click the + icon and select <q>New Copy Files Phase</q></li>
+<li>Under <q>Copy Files</q>, select <q>Frameworks</q> as the destination.</li>
+<li>Click on the plus sign below and add the Pipeline framework.</li>
 <li>Add <code>import Pipeline</code> to the top of all Swift files that need to use the framework.</li>
 </ol>
 <a href='#usage-examples' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage-examples'>Usage Examples</h2>
 <a href='#open-an-fcpxml-file' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='open-an-fcpxml-file'>Open an FCPXML File</h3>
 
 <p>Subsequent examples use the <code>fcpxmlDoc</code> object declared here.</p>
-<pre class="highlight plaintext"><code>let fileURL = URL(fileURLWithPath: "~/Documents/sample.fcpxml")  // Create a new URL object that points to the FCPXML file's path
+<pre class="highlight plaintext"><code>// Change the path below to your FCPXML file's path
+let fileURL = URL(fileURLWithPath: "/Users/[username]/Documents/sample.fcpxml")  // Create a new URL object that points to the FCPXML file's path.
+
+do {
+    try fileURL.checkResourceIsReachable()
+} catch {
+    print("The file cannot be found at the given path.")
+    return
+}
+
 let fcpxmlDoc: XMLDocument  // Declare the fcpxmlDoc constant as an XMLDocument object
 
 do {
@@ -135,6 +148,7 @@ dump(eventNames)  // Neatly display all of the event names
 <a href='#create-and-add-a-new-event' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='create-and-add-a-new-event'>Create and Add a New Event</h3>
 <pre class="highlight plaintext"><code>let newEvent = XMLElement().fcpxEvent(name: "My New Event")  // Create a new empty event
 fcpxmlDoc.add(event: newEvent)  // Add the new event to the FCPXML document
+dump(fcpxmlDoc.fcpxEventNames) // Neatly display all of the event names
 </code></pre>
 <a href='#get-clips-that-match-a-resource-id-and-delete-them' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='get-clips-that-match-a-resource-id-and-delete-them'>Get Clips That Match a Resource ID and Delete Them</h3>
 <pre class="highlight plaintext"><code>let firstEvent = fcpxmlDoc.fcpxEvents[0]  // Get the first event in the FCPXML document
@@ -163,6 +177,15 @@ if eventClips.count &gt; 0 {  // Make sure there's at least one clip in the even
     print(timeDisplay) 
 }
 </code></pre>
+<a href='#save-the-fcpxml-file' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='save-the-fcpxml-file'>Save the FCPXML File</h3>
+<pre class="highlight plaintext"><code>do {
+    // Change the path below to your new FCPXML file's path
+    try fcpxmlDoc.fcpxmlString.write(toFile: "/Users/[username]/Documents/sample-output.fcpxml", atomically: false, encoding: String.Encoding.utf8)
+    print("Wrote FCPXML file.")
+} catch {
+    print("Error writing to file.")
+}
+</code></pre>
 <a href='#authors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='authors'>Authors</h2>
 
 <p>Reuel Kim</p>
@@ -170,7 +193,7 @@ if eventClips.count &gt; 0 {  // Make sure there's at least one clip in the even
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-03-15)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
