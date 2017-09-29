@@ -1363,6 +1363,32 @@ extension XMLElement {
 		}
 	}
 	
+	/// If this is a project element, the clips contained within the project. Returns an empty array if there are no clips or if this is not a valid project element.
+	public var fcpxProjectClips: [XMLElement] {
+		get {
+			if self.isFCPXProject == true {
+				
+				guard let spine = self.fcpxProjectSpine else {
+					return []
+				}
+				
+				guard let children = spine.children else {
+					return []
+				}
+				
+				var clips: [XMLElement] = []
+				for child in children {
+					if child.kind == XMLNode.Kind.element {
+						clips.append(child as! XMLElement)
+					}
+				}
+				return clips
+			} else {
+				return []
+			}
+		}
+	}
+	
 	
 	/// If this is an event item, the event that contains it. Returns nil if it is not an event item.
 	public var fcpxParentEvent: XMLElement? {
