@@ -75,7 +75,7 @@ extension XMLElement {
 	}
 	
 	
-	// MARK: - Creating FCPXML XMLElement objects
+	// MARK: - Creating FCPXML XMLElement Objects
 	
 	
 	/// Creates a new event FCPXML XMLElement object.
@@ -380,7 +380,7 @@ extension XMLElement {
 	
 	
 	
-	// MARK: - Properties for attribute nodes within element tags
+	// MARK: - Properties for Attribute Nodes Within Element Tags
 	public var fcpxType: FCPXMLElementType {
 		get {
 			guard let elementName = self.name else {
@@ -1255,20 +1255,7 @@ extension XMLElement {
 	}
 	
 	
-	// MARK: - Other element properties that are beyond the element itself
-	
-	/// The FCPXML document as a properly formatted string.
-	public var fcpxmlString: String {
-		let xmlDocument = XMLDocument(rootElement: self.copy() as! XMLElement)
-		let formattedData = xmlDocument.xmlData(withOptions: 131076)
-		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
-		
-		guard formattedString != nil else {
-			return ""
-		}
-		
-		return formattedString! as String
-	}
+	// MARK: - Element Identification
 	
 	/// True if this XMLElement is an event.
 	public var isFCPXEvent: Bool {
@@ -1315,21 +1302,13 @@ extension XMLElement {
 		}
 	}
 	
-	/// True if this XMLElement is a project in an event.
-	public var isFCPXProject: Bool {
-		get {
-			if self.name == "project" {
-				return true
-			} else {
-				return false
-			}
-		}
-	}
 	
-	/// If this is a project element, its sequence element. Returns nil if there is no sequence element.
+	// MARK: - Retrieving Related Elements
+	
+	/// If this is a project element, this returns its sequence element. Returns nil if there is no sequence element or if this is not a project element.
 	public var fcpxProjectSequence: XMLElement? {
 		get {
-			if self.isFCPXProject == true {
+			if self.fcpxType == .project {
 				let sequenceElements = self.elements(forName: "sequence")
 				
 				guard sequenceElements.count > 0 else {
@@ -1343,10 +1322,10 @@ extension XMLElement {
 		}
 	}
 	
-	/// If this is a project element, the spine of the primary storyline. Returns nil if there is no spine.
+	/// If this is a project element, this returns the spine of the primary storyline. Returns nil if there is no spine or if this is not a project element.
 	public var fcpxProjectSpine: XMLElement? {
 		get {
-			if self.isFCPXProject == true {
+			if self.fcpxType == .project {
 				guard let sequence = self.fcpxProjectSequence else {
 					return nil
 				}
@@ -1363,10 +1342,10 @@ extension XMLElement {
 		}
 	}
 	
-	/// If this is a project element, the clips contained within the project. Returns an empty array if there are no clips or if this is not a valid project element.
+	/// If this is a project element, this returns the clips contained within the project. Returns an empty array if there are no clips or if this is not a valid project element.
 	public var fcpxProjectClips: [XMLElement] {
 		get {
-			if self.isFCPXProject == true {
+			if self.fcpxType == .project {
 				
 				guard let spine = self.fcpxProjectSpine else {
 					return []
@@ -1389,6 +1368,89 @@ extension XMLElement {
 		}
 	}
 	
+	/// If this is a compound clip or compound resource element, this returns its resource's sequence element. Returns nil if there is no sequence element or if this is not a compound clip or resource element.
+	public var fcpxCompoundResourceSequence: XMLElement? {
+		let resource: XMLElement
+		
+		switch self.fcpxType {
+		case .compoundClip:  // If this is a compound clip in a project timeline
+			guard self.fcpxResource != nil else {
+				return nil
+			}
+			resource = self.fcpxResource!
+			
+		case .compoundResource:  // If this is the resource of a compound clip
+			resource = self
+			
+		default:
+			return nil
+		}
+		
+		let sequenceElements = resource.elements(forName: "sequence")
+		
+		guard sequenceElements.count > 0 else {
+			return nil
+		}
+		
+		return sequenceElements[0]
+	}
+	
+	/// If this is a compound clip or compound resource element, this returns the spine of the primary storyline. Returns nil if there is no spine or if this is not a compound clip or resource element.
+	public var fcpxCompoundResourceSpine: XMLElement? {
+		let resource: XMLElement
+		
+		switch self.fcpxType {
+		case .compoundClip:  // If this is a compound clip in a project timeline
+			guard self.fcpxResource != nil else {
+				return nil
+			}
+			resource = self.fcpxResource!
+			
+		case .compoundResource:  // If this is the resource of a compound clip
+			resource = self
+			
+		default:
+			return nil
+		}
+		
+		let sequenceElements = resource.elements(forName: "sequence")
+		
+		guard sequenceElements.count > 0 else {
+			return nil
+		}
+		
+		let spineElements = sequenceElements[0].elements(forName: "spine")
+		
+		guard spineElements.count > 0 else {
+			return nil
+		}
+		
+		return spineElements[0]
+	}
+	
+	
+	/// If this is a compound clip or compound resource element, this returns the clips contained within the compound clip's primary storyline. Returns an empty array if there are no clips or if this is not a valid compound clip or resource element.
+	public var fcpxCompoundClips: [XMLElement] {
+		get {
+			
+			guard let spine = self.fcpxCompoundResourceSpine else {
+				return []
+			}
+			
+			guard let children = spine.children else {
+				return []
+			}
+			
+			var clips: [XMLElement] = []
+			for child in children {
+				if child.kind == XMLNode.Kind.element {
+					clips.append(child as! XMLElement)
+				}
+			}
+			return clips
+			
+		}
+	}
 	
 	/// If this is an event item, the event that contains it. Returns nil if it is not an event item.
 	public var fcpxParentEvent: XMLElement? {
@@ -1565,7 +1627,7 @@ extension XMLElement {
 
 	}
 	
-	// MARK: - Methods for events
+	// MARK: - Methods for Events
 	
 	/// Returns all items contained within this event. If this is not an event, the property will be nil. If the event is empty, the property will be an empty array.
 	public var eventItems: [XMLElement]? {
@@ -1989,7 +2051,7 @@ extension XMLElement {
 		}
 	}
 
-	// MARK: - Methods for event clips
+	// MARK: - Methods for Event Clips
 	
 	/// Adds an annotation XMLElement to this item, maintaining the proper order of the DTD. Conforms to FCPXML DTD v1.6.
 	///
@@ -2043,7 +2105,7 @@ extension XMLElement {
 	}
 	
 	
-	// MARK: - Retrieving format information
+	// MARK: - Retrieving Format Information
 	
 	/// Returns an element's associated format name, ID, frame duration, and frame size.
 	///
@@ -2154,6 +2216,19 @@ extension XMLElement {
 	
 	
 	// MARK: - Miscellaneous
+	
+	/// The FCPXML document as a properly formatted string.
+	public var fcpxmlString: String {
+		let xmlDocument = XMLDocument(rootElement: self.copy() as! XMLElement)
+		let formattedData = xmlDocument.xmlData(withOptions: 131076)
+		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
+		
+		guard formattedString != nil else {
+			return ""
+		}
+		
+		return formattedString! as String
+	}
 	
 	
 	/**
@@ -2404,7 +2479,7 @@ extension XMLElement {
 	
 	
 	
-	// MARK: - XMLElement helper properties and functions
+	// MARK: - XMLElement Helper Properties and Functions
 	public func getElementAttribute(_ name: String) -> String? {
 		
 		if let elementAttribute = self.attribute(forName: name) {
@@ -2497,7 +2572,7 @@ extension XMLElement {
 	}
 
 	
-	// MARK: - Timing methods
+	// MARK: - Timing Methods
 	
 	// Return true if the given time is within the in and out points of the clip
 	public func clipRangeIncludes(_ time: CMTime) -> Bool {
