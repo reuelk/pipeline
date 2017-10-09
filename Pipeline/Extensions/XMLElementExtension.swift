@@ -1302,6 +1302,26 @@ extension XMLElement {
 		}
 	}
 	
+	/// True if this XMLElement is an element that can appear on a storyline.
+	public var isFCPXStoryElement: Bool {
+		get {
+			if self.fcpxType == .assetClip ||
+				self.fcpxType == .clip ||
+				self.fcpxType == .multicamClip ||
+				self.fcpxType == .compoundClip ||
+				self.fcpxType == .synchronizedClip ||
+				self.fcpxType == .gap ||
+				self.fcpxType == .transition ||
+				self.fcpxType == .title ||
+				self.fcpxType == .audition
+			{
+				return true
+			} else {
+				return false
+			}
+		}
+	}
+	
 	
 	// MARK: - Retrieving Related Elements
 	
@@ -1443,7 +1463,7 @@ extension XMLElement {
 				if child.kind == XMLNode.Kind.element {
 					let childElement = child as! XMLElement
 					
-					if childElement.isFCPXEventItem == true {
+					if childElement.isFCPXStoryElement == true {
 						clips.append(childElement)
 					}
 				}
