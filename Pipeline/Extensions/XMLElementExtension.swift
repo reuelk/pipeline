@@ -2572,9 +2572,12 @@ extension XMLElement {
 	}
 
 	
-	// MARK: - Timing Methods
+	// MARK: - Comparing Timing Between Clips
 	
-	// Return true if the given time is within the in and out points of the clip
+	/// Tests if this clip's in and out points include the given time value.
+	///
+	/// - Parameter time: A CMTime value
+	/// - Returns: True if the time value is between the in and out points of the clip
 	public func clipRangeIncludes(_ time: CMTime) -> Bool {
 		
 		guard let clipInPoint = self.fcpxParentInPoint else {
@@ -2594,6 +2597,12 @@ extension XMLElement {
 		}
 	}
 	
+	/// Tests if this clip's timing falls within the given in and out points.
+	///
+	/// - Parameters:
+	///   - inPoint: The in point to test against.
+	///   - outPoint: The out point to test against.
+	/// - Returns: True if the clip's timing falls within the inPoint and outPoint values.
 	public func clipRangeIsEnclosedBetween(_ inPoint: CMTime, outPoint: CMTime) -> Bool {
 		guard let clipInPoint = self.fcpxParentInPoint else {
 			return false
@@ -2611,20 +2620,21 @@ extension XMLElement {
 	}
 	
 	
-	// Reference for how a clip would overlap.
-	//
-	//     [  referring ]         [ referring ]          [  referring  ]
-	// [ title ]   [ title ]    [      title    ]           [ title ]
-	// (t,f,t)      (t,t,f)   (true, false, false)     (true, true, true)
 	
-	/**
-	Returns whether the clip overlaps with a given time range specified by an in and out point.
 	
-	- parameter inPoint: The in point as a CMTime value.
-	- parameter outPoint: The out point as a CMTime value.
-	
-	- returns: A tuple containing three boolean values. "Overlaps" indicates whether the clip overlaps at all with the in and out point range. "withClipInPoint" indicates whether the element's in point overlaps with the range. "withClipOutPoint" indicates whether the element's out point overlaps with the range.
-	*/
+
+	/// Returns whether the clip overlaps with a given time range specified by an in and out point.
+	///
+	/// - Parameters:
+	///   - inPoint: The in point as a CMTime value.
+	///   - outPoint: The out point as a CMTime value.
+	/// - Returns: A tuple containing three boolean values. "Overlaps" indicates whether the clip overlaps at all with the in and out point range. "withClipInPoint" indicates whether the element's in point overlaps with the range. "withClipOutPoint" indicates whether the element's out point overlaps with the range.
+	///
+	/// - Example:\
+	/// The following is a reference for how a clip could overlap. Below each case are resulting values for the "overlaps", "withClipInPoint", and "withClipOutPoint" tuple values.\
+	/// `[ clip1 ]         [ clip2 ]    [       clip       ]             [   clip   ]`\
+	/// `    [  comparisonClip ]         [ comparisonClip ]          [  comparisonClip  ]`\
+	/// `(t,f,t)            (t,t,f)     (true, false, false)          (true, true, true)`\
 	public func clipRangeOverlapsWith(_ inPoint: CMTime, outPoint: CMTime) -> (overlaps: Bool, withClipInPoint: Bool, withClipOutPoint: Bool) {
 		
 		var overlaps: Bool = false
