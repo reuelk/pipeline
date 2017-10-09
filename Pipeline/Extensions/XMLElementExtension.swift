@@ -1347,21 +1347,12 @@ extension XMLElement {
 		get {
 			if self.fcpxType == .project {
 				
-				guard let spine = self.fcpxProjectSpine else {
+				guard let projectSequence = self.fcpxProjectSequence else {
 					return []
 				}
 				
-				guard let children = spine.children else {
-					return []
-				}
+				return projectSequence.fcpxSequenceClips
 				
-				var clips: [XMLElement] = []
-				for child in children {
-					if child.kind == XMLNode.Kind.element {
-						clips.append(child as! XMLElement)
-					}
-				}
-				return clips
 			} else {
 				return []
 			}
@@ -1429,15 +1420,21 @@ extension XMLElement {
 	}
 	
 	
-	/// If this is a compound clip or compound resource element, this returns the clips contained within the compound clip's primary storyline. Returns an empty array if there are no clips or if this is not a valid compound clip or resource element.
-	public var fcpxCompoundClips: [XMLElement] {
+	/// If this is a sequence element, this returns the clips contained within the primary storyline. Returns an empty array if there are no clips or if this is not a valid sequence element.
+	public var fcpxSequenceClips: [XMLElement] {
 		get {
 			
-			guard let spine = self.fcpxCompoundResourceSpine else {
+			guard self.name == "sequence" else {
 				return []
 			}
 			
-			guard let children = spine.children else {
+			let spineElements = self.elements(forName: "spine")
+			
+			guard spineElements.count > 0 else {
+				return []
+			}
+			
+			guard let children = spineElements[0].children else {
 				return []
 			}
 			
