@@ -1441,7 +1441,11 @@ extension XMLElement {
 			var clips: [XMLElement] = []
 			for child in children {
 				if child.kind == XMLNode.Kind.element {
-					clips.append(child as! XMLElement)
+					let childElement = child as! XMLElement
+					
+					if childElement.isFCPXEventItem == true {
+						clips.append(childElement)
+					}
 				}
 			}
 			return clips
