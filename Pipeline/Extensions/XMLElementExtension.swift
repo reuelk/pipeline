@@ -1307,6 +1307,8 @@ extension XMLElement {
 		get {
 			if self.fcpxType == .assetClip ||
 				self.fcpxType == .clip ||
+				self.fcpxType == .video ||
+				self.fcpxType == .audio ||
 				self.fcpxType == .multicamClip ||
 				self.fcpxType == .compoundClip ||
 				self.fcpxType == .synchronizedClip ||
@@ -2653,8 +2655,8 @@ extension XMLElement {
 	///
 	/// - Example:\
 	/// The following is a reference for how a clip could overlap. Below each case are resulting values for the "overlaps", "withClipInPoint", and "withClipOutPoint" tuple values.\
-	/// `[ clip1 ]         [ clip2 ]    [       clip       ]             [   clip   ]`\
 	/// `    [  comparisonClip ]         [ comparisonClip ]          [  comparisonClip  ]`\
+	/// `[ clip1 ]         [ clip2 ]    [       clip       ]             [   clip   ]`\
 	/// `(t,f,t)            (t,t,f)     (true, false, false)          (true, true, true)`\
 	public func clipRangeOverlapsWith(_ inPoint: CMTime, outPoint: CMTime) -> (overlaps: Bool, withClipInPoint: Bool, withClipOutPoint: Bool) {
 		
@@ -2728,6 +2730,7 @@ extension XMLElement {
 			children = self.elements(forName: elementType!.rawValue)
 		}
 		
+		// FIXME: Something isn't working here and isn't identifying the clips. Maybe it's the timing values?
 		for element in children {
 			
 			let overlaps = element.clipRangeOverlapsWith(inPoint, outPoint: outPoint)
