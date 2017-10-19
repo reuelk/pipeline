@@ -2571,6 +2571,22 @@ extension XMLElement {
 		
 		return (nextNode as! XMLElement)
 	}
+    
+    
+    /// Returns the first sub-element with the given element name.
+    ///
+    /// - Parameter named: A string of the element name to match.
+    /// - Returns: An XMLElement object or nil if there was no match.
+    public func subElement(named name: String) -> XMLElement? {
+        
+        let subElements = self.elements(forName: name)
+        
+        guard subElements.count > 0 else {
+            return nil
+        }
+
+        return subElements[0]
+    }
 	
 	
 	/// Returns the parent XMLElement.
