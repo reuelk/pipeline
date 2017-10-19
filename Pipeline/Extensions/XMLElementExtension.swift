@@ -74,6 +74,17 @@ extension XMLElement {
 		case none = "none"
 	}
 	
+	/// The location of a clip within its sequence or timeline.
+	///
+	/// - primaryStoryline: The clip exists on the primary storyline.
+	/// - attachedClip: The clip is attached to another clip that is on the primary storyline.
+	/// - secondaryStoryline: The clip is embedded in a secondary storyline.
+	public enum ClipLocation {
+		case primaryStoryline
+		case attachedClip
+		case secondaryStoryline
+	}
+	
 	
 	// MARK: - Creating FCPXML XMLElement Objects
 	
