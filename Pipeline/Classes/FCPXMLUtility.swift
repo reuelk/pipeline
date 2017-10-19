@@ -188,6 +188,56 @@ public struct FCPXMLUtility {
 		return counterValue
 		
 	}
+    
+    
+    /**
+     Converts a sequence counter value to the sequence's timecode.
+     
+     - parameter counterValue: The counter value to convert.
+     - parameter project: The sequence to convert against, as an NSXMLElement.
+     
+     - returns: An optional CMTime value of the timecode value.
+     */
+    public func sequenceTimecode(fromCounterValue counterValue: CMTime, inSequence sequence: XMLElement) -> CMTime? {
+        
+        guard sequence.fcpxType == .sequence else {
+            return nil
+        }
+        
+        guard let sequenceTCStart = sequence.fcpxTCStart else {
+            return nil
+        }
+        
+        let timecodeValue = CMTimeAdd(sequenceTCStart, counterValue)
+        
+        return timecodeValue
+    }
+    
+    
+    /**
+     Converts a sequence timecode value to the sequence counter time.
+     
+     - parameter timecodeValue: The timecode value to convert.
+     - parameter sequence: The sequence to convert against, as an NSXMLElement.
+     
+     - returns: An optional CMTime value of the counter time.
+     */
+    public func sequenceCounterTime(fromTimecodeValue timecodeValue: CMTime, inSequence sequence: XMLElement) -> CMTime? {
+        
+        // Convert the timecode values to sequence counter time values
+        guard sequence.fcpxType == .sequence else {
+            return nil
+        }
+        
+        guard let sequenceTCStart = sequence.fcpxTCStart else {
+            return nil
+        }
+        
+        let counterValue = CMTimeSubtract(timecodeValue, sequenceTCStart)
+        
+        return counterValue
+        
+    }
 	
 	/**
 	Converts a local time value to a clip's parent time value. In FCPXML, this would be converting a time value that is in the start value timescale to the offset value timescale.
