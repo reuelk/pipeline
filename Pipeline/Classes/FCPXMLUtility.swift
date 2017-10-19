@@ -150,12 +150,10 @@ public struct FCPXMLUtility {
 	*/
 	public func projectTimecode(fromCounterValue counterValue: CMTime, inProject project: XMLElement) -> CMTime? {
 		
-		guard let projectSequenceNode = project.next else {
-			return nil
-		}
-		
-		let projectSequence = projectSequenceNode as! XMLElement
-		
+        guard let projectSequence = project.fcpxProjectSequence else {
+            return nil
+        }
+        
 		guard let projectSequenceTCStart = projectSequence.fcpxTCStart else {
 			return nil
 		}
@@ -176,12 +174,10 @@ public struct FCPXMLUtility {
 	*/
 	public func projectCounterTime(fromTimecodeValue timecodeValue: CMTime, inProject project: XMLElement) -> CMTime? {
 		
-		// Convert the timecode values to sequence counter time values
-		guard let projectSequenceNode = project.next else {
-			return nil
-		}
-		
-		let projectSequence = projectSequenceNode as! XMLElement
+        // Convert the timecode values to sequence counter time values
+        guard let projectSequence = project.fcpxProjectSequence else {
+            return nil
+        }
 		
 		guard let projectSequenceTCStart = projectSequence.fcpxTCStart else {
 			return nil
