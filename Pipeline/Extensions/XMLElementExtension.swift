@@ -74,12 +74,12 @@ extension XMLElement {
 		case none = "none"
 	}
 	
-	/// The location of a clip within its sequence or timeline.
+	/// The location of a story element within its sequence or timeline.
 	///
-	/// - primaryStoryline: The clip exists on the primary storyline.
-	/// - attachedClip: The clip is attached to another clip that is on the primary storyline.
-	/// - secondaryStoryline: The clip is embedded in a secondary storyline.
-	public enum ClipLocation {
+	/// - primaryStoryline: The story element exists on the primary storyline.
+	/// - attachedClip: The story element is attached to another clip that is on the primary storyline.
+	/// - secondaryStoryline: The story element is embedded in a secondary storyline.
+	public enum StoryElementLocation {
 		case primaryStoryline
 		case attachedClip
 		case secondaryStoryline
@@ -1331,6 +1331,42 @@ extension XMLElement {
 				return true
 			} else {
 				return false
+			}
+		}
+	}
+	
+	/// If this XMLElement is a story element or clip in a sequence, this property returns its location in the sequence.
+	public var fcpxStoryElementLocation: StoryElementLocation? {
+		get {
+			
+			guard self.isFCPXStoryElement == true else {
+				return nil
+			}
+			
+			guard let parent = self.parentElement else {
+				return nil
+			}
+			
+			if parent.fcpxType == .spine {
+				
+				guard let superParent = parent.parentElement else {
+					return nil
+				}
+				
+				if superParent.fcpxType == .sequence {
+					// The clip is on a primary storyline
+					return StoryElementLocation.primaryStoryline
+				} else {
+					// The clip is on a secondary storyline
+					return StoryElementLocation.secondaryStoryline
+				}
+			} else if parent.fcpxType == .event {
+				// The element is not a clip in a sequence.
+				return nil
+				
+			} else {
+				// The clip is attached to another clip
+				return StoryElementLocation.attachedClip
 			}
 		}
 	}
