@@ -20,7 +20,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	
 	/// The FCPXML document as a properly formatted string.
 	public var fcpxmlString: String {
-		let formattedData = self.xmlData(withOptions: 131076)
+		let formattedData = self.xmlData(options: [XMLNode.Options.nodePrettyPrint, XMLNode.Options.nodeCompactEmptyElement])
 		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
 		return formattedString as! String
 	}
@@ -364,7 +364,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	public convenience init(contentsOfFCPXML URL: Foundation.URL) throws {
 		
 		do {
-			try self.init(contentsOf: URL, options: 0)
+			try self.init(contentsOf: URL, options: [XMLNode.Options.nodePrettyPrint, XMLNode.Options.nodeCompactEmptyElement])
 		}
 	}
 	
@@ -758,7 +758,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		}
 		
 		do {
-			self.dtd? = try XMLDTD(contentsOf: unwrappedURL, options: 0)
+			self.dtd? = try XMLDTD(contentsOf: unwrappedURL, options: [XMLNode.Options.nodePrettyPrint, XMLNode.Options.nodeCompactEmptyElement])
 		} catch {
 			print("Error reading the DTD file.")
 			throw error

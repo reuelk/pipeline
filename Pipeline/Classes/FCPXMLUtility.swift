@@ -420,7 +420,7 @@ public struct FCPXMLUtility {
 		
 		do {
 			
-			let newXMLDocument = try XMLDocument(xmlString: newDocument, options: 0)
+			let newXMLDocument = try XMLDocument(xmlString: newDocument, options: [XMLNode.Options.nodePrettyPrint, XMLNode.Options.nodeCompactEmptyElement])
 			
 			return newXMLDocument
 			
