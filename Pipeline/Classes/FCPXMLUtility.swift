@@ -141,7 +141,7 @@ public struct FCPXMLUtility {
 	
 	
 	/**
-	Converts a project counter value to the project's timecode.
+	DEPRECATED. Converts a project counter value to the project's timecode.
 	
 	- parameter counterValue: The counter value to convert.
 	- parameter project: The project to convert against, as an NSXMLElement.
@@ -165,7 +165,7 @@ public struct FCPXMLUtility {
 	
 	
 	/**
-	Converts a project timecode value to the project's counter time.
+	DEPRECATED. Converts a project timecode value to the project's counter time.
 	
 	- parameter timecodeValue: The timecode value to convert.
 	- parameter project: The project to convert against, as an NSXMLElement.
