@@ -73,7 +73,7 @@ extension CMTime {
 	///
 	/// - Parameter frameDuration: The duration of a single frame as a CMTime value.
 	/// - Returns: A tuple with hours, minutes, seconds, and frames as Int and String values.
-	public func timeAsTimecode(usingFrameDuration frameDuration: CMTime, dropFrame: Bool) -> (hours: Int, minutes: Int, seconds: Int, frames: Int, hoursString: String, minutesString: String, secondsString: String, framesString: String, timecodeString: String) {
+	public func timeAsTimecode(usingFrameDuration frameDuration: CMTime, dropFrame: Bool) -> (hours: Int, minutes: Int, seconds: Int, frames: Int, hoursString: String, minutesString: String, secondsString: String, framesString: String, timecodeString: String, timecodeInSeconds: Double) {
 		
 		let framerate: Double
 		if frameDuration == CMTime(value: 1001, timescale: 24000) { // If the framerate is 23.976, make the framerate 24 per SMPTE
@@ -122,6 +122,9 @@ extension CMTime {
 			counter = hoursString + ":" + minutesString + ":" + secondsString + ":" + framesString
 		}
 		
-		return (Int(hours), Int(minutes), Int(seconds), Int(frames), hoursString, minutesString, secondsString, framesString, counter)
+		let timecodeInSeconds = (hours * 60 * 60) + (minutes * 60) + seconds + (frames * frameDuration.seconds)
+		
+		return (Int(hours), Int(minutes), Int(seconds), Int(frames), hoursString, minutesString, secondsString, framesString, counter, timecodeInSeconds)
 	}
+	
 }
