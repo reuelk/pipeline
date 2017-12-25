@@ -2212,7 +2212,7 @@ extension XMLElement {
 	private func formatID(forElement element: XMLElement) -> String? {
 		
 		switch element.fcpxType {
-		case .assetResource, .assetClip, .clip, .synchronizedClip:  // These elements will have the format reference ID in the top level element.
+		case .assetResource, .assetClip, .clip, .synchronizedClip, .sequence:  // These elements will have the format reference ID in the top level element.
 			
 			return element.fcpxFormatRef
 			
