@@ -1176,34 +1176,46 @@ extension XMLElement {
 	/// The start time of this element on the project timeline.
 	public var fcpxTimelineInPoint: CMTime? {
 		get {
-			print("Getting timeline in point...")
+			
 			// If this element does not have an offset, it is not a clip element on the project timeline
 			guard self.fcpxOffset != nil else {
-				print("No offset. Returning nil.")
+				
 				return nil
 			}
 			
 			guard let parentElement = self.parentElement else {
-				print("No parent element. Returning nil.")
+				
 				return nil
 			}
 			
 			if parentElement.name == "spine" && parentElement.fcpxOffset == nil {  // This is a clip on the primary storyline.
-				print("This is a clip on the primary storyline.")
+				
 				return self.fcpxOffset
 				
 			} else if parentElement.name == "spine" {  // This is a clip on a secondary storyline.
-				print("This is a clip on a secondary storyline.")
-				let spineIn = self.fcpxOffset!
+				
+				let clipIn = self.fcpxOffset!
 				
 				guard let spineOffset = parentElement.fcpxOffset else {
 					return nil
 				}
 				
-				return CMTimeAdd(spineIn, spineOffset)
+				let secondaryStorylineIn = CMTimeAdd(clipIn, spineOffset)
+				
+				guard let primaryStorylineClip = parentElement.parentElement else {
+					return nil
+				}
+				
+				let inDifference = CMTimeSubtract(secondaryStorylineIn, primaryStorylineClip.fcpxLocalInPoint)
+				
+				guard let primaryStorylineClipIn = primaryStorylineClip.fcpxParentInPoint else {
+					return nil
+				}
+				
+				return CMTimeAdd(primaryStorylineClipIn, inDifference)
 				
 			} else {  // This is a connected clip.
-				print("This is a connected clip.")
+				
 				let clipIn = self.fcpxOffset!
 				
 				let startDifference = CMTimeSubtract(clipIn, parentElement.fcpxLocalInPoint)
@@ -1237,7 +1249,7 @@ extension XMLElement {
 				
 			} else if parentElement.name == "spine" {  // This is a clip on a secondary storyline.
 				
-				guard let spineOut = self.fcpxParentOutPoint else {
+				guard let clipOut = self.fcpxParentOutPoint else {
 					return nil
 				}
 				
@@ -1245,7 +1257,23 @@ extension XMLElement {
 					return nil
 				}
 				
-				return CMTimeAdd(spineOut, spineOffset)
+				let secondaryStorylineOut = CMTimeAdd(clipOut, spineOffset)
+				
+				guard let primaryStorylineClip = parentElement.parentElement else {
+					return nil
+				}
+				
+				guard let primaryStorylineClipLocalOut = primaryStorylineClip.fcpxLocalOutPoint else {
+					return nil
+				}
+				
+				let outDifference = CMTimeSubtract(secondaryStorylineOut, primaryStorylineClipLocalOut)
+				
+				guard let primaryStorylineClipOut = primaryStorylineClip.fcpxParentOutPoint else {
+					return nil
+				}
+				
+				return CMTimeAdd(primaryStorylineClipOut, outDifference)
 				
 			} else {  // This is a connected clip.
 				
