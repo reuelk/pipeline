@@ -21,11 +21,11 @@ extension XMLElement {
 		var description: String {
 			switch self {
 			case .notAnEvent(let element):
-				return "The \"\(element.name)\" element is not an event."
+				return "The \"\(element.name ?? "unnamed")\" element is not an event."
 			case .notAnAnnotatableItem(let element):
-				return "The \"\(element.name)\" element cannot be annotated."
+				return "The \"\(element.name ?? "unnamed")\" element cannot be annotated."
 			case .notAnAnnotation(let element):
-				return "The \"\(element.name)\" element is not an annotation."
+				return "The \"\(element.name ?? "unnamed")\" element is not an annotation."
 			default:
 				return "An error has occurred with an FCPXML element."
 			}
@@ -1851,7 +1851,7 @@ extension XMLElement {
 				if item.fcpxRef == resource.fcpxID { // Found regular clip
 					matchingItems.append(item)
 					
-					print("Matching asset clip found: \(item.fcpxName)")
+					print("Matching asset clip found: \(item.fcpxName ?? "unnamed element")")
 				}
 				
 			case .clip:  // Check for matching regular clips
@@ -1864,7 +1864,7 @@ extension XMLElement {
 					if videoElement.fcpxRef == resource.fcpxID {
 						matchingItems.append(item)
 						
-						print("Matching video clip found: \(item.fcpxName)")
+						print("Matching video clip found: \(item.fcpxName ?? "unnamed element")")
 					}
 					
 				} else {
@@ -1876,7 +1876,7 @@ extension XMLElement {
 						if audioElement.fcpxRef == resource.fcpxID {
 							matchingItems.append(item)
 							
-							print("Matching audio clip found: \(item.fcpxName)")
+							print("Matching audio clip found: \(item.fcpxName ?? "unnamed element")")
 						}
 						
 					} else {
@@ -1899,7 +1899,7 @@ extension XMLElement {
 					if itemChildElement.fcpxType == .assetClip || itemChildElement.fcpxType == .clip { // Normal synchronized clip
 						
 						if itemChildElement.fcpxRef == resource.fcpxID {  // Match found on a primary storyline clip
-							print("Matching synchronized clip found: \(item.attribute(forName: "name")?.stringValue)")
+							print("Matching synchronized clip found: \(item.fcpxName ?? "unnamed element")")
 							
 							matchingItems.append(item)
 							
@@ -1914,7 +1914,7 @@ extension XMLElement {
 								
 								if syncedClipChildElement.fcpxRef == resource.fcpxID {
 									
-									print("Matching synchronized clip found: \(item.attribute(forName: "name")?.stringValue)")
+									print("Matching synchronized clip found: \(item.fcpxName ?? "unnamed element")")
 									matchingItems.append(item)
 								}
 							}
@@ -1938,7 +1938,7 @@ extension XMLElement {
 								
 								if spineClipChildElement.fcpxRef == resource.fcpxID {
 									
-									print("Matching synchronized clip found: \(item.attribute(forName: "name")?.stringValue)")
+									print("Matching synchronized clip found: \(item.fcpxName ?? "unnamed element")")
 									matchingItems.append(item)
 								}
 							}
@@ -1952,7 +1952,7 @@ extension XMLElement {
 				
 				if item.fcpxRef == resource.fcpxID { // The asset ID matches this multicam so add it immediately to the matchingItems array.
 					
-					print("Matching multicam found: \(item.attribute(forName: "name")?.stringValue)")
+					print("Matching multicam found: \(item.fcpxName ?? "unnamed element")")
 					matchingItems.append(item)
 					
 					continue
@@ -1994,7 +1994,7 @@ extension XMLElement {
 								
 								if multicamAngleChildElement.fcpxRef == resource.fcpxID {
 									
-									print("Matching multicam found: \(item.attribute(forName: "name")?.stringValue)")
+									print("Matching multicam found: \(item.fcpxName ?? "unnamed element")")
 									matchingItems.append(item)
 									break
 								}
@@ -2031,7 +2031,7 @@ extension XMLElement {
 							let childClipElement = childClip as! XMLElement
 							
 							if childClipElement.fcpxRef == resource.fcpxID {  // Check primary storyline clip
-								print("Matching compound clip found: \(item.attribute(forName: "name")?.stringValue)")
+								print("Matching compound clip found: \(item.fcpxName ?? "unnamed element")")
 								matchingItems.append(item)
 								
 							} else {  // Check clips attached to this primary storyline clip
@@ -2044,7 +2044,7 @@ extension XMLElement {
 									let attachedClipElement = attachedClip as! XMLElement
 									
 									if attachedClipElement.fcpxRef == resource.fcpxID {
-										print("Matching compound clip found: \(item.attribute(forName: "name")?.stringValue)")
+										print("Matching compound clip found: \(item.fcpxName ?? "unnamed element")")
 										matchingItems.append(item)
 									}
 									
@@ -2317,7 +2317,7 @@ extension XMLElement {
 	
 	/// The FCPXML document as a properly formatted string.
 	public var fcpxmlString: String {
-		let xmlDocument = XMLDocument(rootElement: self.copy() as! XMLElement)
+		let xmlDocument = XMLDocument(rootElement: self.copy() as? XMLElement)
 //		let formattedData = xmlDocument.xmlData(withOptions: 131076)
 		let formattedData = xmlDocument.xmlData(options: [XMLNode.Options.nodePrettyPrint, XMLNode.Options.nodeCompactEmptyElement])
 		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
@@ -2828,7 +2828,7 @@ extension XMLElement {
 			let overlaps = element.clipRangeOverlapsWith(inPoint, outPoint: outPoint)
 			
 			if overlaps.overlaps == true {
-				print("\(element.fcpxName) \(overlaps.withClipInPoint),\(overlaps.withClipOutPoint)")
+				print("\(element.fcpxName ?? "unnamed element") \(overlaps.withClipInPoint),\(overlaps.withClipOutPoint)")
 				
 				elementsInRange.append((XMLElement: element, overlapsInPoint: overlaps.withClipInPoint, overlapsOutPoint: overlaps.withClipOutPoint))
 				
