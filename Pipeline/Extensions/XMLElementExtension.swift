@@ -2275,7 +2275,7 @@ extension XMLElement {
 
 	
 	
-	/// Takes a format resource XMLElement and returns its ID, name, frame duration, and frame size.
+	/// Takes a format resource XMLElement and returns its ID, name, frame duration, and frame size. When the format is FFVideoFormatRateUndefined, the frameDuration will default to 1/60 second so that the CMTime value is not empty.
 	///
 	/// - Parameter element: The XMLElement of the format resource
 	/// - Returns: A tuple with formatID string, formatName string, frameDuration CMTime, and frameSize CGSize. Or returns null of the element is not a format resource.
@@ -2288,7 +2288,7 @@ extension XMLElement {
 		
 		var formatID = ""
 		var formatName = ""
-		var frameDuration = CMTime(value: 100, timescale: 6000)
+		var frameDuration = CMTime(value: 100, timescale: 6000)  // frameDuration defaults to 1/60 when the format is FFVideoFormatRateUndefined.
 		var frameSize = CGSize()
 		
 		if element.fcpxID != nil {
