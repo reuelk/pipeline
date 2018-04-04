@@ -2208,7 +2208,7 @@ extension XMLElement {
 	/// Returns an element's associated format name, ID, frame duration, and frame size.
 	///
 	/// - Returns: A tuple with a formatID string, formatName string, frameDuration CMTime, and frameSize CGSize.
-	public func formatValues() -> (formatID: String, formatName: String, frameDuration: CMTime, frameSize: CGSize)? {
+	public func formatValues() -> (formatID: String, formatName: String, frameDuration: CMTime?, frameSize: CGSize?)? {
 		
 		// Get the format's ID
 		guard let formatID = self.formatID(forElement: self) else {
@@ -2218,13 +2218,13 @@ extension XMLElement {
 		
 		// Get the format element
 		guard let formatElement = self.rootDocument?.resource(matchingID: formatID) else {
-			print("No format matching ID \(formatID)")
+			print("No format matching ID \(formatID).")
 			return nil
 		}
 		
 		// Get the format values from the element
 		guard let values = self.formatValues(fromElement: formatElement) else {
-			print("formatValues failed")
+			print("Retrieving format values failed.")
 			return nil
 		}
 		
@@ -2275,11 +2275,11 @@ extension XMLElement {
 
 	
 	
-	/// Takes a format resource XMLElement and returns its ID, name, frame duration, and frame size. When the format is FFVideoFormatRateUndefined, the frameDuration will default to 1/60 second so that the CMTime value is not empty.
+	/// Takes a format resource XMLElement and returns its ID, name, frame duration, and frame size. When the format is FFVideoFormatRateUndefined, the frameDuration will be nil.
 	///
 	/// - Parameter element: The XMLElement of the format resource
 	/// - Returns: A tuple with formatID string, formatName string, frameDuration CMTime, and frameSize CGSize. Or returns null of the element is not a format resource.
-	private func formatValues(fromElement element: XMLElement) -> (formatID: String, formatName: String, frameDuration: CMTime, frameSize: CGSize)? {
+	private func formatValues(fromElement element: XMLElement) -> (formatID: String, formatName: String, frameDuration: CMTime?, frameSize: CGSize?)? {
 		
 		guard let elementName = element.name,
 			elementName == "format" else {
@@ -2288,8 +2288,8 @@ extension XMLElement {
 		
 		var formatID = ""
 		var formatName = ""
-		var frameDuration = CMTime(value: 100, timescale: 6000)  // frameDuration defaults to 1/60 when the format is FFVideoFormatRateUndefined.
-		var frameSize = CGSize()
+		var frameDuration: CMTime? = nil
+		var frameSize: CGSize? = nil
 		
 		if element.fcpxID != nil {
 			formatID = element.fcpxID!
