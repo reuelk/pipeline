@@ -2288,7 +2288,7 @@ extension XMLElement {
 		
 		var formatID = ""
 		var formatName = ""
-		var frameDuration = CMTime()
+		var frameDuration = CMTime(value: 100, timescale: 6000)
 		var frameSize = CGSize()
 		
 		if element.fcpxID != nil {
