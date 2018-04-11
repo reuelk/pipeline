@@ -48,6 +48,7 @@ public enum FCPXMLElementType: String {
 	case sequence = "sequence"
 	case title = "title"
 	case param = "param"
+	case caption = "caption"  // FCPXML v1.8
 	
 	// MARK: Text elements
 	case text = "text"

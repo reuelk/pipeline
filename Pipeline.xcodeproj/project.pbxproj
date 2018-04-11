@@ -17,6 +17,7 @@
 		0531AB6B1E2B6BD8006F191F /* XMLDocumentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */; };
 		0567BA8A1D4334DC0039F518 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D79A1CF272B800DEE915 /* Cocoa.framework */; };
 		0567BA8B1D4334DC0039F518 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D7981CF272B100DEE915 /* CoreMedia.framework */; };
+		057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */; };
 		058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */; };
 		05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF395E1E1A3B6100319908 /* PipelineTests.swift */; };
 		05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567BA921D4334DC0039F518 /* Pipeline.framework */; };
@@ -47,6 +48,7 @@
 		0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFKmedia.fcpxml; sourceTree = "<group>"; };
 		0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDocumentExtension.swift; sourceTree = "<group>"; };
 		0567BA921D4334DC0039F518 /* Pipeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pipeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MakeSubtitlesTest.fcpxml; sourceTree = "<group>"; };
 		058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Batch-MSS-Test-1.fcpxml"; sourceTree = "<group>"; };
 		05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PCBang_FromGrace_20160202.fcpxml; sourceTree = "<group>"; };
 		05AF395C1E1A3B6100319908 /* PipelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 		05AF395D1E1A3B6100319908 /* PipelineTests */ = {
 			isa = PBXGroup;
 			children = (
+				057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */,
 				058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */,
 				7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */,
 				0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */,
@@ -256,6 +259,7 @@
 				7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */,
 				05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */,
 				058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */,
+				057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +321,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = debugging;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -344,7 +348,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = debugging;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

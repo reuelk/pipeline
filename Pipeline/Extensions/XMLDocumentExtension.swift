@@ -677,7 +677,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 				continue
 			}
 			
-			let versionNumber = String(filename.characters.dropFirst(7))
+			let versionNumber = String(filename.dropFirst(7))
 			
 			versions.append(versionNumber)
 		}
@@ -690,7 +690,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// - Throws: An error describing the reason for the XML being invalid or another error, such as not being able to read or set the associated DTD file.
 	public func validateFCPXMLAgainstLatestVersion() throws {
 		do {
-			try self.validateFCPXMLAgainst(version: "1.6")
+			try self.validateFCPXMLAgainst(version: "1.8")
 		} catch {
 			throw error
 		}
