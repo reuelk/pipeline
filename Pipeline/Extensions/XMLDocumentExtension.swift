@@ -569,11 +569,14 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	///
 	/// - Parameter resourceElement: The XMLElement of the resource to be added.
 	public func add(resourceElement: XMLElement) {
-		if self.fcpxResourceList == nil {
-			self.rootElement()?.insertChild(XMLElement(name: "resources"), at: 0)
+		if self.fcpxResourceElement == nil {
+			guard let fcpxmlElement = self.fcpxmlElement else {
+				return
+			}
+			fcpxmlElement.insertChild(XMLElement(name: "resources"), at: 0)
 		}
 		
-		self.fcpxResourceList?.addChild(resourceElement)
+		self.fcpxResourceElement?.addChild(resourceElement)
 	}
 	
 	
@@ -592,7 +595,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	///
 	/// - Parameter index: The index of the resource within the resources element.
 	public func remove(resourceAtIndex index: Int) {
-		let resource = self.fcpxResourceList?.child(at: index) as! XMLElement
+		let resource = self.fcpxResourceElement?.child(at: index) as! XMLElement
 		guard let resourceID = resource.fcpxID else {
 			return
 		}
@@ -612,13 +615,13 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 			}
 		}
 		
-		self.fcpxResourceList?.removeChild(at: index)
+		self.fcpxResourceElement?.removeChild(at: index)
 	}
 	
 	
 	/// Removes all resources from the FCPXML document.
 	public func removeAllResources() {
-		self.fcpxResourceList?.setChildren(nil)
+		self.fcpxResourceElement?.setChildren(nil)
 	}
 	
 	
@@ -626,14 +629,17 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	///
 	/// - Parameter event: The XMLElement of the event to be added.
 	public func add(event: XMLElement) {
-		if self.fcpxLibrary == nil {
-			self.rootElement()?.addChild(XMLElement(name: "library"))
+		if self.fcpxLibraryElement == nil {
+			guard let fcpxmlElement = self.fcpxmlElement else {
+				return
+			}
+			fcpxmlElement.addChild(XMLElement(name: "library"))
 		}
 		
 		if let lastEvent = self.fcpxEvents.last {
-			self.fcpxLibrary?.insertChild(event, at: lastEvent.index + 1)
+			self.fcpxLibraryElement?.insertChild(event, at: lastEvent.index + 1)
 		} else {
-			self.fcpxLibrary?.insertChild(event, at: 0)
+			self.fcpxLibraryElement?.insertChild(event, at: 0)
 		}
 	}
 	
@@ -652,14 +658,14 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	///
 	/// - Parameter index: The index of the event within the library element.
 	public func remove(eventAtIndex index: Int) {
-		self.fcpxLibrary?.removeChild(at: index)
+		self.fcpxLibraryElement?.removeChild(at: index)
 	}
 	
 	
 	/// Removes all events from the library.
 	public func removeAllEvents() {
 		for event in self.fcpxEvents {
-			self.fcpxLibrary?.removeChild(at: event.index)
+			self.fcpxLibraryElement?.removeChild(at: event.index)
 		}
 		
 	}
