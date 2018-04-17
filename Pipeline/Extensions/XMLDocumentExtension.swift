@@ -24,20 +24,39 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
 		return formattedString as! String
 	}
-
-	public var fcpxResourceList: XMLElement? {
+	
+	/// The "fcpxml" element at the root of the XMLDocument
+	public var fcpxmlElement: XMLElement? {
 		get {
-			guard let rootElement = self.rootElement(), rootElement.elements(forName: "resources").count > 0 else {
+			guard let children = self.children else {
 				return nil
 			}
-			return rootElement.elements(forName: "resources")[0]
+			
+			for child in children {
+				let childElement = child as! XMLElement
+				
+				if childElement.name == "fcpxml" {
+					return childElement
+				}
+			}
+			return nil
+		}
+	}
+
+	/// The "resource" element child of the "fcpxml" element.
+	public var fcpxResourceElement: XMLElement? {
+		get {
+			guard let fcpxmlElement = self.fcpxmlElement, fcpxmlElement.elements(forName: "resources").count > 0 else {
+				return nil
+			}
+			return fcpxmlElement.elements(forName: "resources")[0]
 		}
 	}
 	
 	/// An array of all resources in the FCPXML document.
 	public var fcpxResources: [XMLElement] {
 		get {
-			if let resourceNodes = self.fcpxResourceList?.children {
+			if let resourceNodes = self.fcpxResourceElement?.children {
 				return resourceNodes as! [XMLElement]
 			} else {
 				return []
@@ -46,22 +65,21 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	/// The library XMLElement in the FCPXML document.
-	public var fcpxLibrary: XMLElement? {
+	public var fcpxLibraryElement: XMLElement? {
 		get {
-			guard let rootElement = self.rootElement(), rootElement.elements(forName: "library").count > 0 else {
+			guard let fcpxmlElement = self.fcpxmlElement, fcpxmlElement.elements(forName: "library").count > 0 else {
 				return nil
 			}
-			return rootElement.elements(forName: "library")[0]
+			return fcpxmlElement.elements(forName: "library")[0]
 		}
 	}
 	
 	/// An array of all event elements in the FCPXML document.
 	public var fcpxEvents: [XMLElement] {
 		get {
-			guard let rootElement = self.rootElement(), rootElement.elements(forName: "library").count > 0 else {
+			guard let libraryElement = self.fcpxLibraryElement else {
 				return []
 			}
-			let libraryElement = rootElement.elements(forName: "library")[0]
 			return libraryElement.elements(forName: "event")
 		}
 	}
