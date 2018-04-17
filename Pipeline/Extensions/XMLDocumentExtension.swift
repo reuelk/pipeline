@@ -191,38 +191,35 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	// The FCPXML version number is obtained here, not during parsing. This way, the version number can be checked before parsing, which could break depending on the FCPXML version.
-	public var fcpxmlVersion: Float? {
+	public var fcpxmlVersion: String? {
 		get {
-			guard let children = self.children else {
+			
+			guard let fcpxmlElement = self.fcpxmlElement else {
 				return nil
 			}
 			
-			for child in children {
-				let childElement = child as! XMLElement
-				
-				if childElement.name == "fcpxml" {
-					guard let version = childElement.attribute(forName: "version") else {
-						return nil
-					}
-					
-					let versionNumber = Float(version.stringValue!)
-					
-					return versionNumber
-				}
+			guard let versionAttribute = fcpxmlElement.attribute(forName: "version") else {
+				return nil
 			}
 			
-			return nil
+			guard let versionNumber = versionAttribute.stringValue else {
+				return nil
+			}
+			
+			return versionNumber
+			
 		}
 		
-		set (value){
+		set {
 			
-			if value != nil {
-				let version = XMLNode.attribute(withName: "version", stringValue: String(value!))
-				self.rootElement()?.addAttribute(version as! XMLNode)
+			if newValue != nil {
+				let version = XMLNode.attribute(withName: "version", stringValue: newValue!)
+				self.fcpxmlElement?.addAttribute(version as! XMLNode)
 			} else {
-				self.rootElement()?.removeAttribute(forName: "version")
+				self.fcpxmlElement?.removeAttribute(forName: "version")
 			}
 		}
+
 	}
 	
 	/// The names of all events as a String array.
@@ -393,7 +390,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	///   - resources: Resources an array of XMLElement objects
 	///   - events: Events as an array of XMLElement objects
 	///   - fcpxmlVersion: The FCPXML version of the document to use.
-	public convenience init(resources: [XMLElement], events: [XMLElement], fcpxmlVersion: Float) {
+	public convenience init(resources: [XMLElement], events: [XMLElement], fcpxmlVersion: String) {
 		
 		self.init()
 		self.documentContentKind = XMLDocument.ContentKind.xml
@@ -405,7 +402,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		self.isStandalone = false
 		
 		self.setRootElement(XMLElement(name: "fcpxml"))
-		self.fcpxmlVersion = 1.6
+		self.fcpxmlVersion = fcpxmlVersion
 		
 		self.add(resourceElements: resources)
 		self.add(events: events)
