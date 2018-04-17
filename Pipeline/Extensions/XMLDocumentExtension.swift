@@ -693,17 +693,85 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		}
 		
 		for url in dtdURLs {
-			let filename = url.deletingPathExtension().lastPathComponent
-			guard filename.hasPrefix("FCPXML_") == true else {
+			guard url.lastPathComponent.hasPrefix("FCPXMLv") == true else {
 				continue
 			}
 			
-			let versionNumber = String(filename.dropFirst(7))
-			
-			versions.append(versionNumber)
+			versions.append(self.fcpxmlDTDVersion(fromFilename: url.lastPathComponent))
 		}
 		
 		return versions
+	}
+	
+	/// Converts a version number string to an FCPXML DTD filename.
+	///
+	/// - Parameters:
+	///   - version: The version number as a String. E.g. 1.6
+	///   - withExtension: True if the return filename should include the .dtd extension.
+	/// - Returns: The FCPXML DTD filename.
+	private func fcpxmlDTDFilename(fromVersion version: String, withExtension: Bool) -> String {
+		let versionUnderscored = version.replacingOccurrences(of: ".", with: "_")
+		var filename = "FCPXMLv" + versionUnderscored
+		if withExtension == true {
+			filename += ".dtd"
+		}
+		return filename
+	}
+	
+	/// Converts an FCPXML DTD filename to a version string.
+	///
+	/// - Parameter filename: The name of the DTD file. It can include or exclude the .dtd extension.
+	/// - Returns: The version string for that filename.
+	private func fcpxmlDTDVersion(fromFilename filename: String) -> String {
+		let filenameWithoutExtension = filename.replacingOccurrences(of: ".dtd", with: "")
+		let filenameUnderscored = filenameWithoutExtension.replacingOccurrences(of: "_", with: ".")
+		let version = filenameUnderscored.suffix(from: filenameUnderscored.index(filenameUnderscored.startIndex, offsetBy: 7))
+		return String(version)
+	}
+	
+	/// Converts a version string to an array of three Int values.
+	///
+	/// - Parameter version: The version string to convert. Can have major, minor, and patch values, each separated by a dot.
+	/// - Returns: An array of three Int values. If three values were not included in the string, the missing values will be 0.
+	public func versionArrayFrom(version: String) -> [Int] {
+		var substringArray = version.split(separator: ".")
+		if substringArray.count == 1 {
+			substringArray.append(contentsOf: ["0","0"])
+		} else if substringArray.count == 2 {
+			substringArray.append("0")
+		}
+		let array = substringArray.map{Int($0) ?? 0}
+		return array
+	}
+	
+	/// Verifies that this document's FCPXML version number is at minimum the specified version.
+	///
+	/// - Parameter minimum: A String of the minimum version. E.g. 1.7.1
+	/// - Returns: True if the document is at least the specified minimum version number.
+	public func versionIs(atMinimum minimum: String) -> Bool {
+		guard let version = self.fcpxmlVersion else {
+			return false
+		}
+		
+		let versionArray = versionArrayFrom(version: version)
+		let minimumArray = versionArrayFrom(version: minimum)
+		
+		if versionArray[0] >= minimumArray[0] {
+			
+			if versionArray[1] >= minimumArray[1] {
+				
+				if versionArray[2] >= minimumArray[2] {
+					return true
+				} else {
+					return false
+				}
+			} else {
+				return false
+			}
+		} else {
+			return false
+		}
+		
 	}
 	
 	/// Validates the XMLDocument against the DTD of the latest FCPXML version included in this framework. The XMLDocument is valid if no error is thrown.
@@ -734,23 +802,23 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		do {
 			try self.validate()
 		} catch {
-			print("The document is invalid.")
+			print("The document is invalid. It does not conform to the FCPXML v\(version) Document Type Definition.")
 			self.dtd = nil
 			throw error
 		}
 		
-		print("The document is valid.")
+		print("The document conforms to the FCPXML v\(version) Document Type Definition.")
 		self.dtd = nil
 	}
 	
 	
-	/// Sets the XMLDocument's DTD to the specified FCPXML version number. The version number must match a DTD resource included in the bundle with the filename pattern `FCPXML_Y` where Y is the version number.
+	/// Sets the XMLDocument's DTD to the specified FCPXML version number. The version number must match a DTD resource included in the bundle.
 	///
 	/// - Parameter version: The version number as a String.
 	/// - Throws: If the DTD file cannot be read properly, an error is thrown describing the issue.
 	private func setDTDToFCPXML(version: String) throws {
 		do {
-			let resourceName = "FCPXML_" + version
+			let resourceName = self.fcpxmlDTDFilename(fromVersion: version, withExtension: false)
 			do {
 				try self.setDTDToBundleResource(named: resourceName)
 			} catch {
