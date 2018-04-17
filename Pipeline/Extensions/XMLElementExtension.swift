@@ -2647,7 +2647,24 @@ extension XMLElement {
 		
 		return (nextNode as! XMLElement)
 	}
-    
+	
+	/// Returns all sub-elements of this XMLElement.
+	///
+	/// - Returns: An array of XMLElement objects.
+	public func subElements() -> [XMLElement] {
+		guard let children = self.children else {
+			return []
+		}
+		
+		var childElements: [XMLElement] = []
+		for child in children {
+			if child.kind == .element {
+				childElements.append(child as! XMLElement)
+			}
+		}
+		
+		return childElements
+	}
     
     /// Returns the first sub-element with the given element name.
     ///
