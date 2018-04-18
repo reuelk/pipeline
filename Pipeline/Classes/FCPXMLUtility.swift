@@ -348,6 +348,30 @@ public struct FCPXMLUtility {
 		return startTime
 	}
 	
+	/// Returns the clip's parent's equivalent offset timings for the specified in and out times. This is useful for walking up an XMLElement hierarchy in order to get the time values of the clip on the project timeline.
+	///
+	/// - Parameters:
+	///   - inTime: The in time to convert, given as a CMTime value.
+	///   - outTime: The out time to convert, given as a CMTime value.
+	///   - clip: The clip that the time values are from. The parent time values will be drawn from this clip's parent.
+	/// - Returns: A tuple of the converted in time, the converted out time, and the parent XMLElement of the specified clip.
+	public func parentClipTime(forInTime inTime: CMTime, outTime: CMTime, forClip clip: XMLElement) -> (in: CMTime, out: CMTime, parent: XMLElement)? {
+		
+		guard let parentClip = clip.parentElement else {
+			return nil
+		}
+		
+		guard let parentIn = self.parentTime(fromLocalTime: inTime, forClip: parentClip) else {
+			return nil
+		}
+		
+		guard let parentOut = self.parentTime(fromLocalTime: outTime, forClip: parentClip) else {
+			return nil
+		}
+		
+		return (parentIn, parentOut, parentClip)
+	}
+	
 	
 	
 	// MARK: - Other conversion functions
