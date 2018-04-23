@@ -74,6 +74,107 @@ extension XMLElement {
 		case none = "none"
 	}
 	
+	/// The caption format included in caption role attributes.
+	public enum CaptionFormat: String {
+		case itt = "ITT"
+		case cea608 = "CEA608"
+	}
+	
+	/// RFC 5646 language tags for use in caption role attributes. The languages included in this enum are those supported by FCPX.
+	public enum CaptionLanguage: String {
+		case Afrikaans = "af"
+		case Arabic = "ar"
+		case Bangla = "bn"
+		case Bulgarian = "bg"
+		case Catalan = "ca"
+		case Chinese_Cantonese = "yue-Hant"
+		case Chinese_Simplified = "cmn-Hans"
+		case Chinese_Traditional = "cmn-Hant"
+		case Croatian = "hr"
+		case Czech = "cs"
+		case Danish = "da"
+		case Dutch = "nl"
+		case English = "en"
+		case English_Australia = "en-AU"
+		case English_Canada = "en-CA"
+		case English_UnitedKingdom = "en-GB"
+		case English_UnitedStates = "en-US"
+		case Estonian = "et"
+		case Finnish = "fi"
+		case French_Belgium = "fr-BE"
+		case French_Canada = "fr-CA"
+		case French_France = "fr-FR"
+		case French_Switzerland = "fr-CH"
+		case German = "de"
+		case German_Austria = "de-AT"
+		case German_Germany = "de-DE"
+		case German_Switzerland = "de-CH"
+		case Greek = "el"
+		case Greek_Cyprus = "el-CY"
+		case Hebrew = "he"
+		case Hindi = "hi"
+		case Hungarian = "hu"
+		case Icelandic = "is"
+		case Indonesian = "id"
+		case Italian = "it"
+		case Japanese = "ja"
+		case Kannada = "kn"
+		case Kazakh = "kk"
+		case Korean = "ko"
+		case Lao = "lo"
+		case Latvian = "lv"
+		case Lithuanian = "lt"
+		case Luxembourgish = "lb"
+		case Malay = "ms"
+		case Malayalam = "ml"
+		case Maltese = "mt"
+		case Marathi = "mr"
+		case Norwegian = "no"
+		case Polish = "pl"
+		case Portuguese_Brazil = "pt-BR"
+		case Portuguese_Portugal = "pt-PT"
+		case Punjabi = "pa"
+		case Romanian = "ro"
+		case Russian = "ru"
+		case Slovak = "sk"
+		case Slovenian = "sl"
+		case Spanish_LatinAmerica = "es-419"
+		case Spanish_Mexico = "es-MX"
+		case Spanish_Spain = "es-ES"
+		case Swedish = "sv"
+		case Tagalog = "tl"
+		case Tamil = "ta"
+		case Telugu = "te"
+		case Thai = "th"
+		case Turkish = "tr"
+		case Ukrainian = "uk"
+		case Urdu = "ur"
+		case Vietnamese = "vi"
+		case Zulu = "zu"
+	}
+	
+	/// Caption display style for CEA-608 captions
+	public enum CEA608CaptionDisplayStyle: String {
+		case popOn = "pop-on"
+		case paintOn = "paint-on"
+		case rollUp = "roll-up"
+	}
+	
+	/// Caption placement for ITT captions.
+	public enum ITTCaptionPlacement: String {
+		case top = "top"
+		case bottom = "bottom"
+		case left = "left"
+		case right = "right"
+	}
+	
+	/// Caption alignment for CEA-608 captions.
+	public enum CEA608CaptionAlignment: String {
+		case left = "left"
+		case center = "center"
+		case right = "right"
+	}
+	
 	/// The location of a story element within its sequence or timeline.
 	///
 	/// - primaryStoryline: The story element exists on the primary storyline.
@@ -385,6 +486,111 @@ extension XMLElement {
 		adjustTransform.setElementAttribute("position", value: "\(xPosition) \(yPosition)")
 		
 		element.addChild(adjustTransform)
+		
+		return element
+	}
+	
+
+	/// Creates a new caption to be used in a timeline.
+	///
+	/// - Parameters:
+	///   - captionName: The name of the caption clip on the timeline.
+	///   - lane: The preferred timeline lane to place the clip into.
+	///   - offset: The clip’s location in parent time as a CMTime value.
+	///   - ref: The reference ID for the title effect resource that this clip refers to.
+	///   - duration: The duration of the clip as a CMTime value.
+	///   - start: The start time of the clip's local timeline as a CMTime value.
+	///   - roleName: The role name assigned to the clip.
+	///   - captionFormat: The format of the captions, either ITT or CEA-608, using the CaptionFormat enum.
+	///   - language: The language of the caption text as a CaptionLanguage enum value.
+	///   - captionText: The text displayed by this caption clip.
+	///   - CEA_displayStyle: For CEA-608 captions, the display transition style of the text.
+	///   - CEA_rollUpHeight: For CEA-608 captions using the roll-up display style, the number of rows to show concurrently.
+	///   - CEA_xPosition: The starting X position of the text for CEA-608 captions.
+	///   - CEA_yPosition: The starting Y position of the text for CEA-608 captions.
+	///   - CEA_alignment: The alignment of the text for CEA-608 captions.
+	///   - ITT_placement: The text placement for ITT captions.
+	///   - textStyleID: The ID to assign to a newly generated text style definition or the ID to reference for an existing text style definition.
+	///   - newTextStyle: True if this title clip should contain a newly generated text style definition.
+	///   - bold: True if the text is styled bold.
+	///   - italic: True if the text is styled italic.
+	///   - underline: True if the text is styled underline.
+	///   - fontColor: The color of the font as an NSColor value.
+	///   - bgColor: The background color behind the text as an NSColor value. Includes alpha value for semi-transparent and transparent backgrounds for CEA-608 captions.
+	/// - Returns: An XMLElement object of the caption, which will contain the text style definition, if newTextStyle is true.
+	public func fcpxCaption(captionName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, roleName: String, captionFormat: CaptionFormat, language: CaptionLanguage, captionText: String, CEA_displayStyle: CEA608CaptionDisplayStyle?, CEA_rollUpHeight: Int?, CEA_xPosition: Int?, CEA_yPosition: Int?, CEA_alignment: CEA608CaptionAlignment?, ITT_placement: ITTCaptionPlacement?, textStyleID: Int, newTextStyle: Bool, bold: Bool, italic: Bool, underline: Bool, fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), bgColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)) -> XMLElement {
+		
+		let element = XMLElement(name: "caption")
+		
+		element.fcpxName = captionName
+		element.fcpxLane = lane
+		element.fcpxOffset = offset
+		element.fcpxRef = ref
+		element.fcpxDuration = duration
+		element.fcpxStart = start
+		element.fcpxRole = "\(roleName)?captionFormat=\(captionFormat.rawValue).\(language.rawValue)"
+		
+		let text = XMLElement(name: "text")
+		
+		if captionFormat == .cea608 {
+			text.fcpxCEACaptionDisplayStyle = CEA_displayStyle
+			if CEA_displayStyle == CEA608CaptionDisplayStyle.rollUp {
+				text.fcpxCEACaptionRollUpHeight = CEA_rollUpHeight
+			}
+			text.fcpxCEACaptionPositionX = CEA_xPosition
+			text.fcpxCEACaptionPositionY = CEA_yPosition
+			text.fcpxCEACaptionAlignment = CEA_alignment
+		} else {
+			text.fcpxITTCaptionPlacement = ITT_placement
+		}
+		
+		let textTextStyle = XMLElement(name: "text-style", stringValue: captionText)
+		
+		
+		// Add the text content and its style
+		textTextStyle.fcpxRef = "ts\(textStyleID)"  // Reference the new text style definition reference number
+		
+		text.addChild(textTextStyle)
+		element.addChild(text)
+		
+		// Text Style Definition
+		if newTextStyle == true {  // If a new text style definition hasn't been created yet
+			
+			let textStyleDef = XMLElement(name: "text-style-def")
+			
+			textStyleDef.fcpxID = "ts\(textStyleID)"
+			
+			let textStyleDefTextStyle = XMLElement(name: "text-style")
+			
+			textStyleDefTextStyle.setElementAttribute("font", value: ".SF NS Text")
+			textStyleDefTextStyle.setElementAttribute("fontSize", value: "13")
+			
+			textStyleDefTextStyle.setElementAttribute("fontColor", value: "\(fontColor.redComponent) \(fontColor.greenComponent) \(fontColor.blueComponent) \(fontColor.alphaComponent)")
+			
+			if bold == true {
+				textStyleDefTextStyle.setElementAttribute("bold", value: "1")
+			} else {
+				textStyleDefTextStyle.removeAttribute(forName: "italic")
+			}
+			
+			if italic == true {
+				textStyleDefTextStyle.setElementAttribute("italic", value: "1")
+			} else {
+				textStyleDefTextStyle.removeAttribute(forName: "italic")
+			}
+			
+			if underline == true {
+				textStyleDefTextStyle.setElementAttribute("underline", value: "1")
+			} else {
+				textStyleDefTextStyle.removeAttribute(forName: "underline")
+			}
+			
+			textStyleDefTextStyle.setElementAttribute("backgroundColor", value: "\(bgColor.redComponent) \(bgColor.greenComponent) \(bgColor.blueComponent) \(bgColor.alphaComponent)")
+			
+			textStyleDef.addChild(textStyleDefTextStyle)
+			
+			element.addChild(textStyleDef)
+		}
 		
 		return element
 	}
@@ -1093,6 +1299,9 @@ extension XMLElement {
         }
 	}
 	
+	
+	// MARK: - Element Timing Properties
+	
 	/// The start of this element on its parent timeline. For example, if this is a video clip on the primary storyline, this value would be the in point of the clip on the project timeline. If this is a clip on a secondary storyline, this value would be the in point of the clip on the secondary storyline's timeline.
 	public var fcpxParentInPoint: CMTime? {
 		get {
@@ -1293,6 +1502,184 @@ extension XMLElement {
 		}
 	}
 	
+	// MARK: - Caption Element Properties
+	
+	/// The display style for CEA-608 formatted captions.
+	public var fcpxCEACaptionDisplayStyle: CEA608CaptionDisplayStyle? {
+		get {
+			guard self.fcpxType == .text else {
+				return nil
+			}
+			if let attributeString = getElementAttribute("display-style") {
+				switch attributeString {
+				case CEA608CaptionDisplayStyle.popOn.rawValue:
+					return CEA608CaptionDisplayStyle.popOn
+				case CEA608CaptionDisplayStyle.paintOn.rawValue:
+					return CEA608CaptionDisplayStyle.paintOn
+				case CEA608CaptionDisplayStyle.rollUp.rawValue:
+					return CEA608CaptionDisplayStyle.rollUp
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("display-style", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "display-style")
+			}
+		}
+	}
+	
+	/// The number of rows to show concurrently on the video when the CEA-608 display style is set to roll-up. Valid values are from 2 to 4.
+	public var fcpxCEACaptionRollUpHeight: Int? {
+		get {
+			guard self.fcpxType == .text else {
+				return nil
+			}
+			if let attributeString = getElementAttribute("roll-up-height") {
+				return Int(attributeString)
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("roll-up-height", value: String(value))
+			} else {
+				self.removeAttribute(forName: "roll-up-height")
+			}
+		}
+	}
+	
+	/// The X position for CEA-608 captions. Valid values are from 1 to 23. Setting this variable will retain the current Y value if it exists. If it does not, the Y value will default to 15.
+	public var fcpxCEACaptionPositionX: Int? {
+		get {
+			guard self.fcpxType == .text else {
+				return nil
+			}
+			if let attributeString = getElementAttribute("position") {
+				let coordinates = attributeString.split(separator: " ")
+				guard coordinates.count == 2 else {
+					return nil
+				}
+				return Int(coordinates[0])
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				if let currentY = self.fcpxCEACaptionPositionY {
+					setElementAttribute("position", value: "\(value) \(currentY)")
+				} else {
+					setElementAttribute("position", value: "\(value) 15")
+				}
+			} else {
+				self.removeAttribute(forName: "position")
+			}
+		}
+	}
+	
+	/// The Y position for CEA-608 captions. Valid values are from 1 to 15. Setting this variable will retain the current X value if it exists. If it does not, the X value will default to 1.
+	public var fcpxCEACaptionPositionY: Int? {
+		get {
+			guard self.fcpxType == .text else {
+				return nil
+			}
+			if let attributeString = getElementAttribute("position") {
+				let coordinates = attributeString.split(separator: " ")
+				guard coordinates.count == 2 else {
+					return nil
+				}
+				return Int(coordinates[1])
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				if let currentX = self.fcpxCEACaptionPositionX {
+					setElementAttribute("position", value: "\(currentX) \(value)")
+				} else {
+					setElementAttribute("position", value: "1 \(value)")
+				}
+			} else {
+				self.removeAttribute(forName: "position")
+			}
+		}
+	}
+	
+	/// The caption placement for ITT formatted captions.
+	public var fcpxITTCaptionPlacement: ITTCaptionPlacement? {
+		get {
+			guard self.fcpxType == .text else {
+				return nil
+			}
+			if let attributeString = getElementAttribute("placement") {
+				switch attributeString {
+				case ITTCaptionPlacement.top.rawValue:
+					return ITTCaptionPlacement.top
+				case ITTCaptionPlacement.bottom.rawValue:
+					return ITTCaptionPlacement.bottom
+				case ITTCaptionPlacement.left.rawValue:
+					return ITTCaptionPlacement.left
+				case ITTCaptionPlacement.right.rawValue:
+					return ITTCaptionPlacement.right
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("placement", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "placement")
+			}
+		}
+	}
+	
+	/// The alignment for CEA-608 formatted captions.
+	public var fcpxCEACaptionAlignment: CEA608CaptionAlignment? {
+		get {
+			guard self.fcpxType == .text else {
+				return nil
+			}
+			if let attributeString = getElementAttribute("alignment") {
+				switch attributeString {
+				case CEA608CaptionAlignment.left.rawValue:
+					return CEA608CaptionAlignment.left
+				case CEA608CaptionAlignment.center.rawValue:
+					return CEA608CaptionAlignment.center
+				case CEA608CaptionAlignment.right.rawValue:
+					return CEA608CaptionAlignment.right
+				default:
+					return nil
+				}
+			} else {
+				return nil
+			}
+		}
+		
+		set(value) {
+			if let value = value {
+				setElementAttribute("alignment", value: value.rawValue)
+			} else {
+				self.removeAttribute(forName: "alignment")
+			}
+		}
+	}
 	
 	// MARK: - Element Identification
 	
