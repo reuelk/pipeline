@@ -505,9 +505,9 @@ extension XMLElement {
 	///   - language: The language of the caption text as a CaptionLanguage enum value.
 	///   - captionText: The text displayed by this caption clip.
 	///   - CEA_displayStyle: For CEA-608 captions, the display transition style of the text.
-	///   - CEA_rollUpHeight: For CEA-608 captions using the roll-up display style, the number of rows to show concurrently.
-	///   - CEA_xPosition: The starting X position of the text for CEA-608 captions.
-	///   - CEA_yPosition: The starting Y position of the text for CEA-608 captions.
+	///   - CEA_rollUpHeight: For CEA-608 captions using the roll-up display style, the number of rows to show concurrently. Valid values are 2 to 4.
+	///   - CEA_xPosition: The starting X position of the text for CEA-608 captions. Valid values are 1 to 23.
+	///   - CEA_yPosition: The starting Y position of the text for CEA-608 captions. Valid values are 1 to 15.
 	///   - CEA_alignment: The alignment of the text for CEA-608 captions.
 	///   - ITT_placement: The text placement for ITT captions.
 	///   - textStyleID: The ID to assign to a newly generated text style definition or the ID to reference for an existing text style definition.
