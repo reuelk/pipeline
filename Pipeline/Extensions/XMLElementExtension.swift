@@ -175,6 +175,18 @@ extension XMLElement {
 		case right = "right"
 	}
 	
+	/// Color values for CEA-608 captions. The raw value is the color expressed as "red green blue alpha" which is the way it is represented in FCPXML text style elements.
+	public enum CEA608Color: String {
+		case red = "1 0 0 1"
+		case yellow = "1 1 0 1"
+		case green = "0 1 0 1"
+		case cyan = "0 1 1 1"
+		case blue = "0 0 1 1"
+		case magenta = "1 0 1 1"
+		case white = "1 1 1 1"
+		case black = "0 0 0 1"
+	}
+	
 	/// The location of a story element within its sequence or timeline.
 	///
 	/// - primaryStoryline: The story element exists on the primary storyline.
@@ -185,6 +197,7 @@ extension XMLElement {
 		case attachedClip
 		case secondaryStoryline
 	}
+	
 	
 	
 	// MARK: - Creating FCPXML XMLElement Objects
