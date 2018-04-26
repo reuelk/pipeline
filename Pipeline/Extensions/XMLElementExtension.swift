@@ -497,7 +497,6 @@ extension XMLElement {
 	///   - captionName: The name of the caption clip on the timeline.
 	///   - lane: The preferred timeline lane to place the clip into.
 	///   - offset: The clip’s location in parent time as a CMTime value.
-	///   - ref: The reference ID for the title effect resource that this clip refers to.
 	///   - duration: The duration of the clip as a CMTime value.
 	///   - start: The start time of the clip's local timeline as a CMTime value.
 	///   - roleName: The role name assigned to the clip.
@@ -518,14 +517,13 @@ extension XMLElement {
 	///   - fontColor: The color of the font as an NSColor value.
 	///   - bgColor: The background color behind the text as an NSColor value. Includes alpha value for semi-transparent and transparent backgrounds for CEA-608 captions.
 	/// - Returns: An XMLElement object of the caption, which will contain the text style definition, if newTextStyle is true.
-	public func fcpxCaption(captionName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, roleName: String, captionFormat: CaptionFormat, language: CaptionLanguage, captionText: String, CEA_displayStyle: CEA608CaptionDisplayStyle?, CEA_rollUpHeight: Int?, CEA_xPosition: Int?, CEA_yPosition: Int?, CEA_alignment: CEA608CaptionAlignment?, ITT_placement: ITTCaptionPlacement?, textStyleID: Int, newTextStyle: Bool, bold: Bool, italic: Bool, underline: Bool, fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), bgColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)) -> XMLElement {
+	public func fcpxCaption(captionName: String, lane: Int?, offset: CMTime, duration: CMTime, start: CMTime, roleName: String, captionFormat: CaptionFormat, language: CaptionLanguage, captionText: String, CEA_displayStyle: CEA608CaptionDisplayStyle?, CEA_rollUpHeight: Int?, CEA_xPosition: Int?, CEA_yPosition: Int?, CEA_alignment: CEA608CaptionAlignment?, ITT_placement: ITTCaptionPlacement?, textStyleID: Int, newTextStyle: Bool, bold: Bool, italic: Bool, underline: Bool, fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), bgColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)) -> XMLElement {
 		
 		let element = XMLElement(name: "caption")
 		
 		element.fcpxName = captionName
 		element.fcpxLane = lane
 		element.fcpxOffset = offset
-		element.fcpxRef = ref
 		element.fcpxDuration = duration
 		element.fcpxStart = start
 		element.fcpxRole = "\(roleName)?captionFormat=\(captionFormat.rawValue).\(language.rawValue)"
