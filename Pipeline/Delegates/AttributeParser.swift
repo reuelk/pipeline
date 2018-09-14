@@ -11,7 +11,7 @@ import CoreMedia
 
 
 // MARK: - PARSER DELEGATE -
-class AttributeParser: NSObject, XMLParserDelegate {
+class AttributeParserDelegate: NSObject, XMLParserDelegate {
 	
 	var attribute: String = ""
 	var elementName: String? = nil

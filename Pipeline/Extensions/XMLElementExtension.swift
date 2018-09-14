@@ -2601,6 +2601,42 @@ extension XMLElement {
 	}
 	
 	
+	// MARK: - Methods for Projects
+	
+	/// Returns an array of all roles used inside the project.
+	///
+	/// - Returns: An array of roles as String values.
+	public func projectRoles() -> [String] {
+		guard self.fcpxType == .project else {
+			return []
+		}
+		
+		var projectRoles = self.parseRoles(fromElement: self)
+		
+		let compoundClips = self.clips(forElementType: .compoundClip)
+		
+		var compoundClipRoles: [String] = []
+		for clip in compoundClips {
+			
+			guard let resourceElement = clip.fcpxResource else {
+				continue
+			}
+			
+			let resourceElementRoles = self.parseRoles(fromElement: resourceElement)
+			compoundClipRoles.append(contentsOf: resourceElementRoles)
+		}
+		
+		for role in compoundClipRoles {
+			if projectRoles.contains(role) == false {
+				projectRoles.append(role)
+			}
+		}
+		
+		return projectRoles
+		
+	}
+	
+	
 	// MARK: - Retrieving Format Information
 	
 	/// Returns an element's associated format name, ID, frame duration, and frame size.
@@ -2748,7 +2784,7 @@ extension XMLElement {
 				continue
 			}
 			
-			let sourceParser = AttributeParser(element: resource, attribute: "src", inElementsWithName: nil)
+			let sourceParser = AttributeParserDelegate(element: resource, attribute: "src", inElementsWithName: nil)
 			
 			if sourceParser.values.count > 0 {
 				for source in sourceParser.values {
@@ -2771,7 +2807,7 @@ extension XMLElement {
 	- returns: The references as an array of strings or nil if no reference is found.
 	*/
 	public func allReferenceIDs() -> [String]? {
-		let refParser = AttributeParser(element: self, attribute: "ref", inElementsWithName: nil)
+		let refParser = AttributeParserDelegate(element: self, attribute: "ref", inElementsWithName: nil)
 		let references = refParser.values
 		
 		if references.count > 0 {
@@ -3254,6 +3290,29 @@ extension XMLElement {
 		return elementsInRange
 	}
 	
+	// MARK: - Parsing Functions
+	
+	/// Parses roles from the given XMLElement. This would typically be used on a project XMLElement.
+	func parseRoles(fromElement element: XMLElement) -> [String]{
+		print("Parsing Roles...")
+		
+		guard let data = element.xmlString.data(using: .utf8) else {
+			print("Error converting XML to Data")
+			return []
+		}
+		let xmlParser = XMLParser(data: data)
+		let parserDelegate = FCPXMLParserDelegate()
+		xmlParser.delegate = parserDelegate
+		
+		// Parse the attributes using XMLParserDelegate
+		xmlParser.parse()
+		
+		return parserDelegate.roles
+		
+	}
+	
+	
+
 }
 
 

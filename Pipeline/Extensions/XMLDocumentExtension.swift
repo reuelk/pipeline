@@ -9,7 +9,7 @@
 import Cocoa
 import CoreMedia
 
-extension XMLDocument: XMLParserDelegate {  //, NSCoding {
+extension XMLDocument {
 	
 	enum FCPXMLDocumentError: Error {
 		case DTDResourceNotFound
@@ -154,10 +154,10 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	/// An array of all roles used in the FCPXML document.
-	public var fcpxRoles: [String] {
+	public var fcpxAllRoles: [String] {
 		get {
 			if self.fcpxRoleAttributeValues == [] {
-				self.parseFCPXIDsAndRoles()
+				self.parseFCPXML()
 			}
 			
 			return self.fcpxRoleAttributeValues
@@ -167,7 +167,9 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The highest resource ID number used in the FCPXML document.
 	public var fcpxLastResourceID: Int {
 		get {
-			self.parseFCPXIDsAndRoles()
+			if self.fcpxResourceIDs == [] {
+				self.parseFCPXML()
+			}
 			
 			if let last = self.fcpxResourceIDs.last {
 				return last
@@ -180,7 +182,9 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	/// The highest text style ID number used in the FCPXML document.
 	public var fcpxLastTextStyleID: Int {
 		get {
-			self.parseFCPXIDsAndRoles()
+			if self.fcpxTextStyleIDs == [] {
+				self.parseFCPXML()
+			}
 			
 			if let last = self.fcpxTextStyleIDs.last {
 				return last
@@ -302,12 +306,17 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	}
 	
 	// MARK: - Private Variables
+	
+	// Since extensions cannot contain stored properties, the properties below are defined as Objective-C associated objects.
+	
+	// A struct that defines stored property types in this extension.
 	private struct ParsedData {
 		static var resourceIDs = "resourceIDs"
 		static var textStyleIDs = "textStyleIDs"
 		static var roles = "roles"
 	}
 	
+	// A stored property for all resource IDs in the FCPXML document.
 	private var fcpxResourceIDs: [Int] {
 		get {
 			guard (objc_getAssociatedObject(self, &ParsedData.resourceIDs)) != nil else {
@@ -321,6 +330,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		}
 	}
 	
+	// A stored property for all text style IDs in the FCPXML document.
 	private var fcpxTextStyleIDs: [Int] {
 		get {
 			guard (objc_getAssociatedObject(self, &ParsedData.textStyleIDs)) != nil else {
@@ -334,6 +344,7 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 		}
 	}
 	
+	// A stored property for all roles in the FCPXML document.
 	private var fcpxRoleAttributeValues: [String] {
 		get {
 			guard (objc_getAssociatedObject(self, &ParsedData.roles)) != nil else {
@@ -413,62 +424,19 @@ extension XMLDocument: XMLParserDelegate {  //, NSCoding {
 	// MARK: - Parsing Functions
 	
 	/// Parses the resource IDs, text style IDs, and roles, refreshing the fcpxLastResourceID, fcpxLastTextStyleID, and fcpxRoles properties. Call this method when initially loading an FCPXML document and when the IDs or roles change.
-	public func parseFCPXIDsAndRoles() {
-		print("Parsing IDs and Roles...")
-		
+	public func parseFCPXML() {
 		let xmlParser = XMLParser(data: self.xmlData)
-		xmlParser.delegate = self
+		let delegate = FCPXMLParserDelegate()
 		
-		// Parse the attributes using NSXMLParserDelegate
+		xmlParser.delegate = delegate
 		xmlParser.parse()
 		
-		self.fcpxResourceIDs = self.fcpxResourceIDs.sorted()
-		self.fcpxTextStyleIDs = self.fcpxTextStyleIDs.sorted()
+		self.fcpxResourceIDs = delegate.resourceIDNumbers
+		self.fcpxTextStyleIDs = delegate.textStyleIDNumbers
+		self.fcpxRoleAttributeValues = delegate.roles
 		
-		// Filter out duplicate role values
-		var roles: [String] = []
-		for value in self.fcpxRoleAttributeValues {
-			if roles.contains(value) == false {
-				roles.append(value)
-			}
-		}
-		self.fcpxRoleAttributeValues = roles
+		return
 	}
-	
-	
-	/**
-	
-	*/
-	
-	/// An NSXMLParserDelegate function that retrieves the last resource ID and text style ID from an FCPXML file.
-	///
-	/// This method should not be called explicitly. Call the method parseFCPXIDsAndRoles() instead.
-	public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-		
-		for (key, value) in attributeDict {
-			if key == "id" {
-				
-				if value.substring(to: value.characters.index(value.startIndex, offsetBy: 1)) == "r" { // The first letter of the value is "r" for resource
-					let ID = Int(value.substring(from: value.characters.index(value.startIndex, offsetBy: 1)))
-					if let ID = ID {
-						self.fcpxResourceIDs.append(ID)
-					}
-				}
-				
-				if value.substring(to: value.characters.index(value.startIndex, offsetBy: 2)) == "ts" { // The first two letters of the value are "ts" for text style
-					let ID = Int(value.substring(from: value.characters.index(value.startIndex, offsetBy: 2)))
-					if let ID = ID {
-						self.fcpxTextStyleIDs.append(ID)
-					}
-				}
-				
-			} else if key == "role" {
-				self.fcpxRoleAttributeValues.append(value)
-			}
-		}
-		
-	}
-	
 	
 	
 	// MARK: - Retrieval Functions
