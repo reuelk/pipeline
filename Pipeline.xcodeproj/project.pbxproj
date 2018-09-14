@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050440BA20C1BF9900262F2A /* FCPXMLParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */; };
 		0515A1081E2AF84F00E7DEA9 /* AttributeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */; };
 		0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FD1E2AF84F00E7DEA9 /* CMTimeExtension.swift */; };
 		0515A10B1E2AF84F00E7DEA9 /* FCPXMLElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */; };
@@ -18,11 +19,13 @@
 		0567BA8A1D4334DC0039F518 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D79A1CF272B800DEE915 /* Cocoa.framework */; };
 		0567BA8B1D4334DC0039F518 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D7981CF272B100DEE915 /* CoreMedia.framework */; };
 		057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */; };
+		0580A0BA20C85788001D094C /* sync clip test.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 0580A0B920C85788001D094C /* sync clip test.fcpxml */; };
 		058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */; };
 		05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF395E1E1A3B6100319908 /* PipelineTests.swift */; };
 		05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567BA921D4334DC0039F518 /* Pipeline.framework */; };
 		05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */; };
 		05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */; };
+		76107172207D9728001795EA /* FCPXMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76107171207D9728001795EA /* FCPXMLDocument.swift */; };
 		7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */; };
 		7676560F1E36BADA0003D9E7 /* DTDs in Resources */ = {isa = PBXBuildFile; fileRef = 7676560E1E36BADA0003D9E7 /* DTDs */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCPXMLParserDelegate.swift; path = Pipeline/Delegates/FCPXMLParserDelegate.swift; sourceTree = SOURCE_ROOT; };
 		0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeParser.swift; sourceTree = "<group>"; };
 		0515A0FD1E2AF84F00E7DEA9 /* CMTimeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMTimeExtension.swift; sourceTree = "<group>"; };
 		0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPXMLElementType.swift; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 		0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDocumentExtension.swift; sourceTree = "<group>"; };
 		0567BA921D4334DC0039F518 /* Pipeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pipeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MakeSubtitlesTest.fcpxml; sourceTree = "<group>"; };
+		0580A0B920C85788001D094C /* sync clip test.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sync clip test.fcpxml"; sourceTree = "<group>"; };
 		058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Batch-MSS-Test-1.fcpxml"; sourceTree = "<group>"; };
 		05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PCBang_FromGrace_20160202.fcpxml; sourceTree = "<group>"; };
 		05AF395C1E1A3B6100319908 /* PipelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +62,7 @@
 		05C3D7981CF272B100DEE915 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		05C3D79A1CF272B800DEE915 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFK_Moon_Demo_START.fcpxml; sourceTree = "<group>"; };
+		76107171207D9728001795EA /* FCPXMLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCPXMLDocument.swift; path = Pipeline/Classes/FCPXMLDocument.swift; sourceTree = SOURCE_ROOT; };
 		7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "JFK_Moon_Demo_multicam with metadata.fcpxml"; sourceTree = "<group>"; };
 		7676560E1E36BADA0003D9E7 /* DTDs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DTDs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,10 +88,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0515A1141E2AF87500E7DEA9 /* Classes */ = {
+		050440B820C1BF3B00262F2A /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */,
+				050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */,
+			);
+			name = Delegates;
+			path = Pipeline/Delegates;
+			sourceTree = "<group>";
+		};
+		0515A1141E2AF87500E7DEA9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76107171207D9728001795EA /* FCPXMLDocument.swift */,
 				0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */,
 				0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */,
 			);
@@ -120,6 +136,7 @@
 			children = (
 				0515A1141E2AF87500E7DEA9 /* Classes */,
 				0515A1161E2AF89200E7DEA9 /* Extensions */,
+				050440B820C1BF3B00262F2A /* Delegates */,
 				0515A1171E2AF89E00E7DEA9 /* Other */,
 				05AF395D1E1A3B6100319908 /* PipelineTests */,
 				0579E25B1C70027A00D3E96F /* Products */,
@@ -140,6 +157,7 @@
 		05AF395D1E1A3B6100319908 /* PipelineTests */ = {
 			isa = PBXGroup;
 			children = (
+				0580A0B920C85788001D094C /* sync clip test.fcpxml */,
 				057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */,
 				058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */,
 				7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */,
@@ -254,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0580A0BA20C85788001D094C /* sync clip test.fcpxml in Resources */,
 				05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */,
 				0515A7D21E1DBE1F00C05F5F /* JFKmedia.fcpxml in Resources */,
 				7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */,
@@ -270,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76107172207D9728001795EA /* FCPXMLDocument.swift in Sources */,
 				0515A10B1E2AF84F00E7DEA9 /* FCPXMLElementType.swift in Sources */,
 				0515A1131E2AF84F00E7DEA9 /* XMLElementExtension.swift in Sources */,
 				0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */,
 				0515A10F1E2AF84F00E7DEA9 /* FCPXMLUtility.swift in Sources */,
+				050440BA20C1BF9900262F2A /* FCPXMLParserDelegate.swift in Sources */,
 				0515A1081E2AF84F00E7DEA9 /* AttributeParser.swift in Sources */,
 				0531AB6B1E2B6BD8006F191F /* XMLDocumentExtension.swift in Sources */,
 			);
