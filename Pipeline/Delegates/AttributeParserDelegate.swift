@@ -1,5 +1,5 @@
 //
-//  AttributeParser.swift
+//  AttributeParserDelegate.swift
 //  Pipeline
 //
 //  Created by Reuel Kim on 1/15/17.
@@ -9,8 +9,7 @@
 import Cocoa
 import CoreMedia
 
-
-// MARK: - PARSER DELEGATE -
+/// An XMLParser delegate for parsing attributes in XMLElement objects.
 class AttributeParserDelegate: NSObject, XMLParserDelegate {
 	
 	var attribute: String = ""

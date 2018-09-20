@@ -11,14 +11,10 @@ import CoreMedia
 
 
 
-// MARK: - UTILITY FUNCTIONS -
+/// Contains miscellaneous utility methods for processing FCPXML data.
 public struct FCPXMLUtility {
 	
-	public init() {
-		
-	}
-	
-	// MARK: - Retrieval functions
+	// MARK: - Retrieval Methods
 	
 	/// Returns an array of elements that match specified FCPXML element types.
 	///
@@ -47,7 +43,7 @@ public struct FCPXMLUtility {
 	
 	
 	
-	// MARK: - Time conversion functions
+	// MARK: - Time Conversion Methods
 	
 	/**
 	Creates a CMTime value that represents real time from timecode values.
@@ -376,7 +372,7 @@ public struct FCPXMLUtility {
 	
 	
 	
-	// MARK: - Other conversion functions
+	// MARK: - Other Conversion Methods
 	
 	/// Converts line breaks in attributes to safe XML entities in an XML file, returning an NSXMLDocument.
 	///

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An XMLParser delegate for parsing roles and IDs from FCPXML documents.
 class FCPXMLParserDelegate: NSObject, XMLParserDelegate {
 
 	/// All roles found by the parser
@@ -109,7 +110,7 @@ class FCPXMLParserDelegate: NSObject, XMLParserDelegate {
 		}
 	}
 	
-	/// An NSXMLParserDelegate function that retrieves roles and resource IDs from an FCPXML file.
+	/// An XMLParserDelegate function that retrieves roles and resource IDs from an FCPXML file.
 	///
 	/// This method should not be called explicitly. Call the method parseFCPXIDsAndRoles() instead.
 	public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {

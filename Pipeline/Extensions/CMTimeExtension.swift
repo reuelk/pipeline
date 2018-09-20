@@ -10,7 +10,6 @@ import Cocoa
 import CoreMedia
 
 
-// MARK: - CMTIME EXTENSION -
 extension CMTime {
 	
 	

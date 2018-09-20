@@ -13,193 +13,6 @@ import CoreMedia
 // MARK: - XMLELEMENT EXTENSION -
 extension XMLElement {
 	
-	enum FCPXMLElementError: Error, CustomStringConvertible {
-		case notAnEvent(element: XMLElement)
-		case notAnAnnotatableItem(element: XMLElement)
-		case notAnAnnotation(element: XMLElement)
-		
-		var description: String {
-			switch self {
-			case .notAnEvent(let element):
-				return "The \"\(element.name ?? "unnamed")\" element is not an event."
-			case .notAnAnnotatableItem(let element):
-				return "The \"\(element.name ?? "unnamed")\" element cannot be annotated."
-			case .notAnAnnotation(let element):
-				return "The \"\(element.name ?? "unnamed")\" element is not an annotation."
-			default:
-				return "An error has occurred with an FCPXML element."
-			}
-		}
-	}
-	
-	public enum TextAlignment: String {
-		case Left = "left"
-		case Center = "center"
-		case Right = "right"
-		case Justified = "justified"
-	}
-	
-	public enum TimecodeFormat: String {
-		case dropFrame = "DF"
-		case nonDropFrame = "NDF"
-	}
-	
-	public enum AudioLayout: String {
-		case mono = "mono"
-		case stereo = "stereo"
-		case surround = "surround"
-	}
-	
-	public enum AudioRate: String {
-		case rate32kHz = "32k"
-		case rate44_1kHz = "44.1k"
-		case rate48kHz = "48k"
-		case rate88_2kHz = "88.2k"
-		case rate96kHz = "96k"
-		case rate176_4kHz = "176.4k"
-		case rate192kHz = "192k"
-	}
-	
-	public enum RenderColorSpace: String {
-		case rec601NTSC = "Rec. 601 (NTSC)"
-		case rec601PAL = "Rec. 601 (PAL)"
-		case rec709 = "Rec. 709"
-		case rec2020 = "Rec. 2020"
-	}
-	
-	public enum MulticamSourceEnable: String {
-		case audio = "audio"
-		case video = "video"
-		case all = "all"
-		case none = "none"
-	}
-	
-	/// The caption format included in caption role attributes.
-	public enum CaptionFormat: String {
-		case itt = "ITT"
-		case cea608 = "CEA608"
-	}
-	
-	/// RFC 5646 language tags for use in caption role attributes. The languages included in this enum are those supported by FCPX.
-	public enum CaptionLanguage: String {
-		case Afrikaans = "af"
-		case Arabic = "ar"
-		case Bangla = "bn"
-		case Bulgarian = "bg"
-		case Catalan = "ca"
-		case Chinese_Cantonese = "yue-Hant"
-		case Chinese_Simplified = "cmn-Hans"
-		case Chinese_Traditional = "cmn-Hant"
-		case Croatian = "hr"
-		case Czech = "cs"
-		case Danish = "da"
-		case Dutch = "nl"
-		case English = "en"
-		case English_Australia = "en-AU"
-		case English_Canada = "en-CA"
-		case English_UnitedKingdom = "en-GB"
-		case English_UnitedStates = "en-US"
-		case Estonian = "et"
-		case Finnish = "fi"
-		case French_Belgium = "fr-BE"
-		case French_Canada = "fr-CA"
-		case French_France = "fr-FR"
-		case French_Switzerland = "fr-CH"
-		case German = "de"
-		case German_Austria = "de-AT"
-		case German_Germany = "de-DE"
-		case German_Switzerland = "de-CH"
-		case Greek = "el"
-		case Greek_Cyprus = "el-CY"
-		case Hebrew = "he"
-		case Hindi = "hi"
-		case Hungarian = "hu"
-		case Icelandic = "is"
-		case Indonesian = "id"
-		case Italian = "it"
-		case Japanese = "ja"
-		case Kannada = "kn"
-		case Kazakh = "kk"
-		case Korean = "ko"
-		case Lao = "lo"
-		case Latvian = "lv"
-		case Lithuanian = "lt"
-		case Luxembourgish = "lb"
-		case Malay = "ms"
-		case Malayalam = "ml"
-		case Maltese = "mt"
-		case Marathi = "mr"
-		case Norwegian = "no"
-		case Polish = "pl"
-		case Portuguese_Brazil = "pt-BR"
-		case Portuguese_Portugal = "pt-PT"
-		case Punjabi = "pa"
-		case Romanian = "ro"
-		case Russian = "ru"
-		case Slovak = "sk"
-		case Slovenian = "sl"
-		case Spanish_LatinAmerica = "es-419"
-		case Spanish_Mexico = "es-MX"
-		case Spanish_Spain = "es-ES"
-		case Swedish = "sv"
-		case Tagalog = "tl"
-		case Tamil = "ta"
-		case Telugu = "te"
-		case Thai = "th"
-		case Turkish = "tr"
-		case Ukrainian = "uk"
-		case Urdu = "ur"
-		case Vietnamese = "vi"
-		case Zulu = "zu"
-	}
-	
-	/// Caption display style for CEA-608 captions
-	public enum CEA608CaptionDisplayStyle: String {
-		case popOn = "pop-on"
-		case paintOn = "paint-on"
-		case rollUp = "roll-up"
-	}
-	
-	/// Caption placement for ITT captions.
-	public enum ITTCaptionPlacement: String {
-		case top = "top"
-		case bottom = "bottom"
-		case left = "left"
-		case right = "right"
-	}
-	
-	/// Caption alignment for CEA-608 captions.
-	public enum CEA608CaptionAlignment: String {
-		case left = "left"
-		case center = "center"
-		case right = "right"
-	}
-	
-	/// Color values for CEA-608 captions. The raw value is the color expressed as "red green blue alpha" which is the way it is represented in FCPXML text style elements.
-	public enum CEA608Color: String {
-		case red = "1 0 0 1"
-		case yellow = "1 1 0 1"
-		case green = "0 1 0 1"
-		case cyan = "0 1 1 1"
-		case blue = "0 0 1 1"
-		case magenta = "1 0 1 1"
-		case white = "1 1 1 1"
-		case black = "0 0 0 1"
-	}
-	
-	/// The location of a story element within its sequence or timeline.
-	///
-	/// - primaryStoryline: The story element exists on the primary storyline.
-	/// - attachedClip: The story element is attached to another clip that is on the primary storyline.
-	/// - secondaryStoryline: The story element is embedded in a secondary storyline.
-	public enum StoryElementLocation {
-		case primaryStoryline
-		case attachedClip
-		case secondaryStoryline
-	}
-	
-	
-	
 	// MARK: - Creating FCPXML XMLElement Objects
 	
 	
@@ -608,7 +421,7 @@ extension XMLElement {
 	
 	
 	
-	// MARK: - Properties for Attribute Nodes Within Element Tags
+	// MARK: - Properties for Attribute Nodes
 	public var fcpxType: FCPXMLElementType {
 		get {
 			guard let elementName = self.name else {
@@ -1311,7 +1124,7 @@ extension XMLElement {
 	}
 	
 	
-	// MARK: - Element Timing Properties
+	// MARK: - Timing Properties
 	
 	/// The start of this element on its parent timeline. For example, if this is a video clip on the primary storyline, this value would be the in point of the clip on the project timeline. If this is a clip on a secondary storyline, this value would be the in point of the clip on the secondary storyline's timeline.
 	public var fcpxParentInPoint: CMTime? {
@@ -2123,7 +1936,7 @@ extension XMLElement {
 
 	}
 	
-	// MARK: - Methods for Events
+	// MARK: - Methods for FCPX Library Events
 	
 	/// Returns all items contained within this event. If this is not an event, the property will be nil. If the event is empty, the property will be an empty array.
 	public var eventItems: [XMLElement]? {
@@ -2745,6 +2558,158 @@ extension XMLElement {
 	}
 	
 	
+	// MARK: - Comparing Timing Between Clips
+	
+	/// Tests if this clip's in and out points include the given time value.
+	///
+	/// - Parameter time: A CMTime value
+	/// - Returns: True if the time value is between the in and out points of the clip
+	public func clipRangeIncludes(_ time: CMTime) -> Bool {
+		
+		guard let clipInPoint = self.fcpxParentInPoint else {
+			return false
+		}
+		
+		guard let clipOutPoint = self.fcpxParentOutPoint else {
+			return false
+		}
+		
+		if clipInPoint.seconds <= time.seconds && time.seconds <= clipOutPoint.seconds {
+			
+			return true
+			
+		} else {
+			return false
+		}
+	}
+	
+	/// Tests if this clip's timing falls within the given in and out points.
+	///
+	/// - Parameters:
+	///   - inPoint: The in point to test against.
+	///   - outPoint: The out point to test against.
+	/// - Returns: True if the clip's timing falls within the inPoint and outPoint values.
+	public func clipRangeIsEnclosedBetween(_ inPoint: CMTime, outPoint: CMTime) -> Bool {
+		guard let clipInPoint = self.fcpxParentInPoint else {
+			return false
+		}
+		
+		guard let clipOutPoint = self.fcpxParentOutPoint else {
+			return false
+		}
+		
+		if inPoint.seconds <= clipInPoint.seconds && clipOutPoint.seconds <= outPoint.seconds {
+			return true
+		} else {
+			return false
+		}
+	}
+	
+	
+	
+	
+	
+	/// Returns whether the clip overlaps with a given time range specified by an in and out point.
+	///
+	/// - Parameters:
+	///   - inPoint: The in point as a CMTime value.
+	///   - outPoint: The out point as a CMTime value.
+	/// - Returns: A tuple containing three boolean values. "Overlaps" indicates whether the clip overlaps at all with the in and out point range. "withClipInPoint" indicates whether the element's in point overlaps with the range. "withClipOutPoint" indicates whether the element's out point overlaps with the range.
+	///
+	/// - Example:\
+	/// The following is a reference for how a clip could overlap. Below each case are resulting values for the "overlaps", "withClipInPoint", and "withClipOutPoint" tuple values.\
+	/// `    [  comparisonClip ]         [ comparisonClip ]          [  comparisonClip  ]`\
+	/// `[ clip1 ]         [ clip2 ]    [       clip       ]             [   clip   ]`\
+	/// `(t,f,t)            (t,t,f)     (true, false, false)          (true, true, true)`\
+	public func clipRangeOverlapsWith(_ inPoint: CMTime, outPoint: CMTime) -> (overlaps: Bool, withClipInPoint: Bool, withClipOutPoint: Bool) {
+		
+		var overlaps: Bool = false
+		var withClipInPoint: Bool = false
+		var withClipOutPoint: Bool = false
+		
+		guard let _ = self.fcpxParentInPoint else {
+			return (overlaps, withClipInPoint, withClipOutPoint)
+		}
+		
+		guard let _ = self.fcpxParentOutPoint else {
+			return (overlaps, withClipInPoint, withClipOutPoint)
+		}
+		
+		
+		if self.clipRangeIsEnclosedBetween(inPoint, outPoint: outPoint) {
+			
+			overlaps = true
+			withClipInPoint = true
+			withClipOutPoint = true
+			
+		} else if self.clipRangeIncludes(inPoint) && self.clipRangeIncludes(outPoint) {
+			
+			overlaps = true
+			withClipInPoint = false
+			withClipOutPoint = false
+			
+		} else {
+			
+			if self.clipRangeIncludes(inPoint) {
+				overlaps = true
+				withClipOutPoint = true
+			}
+			
+			if self.clipRangeIncludes(outPoint) {
+				overlaps = true
+				withClipInPoint = true
+			}
+		}
+		
+		return (overlaps, withClipInPoint, withClipOutPoint)
+	}
+	
+	
+	/**
+	Returns child elements that fall within the specified in and out points. The element type can optionally be specified.
+	
+	- parameter inPoint: The in point as a CMTime value.
+	- parameter outPoint: The out point as a CMTime value.
+	- parameter elementType: The element type as an FCPXMLElementType enum value. If the value is nil, the method will return all child elements that match the criteria.
+	
+	- returns: An array of tuples. Each tuple contains the XML Element as an NSXMLElement, a boolean value indicating whether the element's in point overlaps with the range, and a boolean value indicating whether the element's out point overlaps with the range.
+	*/
+	public func childElementsWithinRangeOf(_ inPoint: CMTime, outPoint: CMTime, elementType: FCPXMLElementType?) -> [(XMLElement: XMLElement, overlapsInPoint: Bool, overlapsOutPoint: Bool)] {
+		
+		var elementsInRange: [(XMLElement: XMLElement, overlapsInPoint: Bool, overlapsOutPoint: Bool)] = []
+		
+		var children: [XMLElement] = []
+		
+		if elementType == nil { // If no type is specified
+			
+			guard let childNodes = self.children else { // Check for nil value
+				return []
+			}
+			
+			children = childNodes as! [XMLElement]
+			
+		} else { // If a type is specified
+			
+			children = self.elements(forName: elementType!.rawValue)
+		}
+		
+		// FIXME: Something isn't working here and isn't identifying the clips. Maybe it's the timing values?
+		for element in children {
+			
+			let overlaps = element.clipRangeOverlapsWith(inPoint, outPoint: outPoint)
+			
+			if overlaps.overlaps == true {
+				print("\(element.fcpxName ?? "unnamed element") \(overlaps.withClipInPoint),\(overlaps.withClipOutPoint)")
+				
+				elementsInRange.append((XMLElement: element, overlapsInPoint: overlaps.withClipInPoint, overlapsOutPoint: overlaps.withClipOutPoint))
+				
+			}
+			
+		}
+		
+		return elementsInRange
+	}
+	
 	
 	
 	// MARK: - Miscellaneous
@@ -2833,7 +2798,7 @@ extension XMLElement {
 	
 	
 	/**
-	A recursive function that goes through an element and all its sub-elements, finding clips that match the given name. This function is used by the clips(forName name:usingAbsoluteMatch:) function and should not be called publicly.
+	A recursive function that goes through an element and all its sub-elements, finding clips that match the given name. This function is used by the clips(forName name:usingAbsoluteMatch:) function and should not be called directly.
 	
 	- parameter forName: A String of the name to match clips with.
 	- parameter inElement: The XMLElement to recursively search. This is usually self.
@@ -3012,7 +2977,7 @@ extension XMLElement {
 	
 	
 	
-	// MARK: - XMLElement Helper Properties and Functions
+	// MARK: - XMLElement Helper Properties and Methods
 	public func getElementAttribute(_ name: String) -> String? {
 		
 		if let elementAttribute = self.attribute(forName: name) {
@@ -3204,161 +3169,7 @@ extension XMLElement {
 	}
 	
 	
-
-	
-	// MARK: - Comparing Timing Between Clips
-	
-	/// Tests if this clip's in and out points include the given time value.
-	///
-	/// - Parameter time: A CMTime value
-	/// - Returns: True if the time value is between the in and out points of the clip
-	public func clipRangeIncludes(_ time: CMTime) -> Bool {
-		
-		guard let clipInPoint = self.fcpxParentInPoint else {
-			return false
-		}
-		
-		guard let clipOutPoint = self.fcpxParentOutPoint else {
-			return false
-		}
-		
-		if clipInPoint.seconds <= time.seconds && time.seconds <= clipOutPoint.seconds {
-			
-			return true
-			
-		} else {
-			return false
-		}
-	}
-	
-	/// Tests if this clip's timing falls within the given in and out points.
-	///
-	/// - Parameters:
-	///   - inPoint: The in point to test against.
-	///   - outPoint: The out point to test against.
-	/// - Returns: True if the clip's timing falls within the inPoint and outPoint values.
-	public func clipRangeIsEnclosedBetween(_ inPoint: CMTime, outPoint: CMTime) -> Bool {
-		guard let clipInPoint = self.fcpxParentInPoint else {
-			return false
-		}
-		
-		guard let clipOutPoint = self.fcpxParentOutPoint else {
-			return false
-		}
-		
-		if inPoint.seconds <= clipInPoint.seconds && clipOutPoint.seconds <= outPoint.seconds {
-			return true
-		} else {
-			return false
-		}
-	}
-	
-	
-	
-	
-
-	/// Returns whether the clip overlaps with a given time range specified by an in and out point.
-	///
-	/// - Parameters:
-	///   - inPoint: The in point as a CMTime value.
-	///   - outPoint: The out point as a CMTime value.
-	/// - Returns: A tuple containing three boolean values. "Overlaps" indicates whether the clip overlaps at all with the in and out point range. "withClipInPoint" indicates whether the element's in point overlaps with the range. "withClipOutPoint" indicates whether the element's out point overlaps with the range.
-	///
-	/// - Example:\
-	/// The following is a reference for how a clip could overlap. Below each case are resulting values for the "overlaps", "withClipInPoint", and "withClipOutPoint" tuple values.\
-	/// `    [  comparisonClip ]         [ comparisonClip ]          [  comparisonClip  ]`\
-	/// `[ clip1 ]         [ clip2 ]    [       clip       ]             [   clip   ]`\
-	/// `(t,f,t)            (t,t,f)     (true, false, false)          (true, true, true)`\
-	public func clipRangeOverlapsWith(_ inPoint: CMTime, outPoint: CMTime) -> (overlaps: Bool, withClipInPoint: Bool, withClipOutPoint: Bool) {
-		
-		var overlaps: Bool = false
-		var withClipInPoint: Bool = false
-		var withClipOutPoint: Bool = false
-		
-		guard let _ = self.fcpxParentInPoint else {
-			return (overlaps, withClipInPoint, withClipOutPoint)
-		}
-		
-		guard let _ = self.fcpxParentOutPoint else {
-			return (overlaps, withClipInPoint, withClipOutPoint)
-		}
-		
-		
-		if self.clipRangeIsEnclosedBetween(inPoint, outPoint: outPoint) {
-			
-			overlaps = true
-			withClipInPoint = true
-			withClipOutPoint = true
-			
-		} else if self.clipRangeIncludes(inPoint) && self.clipRangeIncludes(outPoint) {
-			
-			overlaps = true
-			withClipInPoint = false
-			withClipOutPoint = false
-			
-		} else {
-			
-			if self.clipRangeIncludes(inPoint) {
-				overlaps = true
-				withClipOutPoint = true
-			}
-			
-			if self.clipRangeIncludes(outPoint) {
-				overlaps = true
-				withClipInPoint = true
-			}
-		}
-		
-		return (overlaps, withClipInPoint, withClipOutPoint)
-	}
-	
-	
-	/**
-	Returns child elements that fall within the specified in and out points. The element type can optionally be specified.
-	
-	- parameter inPoint: The in point as a CMTime value.
-	- parameter outPoint: The out point as a CMTime value.
-	- parameter elementType: The element type as an FCPXMLElementType enum value. If the value is nil, the method will return all child elements that match the criteria.
-	
-	- returns: An array of tuples. Each tuple contains the XML Element as an NSXMLElement, a boolean value indicating whether the element's in point overlaps with the range, and a boolean value indicating whether the element's out point overlaps with the range.
-	*/
-	public func childElementsWithinRangeOf(_ inPoint: CMTime, outPoint: CMTime, elementType: FCPXMLElementType?) -> [(XMLElement: XMLElement, overlapsInPoint: Bool, overlapsOutPoint: Bool)] {
-		
-		var elementsInRange: [(XMLElement: XMLElement, overlapsInPoint: Bool, overlapsOutPoint: Bool)] = []
-		
-		var children: [XMLElement] = []
-		
-		if elementType == nil { // If no type is specified
-			
-			guard let childNodes = self.children else { // Check for nil value
-				return []
-			}
-			
-			children = childNodes as! [XMLElement]
-			
-		} else { // If a type is specified
-			
-			children = self.elements(forName: elementType!.rawValue)
-		}
-		
-		// FIXME: Something isn't working here and isn't identifying the clips. Maybe it's the timing values?
-		for element in children {
-			
-			let overlaps = element.clipRangeOverlapsWith(inPoint, outPoint: outPoint)
-			
-			if overlaps.overlaps == true {
-				print("\(element.fcpxName ?? "unnamed element") \(overlaps.withClipInPoint),\(overlaps.withClipOutPoint)")
-				
-				elementsInRange.append((XMLElement: element, overlapsInPoint: overlaps.withClipInPoint, overlapsOutPoint: overlaps.withClipOutPoint))
-				
-			}
-			
-		}
-		
-		return elementsInRange
-	}
-	
-	// MARK: - Parsing Functions
+	// MARK: - Parsing Methods
 	
 	/// Parses roles from the given XMLElement. This would typically be used on a project XMLElement.
 	func parseRoles(fromElement element: XMLElement) -> [String]{
@@ -3379,6 +3190,192 @@ extension XMLElement {
 		
 	}
 	
+	
+	// MARK: - Constants
+	enum FCPXMLElementError: Error, CustomStringConvertible {
+		case notAnEvent(element: XMLElement)
+		case notAnAnnotatableItem(element: XMLElement)
+		case notAnAnnotation(element: XMLElement)
+		
+		var description: String {
+			switch self {
+			case .notAnEvent(let element):
+				return "The \"\(element.name ?? "unnamed")\" element is not an event."
+			case .notAnAnnotatableItem(let element):
+				return "The \"\(element.name ?? "unnamed")\" element cannot be annotated."
+			case .notAnAnnotation(let element):
+				return "The \"\(element.name ?? "unnamed")\" element is not an annotation."
+			default:
+				return "An error has occurred with an FCPXML element."
+			}
+		}
+	}
+	
+	public enum TextAlignment: String {
+		case Left = "left"
+		case Center = "center"
+		case Right = "right"
+		case Justified = "justified"
+	}
+	
+	public enum TimecodeFormat: String {
+		case dropFrame = "DF"
+		case nonDropFrame = "NDF"
+	}
+	
+	public enum AudioLayout: String {
+		case mono = "mono"
+		case stereo = "stereo"
+		case surround = "surround"
+	}
+	
+	public enum AudioRate: String {
+		case rate32kHz = "32k"
+		case rate44_1kHz = "44.1k"
+		case rate48kHz = "48k"
+		case rate88_2kHz = "88.2k"
+		case rate96kHz = "96k"
+		case rate176_4kHz = "176.4k"
+		case rate192kHz = "192k"
+	}
+	
+	public enum RenderColorSpace: String {
+		case rec601NTSC = "Rec. 601 (NTSC)"
+		case rec601PAL = "Rec. 601 (PAL)"
+		case rec709 = "Rec. 709"
+		case rec2020 = "Rec. 2020"
+	}
+	
+	public enum MulticamSourceEnable: String {
+		case audio = "audio"
+		case video = "video"
+		case all = "all"
+		case none = "none"
+	}
+	
+	/// The caption format included in caption role attributes.
+	public enum CaptionFormat: String {
+		case itt = "ITT"
+		case cea608 = "CEA608"
+	}
+	
+	/// RFC 5646 language tags for use in caption role attributes. The languages included in this enum are those supported by FCPX.
+	public enum CaptionLanguage: String {
+		case Afrikaans = "af"
+		case Arabic = "ar"
+		case Bangla = "bn"
+		case Bulgarian = "bg"
+		case Catalan = "ca"
+		case Chinese_Cantonese = "yue-Hant"
+		case Chinese_Simplified = "cmn-Hans"
+		case Chinese_Traditional = "cmn-Hant"
+		case Croatian = "hr"
+		case Czech = "cs"
+		case Danish = "da"
+		case Dutch = "nl"
+		case English = "en"
+		case English_Australia = "en-AU"
+		case English_Canada = "en-CA"
+		case English_UnitedKingdom = "en-GB"
+		case English_UnitedStates = "en-US"
+		case Estonian = "et"
+		case Finnish = "fi"
+		case French_Belgium = "fr-BE"
+		case French_Canada = "fr-CA"
+		case French_France = "fr-FR"
+		case French_Switzerland = "fr-CH"
+		case German = "de"
+		case German_Austria = "de-AT"
+		case German_Germany = "de-DE"
+		case German_Switzerland = "de-CH"
+		case Greek = "el"
+		case Greek_Cyprus = "el-CY"
+		case Hebrew = "he"
+		case Hindi = "hi"
+		case Hungarian = "hu"
+		case Icelandic = "is"
+		case Indonesian = "id"
+		case Italian = "it"
+		case Japanese = "ja"
+		case Kannada = "kn"
+		case Kazakh = "kk"
+		case Korean = "ko"
+		case Lao = "lo"
+		case Latvian = "lv"
+		case Lithuanian = "lt"
+		case Luxembourgish = "lb"
+		case Malay = "ms"
+		case Malayalam = "ml"
+		case Maltese = "mt"
+		case Marathi = "mr"
+		case Norwegian = "no"
+		case Polish = "pl"
+		case Portuguese_Brazil = "pt-BR"
+		case Portuguese_Portugal = "pt-PT"
+		case Punjabi = "pa"
+		case Romanian = "ro"
+		case Russian = "ru"
+		case Slovak = "sk"
+		case Slovenian = "sl"
+		case Spanish_LatinAmerica = "es-419"
+		case Spanish_Mexico = "es-MX"
+		case Spanish_Spain = "es-ES"
+		case Swedish = "sv"
+		case Tagalog = "tl"
+		case Tamil = "ta"
+		case Telugu = "te"
+		case Thai = "th"
+		case Turkish = "tr"
+		case Ukrainian = "uk"
+		case Urdu = "ur"
+		case Vietnamese = "vi"
+		case Zulu = "zu"
+	}
+	
+	/// Caption display style for CEA-608 captions
+	public enum CEA608CaptionDisplayStyle: String {
+		case popOn = "pop-on"
+		case paintOn = "paint-on"
+		case rollUp = "roll-up"
+	}
+	
+	/// Caption placement for ITT captions.
+	public enum ITTCaptionPlacement: String {
+		case top = "top"
+		case bottom = "bottom"
+		case left = "left"
+		case right = "right"
+	}
+	
+	/// Caption alignment for CEA-608 captions.
+	public enum CEA608CaptionAlignment: String {
+		case left = "left"
+		case center = "center"
+		case right = "right"
+	}
+	
+	/// Color values for CEA-608 captions. The raw value is the color expressed as "red green blue alpha" which is the way it is represented in FCPXML text style elements.
+	public enum CEA608Color: String {
+		case red = "1 0 0 1"
+		case yellow = "1 1 0 1"
+		case green = "0 1 0 1"
+		case cyan = "0 1 1 1"
+		case blue = "0 0 1 1"
+		case magenta = "1 0 1 1"
+		case white = "1 1 1 1"
+		case black = "0 0 0 1"
+	}
+	
+	/// The location of a story element within its sequence or timeline.
+	///
+	/// - primaryStoryline: The story element exists on the primary storyline.
+	/// - attachedClip: The story element is attached to another clip that is on the primary storyline.
+	/// - secondaryStoryline: The story element is embedded in a secondary storyline.
+	public enum StoryElementLocation {
+		case primaryStoryline
+		case attachedClip
+		case secondaryStoryline
+	}
 	
 
 }
