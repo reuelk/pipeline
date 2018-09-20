@@ -3136,6 +3136,74 @@ extension XMLElement {
 	public func addChildConformingToDTD(element: XMLElement, overrideDTDVersion: String?) {
 		// TODO: Add this function
 	}
+	
+	
+	/// Converts a whitespace-only text value inside an XMLElement into an XMLNode object and inserts it as a child back into the XMLElement.
+	///
+	/// When text values consist of only whitespace characters, such as in title clips with adjusted kerning, Final Cut Pro X exports FCPXML files with the whitespace as is, not encoded into a valid XML whitespace character. This results in the XMLNode class ignoring the whitespace character and not initializing that into an XMLNode object.
+	///
+	/// This method extracts the text value inside an _XML element string_, converts that into a text XMLNode object, and inserts it back into the XMLElement object.
+	///
+	/// For example, an XMLElement consisting of:
+	/// ````
+	/// <text-style ref="ts30"> </text-style>
+	/// ````
+	/// will have its single space character converted into a text XMLNode after being processed through this method.
+	///
+	/// - Note: If the XMLElement has a child node, the XMLElement will not be modified.
+	public func convertWhitespaceText() {
+		
+		guard self.childCount == 0 else {
+			return
+		}
+		
+		guard let textNode = self.textNode(fromXMLString: self.xmlString) else {
+			return
+		}
+		
+		// Insert the node back into the element.
+		self.addChild(textNode)
+		
+	}
+	
+	
+	/// Extracts the text node inside an XMLElement from a string representation of the XMLElement.
+	///
+	/// When text values consist of only whitespace characters, such as in title clips with adjusted kerning, Final Cut Pro X exports FCPXML files with the whitespace as is, not encoded into a valid XML whitespace character. This results in the XMLNode class ignoring the whitespace character and not initializing that into an XMLNode object.
+	///
+	/// This function will extract the text value inside an _XML element string_ and convert that into a text XMLNode object so that it can be inserted into the XMLElement object.
+	///
+	/// For example, an XMLElement consisting of:
+	/// ````
+	/// <text-style ref="ts30"> </text-style>
+	/// ````
+	/// will return a text node containing a single space character, which would normally be ignored when that XML string is read from a file.
+	///
+	/// - Parameter xmlString: A string representation of a single XML element.
+	/// - Returns: An XMLNode object of the text node inside the XMLElement, or nil if one could not be extracted.
+	private func textNode(fromXMLString xmlString: String) -> XMLNode? {
+		// Find the text within the single element and convert it to a text node object.
+		
+		guard let rangeOfEndTag = xmlString.range(of: "</") else {
+			return nil
+		}
+		let beginning = xmlString.prefix(upTo: rangeOfEndTag.lowerBound)
+		
+		guard let rangeOfBeginningTag = beginning.range(of: ">") else {
+			return nil
+		}
+		let text = beginning.suffix(from: rangeOfBeginningTag.upperBound)
+		
+		guard text != "" else {
+			return nil
+		}
+		
+		let node = XMLNode.text(withStringValue: String(text)) as? XMLNode
+		
+		return node
+	}
+	
+	
 
 	
 	// MARK: - Comparing Timing Between Clips
