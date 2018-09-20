@@ -153,48 +153,9 @@ extension XMLDocument {
 		}
 	}
 	
-	/// An array of all roles used in the FCPXML document.
-	public var fcpxAllRoles: [String] {
-		get {
-			if self.fcpxRoleAttributeValues == [] {
-				self.parseFCPXML()
-			}
-			
-			return self.fcpxRoleAttributeValues
-		}
-	}
-	
-	/// The highest resource ID number used in the FCPXML document.
-	public var fcpxLastResourceID: Int {
-		get {
-			if self.fcpxResourceIDs == [] {
-				self.parseFCPXML()
-			}
-			
-			if let last = self.fcpxResourceIDs.last {
-				return last
-			}
-			
-			return 0
-		}
-	}
-	
-	/// The highest text style ID number used in the FCPXML document.
-	public var fcpxLastTextStyleID: Int {
-		get {
-			if self.fcpxTextStyleIDs == [] {
-				self.parseFCPXML()
-			}
-			
-			if let last = self.fcpxTextStyleIDs.last {
-				return last
-			}
-			
-			return 0
-		}
-	}
 	
 	// The FCPXML version number is obtained here, not during parsing. This way, the version number can be checked before parsing, which could break depending on the FCPXML version.
+	/// The version of FCPXML used in this document.
 	public var fcpxmlVersion: String? {
 		get {
 			
@@ -304,6 +265,7 @@ extension XMLDocument {
 			
 		}
 	}
+	
 	
 	// MARK: - Private Variables
 	
@@ -421,7 +383,7 @@ extension XMLDocument {
 	}
 
 	
-	// MARK: - Parsing Functions
+	// MARK: - Parsing Methods
 	
 	/// Parses the resource IDs, text style IDs, and roles, refreshing the fcpxLastResourceID, fcpxLastTextStyleID, and fcpxRoles properties. Call this method when initially loading an FCPXML document and when the IDs or roles change.
 	public func parseFCPXML() {
@@ -436,6 +398,45 @@ extension XMLDocument {
 		self.fcpxRoleAttributeValues = delegate.roles
 		
 		return
+	}
+	
+	
+	/// Returns an array of all roles used in the FCPXML document.
+	///
+	/// This function parses the entire XML document whenever called. Avoid calling it repeatedly and store the value separately instead.
+	/// - Returns: An array of String values.
+	public func fcpxAllRoles() -> [String] {
+		self.parseFCPXML()
+		
+		return self.fcpxRoleAttributeValues
+	}
+	
+	/// Returns the highest resource ID number used in the FCPXML document.
+	///
+	/// This function parses the entire XML document whenever called. Avoid calling it repeatedly and store the value separately instead.
+	/// - Returns: An integer value.
+	public func fcpxLastResourceID() -> Int {
+		self.parseFCPXML()
+		
+		if let last = self.fcpxResourceIDs.last {
+			return last
+		}
+		
+		return 0
+	}
+	
+	/// Returns the highest text style ID number used in the FCPXML document.
+	///
+	/// This function parses the entire XML document whenever called. Avoid calling it repeatedly and store the value separately instead.
+	/// - Returns: An integer value.
+	public func fcpxLastTextStyleID() -> Int {
+		self.parseFCPXML()
+		
+		if let last = self.fcpxTextStyleIDs.last {
+			return last
+		}
+		
+		return 0
 	}
 	
 	
