@@ -63,7 +63,7 @@ public struct FCPXMLUtility {
 	public func CMTimeFrom(timecodeHours: Int, timecodeMinutes: Int, timecodeSeconds: Int, timecodeFrames: Int, frameDuration: CMTime) -> CMTime {
 		
 		let framerate: Double
-		if frameDuration == CMTimeMake(1001, 24000) { // If the framerate is 23.976, make the framerate 24 per SMPTE
+		if frameDuration == CMTimeMake(value: 1001, timescale: 24000) { // If the framerate is 23.976, make the framerate 24 per SMPTE
 			framerate = 24.0
 		} else {
 			framerate = 1 / (frameDuration.seconds)
@@ -80,7 +80,7 @@ public struct FCPXMLUtility {
 		let timescale = Int32(framerate * 1000)
 		let value = Int64(Double(timescale) * totalSeconds)
 		
-		let totalSecondsCMTime = CMTimeMake(value, timescale)
+		let totalSecondsCMTime = CMTimeMake(value: value, timescale: timescale)
 		
 		return totalSecondsCMTime
 	}
@@ -96,16 +96,16 @@ public struct FCPXMLUtility {
 	public func CMTime(fromFCPXMLTime timeString: String) -> CMTime {
 		var timeValues = timeString.components(separatedBy: "/")
 		if timeValues.count > 1 {
-			timeValues[1] = String(timeValues[1].characters.dropLast())
+			timeValues[1] = String(timeValues[1].dropLast())
 			let value = Int64(timeValues[0])!
 			let timescale = Int32(timeValues[1])!
 			
-			return CMTimeMake(value, timescale)
+			return CMTimeMake(value: value, timescale: timescale)
 		} else {
-			timeValues[0] = String(timeValues[0].characters.dropLast())
+			timeValues[0] = String(timeValues[0].dropLast())
 			let value = Int64(timeValues[0])!
 			
-			return CMTimeMake(value, 1)
+			return CMTimeMake(value: value, timescale: 1)
 		}
 	}
 	
@@ -403,7 +403,7 @@ public struct FCPXMLUtility {
 			var newSegment = ""
 			var reachedAttributeEnd = false
 			
-			for (charIndex, char) in segment.characters.enumerated() {
+			for (charIndex, char) in segment.enumerated() {
 				
 				if reachedAttributeEnd == false {
 					
@@ -421,7 +421,7 @@ public struct FCPXMLUtility {
 						
 						newSegment += String(char)
 						
-						if charIndex == segment.characters.count - 1 {
+						if charIndex == segment.count - 1 {
 							skipNextNewLineReplacement = true
 						}
 						
