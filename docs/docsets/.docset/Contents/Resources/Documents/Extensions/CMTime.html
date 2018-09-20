@@ -14,7 +14,7 @@
     <a title="CMTime Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../index.html"> Docs</a> (44% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,7 +28,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../Enums.html">Enums</a>
+            <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Enums/FCPXMLElementType.html">FCPXMLElementType</a>
@@ -65,10 +65,31 @@
               <li class="nav-group-task">
                 <a href="../Extensions/XMLElement/MulticamSourceEnable.html">– MulticamSourceEnable</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CaptionFormat.html">– CaptionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CaptionLanguage.html">– CaptionLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CEA608CaptionDisplayStyle.html">– CEA608CaptionDisplayStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/ITTCaptionPlacement.html">– ITTCaptionPlacement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CEA608CaptionAlignment.html">– CEA608CaptionAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CEA608Color.html">– CEA608Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/StoryElementLocation.html">– StoryElementLocation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Structs.html">Structs</a>
+            <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/FCPXMLUtility.html">FCPXMLUtility</a>
@@ -83,7 +104,7 @@
             <h1>CMTime</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">CMTime</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">CMTime</span></code></pre>
 
                 </div>
               </div>
@@ -95,9 +116,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SC6CMTimeV8PipelineE12fcpxmlStringSSv"></a>
+                    <a name="/s:So6CMTimea8PipelineE12fcpxmlStringSSvp"></a>
                     <a name="//apple_ref/swift/Property/fcpxmlString" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SC6CMTimeV8PipelineE12fcpxmlStringSSv">fcpxmlString</a>
+                    <a class="token" href="#/s:So6CMTimea8PipelineE12fcpxmlStringSSvp">fcpxmlString</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -112,7 +133,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxmlString</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxmlString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -122,9 +143,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SC6CMTimeV8PipelineE4zeroAByF"></a>
+                    <a name="/s:So6CMTimea8PipelineE4zeroAByF"></a>
                     <a name="//apple_ref/swift/Method/zero()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SC6CMTimeV8PipelineE4zeroAByF">zero()</a>
+                    <a class="token" href="#/s:So6CMTimea8PipelineE4zeroAByF">zero()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -139,9 +160,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">zero</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">zero</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CMTime</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMTime object.</p>
                       </div>
                     </section>
                   </div>
@@ -149,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SC6CMTimeV8PipelineE13timeAsCounterSi5hours_Si7minutesSi7secondsSd12millisecondsSS0F6StringSS0gJ0SS0hJ0SS06framesJ0SS07counterJ0tyF"></a>
+                    <a name="/s:So6CMTimea8PipelineE13timeAsCounterSi5hours_Si7minutesSi7secondsSd12millisecondsSS0F6StringSS0gJ0SS0hJ0SS06framesJ0SS07counterJ0tyF"></a>
                     <a name="//apple_ref/swift/Method/timeAsCounter()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SC6CMTimeV8PipelineE13timeAsCounterSi5hours_Si7minutesSi7secondsSd12millisecondsSS0F6StringSS0gJ0SS0hJ0SS06framesJ0SS07counterJ0tyF">timeAsCounter()</a>
+                    <a class="token" href="#/s:So6CMTimea8PipelineE13timeAsCounterSi5hours_Si7minutesSi7secondsSd12millisecondsSS0F6StringSS0gJ0SS0hJ0SS06framesJ0SS07counterJ0tyF">timeAsCounter()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,9 +191,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">timeAsCounter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">hours</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">minutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">milliseconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">hoursString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">minutesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">secondsString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">framesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">counterString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">timeAsCounter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">hours</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">minutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">milliseconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">hoursString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">minutesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">secondsString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">framesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">counterString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A tuple with hours, minutes, seconds, and milliseconds as Int, Double, and String values.</p>
                       </div>
                     </section>
                   </div>
@@ -176,9 +205,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SC6CMTimeV8PipelineE14timeAsTimecodeSi5hours_Si7minutesSi7secondsSi6framesSS0F6StringSS0gJ0SS0hJ0SS0iJ0SS08timecodeJ0tAB18usingFrameDuration_Sb04dropM0tF"></a>
+                    <a name="/s:So6CMTimea8PipelineE14timeAsTimecode18usingFrameDuration04dropG0Si5hours_Si7minutesSi7secondsSi6framesSS0J6StringSS0kN0SS0lN0SS0mN0SS08timecodeN0Sd0O9InSecondstAB_SbtF"></a>
                     <a name="//apple_ref/swift/Method/timeAsTimecode(usingFrameDuration:dropFrame:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SC6CMTimeV8PipelineE14timeAsTimecodeSi5hours_Si7minutesSi7secondsSi6framesSS0F6StringSS0gJ0SS0hJ0SS0iJ0SS08timecodeJ0tAB18usingFrameDuration_Sb04dropM0tF">timeAsTimecode(usingFrameDuration:dropFrame:)</a>
+                    <a class="token" href="#/s:So6CMTimea8PipelineE14timeAsTimecode18usingFrameDuration04dropG0Si5hours_Si7minutesSi7secondsSi6framesSS0J6StringSS0kN0SS0lN0SS0mN0SS08timecodeN0Sd0O9InSecondstAB_SbtF">timeAsTimecode(usingFrameDuration:dropFrame:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -193,9 +222,32 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">timeAsTimecode</span><span class="p">(</span><span class="n">usingFrameDuration</span> <span class="nv">frameDuration</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="nv">dropFrame</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">hours</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">minutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">frames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">hoursString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">minutesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">secondsString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">framesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">timecodeString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">timeAsTimecode</span><span class="p">(</span><span class="n">usingFrameDuration</span> <span class="nv">frameDuration</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="nv">dropFrame</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">hours</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">minutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">frames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">hoursString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">minutesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">secondsString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">framesString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">timecodeString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">timecodeInSeconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frameDuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The duration of a single frame as a CMTime value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A tuple with hours, minutes, seconds, and frames as Int and String values.</p>
                       </div>
                     </section>
                   </div>
@@ -205,8 +257,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-09-28)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

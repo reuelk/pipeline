@@ -2,681 +2,1290 @@
   "warnings": [
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 25,
+      "line": 23,
       "symbol": "FCPXMLElementType.assetResource",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 26,
+      "line": 24,
       "symbol": "FCPXMLElementType.formatResource",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "FCPXMLElementType.mediaResource",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 28,
+      "line": 26,
       "symbol": "FCPXMLElementType.effectResource",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 29,
+      "line": 27,
       "symbol": "FCPXMLElementType.multicamResource",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 30,
+      "line": 28,
       "symbol": "FCPXMLElementType.compoundResource",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 33,
+      "line": 31,
       "symbol": "FCPXMLElementType.event",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 34,
+      "line": 32,
       "symbol": "FCPXMLElementType.project",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 35,
+      "line": 33,
       "symbol": "FCPXMLElementType.multicamClip",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 36,
+      "line": 34,
       "symbol": "FCPXMLElementType.compoundClip",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 37,
+      "line": 35,
       "symbol": "FCPXMLElementType.synchronizedClip",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 38,
+      "line": 36,
       "symbol": "FCPXMLElementType.assetClip",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 41,
+      "line": 39,
       "symbol": "FCPXMLElementType.clip",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 42,
+      "line": 40,
       "symbol": "FCPXMLElementType.audio",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 43,
+      "line": 41,
       "symbol": "FCPXMLElementType.video",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 44,
+      "line": 42,
       "symbol": "FCPXMLElementType.gap",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 45,
+      "line": 43,
       "symbol": "FCPXMLElementType.transition",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 46,
+      "line": 44,
       "symbol": "FCPXMLElementType.spine",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 47,
+      "line": 45,
       "symbol": "FCPXMLElementType.audition",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 48,
+      "line": 46,
       "symbol": "FCPXMLElementType.sequence",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 49,
+      "line": 47,
       "symbol": "FCPXMLElementType.title",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 50,
+      "line": 48,
       "symbol": "FCPXMLElementType.param",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 53,
+      "line": 49,
+      "symbol": "FCPXMLElementType.caption",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
+      "line": 52,
       "symbol": "FCPXMLElementType.text",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 54,
+      "line": 53,
       "symbol": "FCPXMLElementType.textStyleDef",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 55,
+      "line": 54,
       "symbol": "FCPXMLElementType.textStyle",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 58,
+      "line": 57,
       "symbol": "FCPXMLElementType.marker",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 59,
+      "line": 58,
       "symbol": "FCPXMLElementType.keyword",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 60,
+      "line": 59,
       "symbol": "FCPXMLElementType.rating",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 61,
+      "line": 60,
       "symbol": "FCPXMLElementType.chapterMarker",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 62,
+      "line": 61,
       "symbol": "FCPXMLElementType.analysisMarker",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 63,
+      "line": 62,
       "symbol": "FCPXMLElementType.note",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 66,
+      "line": 65,
       "symbol": "FCPXMLElementType.folder",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 67,
+      "line": 66,
       "symbol": "FCPXMLElementType.keywordCollection",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLElementType.swift",
-      "line": 68,
+      "line": 67,
       "symbol": "FCPXMLElementType.smartCollection",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLUtility.swift",
-      "line": 15,
-      "symbol": "FCPXMLUtility",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Classes/FCPXMLUtility.swift",
-      "line": 17,
-      "symbol": "FCPXMLUtility.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLDocumentExtension.swift",
-      "line": 28,
-      "symbol": "XMLDocument.fcpxResourceList",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLDocumentExtension.swift",
-      "line": 176,
-      "symbol": "XMLDocument.fcpxmlVersion",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 35,
-      "symbol": "XMLElement.TextAlignment",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 36,
-      "symbol": "XMLElement.TextAlignment.Left",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 37,
-      "symbol": "XMLElement.TextAlignment.Center",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 38,
-      "symbol": "XMLElement.TextAlignment.Right",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 39,
-      "symbol": "XMLElement.TextAlignment.Justified",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 42,
-      "symbol": "XMLElement.TimecodeFormat",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 43,
-      "symbol": "XMLElement.TimecodeFormat.dropFrame",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 44,
-      "symbol": "XMLElement.TimecodeFormat.nonDropFrame",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 47,
-      "symbol": "XMLElement.AudioLayout",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 48,
-      "symbol": "XMLElement.AudioLayout.mono",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 49,
-      "symbol": "XMLElement.AudioLayout.stereo",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 50,
-      "symbol": "XMLElement.AudioLayout.surround",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 53,
-      "symbol": "XMLElement.AudioRate",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 54,
-      "symbol": "XMLElement.AudioRate.rate32kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 55,
-      "symbol": "XMLElement.AudioRate.rate44_1kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 56,
-      "symbol": "XMLElement.AudioRate.rate48kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 57,
-      "symbol": "XMLElement.AudioRate.rate88_2kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 58,
-      "symbol": "XMLElement.AudioRate.rate96kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 59,
-      "symbol": "XMLElement.AudioRate.rate176_4kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 60,
-      "symbol": "XMLElement.AudioRate.rate192kHz",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 63,
-      "symbol": "XMLElement.RenderColorSpace",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 64,
-      "symbol": "XMLElement.RenderColorSpace.rec601NTSC",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 65,
-      "symbol": "XMLElement.RenderColorSpace.rec601PAL",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 66,
-      "symbol": "XMLElement.RenderColorSpace.rec709",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 67,
-      "symbol": "XMLElement.RenderColorSpace.rec2020",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 70,
-      "symbol": "XMLElement.MulticamSourceEnable",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 71,
-      "symbol": "XMLElement.MulticamSourceEnable.audio",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 72,
-      "symbol": "XMLElement.MulticamSourceEnable.video",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 73,
-      "symbol": "XMLElement.MulticamSourceEnable.all",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 74,
-      "symbol": "XMLElement.MulticamSourceEnable.none",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 384,
+      "line": 425,
       "symbol": "XMLElement.fcpxType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 426,
+      "line": 467,
       "symbol": "XMLElement.fcpxName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 444,
+      "line": 485,
       "symbol": "XMLElement.fcpxDuration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 463,
+      "line": 504,
       "symbol": "XMLElement.fcpxTCStart",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 482,
+      "line": 523,
       "symbol": "XMLElement.fcpxStart",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 513,
+      "line": 554,
       "symbol": "XMLElement.fcpxOffset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 532,
+      "line": 573,
       "symbol": "XMLElement.fcpxTCFormat",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 557,
+      "line": 598,
       "symbol": "XMLElement.fcpxFormatRef",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 575,
+      "line": 616,
       "symbol": "XMLElement.fcpxRefOrID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 677,
+      "line": 718,
       "symbol": "XMLElement.fcpxID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 719,
+      "line": 760,
       "symbol": "XMLElement.fcpxRole",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 737,
+      "line": 778,
       "symbol": "XMLElement.fcpxLane",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 755,
+      "line": 796,
       "symbol": "XMLElement.fcpxNote",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 773,
+      "line": 814,
       "symbol": "XMLElement.fcpxValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 791,
+      "line": 832,
       "symbol": "XMLElement.fcpxSrc",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 809,
+      "line": 850,
       "symbol": "XMLElement.fcpxFrameDuration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 828,
+      "line": 869,
       "symbol": "XMLElement.fcpxWidth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 851,
+      "line": 892,
       "symbol": "XMLElement.fcpxHeight",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 874,
+      "line": 915,
       "symbol": "XMLElement.fcpxAudioLayout",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 901,
+      "line": 942,
       "symbol": "XMLElement.fcpxAudioRate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 936,
+      "line": 977,
       "symbol": "XMLElement.fcpxRenderColorSpace",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 966,
+      "line": 1007,
       "symbol": "XMLElement.fcpxHasAudio",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 992,
+      "line": 1033,
       "symbol": "XMLElement.fcpxHasVideo",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 1018,
+      "line": 1059,
       "symbol": "XMLElement.fcpxAngleID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 1067,
+      "line": 1108,
       "symbol": "XMLElement.fcpxUID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 2408,
+      "line": 2981,
       "symbol": "XMLElement.getElementAttribute(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 2422,
+      "line": 2995,
       "symbol": "XMLElement.setElementAttribute(_:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 2503,
-      "symbol": "XMLElement.clipRangeIncludes(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 3214,
+      "symbol": "XMLElement.TextAlignment",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
-      "line": 2522,
-      "symbol": "XMLElement.clipRangeIsEnclosedBetween(_:outPoint:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 3215,
+      "symbol": "XMLElement.TextAlignment.Left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3216,
+      "symbol": "XMLElement.TextAlignment.Center",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3217,
+      "symbol": "XMLElement.TextAlignment.Right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3218,
+      "symbol": "XMLElement.TextAlignment.Justified",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3221,
+      "symbol": "XMLElement.TimecodeFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3222,
+      "symbol": "XMLElement.TimecodeFormat.dropFrame",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3223,
+      "symbol": "XMLElement.TimecodeFormat.nonDropFrame",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3226,
+      "symbol": "XMLElement.AudioLayout",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3227,
+      "symbol": "XMLElement.AudioLayout.mono",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3228,
+      "symbol": "XMLElement.AudioLayout.stereo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3229,
+      "symbol": "XMLElement.AudioLayout.surround",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3232,
+      "symbol": "XMLElement.AudioRate",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3233,
+      "symbol": "XMLElement.AudioRate.rate32kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3234,
+      "symbol": "XMLElement.AudioRate.rate44_1kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3235,
+      "symbol": "XMLElement.AudioRate.rate48kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3236,
+      "symbol": "XMLElement.AudioRate.rate88_2kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3237,
+      "symbol": "XMLElement.AudioRate.rate96kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3238,
+      "symbol": "XMLElement.AudioRate.rate176_4kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3239,
+      "symbol": "XMLElement.AudioRate.rate192kHz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3242,
+      "symbol": "XMLElement.RenderColorSpace",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3243,
+      "symbol": "XMLElement.RenderColorSpace.rec601NTSC",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3244,
+      "symbol": "XMLElement.RenderColorSpace.rec601PAL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3245,
+      "symbol": "XMLElement.RenderColorSpace.rec709",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3246,
+      "symbol": "XMLElement.RenderColorSpace.rec2020",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3249,
+      "symbol": "XMLElement.MulticamSourceEnable",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3250,
+      "symbol": "XMLElement.MulticamSourceEnable.audio",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3251,
+      "symbol": "XMLElement.MulticamSourceEnable.video",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3252,
+      "symbol": "XMLElement.MulticamSourceEnable.all",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3253,
+      "symbol": "XMLElement.MulticamSourceEnable.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3258,
+      "symbol": "XMLElement.CaptionFormat.itt",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3259,
+      "symbol": "XMLElement.CaptionFormat.cea608",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3264,
+      "symbol": "XMLElement.CaptionLanguage.Afrikaans",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3265,
+      "symbol": "XMLElement.CaptionLanguage.Arabic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3266,
+      "symbol": "XMLElement.CaptionLanguage.Bangla",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3267,
+      "symbol": "XMLElement.CaptionLanguage.Bulgarian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3268,
+      "symbol": "XMLElement.CaptionLanguage.Catalan",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3269,
+      "symbol": "XMLElement.CaptionLanguage.Chinese_Cantonese",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3270,
+      "symbol": "XMLElement.CaptionLanguage.Chinese_Simplified",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3271,
+      "symbol": "XMLElement.CaptionLanguage.Chinese_Traditional",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3272,
+      "symbol": "XMLElement.CaptionLanguage.Croatian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3273,
+      "symbol": "XMLElement.CaptionLanguage.Czech",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3274,
+      "symbol": "XMLElement.CaptionLanguage.Danish",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3275,
+      "symbol": "XMLElement.CaptionLanguage.Dutch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3276,
+      "symbol": "XMLElement.CaptionLanguage.English",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3277,
+      "symbol": "XMLElement.CaptionLanguage.English_Australia",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3278,
+      "symbol": "XMLElement.CaptionLanguage.English_Canada",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3279,
+      "symbol": "XMLElement.CaptionLanguage.English_UnitedKingdom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3280,
+      "symbol": "XMLElement.CaptionLanguage.English_UnitedStates",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3281,
+      "symbol": "XMLElement.CaptionLanguage.Estonian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3282,
+      "symbol": "XMLElement.CaptionLanguage.Finnish",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3283,
+      "symbol": "XMLElement.CaptionLanguage.French_Belgium",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3284,
+      "symbol": "XMLElement.CaptionLanguage.French_Canada",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3285,
+      "symbol": "XMLElement.CaptionLanguage.French_France",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3286,
+      "symbol": "XMLElement.CaptionLanguage.French_Switzerland",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3287,
+      "symbol": "XMLElement.CaptionLanguage.German",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3288,
+      "symbol": "XMLElement.CaptionLanguage.German_Austria",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3289,
+      "symbol": "XMLElement.CaptionLanguage.German_Germany",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3290,
+      "symbol": "XMLElement.CaptionLanguage.German_Switzerland",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3291,
+      "symbol": "XMLElement.CaptionLanguage.Greek",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3292,
+      "symbol": "XMLElement.CaptionLanguage.Greek_Cyprus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3293,
+      "symbol": "XMLElement.CaptionLanguage.Hebrew",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3294,
+      "symbol": "XMLElement.CaptionLanguage.Hindi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3295,
+      "symbol": "XMLElement.CaptionLanguage.Hungarian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3296,
+      "symbol": "XMLElement.CaptionLanguage.Icelandic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3297,
+      "symbol": "XMLElement.CaptionLanguage.Indonesian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3298,
+      "symbol": "XMLElement.CaptionLanguage.Italian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3299,
+      "symbol": "XMLElement.CaptionLanguage.Japanese",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3300,
+      "symbol": "XMLElement.CaptionLanguage.Kannada",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3301,
+      "symbol": "XMLElement.CaptionLanguage.Kazakh",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3302,
+      "symbol": "XMLElement.CaptionLanguage.Korean",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3303,
+      "symbol": "XMLElement.CaptionLanguage.Lao",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3304,
+      "symbol": "XMLElement.CaptionLanguage.Latvian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3305,
+      "symbol": "XMLElement.CaptionLanguage.Lithuanian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3306,
+      "symbol": "XMLElement.CaptionLanguage.Luxembourgish",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3307,
+      "symbol": "XMLElement.CaptionLanguage.Malay",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3308,
+      "symbol": "XMLElement.CaptionLanguage.Malayalam",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3309,
+      "symbol": "XMLElement.CaptionLanguage.Maltese",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3310,
+      "symbol": "XMLElement.CaptionLanguage.Marathi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3311,
+      "symbol": "XMLElement.CaptionLanguage.Norwegian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3312,
+      "symbol": "XMLElement.CaptionLanguage.Polish",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3313,
+      "symbol": "XMLElement.CaptionLanguage.Portuguese_Brazil",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3314,
+      "symbol": "XMLElement.CaptionLanguage.Portuguese_Portugal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3315,
+      "symbol": "XMLElement.CaptionLanguage.Punjabi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3316,
+      "symbol": "XMLElement.CaptionLanguage.Romanian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3317,
+      "symbol": "XMLElement.CaptionLanguage.Russian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3318,
+      "symbol": "XMLElement.CaptionLanguage.Slovak",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3319,
+      "symbol": "XMLElement.CaptionLanguage.Slovenian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3320,
+      "symbol": "XMLElement.CaptionLanguage.Spanish_LatinAmerica",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3321,
+      "symbol": "XMLElement.CaptionLanguage.Spanish_Mexico",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3322,
+      "symbol": "XMLElement.CaptionLanguage.Spanish_Spain",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3323,
+      "symbol": "XMLElement.CaptionLanguage.Swedish",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3324,
+      "symbol": "XMLElement.CaptionLanguage.Tagalog",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3325,
+      "symbol": "XMLElement.CaptionLanguage.Tamil",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3326,
+      "symbol": "XMLElement.CaptionLanguage.Telugu",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3327,
+      "symbol": "XMLElement.CaptionLanguage.Thai",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3328,
+      "symbol": "XMLElement.CaptionLanguage.Turkish",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3329,
+      "symbol": "XMLElement.CaptionLanguage.Ukrainian",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3330,
+      "symbol": "XMLElement.CaptionLanguage.Urdu",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3331,
+      "symbol": "XMLElement.CaptionLanguage.Vietnamese",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3332,
+      "symbol": "XMLElement.CaptionLanguage.Zulu",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3337,
+      "symbol": "XMLElement.CEA608CaptionDisplayStyle.popOn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3338,
+      "symbol": "XMLElement.CEA608CaptionDisplayStyle.paintOn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3339,
+      "symbol": "XMLElement.CEA608CaptionDisplayStyle.rollUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3344,
+      "symbol": "XMLElement.ITTCaptionPlacement.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3345,
+      "symbol": "XMLElement.ITTCaptionPlacement.bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3346,
+      "symbol": "XMLElement.ITTCaptionPlacement.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3347,
+      "symbol": "XMLElement.ITTCaptionPlacement.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3352,
+      "symbol": "XMLElement.CEA608CaptionAlignment.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3353,
+      "symbol": "XMLElement.CEA608CaptionAlignment.center",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3354,
+      "symbol": "XMLElement.CEA608CaptionAlignment.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3359,
+      "symbol": "XMLElement.CEA608Color.red",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3360,
+      "symbol": "XMLElement.CEA608Color.yellow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3361,
+      "symbol": "XMLElement.CEA608Color.green",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3362,
+      "symbol": "XMLElement.CEA608Color.cyan",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3363,
+      "symbol": "XMLElement.CEA608Color.blue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3364,
+      "symbol": "XMLElement.CEA608Color.magenta",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3365,
+      "symbol": "XMLElement.CEA608Color.white",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3366,
+      "symbol": "XMLElement.CEA608Color.black",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3375,
+      "symbol": "XMLElement.StoryElementLocation.primaryStoryline",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3376,
+      "symbol": "XMLElement.StoryElementLocation.attachedClip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rkim/Library/Mobile Documents/com~apple~CloudDocs/Development/Projects/Pipeline/Project/Pipeline/Extensions/XMLElementExtension.swift",
+      "line": 3377,
+      "symbol": "XMLElement.StoryElementLocation.secondaryStoryline",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],

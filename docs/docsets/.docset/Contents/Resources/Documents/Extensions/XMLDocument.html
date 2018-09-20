@@ -14,7 +14,7 @@
     <a title="XMLDocument Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../index.html"> Docs</a> (44% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,7 +28,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../Enums.html">Enums</a>
+            <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Enums/FCPXMLElementType.html">FCPXMLElementType</a>
@@ -65,10 +65,31 @@
               <li class="nav-group-task">
                 <a href="../Extensions/XMLElement/MulticamSourceEnable.html">– MulticamSourceEnable</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CaptionFormat.html">– CaptionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CaptionLanguage.html">– CaptionLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CEA608CaptionDisplayStyle.html">– CEA608CaptionDisplayStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/ITTCaptionPlacement.html">– ITTCaptionPlacement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CEA608CaptionAlignment.html">– CEA608CaptionAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/CEA608Color.html">– CEA608Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XMLElement/StoryElementLocation.html">– StoryElementLocation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Structs.html">Structs</a>
+            <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/FCPXMLUtility.html">FCPXMLUtility</a>
@@ -83,7 +104,7 @@
             <h1>XMLDocument</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">XMLDocument</span> <span class="p">:</span> <span class="kt">XMLNode</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">XMLDocument</span> <span class="p">:</span> <span class="kt">XMLNode</span></code></pre>
 
                 </div>
               </div>
@@ -92,570 +113,19 @@
           <section class="section task-group-section">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties"></a>
-                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties">
-                  <h3 class="section-name">Properties</h3>
+                <a name="/Initializing%20XMLDocument%20Objects"></a>
+                <a name="//apple_ref/swift/Section/Initializing XMLDocument Objects" class="dashAnchor"></a>
+                <a href="#/Initializing%20XMLDocument%20Objects">
+                  <h3 class="section-name">Initializing XMLDocument Objects</h3>
                 </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxmlString"></a>
-                    <a name="//apple_ref/swift/Property/fcpxmlString" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxmlString">fcpxmlString</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The FCPXML document as a properly formatted string.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxmlString</span><span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxResourceList"></a>
-                    <a name="//apple_ref/swift/Property/fcpxResourceList" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxResourceList">fcpxResourceList</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">XMLDocument</span> <span class="p">:</span> <span class="kt">XMLNode</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxResources"></a>
-                    <a name="//apple_ref/swift/Property/fcpxResources" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxResources">fcpxResources</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of all resources in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxLibrary"></a>
-                    <a name="//apple_ref/swift/Property/fcpxLibrary" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxLibrary">fcpxLibrary</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The library XMLElement in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxLibrary</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxEvents"></a>
-                    <a name="//apple_ref/swift/Property/fcpxEvents" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxEvents">fcpxEvents</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of all event elements in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxEvents</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxFormatResources"></a>
-                    <a name="//apple_ref/swift/Property/fcpxFormatResources" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxFormatResources">fcpxFormatResources</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of format resources in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxFormatResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAssetResources"></a>
-                    <a name="//apple_ref/swift/Property/fcpxAssetResources" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAssetResources">fcpxAssetResources</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of asset resources in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAssetResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxMulticamResources"></a>
-                    <a name="//apple_ref/swift/Property/fcpxMulticamResources" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxMulticamResources">fcpxMulticamResources</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of multicam resources in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxMulticamResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxCompoundResources"></a>
-                    <a name="//apple_ref/swift/Property/fcpxCompoundResources" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxCompoundResources">fcpxCompoundResources</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of compound clip resources in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxCompoundResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxEffectResources"></a>
-                    <a name="//apple_ref/swift/Property/fcpxEffectResources" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxEffectResources">fcpxEffectResources</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of effect resources in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxEffectResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllProjects"></a>
-                    <a name="//apple_ref/swift/Property/fcpxAllProjects" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllProjects">fcpxAllProjects</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of all projects in all events in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllProjects</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllClips"></a>
-                    <a name="//apple_ref/swift/Property/fcpxAllClips" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllClips">fcpxAllClips</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of all clips in all events in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllClips</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxRoles"></a>
-                    <a name="//apple_ref/swift/Property/fcpxRoles" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxRoles">fcpxRoles</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of all roles used in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxRoles</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxLastResourceID"></a>
-                    <a name="//apple_ref/swift/Property/fcpxLastResourceID" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxLastResourceID">fcpxLastResourceID</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The highest resource ID number used in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxLastResourceID</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxLastTextStyleID"></a>
-                    <a name="//apple_ref/swift/Property/fcpxLastTextStyleID" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxLastTextStyleID">fcpxLastTextStyleID</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The highest text style ID number used in the FCPXML document.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxLastTextStyleID</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So11XMLDocumentC8PipelineE13fcpxmlVersionSfSgv"></a>
-                    <a name="//apple_ref/swift/Property/fcpxmlVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So11XMLDocumentC8PipelineE13fcpxmlVersionSfSgv">fcpxmlVersion</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">XMLDocument</span> <span class="p">:</span> <span class="kt">XMLNode</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxEventNames"></a>
-                    <a name="//apple_ref/swift/Property/fcpxEventNames" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxEventNames">fcpxEventNames</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The names of all events as a String array.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxEventNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllEventItems"></a>
-                    <a name="//apple_ref/swift/Property/fcpxAllEventItems" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllEventItems">fcpxAllEventItems</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>All items from all events as a XMLElement array.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllEventItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllEventItemNames"></a>
-                    <a name="//apple_ref/swift/Property/fcpxAllEventItemNames" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllEventItemNames">fcpxAllEventItemNames</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The names of all items from all events as a XMLElement array.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllEventItemNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllProjectNames"></a>
-                    <a name="//apple_ref/swift/Property/fcpxAllProjectNames" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(py)fcpxAllProjectNames">fcpxAllProjectNames</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The names of all projects from all events as a XMLElement array.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllProjectNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Initializers"></a>
-                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
-                </a>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)initWithContentsOfFCPXML:error:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE16contentsOfFCPXMLAB10Foundation3URLV_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(contentsOfFCPXML:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)initWithContentsOfFCPXML:error:">init(contentsOfFCPXML:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE16contentsOfFCPXMLAB10Foundation3URLV_tKcfc">init(contentsOfFCPXML:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -664,7 +134,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initializes a new XMLDocument using the contents of an existing FCPXML file.</p>
-
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
     An error object that, on return, identifies any parsing errors and warnings or connection problems.
@@ -676,9 +145,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">contentsOfFCPXML</span> <span class="kt">URL</span><span class="p">:</span> <span class="kt">Foundation</span><span class="o">.</span><span class="kt">URL</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">contentsOfFCPXML</span> <span class="kt">URL</span><span class="p">:</span> <span class="kt">Foundation</span><span class="o">.</span><span class="kt">URL</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>URL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to the FCPXML file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -686,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)initWithResources:events:fcpxmlVersion:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE9resources6events13fcpxmlVersionABSaySo12NSXMLElementCG_AISStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(resources:events:fcpxmlVersion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)initWithResources:events:fcpxmlVersion:">init(resources:events:fcpxmlVersion:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE9resources6events13fcpxmlVersionABSaySo12NSXMLElementCG_AISStcfc">init(resources:events:fcpxmlVersion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -703,7 +191,547 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">resources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">],</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">],</span> <span class="nv">fcpxmlVersion</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">resources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">],</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">],</span> <span class="nv">fcpxmlVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resources</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Resources an array of XMLElement objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>events</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Events as an array of XMLElement objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fcpxmlVersion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The FCPXML version of the document to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/FCPXML%20Document%20Properties"></a>
+                <a name="//apple_ref/swift/Section/FCPXML Document Properties" class="dashAnchor"></a>
+                <a href="#/FCPXML%20Document%20Properties">
+                  <h3 class="section-name">FCPXML Document Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE12fcpxmlStringSSvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxmlString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE12fcpxmlStringSSvp">fcpxmlString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The FCPXML document as a properly formatted string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxmlString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE13fcpxmlElementSo12NSXMLElementCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxmlElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE13fcpxmlElementSo12NSXMLElementCSgvp">fcpxmlElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <q>fcpxml</q> element at the root of the XMLDocument</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxmlElement</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE19fcpxResourceElementSo12NSXMLElementCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxResourceElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE19fcpxResourceElementSo12NSXMLElementCSgvp">fcpxResourceElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <q>resource</q> element child of the <q>fcpxml</q> element.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxResourceElement</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE13fcpxResourcesSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxResources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE13fcpxResourcesSaySo12NSXMLElementCGvp">fcpxResources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of all resources in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE18fcpxLibraryElementSo12NSXMLElementCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxLibraryElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE18fcpxLibraryElementSo12NSXMLElementCSgvp">fcpxLibraryElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The library XMLElement in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxLibraryElement</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE10fcpxEventsSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxEvents" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE10fcpxEventsSaySo12NSXMLElementCGvp">fcpxEvents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of all event elements in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxEvents</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE19fcpxFormatResourcesSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxFormatResources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE19fcpxFormatResourcesSaySo12NSXMLElementCGvp">fcpxFormatResources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of format resources in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxFormatResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE18fcpxAssetResourcesSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxAssetResources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE18fcpxAssetResourcesSaySo12NSXMLElementCGvp">fcpxAssetResources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of asset resources in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAssetResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE21fcpxMulticamResourcesSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxMulticamResources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE21fcpxMulticamResourcesSaySo12NSXMLElementCGvp">fcpxMulticamResources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of multicam resources in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxMulticamResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE21fcpxCompoundResourcesSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxCompoundResources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE21fcpxCompoundResourcesSaySo12NSXMLElementCGvp">fcpxCompoundResources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of compound clip resources in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxCompoundResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE19fcpxEffectResourcesSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxEffectResources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE19fcpxEffectResourcesSaySo12NSXMLElementCGvp">fcpxEffectResources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of effect resources in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxEffectResources</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE15fcpxAllProjectsSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxAllProjects" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE15fcpxAllProjectsSaySo12NSXMLElementCGvp">fcpxAllProjects</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of all projects in all events in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllProjects</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE12fcpxAllClipsSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxAllClips" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE12fcpxAllClipsSaySo12NSXMLElementCGvp">fcpxAllClips</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of all clips in all events in the FCPXML document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllClips</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE13fcpxmlVersionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxmlVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE13fcpxmlVersionSSSgvp">fcpxmlVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The version of FCPXML used in this document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxmlVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE14fcpxEventNamesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxEventNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE14fcpxEventNamesSaySSGvp">fcpxEventNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The names of all events as a String array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxEventNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE17fcpxAllEventItemsSaySo12NSXMLElementCGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxAllEventItems" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE17fcpxAllEventItemsSaySo12NSXMLElementCGvp">fcpxAllEventItems</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All items from all events as a XMLElement array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllEventItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE21fcpxAllEventItemNamesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxAllEventItemNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE21fcpxAllEventItemNamesSaySSGvp">fcpxAllEventItemNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The names of all items from all events as a XMLElement array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllEventItemNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE19fcpxAllProjectNamesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/fcpxAllProjectNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE19fcpxAllProjectNamesSaySSGvp">fcpxAllProjectNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The names of all projects from all events as a XMLElement array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fcpxAllProjectNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -714,19 +742,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Parsing%20Functions"></a>
-                <a name="//apple_ref/swift/Section/Parsing Functions" class="dashAnchor"></a>
-                <a href="#/Parsing%20Functions">
-                  <h3 class="section-name">Parsing Functions</h3>
+                <a name="/Roles%20and%20IDs"></a>
+                <a name="//apple_ref/swift/Section/Roles and IDs" class="dashAnchor"></a>
+                <a href="#/Roles%20and%20IDs">
+                  <h3 class="section-name">Roles and IDs</h3>
                 </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)parseFCPXIDsAndRoles"></a>
-                    <a name="//apple_ref/swift/Method/parseFCPXIDsAndRoles()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)parseFCPXIDsAndRoles">parseFCPXIDsAndRoles()</a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE12fcpxAllRolesSaySSGyF"></a>
+                    <a name="//apple_ref/swift/Method/fcpxAllRoles()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE12fcpxAllRolesSaySSGyF">fcpxAllRoles()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -734,16 +762,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Parses the resource IDs, text style IDs, and roles, refreshing the fcpxLastResourceID, fcpxLastTextStyleID, and fcpxRoles properties. Call this method when initially loading an FCPXML document and when the IDs or roles change.</p>
+                        <p>Returns an array of all roles used in the FCPXML document.</p>
+
+<p>This function parses the entire XML document whenever called. Avoid calling it repeatedly and store the value separately instead.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">parseFCPXIDsAndRoles</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fcpxAllRoles</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of String values.</p>
                       </div>
                     </section>
                   </div>
@@ -751,9 +785,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)parser:didStartElement:namespaceURI:qualifiedName:attributes:"></a>
-                    <a name="//apple_ref/swift/Method/parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)parser:didStartElement:namespaceURI:qualifiedName:attributes:">parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)</a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE18fcpxLastResourceIDSiyF"></a>
+                    <a name="//apple_ref/swift/Method/fcpxLastResourceID()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE18fcpxLastResourceIDSiyF">fcpxLastResourceID()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -761,15 +795,55 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Returns the highest resource ID number used in the FCPXML document.</p>
+
+<p>This function parses the entire XML document whenever called. Avoid calling it repeatedly and store the value separately instead.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">parser</span><span class="p">(</span><span class="n">_</span> <span class="nv">parser</span><span class="p">:</span> <span class="kt">XMLParser</span><span class="p">,</span> <span class="n">didStartElement</span> <span class="nv">elementName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">namespaceURI</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">qualifiedName</span> <span class="nv">qName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">attributes</span> <span class="nv">attributeDict</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fcpxLastResourceID</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An integer value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE19fcpxLastTextStyleIDSiyF"></a>
+                    <a name="//apple_ref/swift/Method/fcpxLastTextStyleID()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE19fcpxLastTextStyleIDSiyF">fcpxLastTextStyleID()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the highest text style ID number used in the FCPXML document.</p>
+
+<p>This function parses the entire XML document whenever called. Avoid calling it repeatedly and store the value separately instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fcpxLastTextStyleID</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An integer value.</p>
                       </div>
                     </section>
                   </div>
@@ -778,19 +852,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Retrieval%20Functions"></a>
-                <a name="//apple_ref/swift/Section/Retrieval Functions" class="dashAnchor"></a>
-                <a href="#/Retrieval%20Functions">
-                  <h3 class="section-name">Retrieval Functions</h3>
+                <a name="/Retrieving%20Resources"></a>
+                <a name="//apple_ref/swift/Section/Retrieving Resources" class="dashAnchor"></a>
+                <a href="#/Retrieving%20Resources">
+                  <h3 class="section-name">Retrieving Resources</h3>
                 </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)resourceMatchingID:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE8resource10matchingIDSo12NSXMLElementCSgSS_tF"></a>
                     <a name="//apple_ref/swift/Method/resource(matchingID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)resourceMatchingID:">resource(matchingID:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE8resource10matchingIDSo12NSXMLElementCSgSS_tF">resource(matchingID:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -805,9 +879,32 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resource</span><span class="p">(</span><span class="n">matchingID</span> <span class="kt">ID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">XMLElement</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resource</span><span class="p">(</span><span class="n">matchingID</span> <span class="kt">ID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">XMLElement</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>matchingID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The resource ID as a string in the form of <q>r1</q></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The matching resource NSXMLElement</p>
                       </div>
                     </section>
                   </div>
@@ -815,9 +912,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)assetResourcesMatchingURL:usingFilenameOnly:omittingExtension:caseSensitive:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE14assetResources11matchingURL17usingFilenameOnly17omittingExtension13caseSensitiveSaySo12NSXMLElementCG10Foundation0F0V_S3btF"></a>
                     <a name="//apple_ref/swift/Method/assetResources(matchingURL:usingFilenameOnly:omittingExtension:caseSensitive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)assetResourcesMatchingURL:usingFilenameOnly:omittingExtension:caseSensitive:">assetResources(matchingURL:usingFilenameOnly:omittingExtension:caseSensitive:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE14assetResources11matchingURL17usingFilenameOnly17omittingExtension13caseSensitiveSaySo12NSXMLElementCG10Foundation0F0V_S3btF">assetResources(matchingURL:usingFilenameOnly:omittingExtension:caseSensitive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -832,9 +929,68 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assetResources</span><span class="p">(</span><span class="n">matchingURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">usingFilenameOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">omittingExtension</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">caseSensitive</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assetResources</span><span class="p">(</span><span class="n">matchingURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">usingFilenameOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">omittingExtension</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">caseSensitive</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>matchingURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to match with.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usingFilenameOnly</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if matching with just the filename, false if matching with the entire URL path.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>omittingExtension</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if matching without the extension in the filename, false if matching with the entire filename.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>caseSensitive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if the search should be case sensitive, false if it should not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of XMLElement objects that are matching asset resources.</p>
                       </div>
                     </section>
                   </div>
@@ -843,19 +999,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Modification%20Functions"></a>
-                <a name="//apple_ref/swift/Section/Modification Functions" class="dashAnchor"></a>
-                <a href="#/Modification%20Functions">
-                  <h3 class="section-name">Modification Functions</h3>
+                <a name="/Modifying%20FCPXML%20Documents"></a>
+                <a name="//apple_ref/swift/Section/Modifying FCPXML Documents" class="dashAnchor"></a>
+                <a href="#/Modifying%20FCPXML%20Documents">
+                  <h3 class="section-name">Modifying FCPXML Documents</h3>
                 </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithResourceElement:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE3add15resourceElementySo12NSXMLElementC_tF"></a>
                     <a name="//apple_ref/swift/Method/add(resourceElement:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithResourceElement:">add(resourceElement:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE3add15resourceElementySo12NSXMLElementC_tF">add(resourceElement:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -870,9 +1026,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">resourceElement</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">resourceElement</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resourceElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The XMLElement of the resource to be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -880,9 +1055,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithResourceElements:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE3add16resourceElementsySaySo12NSXMLElementCG_tF"></a>
                     <a name="//apple_ref/swift/Method/add(resourceElements:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithResourceElements:">add(resourceElements:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE3add16resourceElementsySaySo12NSXMLElementCG_tF">add(resourceElements:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -897,9 +1072,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">resourceElements</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">resourceElements</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">])</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resourceElements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of resource XMLElement objects.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -907,9 +1101,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeWithResourceAtIndex:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE6remove15resourceAtIndexySi_tF"></a>
                     <a name="//apple_ref/swift/Method/remove(resourceAtIndex:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeWithResourceAtIndex:">remove(resourceAtIndex:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE6remove15resourceAtIndexySi_tF">remove(resourceAtIndex:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -917,17 +1111,40 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Removes the resource at the specified index.
-- Important: This method will remove all associated clips from all events in the FCPXML document. However, it will not remove synchronized clips, compound clips and multicams that contain the resource.</p>
+                        <p>Removes the resource at the specified index.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>This method will remove all associated clips from all events in the FCPXML document. However, it will not remove synchronized clips, compound clips and multicams that contain the resource.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">resourceAtIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">resourceAtIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index of the resource within the resources element.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -935,9 +1152,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeAllResources"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE18removeAllResourcesyyF"></a>
                     <a name="//apple_ref/swift/Method/removeAllResources()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeAllResources">removeAllResources()</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE18removeAllResourcesyyF">removeAllResources()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -952,7 +1169,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllResources</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllResources</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -962,9 +1179,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithEvent:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE3add5eventySo12NSXMLElementC_tF"></a>
                     <a name="//apple_ref/swift/Method/add(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithEvent:">add(event:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE3add5eventySo12NSXMLElementC_tF">add(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -979,9 +1196,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt">XMLElement</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The XMLElement of the event to be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -989,9 +1225,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithEvents:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE3add6eventsySaySo12NSXMLElementCG_tF"></a>
                     <a name="//apple_ref/swift/Method/add(events:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)addWithEvents:">add(events:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE3add6eventsySaySo12NSXMLElementCG_tF">add(events:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1006,9 +1242,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt">XMLElement</span><span class="p">])</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>events</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of event XMLElement objects.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -1016,9 +1271,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeWithEventAtIndex:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE6remove12eventAtIndexySi_tF"></a>
                     <a name="//apple_ref/swift/Method/remove(eventAtIndex:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeWithEventAtIndex:">remove(eventAtIndex:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE6remove12eventAtIndexySi_tF">remove(eventAtIndex:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1033,9 +1288,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">eventAtIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">eventAtIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index of the event within the library element.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -1043,9 +1317,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeAllEvents"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE15removeAllEventsyyF"></a>
                     <a name="//apple_ref/swift/Method/removeAllEvents()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)removeAllEvents">removeAllEvents()</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE15removeAllEventsyyF">removeAllEvents()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1060,7 +1334,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllEvents</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllEvents</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1071,19 +1345,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/DTD%20Functions"></a>
-                <a name="//apple_ref/swift/Section/DTD Functions" class="dashAnchor"></a>
-                <a href="#/DTD%20Functions">
-                  <h3 class="section-name">DTD Functions</h3>
+                <a name="/DTD%20Methods"></a>
+                <a name="//apple_ref/swift/Section/DTD Methods" class="dashAnchor"></a>
+                <a href="#/DTD%20Methods">
+                  <h3 class="section-name">DTD Methods</h3>
                 </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)fcpxmlDTDVersions"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE17fcpxmlDTDVersionsSaySSGyF"></a>
                     <a name="//apple_ref/swift/Method/fcpxmlDTDVersions()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)fcpxmlDTDVersions">fcpxmlDTDVersions()</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE17fcpxmlDTDVersionsSaySSGyF">fcpxmlDTDVersions()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1098,9 +1372,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fcpxmlDTDVersions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fcpxmlDTDVersions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of String objects.</p>
                       </div>
                     </section>
                   </div>
@@ -1108,9 +1386,109 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)validateFCPXMLAgainstLatestVersionAndReturnError:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE16versionArrayFrom0C0SaySiGSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/versionArrayFrom(version:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE16versionArrayFrom0C0SaySiGSS_tF">versionArrayFrom(version:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a version string to an array of three Int values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">versionArrayFrom</span><span class="p">(</span><span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>version</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The version string to convert. Can have major, minor, and patch values, each separated by a dot.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of three Int values. If three values were not included in the string, the missing values will be 0.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE9versionIs9atMinimumSbSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/versionIs(atMinimum:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE9versionIs9atMinimumSbSS_tF">versionIs(atMinimum:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Verifies that this document&rsquo;s FCPXML version number is at minimum the specified version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">versionIs</span><span class="p">(</span><span class="n">atMinimum</span> <span class="nv">minimum</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>minimum</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A String of the minimum version. E.g. 1.7.1</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if the document is at least the specified minimum version number.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE34validateFCPXMLAgainstLatestVersionyyKF"></a>
                     <a name="//apple_ref/swift/Method/validateFCPXMLAgainstLatestVersion()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)validateFCPXMLAgainstLatestVersionAndReturnError:">validateFCPXMLAgainstLatestVersion()</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE34validateFCPXMLAgainstLatestVersionyyKF">validateFCPXMLAgainstLatestVersion()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1119,7 +1497,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Validates the XMLDocument against the DTD of the latest FCPXML version included in this framework. The XMLDocument is valid if no error is thrown.</p>
-
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
     An error describing the reason for the XML being invalid or another error, such as not being able to read or set the associated DTD file.
@@ -1131,7 +1508,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validateFCPXMLAgainstLatestVersion</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validateFCPXMLAgainstLatestVersion</span><span class="p">()</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1141,9 +1518,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)validateFCPXMLAgainstWithVersion:error:"></a>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE21validateFCPXMLAgainst7versionySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validateFCPXMLAgainst(version:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@Pipeline@@objc(cs)NSXMLDocument(im)validateFCPXMLAgainstWithVersion:error:">validateFCPXMLAgainst(version:)</a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE21validateFCPXMLAgainst7versionySS_tKF">validateFCPXMLAgainst(version:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1152,7 +1529,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Validates the XMLDocument against the DTD of the FCPXML version specified. The version number must match a DTD resource included in the bundle. The XMLDocument is valid if no error is thrown.</p>
-
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
     An error describing the reason for the XML being invalid or another error, such as not being able to read or set the associated DTD file.
@@ -1164,7 +1540,64 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validateFCPXMLAgainst</span><span class="p">(</span><span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validateFCPXMLAgainst</span><span class="p">(</span><span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>version</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A String of the version number.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/XML%20Parsing%20Methods"></a>
+                <a name="//apple_ref/swift/Section/XML Parsing Methods" class="dashAnchor"></a>
+                <a href="#/XML%20Parsing%20Methods">
+                  <h3 class="section-name">XML Parsing Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So13NSXMLDocumentC8PipelineE11parseFCPXMLyyF"></a>
+                    <a name="//apple_ref/swift/Method/parseFCPXML()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So13NSXMLDocumentC8PipelineE11parseFCPXMLyyF">parseFCPXML()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Parses the resource IDs, text style IDs, and roles, refreshing the fcpxLastResourceID, fcpxLastTextStyleID, and fcpxRoles properties. Call this method when initially loading an FCPXML document and when the IDs or roles change.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">parseFCPXML</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1176,8 +1609,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-09-28)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
