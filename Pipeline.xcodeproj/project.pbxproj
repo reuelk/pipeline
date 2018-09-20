@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		050440BA20C1BF9900262F2A /* FCPXMLParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */; };
-		0515A1081E2AF84F00E7DEA9 /* AttributeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */; };
+		0515A1081E2AF84F00E7DEA9 /* AttributeParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FC1E2AF84F00E7DEA9 /* AttributeParserDelegate.swift */; };
 		0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FD1E2AF84F00E7DEA9 /* CMTimeExtension.swift */; };
 		0515A10B1E2AF84F00E7DEA9 /* FCPXMLElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */; };
 		0515A10F1E2AF84F00E7DEA9 /* FCPXMLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */; };
@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCPXMLParserDelegate.swift; path = Pipeline/Delegates/FCPXMLParserDelegate.swift; sourceTree = SOURCE_ROOT; };
-		0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeParser.swift; sourceTree = "<group>"; };
+		0515A0FC1E2AF84F00E7DEA9 /* AttributeParserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeParserDelegate.swift; sourceTree = "<group>"; };
 		0515A0FD1E2AF84F00E7DEA9 /* CMTimeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMTimeExtension.swift; sourceTree = "<group>"; };
 		0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPXMLElementType.swift; sourceTree = "<group>"; };
 		0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPXMLUtility.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		050440B820C1BF3B00262F2A /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				0515A0FC1E2AF84F00E7DEA9 /* AttributeParser.swift */,
+				0515A0FC1E2AF84F00E7DEA9 /* AttributeParserDelegate.swift */,
 				050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */,
 			);
 			name = Delegates;
@@ -295,7 +295,7 @@
 				0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */,
 				0515A10F1E2AF84F00E7DEA9 /* FCPXMLUtility.swift in Sources */,
 				050440BA20C1BF9900262F2A /* FCPXMLParserDelegate.swift in Sources */,
-				0515A1081E2AF84F00E7DEA9 /* AttributeParser.swift in Sources */,
+				0515A1081E2AF84F00E7DEA9 /* AttributeParserDelegate.swift in Sources */,
 				0531AB6B1E2B6BD8006F191F /* XMLDocumentExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
