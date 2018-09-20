@@ -134,20 +134,21 @@ public struct FCPXMLUtility {
 	public func conform(time: CMTime, toFrameDuration frameDuration: CMTime) -> CMTime {
 		let numberOfFrames = time.seconds / frameDuration.seconds
 		let numberOfFramesRounded = floor(Double(numberOfFrames))
-		let conformedTime = CMTimeMake(Int64(numberOfFramesRounded * Double(frameDuration.value)), frameDuration.timescale)
+		let conformedTime = CMTimeMake(value: Int64(numberOfFramesRounded * Double(frameDuration.value)), timescale: frameDuration.timescale)
 		
 		return conformedTime
 	}
 	
 	
 	/**
-	DEPRECATED. Converts a project counter value to the project's timecode.
+	Converts a project counter value to the project's timecode.
 	
 	- parameter counterValue: The counter value to convert.
 	- parameter project: The project to convert against, as an NSXMLElement.
 	
 	- returns: An optional CMTime value of the timecode value.
 	*/
+	@available(*, deprecated, message: "Use sequenceTimecode(fromCounterValue:inSequence:) instead.")
 	public func projectTimecode(fromCounterValue counterValue: CMTime, inProject project: XMLElement) -> CMTime? {
 		
         guard let projectSequence = project.fcpxProjectSequence else {
@@ -165,13 +166,14 @@ public struct FCPXMLUtility {
 	
 	
 	/**
-	DEPRECATED. Converts a project timecode value to the project's counter time.
+	Converts a project timecode value to the project's counter time.
 	
 	- parameter timecodeValue: The timecode value to convert.
 	- parameter project: The project to convert against, as an NSXMLElement.
 	
 	- returns: An optional CMTime value of the counter time.
 	*/
+	@available(*, deprecated, message: "Use sequenceCounterTime(fromTimecodeValue:inSequence:) instead.")
 	public func projectCounterTime(fromTimecodeValue timecodeValue: CMTime, inProject project: XMLElement) -> CMTime? {
 		
         // Convert the timecode values to sequence counter time values
@@ -375,13 +377,13 @@ public struct FCPXMLUtility {
 	
 	
 	// MARK: - Other conversion functions
-	/**
-	Converts line breaks in attributes to safe XML entities in an XML file, returning an NSXMLDocument.
 	
-	- parameter XMLDocumentURL: An NSURL pointing to the XML file to convert.
-	
-	- returns: An NSXMLDocument or nil if there was a file read or conversion error.
-	*/
+	/// Converts line breaks in attributes to safe XML entities in an XML file, returning an NSXMLDocument.
+	///
+	/// When text values contain line breaks, such as in markers, Final Cut Pro X exports FCPXML files with the line break as is, not encoded into a valid XML line break character. This function will replace line breaks in _attribute nodes_ in FCPXML files with the &#xA; character entity.
+	///
+	/// - Parameter URL: A URL object pointing to the XML file to convert.
+	/// - Returns: An XMLDocument or nil if there was a file read or conversion error.
 	public func convertLineBreaksInAttributes(inXMLDocumentURL URL: Foundation.URL) -> XMLDocument? {
 		
 		var document: String = ""
