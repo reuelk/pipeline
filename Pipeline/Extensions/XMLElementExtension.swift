@@ -2753,7 +2753,7 @@ extension XMLElement {
 	public var fcpxmlString: String {
 		let xmlDocument = XMLDocument(rootElement: self.copy() as? XMLElement)
 //		let formattedData = xmlDocument.xmlData(withOptions: 131076)
-		let formattedData = xmlDocument.xmlData(options: [XMLNode.Options.nodePrettyPrint, XMLNode.Options.nodeCompactEmptyElement])
+		let formattedData = xmlDocument.xmlData(options: [.nodePreserveWhitespace, .nodePrettyPrint, .nodeCompactEmptyElement])
 		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
 		
 		guard formattedString != nil else {
