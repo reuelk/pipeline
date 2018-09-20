@@ -14,6 +14,13 @@ import CoreMedia
 /// Contains miscellaneous utility methods for processing FCPXML data.
 public struct FCPXMLUtility {
 	
+	// MARK: - Initializing
+	
+	/// Initializer
+	public init() {
+		
+	}
+	
 	// MARK: - Retrieval Methods
 	
 	/// Returns an array of elements that match specified FCPXML element types.
