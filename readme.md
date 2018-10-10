@@ -92,7 +92,7 @@ fcpxmlDoc.remove(resourceAtIndex: resource.index)  // Remove the "r1" resource f
 
 ### Display the Duration of a Clip
 
-```
+```swift
 let firstEvent = fcpxmlDoc.fcpxEvents[0]  // Get the first event in the FCPXML document
 
 guard let eventClips = firstEvent.eventClips else {  // Get the event clips while guarding against a potential nil value
