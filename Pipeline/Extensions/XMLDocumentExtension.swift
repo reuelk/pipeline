@@ -57,8 +57,11 @@ extension XMLDocument {
 	/// The FCPXML document as a properly formatted string.
 	public var fcpxmlString: String {
 		let formattedData = self.xmlData(options: [.nodePreserveWhitespace, .nodePrettyPrint, .nodeCompactEmptyElement])
-		let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue)
-		return formattedString as! String
+		if let formattedString = NSString(data: formattedData, encoding: String.Encoding.utf8.rawValue) {
+			return formattedString as String
+		} else {
+			return ""
+		}
 	}
 	
 	/// The "fcpxml" element at the root of the XMLDocument
