@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.6">
+    <resources>
+        <asset id="r1" name="flight_of_apollo_11_512kb" uid="CA1848FDCBC8449E93341A9A864C4646" src="file:///Users/rkim/Documents/Old%20Files/JFK_Moon_Demo/media/flight_of_apollo_11_512kb.mp4" start="0s" duration="17030013/10000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <bookmark>Ym9va1ADAAAAAAQQMAAAALzNWBqdpykXpVKF4nEd0RxM31N182N4sI9+sYh8Ya1DTAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHJraW0JAAAAAQEAAERvY3VtZW50cwAAAAkAAAABAQAAT2xkIEZpbGVzAAAADQAAAAEBAABKRktfTW9vbl9EZW1vAAAABQAAAAEBAABtZWRpYQAAAB0AAAABAQAAZmxpZ2h0X29mX2Fwb2xsb18xMV81MTJrYi5tcDQAAAAcAAAAAQYAABAAAAAgAAAALAAAAEAAAABUAAAAbAAAAHwAAAAIAAAABAMAAC9iBgAAAAAACAAAAAQDAAAibQ0AAAAAAAgAAAAEAwAAI20NAAAAAAAIAAAABAMAABgbIgAAAAAACAAAAAQDAACMOyIAAAAAAAgAAAAEAwAAIEAiAAAAAAAIAAAABAMAACJAIgAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBrbKLhAAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAFAAAAAAAAAAQAAAADAwAAVNj6GQgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAAqOgAAAAIAAAAAAQAAEG9/C6oAAAAJAAAAAEBAAAzNTg5MDI1NC1EMUQxLTM3RTktQjkzRi0zQkFEQjE3ODI2RjYYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAApAAAAAAAAAAFEAAAOAEAAAAAAAAQEAAAbAEAAAAAAABAEAAAXAEAAAAAAAACIAAAOAIAAAAAAAAFIAAAqAEAAAAAAAAQIAAAuAEAAAAAAAARIAAA7AEAAAAAAAASIAAAzAEAAAAAAAATIAAA3AEAAAAAAAAgIAAAGAIAAAAAAAAwIAAARAIAAAAAAAABwAAAjAEAAAAAAAARwAAAIAAAAAAAAAASwAAAnAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="5"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>AAC</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2016-06-05 00:47:37 -0700"/>
+            </metadata>
+        </asset>
+        <format id="r2" frameDuration="1001/30000s" width="320" height="240" paspH="220" paspV="219"/>
+        <media id="r3" name="JFK_Address_compound" uid="jmckchwOSre7lDcVDcZX7A" modDate="2017-01-16 00:23:15 -0800">
+            <sequence duration="40659619/60000s" format="r4" renderColorSpace="Rec. 709" tcStart="216216000/60000s" tcFormat="NDF">
+                <spine>
+                    <asset-clip name="JFK_Address_Excerpt" offset="216216000/60000s" ref="r5" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <asset-clip name="JFK_Address_Excerpt_audio" lane="-1" offset="18018/5s" ref="r6" duration="40659619/60000s" audioRole="dialogue"/>
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </spine>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="1"/>
+                    <md key="com.apple.proapps.studio.scene" value="2"/>
+                    <md key="com.apple.proapps.studio.shot" value="3"/>
+                    <md key="com.apple.proapps.studio.angle" value="myangle"/>
+                </metadata>
+            </sequence>
+        </media>
+        <format id="r4" name="FFVideoFormat1080p5994" frameDuration="1001/60000s" width="1920" height="1080"/>
+        <asset id="r5" name="JFK_Address_Excerpt" uid="71332EF64D337FFE799D390E657DB221" src="file:///Users/rkim/Documents/Old%20Files/JFK_Moon_Demo/media/JFK_Address_Excerpt.mov" start="216216000/60000s" duration="40659619/60000s" hasVideo="1" format="r4" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9va0gDAAAAAAQQMAAAADomAf4XoBXOdzaUGnRoVD/CBKurnh5mxfAJFYPavlViRAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHJraW0JAAAAAQEAAERvY3VtZW50cwAAAAkAAAABAQAAT2xkIEZpbGVzAAAADQAAAAEBAABKRktfTW9vbl9EZW1vAAAABQAAAAEBAABtZWRpYQAAABcAAAABAQAASkZLX0FkZHJlc3NfRXhjZXJwdC5tb3YAHAAAAAEGAAAQAAAAIAAAACwAAABAAAAAVAAAAGwAAAB8AAAACAAAAAQDAAAvYgYAAAAAAAgAAAAEAwAAIm0NAAAAAAAIAAAABAMAACNtDQAAAAAACAAAAAQDAAAYGyIAAAAAAAgAAAAEAwAAjDsiAAAAAAAIAAAABAMAACBAIgAAAAAACAAAAAQDAAAjQCIAAAAAABwAAAABBgAAwAAAANAAAADgAAAA8AAAAAABAAAQAQAAIAEAAAgAAAAABAAAQb4sugcAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAABQAAAAAAAAAEAAAAAwMAAFTY+hkIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAAAAAKjoAAAACAAAAAAEAABBvfwuqAAAACQAAAABAQAAMzU4OTAyNTQtRDFEMS0zN0U5LUI5M0YtM0JBREIxNzgyNkY2GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAJwAAAAAAAAABRAAADABAAAAAAAAEBAAAGQBAAAAAAAAQBAAAFQBAAAAAAAAAiAAADACAAAAAAAABSAAAKABAAAAAAAAECAAALABAAAAAAAAESAAAOQBAAAAAAAAEiAAAMQBAAAAAAAAEyAAANQBAAAAAAAAICAAABACAAAAAAAAMCAAADwCAAAAAAAAAcAAAIQBAAAAAAAAEcAAACAAAAAAAAAAEsAAAJQBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="myname"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>AAC</string>
+                        <string>H.264</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2017-01-16 00:22:08 -0800"/>
+            </metadata>
+        </asset>
+        <asset id="r6" name="JFK_Address_Excerpt_audio" uid="EF1A201E2DFF4F9029053B1FB1DAF4DF" src="file:///Users/rkim/Documents/Old%20Files/JFK_Moon_Demo/media/JFK_Address_Excerpt_audio.m4a" start="0s" duration="29884821/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <bookmark>Ym9va1ADAAAAAAQQMAAAAIhqEMxXvGaOqusq7XwiWOj/W8Ktr/3GE1/Epa1WcOMaTAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHJraW0JAAAAAQEAAERvY3VtZW50cwAAAAkAAAABAQAAT2xkIEZpbGVzAAAADQAAAAEBAABKRktfTW9vbl9EZW1vAAAABQAAAAEBAABtZWRpYQAAAB0AAAABAQAASkZLX0FkZHJlc3NfRXhjZXJwdF9hdWRpby5tNGEAAAAcAAAAAQYAABAAAAAgAAAALAAAAEAAAABUAAAAbAAAAHwAAAAIAAAABAMAAC9iBgAAAAAACAAAAAQDAAAibQ0AAAAAAAgAAAAEAwAAI20NAAAAAAAIAAAABAMAABgbIgAAAAAACAAAAAQDAACMOyIAAAAAAAgAAAAEAwAAIEAiAAAAAAAIAAAABAMAACZAIgAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBviy0AwAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAFAAAAAAAAAAQAAAADAwAAVNj6GQgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAAqOgAAAAIAAAAAAQAAEG9/C6oAAAAJAAAAAEBAAAzNTg5MDI1NC1EMUQxLTM3RTktQjkzRi0zQkFEQjE3ODI2RjYYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAApAAAAAAAAAAFEAAAOAEAAAAAAAAQEAAAbAEAAAAAAABAEAAAXAEAAAAAAAACIAAAOAIAAAAAAAAFIAAAqAEAAAAAAAAQIAAAuAEAAAAAAAARIAAA7AEAAAAAAAASIAAAzAEAAAAAAAATIAAA3AEAAAAAAAAgIAAAGAIAAAAAAAAwIAAARAIAAAAAAAABwAAAjAEAAAAAAAARwAAAIAAAAAAAAAASwAAAnAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="CamA"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2017-01-15 23:56:30 -0800"/>
+            </metadata>
+        </asset>
+        <format id="r7" name="FFVideoFormatRateUndefined"/>
+        <media id="r8" name="JFK_Address_Excerpt_video + JFK_Address_Excerpt.srt" uid="tuK8u+UoSY2jMXKgtIPxiA" modDate="2017-01-19 15:17:34 -0800">
+            <sequence duration="40659619/60000s" format="r4" renderColorSpace="Rec. 709" tcStart="216216000/60000s" tcFormat="NDF">
+                <spine>
+                    <asset-clip name="JFK_Address_Excerpt_video" offset="216216000/60000s" ref="r5" duration="40658618/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <title name="President Pitzer, Mr. Vice President, Governor, Congressman Thomas, Senator" lane="1" offset="108355247/30000s" ref="r9" duration="542542/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184398/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts1">President Pitzer, Mr. Vice President, 
+Governor, Congressman Thomas, Senator</text-style>
+                            </text>
+                            <text-style-def id="ts1">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="Wiley, and Congressman Miller, Mr. Webb, Mr. Bell, scientists, distinguished" lane="1" offset="36209173/10000s" ref="r9" duration="426426/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184408/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts2">Wiley, and Congressman Miller, Mr. Webb,
+ Mr. Bell, scientists, distinguished</text-style>
+                            </text>
+                            <text-style-def id="ts2">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="guests, and ladies and gentlemen:" lane="1" offset="43536493/12000s" ref="r9" duration="77077/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts3">guests, and ladies and gentlemen:</text-style>
+                            </text>
+                            <text-style-def id="ts3">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="I appreciate your president having made me an honorary visiting professor, and" lane="1" offset="36299263/10000s" ref="r9" duration="357357/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184427/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts4">I appreciate your president having made 
+me an honorary visiting professor, and</text-style>
+                            </text>
+                            <text-style-def id="ts4">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="I will assure you that my first lecture will be very brief." lane="1" offset="13634621/3750s" ref="r9" duration="216216/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184437/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts5">I will assure you that my first lecture 
+will be very brief.</text-style>
+                            </text>
+                            <text-style-def id="ts5">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="I am delighted to be here, and I'm particularly delighted to be here on this occasion." lane="1" offset="72803731/20000s" ref="r9" duration="275275/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184447/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts6">I am delighted to be here, and I'm 
+particularly delighted to be here on this occasion.</text-style>
+                            </text>
+                            <text-style-def id="ts6">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="We meet at a college noted for knowledge, in a city noted for progress," lane="1" offset="43742699/12000s" ref="r9" duration="421421/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184457/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts7">We meet at a college noted for 
+knowledge, in a city noted for progress,</text-style>
+                            </text>
+                            <text-style-def id="ts7">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="in a State noted for strength, and we stand in need of all three, for we meet" lane="1" offset="219181963/60000s" ref="r9" duration="357357/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184467/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts8"> in a State noted for strength, and we 
+stand in need of all three, for we meet</text-style>
+                            </text>
+                            <text-style-def id="ts8">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="in an hour of change and challenge, in a decade of hope and fear, in an age of" lane="1" offset="109772663/30000s" ref="r9" duration="412412/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184477/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts9">in an hour of change and challenge, in 
+a decade of hope and fear, in an age of</text-style>
+                            </text>
+                            <text-style-def id="ts9">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="both knowledge and ignorance. The greater our knowledge increases, the" lane="1" offset="219958739/60000s" ref="r9" duration="284284/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184487/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts10">both knowledge and ignorance. The 
+greater our knowledge increases, the</text-style>
+                            </text>
+                            <text-style-def id="ts10">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="greater our ignorance unfolds." lane="1" offset="220269049/60000s" ref="r9" duration="134134/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts11">greater our ignorance unfolds.</text-style>
+                            </text>
+                            <text-style-def id="ts11">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="Despite the striking fact that most of the scientists that the world has ever" lane="1" offset="220479259/60000s" ref="r9" duration="276276/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184506/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts12">Despite the striking fact that most of 
+the scientists that the world has ever</text-style>
+                            </text>
+                            <text-style-def id="ts12">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="known are alive and working today, despite the fact that this Nation¹s own" lane="1" offset="73592519/20000s" ref="r9" duration="374374/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184516/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts13">known are alive and working today, 
+despite the fact that this Nation¹s own</text-style>
+                            </text>
+                            <text-style-def id="ts13">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="scientific manpower is doubling every 12 years in a rate of growth more than" lane="1" offset="73722649/20000s" ref="r9" duration="457457/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184526/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts14">scientific manpower is doubling every 
+12 years in a rate of growth more than</text-style>
+                            </text>
+                            <text-style-def id="ts14">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="three times that of our population as a whole, despite that, the vast stretches" lane="1" offset="36939903/10000s" ref="r9" duration="432432/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184536/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts15">three times that of our population as a 
+whole, despite that, the vast stretches</text-style>
+                            </text>
+                            <text-style-def id="ts15">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="of the unknown and the unanswered and the unfinished still far outstrip our" lane="1" offset="222108887/60000s" ref="r9" duration="451451/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184546/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts16">of the unknown and the unanswered and 
+the unfinished still far outstrip our</text-style>
+                            </text>
+                            <text-style-def id="ts16">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="collective comprehension." lane="1" offset="13910897/3750s" ref="r9" duration="80080/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts17">collective comprehension.</text-style>
+                            </text>
+                            <text-style-def id="ts17">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="No man can fully grasp how far and how fast we have come, but condense, if you" lane="1" offset="44545501/12000s" ref="r9" duration="455455/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184565/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts18">No man can fully grasp how far and how 
+fast we have come, but condense, if you</text-style>
+                            </text>
+                            <text-style-def id="ts18">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="will, the 50,000 years of man¹s recorded history in a time span of but" lane="2" offset="223183961/60000s" ref="r9" duration="516516/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184575/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts19">will, the 50,000 years of man¹s 
+recorded history in a time span of but</text-style>
+                            </text>
+                            <text-style-def id="ts19">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="a half-century. Stated in these terms, we know very little about the first 40" lane="1" offset="18641623/5000s" ref="r9" duration="333333/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184585/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts20">a half-century. Stated in these terms, 
+we know very little about the first 40</text-style>
+                            </text>
+                            <text-style-def id="ts20">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="years, except at the end of them advanced man had learned to use the" lane="1" offset="22403381/6000s" ref="r9" duration="350350/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184595/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts21">years, except at the end of them 
+advanced man had learned to use the</text-style>
+                            </text>
+                            <text-style-def id="ts21">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="skins of animals to cover them. Then about 10 years ago, under this standard," lane="1" offset="112199087/30000s" ref="r9" duration="321321/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184605/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts22">skins of animals to cover them. Then 
+about 10 years ago, under this standard,</text-style>
+                            </text>
+                            <text-style-def id="ts22">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="man emerged from his caves to construct other kinds of shelter. Only" lane="1" offset="22473451/6000s" ref="r9" duration="362362/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184615/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts23"> man emerged from his caves to 
+construct other kinds of shelter. Only</text-style>
+                            </text>
+                            <text-style-def id="ts23">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="five years ago man learned to write and use a cart with wheels. Christianity" lane="1" offset="28137109/7500s" ref="r9" duration="417417/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184625/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts24">five years ago man learned to write and 
+use a cart with wheels. Christianity</text-style>
+                            </text>
+                            <text-style-def id="ts24">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="began less than two years ago. The printing press came this year, and then" lane="1" offset="225514289/60000s" ref="r9" duration="426426/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184635/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts25">began less than two years ago. The 
+printing press came this year, and then</text-style>
+                            </text>
+                            <text-style-def id="ts25">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="less than two months ago, during this whole 50-year span of human history," lane="1" offset="225982757/60000s" ref="r9" duration="331331/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184645/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts26">less than two months ago, during this 
+whole 50-year span of human history,</text-style>
+                            </text>
+                            <text-style-def id="ts26">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="the steam engine provided a new source of power." lane="1" offset="75448373/20000s" ref="r9" duration="203203/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184655/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts27">the steam engine provided a new source 
+of power.</text-style>
+                            </text>
+                            <text-style-def id="ts27">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="Newton explored the meaning of gravity. Last month electric lights and" lane="1" offset="113304191/30000s" ref="r9" duration="357357/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184665/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts28">Newton explored the meaning of gravity. 
+Last month electric lights and</text-style>
+                            </text>
+                            <text-style-def id="ts28">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="telephones and automobiles and airplanes became available. Only last" lane="2" offset="3782779/1000s" ref="r9" duration="294294/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184675/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts29">telephones and automobiles and 
+airplanes became available. Only last</text-style>
+                            </text>
+                            <text-style-def id="ts29">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="week did we develop penicillin and television and nuclear power, and now" lane="1" offset="227260033/60000s" ref="r9" duration="449449/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184685/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts30">week did we develop penicillin and 
+television and nuclear power, and now</text-style>
+                            </text>
+                            <text-style-def id="ts30">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="if America's new spacecraft succeeds in reaching Venus, we will have literally" lane="1" offset="227710483/60000s" ref="r9" duration="392392/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184695/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts31">if America's new spacecraft succeeds in 
+reaching Venus, we will have literally</text-style>
+                            </text>
+                            <text-style-def id="ts31">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="reached the stars before midnight tonight." lane="1" offset="1824823/480s" ref="r9" duration="182182/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184705/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts32">reached the stars before midnight 
+tonight.</text-style>
+                            </text>
+                            <text-style-def id="ts32">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="This is a breathtaking pace, and such a pace cannot help but create new ills as" lane="1" offset="38059021/10000s" ref="r9" duration="411411/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184715/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts33">This is a breathtaking pace, and such a 
+pace cannot help but create new ills as</text-style>
+                            </text>
+                            <text-style-def id="ts33">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="it dispels old, new ignorance, new problems, new dangers. Surely the" lane="1" offset="114383269/30000s" ref="r9" duration="472472/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184725/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts34">it dispels old, new ignorance, new 
+problems, new dangers. Surely the</text-style>
+                            </text>
+                            <text-style-def id="ts34">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="opening vistas of space promise high costs and hardships, as well as high" lane="1" offset="22923901/6000s" ref="r9" duration="372372/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184735/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts35">opening vistas of space promise high 
+costs and hardships, as well as high</text-style>
+                            </text>
+                            <text-style-def id="ts35">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="reward." lane="1" offset="114805691/30000s" ref="r9" duration="60060/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts36">reward.</text-style>
+                            </text>
+                            <text-style-def id="ts36">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="So it is not surprising that some would have us stay where we are a little" lane="1" offset="38287249/10000s" ref="r9" duration="324324/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184754/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts37">So it is not surprising that some would 
+have us stay where we are a little</text-style>
+                            </text>
+                            <text-style-def id="ts37">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="longer to rest, to wait. But this city of Houston, this State of Texas, this" lane="1" offset="38341303/10000s" ref="r9" duration="412412/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184764/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts38">longer to rest, to wait. But this city 
+of Houston, this State of Texas, this</text-style>
+                            </text>
+                            <text-style-def id="ts38">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="country of the United States was not built by those who waited and rested" lane="1" offset="23046023/6000s" ref="r9" duration="355355/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184774/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts39">country of the United States was not 
+built by those who waited and rested</text-style>
+                            </text>
+                            <text-style-def id="ts39">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="and wished to look behind them." lane="1" offset="46163117/12000s" ref="r9" duration="83083/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts40">and wished to look behind them.</text-style>
+                            </text>
+                            <text-style-def id="ts40">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="This country was conquered by those who" lane="1" offset="46295249/12000s" ref="r9" duration="170170/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts41">This country was conquered by those who</text-style>
+                            </text>
+                            <text-style-def id="ts41">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="moved forward--and so will space." lane="1" offset="46329283/12000s" ref="r9" duration="170170/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts42">moved forward--and so will space.</text-style>
+                            </text>
+                            <text-style-def id="ts42">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="William Bradford, speaking in 1630 of the founding of the Plymouth Bay Colony," lane="1" offset="28989961/7500s" ref="r9" duration="367367/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184811/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts43">William Bradford, speaking in 1630 of 
+the founding of the Plymouth Bay Colony,</text-style>
+                            </text>
+                            <text-style-def id="ts43">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="said that all great and honorable actions are accompanied with great" lane="1" offset="77438361/20000s" ref="r9" duration="310310/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184821/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts44"> said that all great and honorable 
+actions are accompanied with great</text-style>
+                            </text>
+                            <text-style-def id="ts44">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="difficulties, and both must be enterprised and overcome with" lane="1" offset="232625393/60000s" ref="r9" duration="360360/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184831/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts45">difficulties, and both must be 
+enterprised and overcome with</text-style>
+                            </text>
+                            <text-style-def id="ts45">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="answerable courage." lane="1" offset="232985753/60000s" ref="r9" duration="91091/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts46">answerable courage.</text-style>
+                            </text>
+                            <text-style-def id="ts46">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="If this capsule history of our progress teaches us anything, it is that man, in" lane="1" offset="233109877/60000s" ref="r9" duration="336336/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184850/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts47">If this capsule history of our progress 
+teaches us anything, it is that man, in</text-style>
+                            </text>
+                            <text-style-def id="ts47">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="his quest for knowledge and progress, is determined and cannot be deterred." lane="1" offset="233446213/60000s" ref="r9" duration="251251/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184860/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts48">his quest for knowledge and progress, 
+is determined and cannot be deterred.</text-style>
+                            </text>
+                            <text-style-def id="ts48">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="The exploration of space will go ahead, whether we join in it or not, and it is" lane="1" offset="29212183/7500s" ref="r9" duration="466466/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184870/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts49">The exploration of space will go ahead, 
+whether we join in it or not, and it is</text-style>
+                            </text>
+                            <text-style-def id="ts49">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="one of the great adventures of all time, and no nation which expects to be the" lane="1" offset="234214981/60000s" ref="r9" duration="385385/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184880/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts50">one of the great adventures of all time,
+ and no nation which expects to be the</text-style>
+                            </text>
+                            <text-style-def id="ts50">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="leader of other nations can expect to stay behind in the race for space." lane="1" offset="58661603/15000s" ref="r9" duration="257257/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184890/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts51">leader of other nations can expect to 
+stay behind in the race for space.</text-style>
+                            </text>
+                            <text-style-def id="ts51">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="Those who came before us made certain that this country rode the first waves" lane="1" offset="234967733/60000s" ref="r9" duration="366366/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184900/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts52">Those who came before us made certain 
+that this country rode the first waves</text-style>
+                            </text>
+                            <text-style-def id="ts52">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="of the industrial revolutions, the first waves of modern invention, and" lane="1" offset="235334099/60000s" ref="r9" duration="346346/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184910/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts53">of the industrial revolutions, the 
+first waves of modern invention, and</text-style>
+                            </text>
+                            <text-style-def id="ts53">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="the first wave of nuclear power, and this generation does not intend to" lane="1" offset="47136089/12000s" ref="r9" duration="363363/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184920/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts54">the first wave of nuclear power, and 
+this generation does not intend to</text-style>
+                            </text>
+                            <text-style-def id="ts54">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="founder in the backwash of the coming age of space. We mean to be a part of" lane="1" offset="7376369/1875s" ref="r9" duration="333333/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184930/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts55">founder in the backwash of the coming 
+age of space. We mean to be a part of</text-style>
+                            </text>
+                            <text-style-def id="ts55">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="it--we mean to lead it." lane="1" offset="39396357/10000s" ref="r9" duration="90090/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts56">it--we mean to lead it.</text-style>
+                            </text>
+                            <text-style-def id="ts56">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="For the eyes of the world now look into space, to the" lane="1" offset="15806791/4000s" ref="r9" duration="344344/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184949/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts57">For the eyes of the world now look into
+space, to the</text-style>
+                            </text>
+                            <text-style-def id="ts57">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="moon and to the planets beyond, and we have vowed that we shall not see it" lane="1" offset="237448211/60000s" ref="r9" duration="420420/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184959/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts58">moon and to the planets beyond, and we 
+have vowed that we shall not see it</text-style>
+                            </text>
+                            <text-style-def id="ts58">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="governed by a hostile flag of conquest, but by a banner of freedom and peace." lane="1" offset="15858843/4000s" ref="r9" duration="461461/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184969/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts59">governed by a hostile flag of conquest, 
+but by a banner of freedom and peace.</text-style>
+                            </text>
+                            <text-style-def id="ts59">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="We have vowed that we shall not see space filled with weapons of mass" lane="2" offset="119188069/30000s" ref="r9" duration="300300/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184979/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts60">We have vowed that we shall not see 
+space filled with weapons of mass</text-style>
+                            </text>
+                            <text-style-def id="ts60">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="destruction, but with instruments of knowledge and understanding." lane="1" offset="79558479/20000s" ref="r9" duration="288288/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184989/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts61">destruction, but with instruments of 
+knowledge and understanding.</text-style>
+                            </text>
+                            <text-style-def id="ts61">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="Yet the vows of this Nation can only be fulfilled if we in this Nation are" lane="1" offset="119508389/30000s" ref="r9" duration="429429/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999184999/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts62">Yet the vows of this Nation can only be 
+fulfilled if we in this Nation are</text-style>
+                            </text>
+                            <text-style-def id="ts62">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="first, and, therefore, we intend to be first." lane="1" offset="239446207/60000s" ref="r9" duration="217217/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts63">first, and, therefore, we intend to be first.</text-style>
+                            </text>
+                            <text-style-def id="ts63">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="In short, our leadership in" lane="1" offset="80020941/20000s" ref="r9" duration="192192/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts64">In short, our leadership in</text-style>
+                            </text>
+                            <text-style-def id="ts64">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="science and in industry, our hopes for peace and security, our obligations to" lane="1" offset="40043003/10000s" ref="r9" duration="389389/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185027/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts65">science and in industry, our hopes for 
+peace and security, our obligations to</text-style>
+                            </text>
+                            <text-style-def id="ts65">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="ourselves as well as others, all require us to make this effort, to" lane="1" offset="240647407/60000s" ref="r9" duration="346346/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185037/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts66">ourselves as well as others, all 
+require us to make this effort, to</text-style>
+                            </text>
+                            <text-style-def id="ts66">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="solve these mysteries, to solve them for the good of all men, and to become" lane="1" offset="80331251/20000s" ref="r9" duration="361361/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185047/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts67">solve these mysteries, to solve them 
+for the good of all men, and to become</text-style>
+                            </text>
+                            <text-style-def id="ts67">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="the world's leading space-faring nation." lane="1" offset="120677557/30000s" ref="r9" duration="163163/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts68">the world's leading space-faring nation.</text-style>
+                            </text>
+                            <text-style-def id="ts68">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="We set sail on this new sea because there is new knowledge to be gained," lane="1" offset="80529449/20000s" ref="r9" duration="336336/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185066/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts69">We set sail on this new sea because 
+there is new knowledge to be gained,</text-style>
+                            </text>
+                            <text-style-def id="ts69">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="and new rights to be won, and they must be won and used for the progress of all" lane="1" offset="80641561/20000s" ref="r9" duration="438438/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185076/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts70">and new rights to be won, and they must 
+be won and used for the progress of all</text-style>
+                            </text>
+                            <text-style-def id="ts70">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="people. For space science, like nuclear science and all technology, has no" lane="1" offset="242365123/60000s" ref="r9" duration="373373/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185086/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts71">people. For space science, like nuclear 
+science and all technology, has no</text-style>
+                            </text>
+                            <text-style-def id="ts71">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="conscience of its own. Whether it will become a force for good or ill depends" lane="1" offset="242739497/60000s" ref="r9" duration="370370/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185096/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts72">conscience of its own. Whether it will 
+become a force for good or ill depends</text-style>
+                            </text>
+                            <text-style-def id="ts72">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="on man, and only if the United States occupies a position of pre-eminence can" lane="1" offset="243109867/60000s" ref="r9" duration="457457/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185106/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts73">on man, and only if the United States 
+occupies a position of pre-eminence can</text-style>
+                            </text>
+                            <text-style-def id="ts73">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="we help decide whether this new ocean will be a sea of peace or a new" lane="1" offset="20299279/5000s" ref="r9" duration="446446/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185116/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts74">we help decide whether this new ocean 
+will be a sea of peace or a new</text-style>
+                            </text>
+                            <text-style-def id="ts74">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="terrifying theater of war. I do not say the we should or will go unprotected" lane="2" offset="48809761/12000s" ref="r9" duration="440440/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185126/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts75">terrifying theater of war. I do not say 
+the we should or will go unprotected</text-style>
+                            </text>
+                            <text-style-def id="ts75">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="against the hostile misuse of space any more than we go unprotected against the" lane="1" offset="61122061/15000s" ref="r9" duration="420420/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185136/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts76">against the hostile misuse of space any 
+more than we go unprotected against the</text-style>
+                            </text>
+                            <text-style-def id="ts76">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="hostile use of land or sea, but I do say that space can be explored and" lane="1" offset="30613583/7500s" ref="r9" duration="392392/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185146/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts77">hostile use of land or sea, but I do 
+say that space can be explored and</text-style>
+                            </text>
+                            <text-style-def id="ts77">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="mastered without feeding the fires of war, without repeating the mistakes" lane="1" offset="7665658/1875s" ref="r9" duration="343343/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185156/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts78">mastered without feeding the fires of 
+war, without repeating the mistakes</text-style>
+                            </text>
+                            <text-style-def id="ts78">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="that man has made in extending his writ around this globe of ours." lane="1" offset="245644399/60000s" ref="r9" duration="266266/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185166/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts79">that man has made in extending his writ 
+around this globe of ours.</text-style>
+                            </text>
+                            <text-style-def id="ts79">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="There is no strife, no prejudice, no national conflict in outer space as yet." lane="1" offset="81990909/20000s" ref="r9" duration="375375/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185176/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts80">There is no strife, no prejudice, no 
+national conflict in outer space as yet.</text-style>
+                            </text>
+                            <text-style-def id="ts80">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="Its hazards are hostile to us all. Its conquest deserves the best of all" lane="1" offset="246349103/60000s" ref="r9" duration="392392/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185186/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts81">Its hazards are hostile to us all. Its 
+conquest deserves the best of all</text-style>
+                            </text>
+                            <text-style-def id="ts81">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="mankind, and its opportunity for peaceful cooperation may never come again." lane="1" offset="16449433/4000s" ref="r9" duration="361361/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185196/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts82">mankind, and its opportunity for 
+peaceful cooperation may never come again.</text-style>
+                            </text>
+                            <text-style-def id="ts82">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="But why, some say, the moon?" lane="1" offset="247187941/60000s" ref="r9" duration="95095/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts83">But why, some say, the moon?</text-style>
+                            </text>
+                            <text-style-def id="ts83">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="Why choose this as our goal?" lane="1" offset="16489473/4000s" ref="r9" duration="116116/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts84">Why choose this as our goal?</text-style>
+                            </text>
+                            <text-style-def id="ts84">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="And they may well ask why climb the highest mountain?" lane="1" offset="82495413/20000s" ref="r9" duration="246246/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185224/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts85">And they may well ask
+why climb the highest mountain?</text-style>
+                            </text>
+                            <text-style-def id="ts85">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="Why, 35 years ago, fly the Atlantic?" lane="1" offset="16517501/4000s" ref="r9" duration="227227/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts86">Why, 35 years ago, fly the Atlantic?</text-style>
+                            </text>
+                            <text-style-def id="ts86">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="Why does Rice play Texas?" lane="1" offset="12401389/3000s" ref="r9" duration="94094/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts87">Why does Rice play Texas?</text-style>
+                            </text>
+                            <text-style-def id="ts87">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="We choose to go to the moon." lane="1" offset="31019989/7500s" ref="r9" duration="80080/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts88">We choose to go to the moon.</text-style>
+                            </text>
+                            <text-style-def id="ts88">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="We choose to go to the moon" lane="1" offset="31038007/7500s" ref="r9" duration="115115/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts89">We choose to go to the moon</text-style>
+                            </text>
+                            <text-style-def id="ts89">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="We choose to go to the moon in this decade and do the other things" lane="1" offset="20731711/5000s" ref="r9" duration="260260/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185270/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts90">We choose to go to the moon
+in this decade and do the other things</text-style>
+                            </text>
+                            <text-style-def id="ts90">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="not because they are easy but because they are hard" lane="1" offset="124521397/30000s" ref="r9" duration="216216/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185280/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts91">not because they are easy
+but because they are hard</text-style>
+                            </text>
+                            <text-style-def id="ts91">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="because that goal will serve to organize and measure the best of our" lane="1" offset="49862813/12000s" ref="r9" duration="329329/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185290/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts92">because that goal will serve to 
+organize and measure the best of our</text-style>
+                            </text>
+                            <text-style-def id="ts92">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="energies and skills" lane="1" offset="124821697/30000s" ref="r9" duration="93093/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts93">energies and skills</text-style>
+                            </text>
+                            <text-style-def id="ts93">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="because that challenge is one that we are willing to accept" lane="1" offset="31218187/7500s" ref="r9" duration="209209/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185309/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts94">because that challenge is one
+that we are willing to accept</text-style>
+                            </text>
+                            <text-style-def id="ts94">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="one we are unwilling to postpone" lane="1" offset="249980731/60000s" ref="r9" duration="155155/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts95">one we are unwilling to postpone</text-style>
+                            </text>
+                            <text-style-def id="ts95">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -43.2407"/>
+                        </title>
+                        <title name="and one which we intend to win and the others, too." lane="1" offset="25015991/6000s" ref="r9" duration="176176/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185328/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts96">and one which we intend to win
+and the others, too.</text-style>
+                            </text>
+                            <text-style-def id="ts96">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="It is for these reasons that I regard the decision last year to shift our" lane="1" offset="16719703/4000s" ref="r9" duration="331331/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185338/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts97">It is for these reasons that I regard 
+the decision last year to shift our</text-style>
+                            </text>
+                            <text-style-def id="ts97">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="efforts in space from low to high gear as among the most important decisions" lane="1" offset="62781719/15000s" ref="r9" duration="327327/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185348/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts98">efforts in space from low to high gear 
+as among the most important decisions</text-style>
+                            </text>
+                            <text-style-def id="ts98">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="that will be made during my incumbency in the office of the Presidency." lane="1" offset="251454203/60000s" ref="r9" duration="253253/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185358/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts99">that will be made during my incumbency 
+in the office of the Presidency.</text-style>
+                            </text>
+                            <text-style-def id="ts99">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="In the last 24 hours we have seen facilities now being created for the" lane="1" offset="62941879/15000s" ref="r9" duration="326326/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185368/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts100">In the last 24 hours we have seen 
+facilities now being created for the</text-style>
+                            </text>
+                            <text-style-def id="ts100">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="greatest and most complex exploration in man's history. We have felt the" lane="1" offset="126054929/30000s" ref="r9" duration="327327/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185378/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts101">greatest and most complex exploration 
+in man's history. We have felt the</text-style>
+                            </text>
+                            <text-style-def id="ts101">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="ground shake and the air shattered by the testing of a Saturn C-1 booster" lane="1" offset="63110047/15000s" ref="r9" duration="346346/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185388/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts102">ground shake and the air shattered by 
+the testing of a Saturn C-1 booster</text-style>
+                            </text>
+                            <text-style-def id="ts102">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="rocket, many times as powerful as the Atlas which launched John Glenn," lane="1" offset="42131089/10000s" ref="r9" duration="357357/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185398/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts103">rocket, many times as powerful as the 
+Atlas which launched John Glenn,</text-style>
+                            </text>
+                            <text-style-def id="ts103">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="generating power equivalent to 10,000 automobiles with their accelerators on" lane="1" offset="84381297/20000s" ref="r9" duration="355355/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185408/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts104">generating power equivalent to 10,000 
+automobiles with their accelerators on</text-style>
+                            </text>
+                            <text-style-def id="ts104">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="the floor. We have seen the site where the F-1 rocket engines, each one as" lane="1" offset="84503419/20000s" ref="r9" duration="341341/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185418/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts105">the floor. We have seen the site where 
+the F-1 rocket engines, each one as</text-style>
+                            </text>
+                            <text-style-def id="ts105">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="powerful as all eight engines of the Saturn combined, will be clustered" lane="1" offset="253922669/60000s" ref="r9" duration="355355/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185428/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts106">powerful as all eight engines of the 
+Saturn combined, will be clustered</text-style>
+                            </text>
+                            <text-style-def id="ts106">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="together to make the advanced Saturn missile, assembled in a new building to" lane="1" offset="84767683/20000s" ref="r9" duration="362362/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185438/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts107">together to make the advanced Saturn 
+missile, assembled in a new building to</text-style>
+                            </text>
+                            <text-style-def id="ts107">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="be built at Cape Canaveral as tall as a 48 story structure, as wide as a city" lane="1" offset="254691437/60000s" ref="r9" duration="412412/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185448/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts108">be built at Cape Canaveral as tall as a 
+48 story structure, as wide as a city</text-style>
+                            </text>
+                            <text-style-def id="ts108">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <title name="block, and as long as two lengths of this field." lane="1" offset="255103849/60000s" ref="r9" duration="255255/60000s" start="1s" role="subtitle.subtitle-1">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999185458/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts109">block, and as long as two lengths of 
+this field.</text-style>
+                            </text>
+                            <text-style-def id="ts109">
+                                <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform position="0 -36.4815"/>
+                        </title>
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </spine>
+            </sequence>
+        </media>
+        <effect id="r9" name="Basic Title" uid=".../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti"/>
+        <media id="r10" name="JFK_Address_multicam" uid="4y8bz6iGTmOTXzkpbEoHjA" modDate="2017-01-16 00:23:01 -0800">
+            <multicam format="r4" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF">
+                <mc-angle name="JFK_Address_Excerpt" angleID="yn9JtKhvT/q5u/PkHzbgTA">
+                    <asset-clip name="JFK_Address_Excerpt" offset="0s" ref="r5" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </mc-angle>
+                <mc-angle name="JFK_Address_Excerpt_audio" angleID="Iu6372AJTEqJ4EAxzJVgXA">
+                    <asset-clip name="JFK_Address_Excerpt_audio" offset="0s" ref="r6" duration="40659619/60000s" audioRole="dialogue"/>
+                </mc-angle>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="1"/>
+                    <md key="com.apple.proapps.studio.scene" value="23"/>
+                    <md key="com.apple.proapps.studio.shot" value="2"/>
+                </metadata>
+            </multicam>
+        </media>
+        <media id="r11" name="JFK_Address_multicam copy" uid="wl+WJiFuRYGEwSx86lyxVg" modDate="2017-01-16 00:23:01 -0800">
+            <multicam format="r4" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF">
+                <mc-angle name="JFK_Address_Excerpt" angleID="yn9JtKhvT/q5u/PkHzbgTA">
+                    <asset-clip name="JFK_Address_Excerpt" offset="0s" ref="r5" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </mc-angle>
+                <mc-angle name="JFK_Address_Excerpt_audio" angleID="Iu6372AJTEqJ4EAxzJVgXA">
+                    <asset-clip name="JFK_Address_Excerpt_audio" offset="0s" ref="r6" duration="40659619/60000s" audioRole="dialogue"/>
+                </mc-angle>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="10"/>
+                    <md key="com.apple.proapps.studio.scene" value="2300"/>
+                    <md key="com.apple.proapps.studio.shot" value="2"/>
+                </metadata>
+            </multicam>
+        </media>
+    </resources>
+    <library location="file:///Users/rkim/Documents/Old%20Files/JFK_Moon_Demo/JFK_Moon_Demo.fcpbundle/">
+        <event name="media" uid="21664417-7378-42FE-A266-DC28E012468F">
+            <asset-clip name="flight_of_apollo_11" ref="r1" duration="51090039/30000s" audioRole="dialogue" format="r2" tcFormat="NDF" modDate="2017-04-11 09:55:11 -0700">
+                <rating start="4377373/15000s" duration="170170/30000s" value="favorite"/>
+                <rating start="213213/500s" duration="87087/30000s" value="favorite"/>
+                <rating start="4785781/7500s" duration="96096/30000s" value="favorite"/>
+                <rating start="28835807/30000s" duration="155155/30000s" value="favorite"/>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="1"/>
+                    <md key="com.apple.proapps.studio.scene" value="2"/>
+                    <md key="com.apple.proapps.studio.shot" value="3"/>
+                    <md key="com.apple.proapps.studio.angle" value="4"/>
+                </metadata>
+            </asset-clip>
+            <ref-clip name="JFK_Address_compound" ref="r3" duration="40659619/60000s" start="216216000/60000s" useAudioSubroles="1" modDate="2017-04-11 09:56:20 -0700"/>
+            <sync-clip name="JFK_Address_Excerpt - Synchronized Clip" duration="487915444/720000s" format="r4" tcFormat="NDF" modDate="2017-04-11 09:55:30 -0700">
+                <asset-clip name="JFK_Address_Excerpt" offset="0s" ref="r5" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                    <asset-clip name="JFK_Address_Excerpt_audio" lane="-1" offset="18018/5s" ref="r6" duration="487915444/720000s" audioRole="dialogue" format="r7"/>
+                    <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                </asset-clip>
+                <sync-source sourceID="storyline">
+                    <audio-role-source role="dialogue.dialogue-1" active="0"/>
+                </sync-source>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="a"/>
+                    <md key="com.apple.proapps.studio.scene" value="b"/>
+                    <md key="com.apple.proapps.studio.shot" value="c"/>
+                    <md key="com.apple.proapps.studio.angle" value="d"/>
+                </metadata>
+            </sync-clip>
+            <asset-clip name="JFK_Address_Excerpt_audio" ref="r6" duration="487915445/720000s" audioRole="dialogue" format="r7" modDate="2017-04-11 09:56:28 -0700">
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="1"/>
+                    <md key="com.apple.proapps.studio.scene" value="2"/>
+                    <md key="com.apple.proapps.studio.shot" value="3"/>
+                    <md key="com.apple.proapps.studio.angle" value="A"/>
+                </metadata>
+            </asset-clip>
+            <asset-clip name="JFK_Address_Excerpt_audio copy" ref="r6" duration="487915445/720000s" audioRole="dialogue" format="r7" modDate="2017-04-11 09:54:29 -0700">
+                <metadata>
+                    <md key="com.apple.proapps.studio.angle" value="B"/>
+                </metadata>
+            </asset-clip>
+            <asset-clip name="JFK_Address_Excerpt_video" ref="r5" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" format="r4" tcFormat="NDF" modDate="2017-01-16 00:23:34 -0800">
+                <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+            </asset-clip>
+            <ref-clip name="JFK_Address_Excerpt_video + JFK_Address_Excerpt.srt" ref="r8" duration="40659619/60000s" start="216216000/60000s" useAudioSubroles="1" modDate="2017-01-26 18:43:43 -0800"/>
+            <mc-clip name="JFK_Address_multicam" ref="r10" duration="40659619/60000s" modDate="2017-04-10 18:52:53 -0700">
+                <note>blah</note>
+                <mc-source angleID="yn9JtKhvT/q5u/PkHzbgTA" srcEnable="all"/>
+            </mc-clip>
+            <mc-clip name="JFK_Address_multicam copy" ref="r11" duration="40659619/60000s" modDate="2017-04-11 09:53:53 -0700">
+                <note>blah</note>
+                <mc-source angleID="yn9JtKhvT/q5u/PkHzbgTA" srcEnable="all"/>
+            </mc-clip>
+            <project name="JFK_Moon_Project" uid="C15AFA62-A762-40CA-B524-4DB69D9C1F3D" modDate="2017-03-12 23:53:59 -0700">
+                <sequence duration="93052960/2400000s" format="r4" renderColorSpace="Rec. 709" tcStart="8648640000/2400000s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <ref-clip name="JFK_Address_Excerpt_video + JFK_Address_Excerpt.srt" offset="8648640000/2400000s" ref="r8" duration="27787760/2400000s" start="9909459560/2400000s">
+                            <asset-clip name="flight_of_apollo_11" lane="1" offset="62084022/15000s" ref="r1" duration="170170/30000s" start="4377373/15000s" audioRole="dialogue" format="r2" tcFormat="NDF">
+                                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                                <adjust-conform type="fill"/>
+                                <audio-channel-source role="dialogue.dialogue-1" srcCh="1, 2" active="0"/>
+                            </asset-clip>
+                            <marker start="108355247/30000s" duration="1001/60000s" value="President Pitzer, Mr. Vice President, Governor, Congressman Thomas, Senator"/>
+                            <keyword start="108355247/30000s" duration="1659658/60000s" value="subtitle" note="President Pitzer, Mr. Vice President, Governor, Congressman Thomas, Senator Wiley, and Congressman Miller, Mr. Webb, Mr. Bell, scientists, distinguished guests, and ladies and gentlemen: I appreciate your president having made me an honorary visiting professor, and I will assure you that my first lecture will be very brief."/>
+                            <marker start="36209173/10000s" duration="1001/60000s" value="Wiley, and Congressman Miller, Mr. Webb, Mr. Bell, scientists, distinguished"/>
+                            <marker start="43536493/12000s" duration="1001/60000s" value="guests, and ladies and gentlemen:"/>
+                            <marker start="36299263/10000s" duration="1001/60000s" value="I appreciate your president having made me an honorary visiting professor, and"/>
+                            <marker start="13634621/3750s" duration="1001/60000s" value="I will assure you that my first lecture will be very brief."/>
+                            <marker start="72803731/20000s" duration="1001/60000s" value="I am delighted to be here, and I'm particularly delighted to be here on this occasion."/>
+                            <keyword start="72803731/20000s" duration="1831830/60000s" value="subtitle" note="I am delighted to be here, and I'm particularly delighted to be here on this occasion. We meet at a college noted for knowledge, in a city noted for progress, in a State noted for strength, and we stand in need of all three, for we meet in an hour of change and challenge, in a decade of hope and fear, in an age of both knowledge and ignorance. The greater our knowledge increases, the"/>
+                            <marker start="43742699/12000s" duration="1001/60000s" value="We meet at a college noted for knowledge, in a city noted for progress,"/>
+                            <marker start="219181963/60000s" duration="1001/60000s" value="in a State noted for strength, and we stand in need of all three, for we meet"/>
+                            <marker start="109772663/30000s" duration="1001/60000s" value="in an hour of change and challenge, in a decade of hope and fear, in an age of"/>
+                            <marker start="219958739/60000s" duration="1001/60000s" value="both knowledge and ignorance. The greater our knowledge increases, the"/>
+                            <marker start="220269049/60000s" duration="1001/60000s" value="greater our ignorance unfolds."/>
+                            <keyword start="220269049/60000s" duration="1802801/60000s" value="subtitle" note="greater our ignorance unfolds. Despite the striking fact that most of the scientists that the world has ever known are alive and working today, despite the fact that this Nation¹s own scientific manpower is doubling every 12 years in a rate of growth more than three times that of our population as a whole, despite that, the vast stretches"/>
+                            <marker start="220479259/60000s" duration="1001/60000s" value="Despite the striking fact that most of the scientists that the world has ever"/>
+                            <marker start="73592519/20000s" duration="1001/60000s" value="known are alive and working today, despite the fact that this Nation¹s own"/>
+                            <marker start="73722649/20000s" duration="1001/60000s" value="scientific manpower is doubling every 12 years in a rate of growth more than"/>
+                            <marker start="36939903/10000s" duration="1001/60000s" value="three times that of our population as a whole, despite that, the vast stretches"/>
+                            <marker start="222108887/60000s" duration="1001/60000s" value="of the unknown and the unanswered and the unfinished still far outstrip our"/>
+                            <keyword start="222108887/60000s" duration="1923922/60000s" value="subtitle" note="of the unknown and the unanswered and the unfinished still far outstrip our collective comprehension. No man can fully grasp how far and how fast we have come, but condense, if you will, the 50,000 years of man¹s recorded history in a time span of but a half-century. Stated in these terms, we know very little about the first 40"/>
+                            <marker start="13910897/3750s" duration="1001/60000s" value="collective comprehension."/>
+                            <marker start="44545501/12000s" duration="1001/60000s" value="No man can fully grasp how far and how fast we have come, but condense, if you"/>
+                            <marker start="223183961/60000s" duration="1001/60000s" value="will, the 50,000 years of man¹s recorded history in a time span of but"/>
+                            <marker start="18641623/5000s" duration="1001/60000s" value="a half-century. Stated in these terms, we know very little about the first 40"/>
+                            <keyword start="22403381/6000s" duration="1906905/60000s" value="subtitle" note="years, except at the end of them advanced man had learned to use the skins of animals to cover them. Then about 10 years ago, under this standard, man emerged from his caves to construct other kinds of shelter. Only five years ago man learned to write and use a cart with wheels. Christianity began less than two years ago. The printing press came this year, and then"/>
+                            <marker start="22403381/6000s" duration="1001/60000s" value="years, except at the end of them advanced man had learned to use the"/>
+                            <marker start="112199087/30000s" duration="1001/60000s" value="skins of animals to cover them. Then about 10 years ago, under this standard,"/>
+                            <marker start="22473451/6000s" duration="1001/60000s" value="man emerged from his caves to construct other kinds of shelter. Only"/>
+                            <marker start="28137109/7500s" duration="1001/60000s" value="five years ago man learned to write and use a cart with wheels. Christianity"/>
+                            <marker start="225514289/60000s" duration="1001/60000s" value="began less than two years ago. The printing press came this year, and then"/>
+                            <keyword start="225982757/60000s" duration="1726725/60000s" value="subtitle" note="less than two months ago, during this whole 50-year span of human history, the steam engine provided a new source of power. Newton explored the meaning of gravity. Last month electric lights and telephones and automobiles and airplanes became available. Only last week did we develop penicillin and television and nuclear power, and now"/>
+                            <marker start="225982757/60000s" duration="1001/60000s" value="less than two months ago, during this whole 50-year span of human history,"/>
+                            <marker start="75448373/20000s" duration="1001/60000s" value="the steam engine provided a new source of power."/>
+                            <marker start="113304191/30000s" duration="1001/60000s" value="Newton explored the meaning of gravity. Last month electric lights and"/>
+                            <marker start="3782779/1000s" duration="1001/60000s" value="telephones and automobiles and airplanes became available. Only last"/>
+                            <marker start="227260033/60000s" duration="1001/60000s" value="week did we develop penicillin and television and nuclear power, and now"/>
+                            <marker start="227710483/60000s" duration="1001/60000s" value="if America's new spacecraft succeeds in reaching Venus, we will have literally"/>
+                            <keyword start="227710483/60000s" duration="1900899/60000s" value="subtitle" note="if America's new spacecraft succeeds in reaching Venus, we will have literally reached the stars before midnight tonight. This is a breathtaking pace, and such a pace cannot help but create new ills as it dispels old, new ignorance, new problems, new dangers. Surely the opening vistas of space promise high costs and hardships, as well as high"/>
+                            <marker start="1824823/480s" duration="1001/60000s" value="reached the stars before midnight tonight."/>
+                            <marker start="38059021/10000s" duration="1001/60000s" value="This is a breathtaking pace, and such a pace cannot help but create new ills as"/>
+                            <marker start="114383269/30000s" duration="1001/60000s" value="it dispels old, new ignorance, new problems, new dangers. Surely the"/>
+                            <marker start="22923901/6000s" duration="1001/60000s" value="opening vistas of space promise high costs and hardships, as well as high"/>
+                            <keyword start="114805691/30000s" duration="1287286/60000s" value="subtitle" note="reward. So it is not surprising that some would have us stay where we are a little longer to rest, to wait. But this city of Houston, this State of Texas, this country of the United States was not built by those who waited and rested and wished to look behind them."/>
+                            <marker start="114805691/30000s" duration="1001/60000s" value="reward."/>
+                            <marker start="38287249/10000s" duration="1001/60000s" value="So it is not surprising that some would have us stay where we are a little"/>
+                            <marker start="38341303/10000s" duration="1001/60000s" value="longer to rest, to wait. But this city of Houston, this State of Texas, this"/>
+                            <marker start="23046023/6000s" duration="1001/60000s" value="country of the United States was not built by those who waited and rested"/>
+                            <marker start="46163117/12000s" duration="1001/60000s" value="and wished to look behind them."/>
+                            <keyword start="46295249/12000s" duration="1509508/60000s" value="subtitle" note="This country was conquered by those who moved forward--and so will space. William Bradford, speaking in 1630 of the founding of the Plymouth Bay Colony, said that all great and honorable actions are accompanied with great difficulties, and both must be enterprised and overcome with"/>
+                            <marker start="46295249/12000s" duration="1001/60000s" value="This country was conquered by those who"/>
+                            <marker start="46329283/12000s" duration="1001/60000s" value="moved forward--and so will space."/>
+                            <marker start="28989961/7500s" duration="1001/60000s" value="William Bradford, speaking in 1630 of the founding of the Plymouth Bay Colony,"/>
+                            <marker start="77438361/20000s" duration="1001/60000s" value="said that all great and honorable actions are accompanied with great"/>
+                            <marker start="232625393/60000s" duration="1001/60000s" value="difficulties, and both must be enterprised and overcome with"/>
+                            <marker start="232985753/60000s" duration="1001/60000s" value="answerable courage."/>
+                            <keyword start="232985753/60000s" duration="1614613/60000s" value="subtitle" note="answerable courage. If this capsule history of our progress teaches us anything, it is that man, in his quest for knowledge and progress, is determined and cannot be deterred. The exploration of space will go ahead, whether we join in it or not, and it is one of the great adventures of all time, and no nation which expects to be the"/>
+                            <marker start="233109877/60000s" duration="1001/60000s" value="If this capsule history of our progress teaches us anything, it is that man, in"/>
+                            <marker start="233446213/60000s" duration="1001/60000s" value="his quest for knowledge and progress, is determined and cannot be deterred."/>
+                            <marker start="29212183/7500s" duration="1001/60000s" value="The exploration of space will go ahead, whether we join in it or not, and it is"/>
+                            <marker start="234214981/60000s" duration="1001/60000s" value="one of the great adventures of all time, and no nation which expects to be the"/>
+                            <marker start="58661603/15000s" duration="1001/60000s" value="leader of other nations can expect to stay behind in the race for space."/>
+                            <keyword start="58661603/15000s" duration="1730729/60000s" value="subtitle" note="leader of other nations can expect to stay behind in the race for space. Those who came before us made certain that this country rode the first waves of the industrial revolutions, the first waves of modern invention, and the first wave of nuclear power, and this generation does not intend to founder in the backwash of the coming age of space. We mean to be a part of"/>
+                            <marker start="234967733/60000s" duration="1001/60000s" value="Those who came before us made certain that this country rode the first waves"/>
+                            <marker start="235334099/60000s" duration="1001/60000s" value="of the industrial revolutions, the first waves of modern invention, and"/>
+                            <marker start="47136089/12000s" duration="1001/60000s" value="the first wave of nuclear power, and this generation does not intend to"/>
+                            <marker start="7376369/1875s" duration="1001/60000s" value="founder in the backwash of the coming age of space. We mean to be a part of"/>
+                            <marker start="39396357/10000s" duration="1001/60000s" value="it--we mean to lead it."/>
+                            <keyword start="39396357/10000s" duration="2298296/60000s" value="subtitle" note="it--we mean to lead it. For the eyes of the world now look into space, to the moon and to the planets beyond, and we have vowed that we shall not see it governed by a hostile flag of conquest, but by a banner of freedom and peace. We have vowed that we shall not see space filled with weapons of mass"/>
+                            <marker start="15806791/4000s" duration="1001/60000s" value="For the eyes of the world now look into space, to the"/>
+                            <marker start="237448211/60000s" duration="1001/60000s" value="moon and to the planets beyond, and we have vowed that we shall not see it"/>
+                            <marker start="15858843/4000s" duration="1001/60000s" value="governed by a hostile flag of conquest, but by a banner of freedom and peace."/>
+                            <marker start="119188069/30000s" duration="1001/60000s" value="We have vowed that we shall not see space filled with weapons of mass"/>
+                            <marker start="79558479/20000s" duration="1001/60000s" value="destruction, but with instruments of knowledge and understanding."/>
+                            <keyword start="79558479/20000s" duration="1971970/60000s" value="subtitle" note="destruction, but with instruments of knowledge and understanding. Yet the vows of this Nation can only be fulfilled if we in this Nation are first, and, therefore, we intend to be first. In short, our leadership in science and in industry, our hopes for peace and security, our obligations to"/>
+                            <marker start="119508389/30000s" duration="1001/60000s" value="Yet the vows of this Nation can only be fulfilled if we in this Nation are"/>
+                            <marker start="239446207/60000s" duration="1001/60000s" value="first, and, therefore, we intend to be first."/>
+                            <marker start="80020941/20000s" duration="1001/60000s" value="In short, our leadership in"/>
+                            <marker start="40043003/10000s" duration="1001/60000s" value="science and in industry, our hopes for peace and security, our obligations to"/>
+                            <keyword start="240647407/60000s" duration="1715714/60000s" value="subtitle" note="ourselves as well as others, all require us to make this effort, to solve these mysteries, to solve them for the good of all men, and to become the world's leading space-faring nation. We set sail on this new sea because there is new knowledge to be gained, and new rights to be won, and they must be won and used for the progress of all"/>
+                            <marker start="240647407/60000s" duration="1001/60000s" value="ourselves as well as others, all require us to make this effort, to"/>
+                            <marker start="80331251/20000s" duration="1001/60000s" value="solve these mysteries, to solve them for the good of all men, and to become"/>
+                            <marker start="120677557/30000s" duration="1001/60000s" value="the world's leading space-faring nation."/>
+                            <marker start="80529449/20000s" duration="1001/60000s" value="We set sail on this new sea because there is new knowledge to be gained,"/>
+                            <marker start="80641561/20000s" duration="1001/60000s" value="and new rights to be won, and they must be won and used for the progress of all"/>
+                            <keyword start="242365123/60000s" duration="2124122/60000s" value="subtitle" note="people. For space science, like nuclear science and all technology, has no conscience of its own. Whether it will become a force for good or ill depends on man, and only if the United States occupies a position of pre-eminence can we help decide whether this new ocean will be a sea of peace or a new terrifying theater of war. I do not say the we should or will go unprotected"/>
+                            <marker start="242365123/60000s" duration="1001/60000s" value="people. For space science, like nuclear science and all technology, has no"/>
+                            <marker start="242739497/60000s" duration="1001/60000s" value="conscience of its own. Whether it will become a force for good or ill depends"/>
+                            <marker start="243109867/60000s" duration="1001/60000s" value="on man, and only if the United States occupies a position of pre-eminence can"/>
+                            <marker start="20299279/5000s" duration="1001/60000s" value="we help decide whether this new ocean will be a sea of peace or a new"/>
+                            <marker start="48809761/12000s" duration="1001/60000s" value="terrifying theater of war. I do not say the we should or will go unprotected"/>
+                            <keyword start="61122061/15000s" duration="1859858/60000s" value="subtitle" note="against the hostile misuse of space any more than we go unprotected against the hostile use of land or sea, but I do say that space can be explored and mastered without feeding the fires of war, without repeating the mistakes that man has made in extending his writ around this globe of ours. There is no strife, no prejudice, no national conflict in outer space as yet."/>
+                            <marker start="61122061/15000s" duration="1001/60000s" value="against the hostile misuse of space any more than we go unprotected against the"/>
+                            <marker start="30613583/7500s" duration="1001/60000s" value="hostile use of land or sea, but I do say that space can be explored and"/>
+                            <marker start="7665658/1875s" duration="1001/60000s" value="mastered without feeding the fires of war, without repeating the mistakes"/>
+                            <marker start="245644399/60000s" duration="1001/60000s" value="that man has made in extending his writ around this globe of ours."/>
+                            <marker start="81990909/20000s" duration="1001/60000s" value="There is no strife, no prejudice, no national conflict in outer space as yet."/>
+                            <keyword start="246349103/60000s" duration="1383382/60000s" value="subtitle" note="Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation may never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain?"/>
+                            <marker start="246349103/60000s" duration="1001/60000s" value="Its hazards are hostile to us all. Its conquest deserves the best of all"/>
+                            <marker start="16449433/4000s" duration="1001/60000s" value="mankind, and its opportunity for peaceful cooperation may never come again."/>
+                            <marker start="247187941/60000s" duration="1001/60000s" value="But why, some say, the moon?"/>
+                            <marker start="16489473/4000s" duration="1001/60000s" value="Why choose this as our goal?"/>
+                            <marker start="82495413/20000s" duration="1001/60000s" value="And they may well ask why climb the highest mountain?"/>
+                            <marker start="16517501/4000s" duration="1001/60000s" value="Why, 35 years ago, fly the Atlantic?"/>
+                            <keyword start="16517501/4000s" duration="1278277/60000s" value="subtitle" note="Why, 35 years ago, fly the Atlantic? Why does Rice play Texas? We choose to go to the moon. We choose to go to the moon We choose to go to the moon in this decade and do the other things"/>
+                            <marker start="12401389/3000s" duration="1001/60000s" value="Why does Rice play Texas?"/>
+                            <marker start="31019989/7500s" duration="1001/60000s" value="We choose to go to the moon."/>
+                            <marker start="31038007/7500s" duration="1001/60000s" value="We choose to go to the moon"/>
+                            <marker start="20731711/5000s" duration="1001/60000s" value="We choose to go to the moon in this decade and do the other things"/>
+                            <marker start="124521397/30000s" duration="1001/60000s" value="not because they are easy but because they are hard"/>
+                            <keyword start="124521397/30000s" duration="1093092/60000s" value="subtitle" note="not because they are easy but because they are hard because that goal will serve to organize and measure the best of our energies and skills because that challenge is one that we are willing to accept one we are unwilling to postpone"/>
+                            <marker start="49862813/12000s" duration="1001/60000s" value="because that goal will serve to organize and measure the best of our"/>
+                            <marker start="124821697/30000s" duration="1001/60000s" value="energies and skills"/>
+                            <marker start="31218187/7500s" duration="1001/60000s" value="because that challenge is one that we are willing to accept"/>
+                            <marker start="249980731/60000s" duration="1001/60000s" value="one we are unwilling to postpone"/>
+                            <keyword start="25015991/6000s" duration="1933932/60000s" value="subtitle" note="and one which we intend to win and the others, too. It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency. In the last 24 hours we have seen facilities now being created for the"/>
+                            <marker start="25015991/6000s" duration="1001/60000s" value="and one which we intend to win and the others, too."/>
+                            <marker start="16719703/4000s" duration="1001/60000s" value="It is for these reasons that I regard the decision last year to shift our"/>
+                            <marker start="62781719/15000s" duration="1001/60000s" value="efforts in space from low to high gear as among the most important decisions"/>
+                            <marker start="251454203/60000s" duration="1001/60000s" value="that will be made during my incumbency in the office of the Presidency."/>
+                            <marker start="62941879/15000s" duration="1001/60000s" value="In the last 24 hours we have seen facilities now being created for the"/>
+                            <marker start="126054929/30000s" duration="1001/60000s" value="greatest and most complex exploration in man's history. We have felt the"/>
+                            <keyword start="126054929/30000s" duration="1741740/60000s" value="subtitle" note="greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as"/>
+                            <marker start="63110047/15000s" duration="1001/60000s" value="ground shake and the air shattered by the testing of a Saturn C-1 booster"/>
+                            <marker start="42131089/10000s" duration="1001/60000s" value="rocket, many times as powerful as the Atlas which launched John Glenn,"/>
+                            <marker start="84381297/20000s" duration="1001/60000s" value="generating power equivalent to 10,000 automobiles with their accelerators on"/>
+                            <marker start="84503419/20000s" duration="1001/60000s" value="the floor. We have seen the site where the F-1 rocket engines, each one as"/>
+                            <marker start="253922669/60000s" duration="1001/60000s" value="powerful as all eight engines of the Saturn combined, will be clustered"/>
+                            <keyword start="253922669/60000s" duration="1436435/60000s" value="subtitle" note="powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field."/>
+                            <marker start="84767683/20000s" duration="1001/60000s" value="together to make the advanced Saturn missile, assembled in a new building to"/>
+                            <marker start="254691437/60000s" duration="1001/60000s" value="be built at Cape Canaveral as tall as a 48 story structure, as wide as a city"/>
+                            <marker start="255103849/60000s" duration="1001/60000s" value="block, and as long as two lengths of this field."/>
+                        </ref-clip>
+                        <asset-clip name="JFK_Address_Excerpt_video" offset="8676427760/2400000s" ref="r5" duration="29189160/2400000s" start="9981091120/2400000s" audioRole="dialogue" tcFormat="NDF">
+                            <title name="energies and skills" lane="2" offset="124821697/30000s" ref="r9" duration="93093/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts110">energies and skills</text-style>
+                                </text>
+                                <text-style-def id="ts110">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -43.2407"/>
+                            </title>
+                            <title name="because that challenge is one that we are willing to accept" lane="2" offset="31218187/7500s" ref="r9" duration="209209/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999185309/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts111">because that challenge is one
+that we are willing to accept</text-style>
+                                </text>
+                                <text-style-def id="ts111">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -36.4815"/>
+                            </title>
+                            <asset-clip name="flight_of_apollo_11" lane="1" offset="249772523/60000s" ref="r1" duration="96096/30000s" start="4785781/7500s" audioRole="dialogue" format="r2" tcFormat="NDF">
+                                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                                <adjust-conform type="fill"/>
+                                <audio-channel-source role="dialogue.dialogue-1" srcCh="1, 2" active="0"/>
+                            </asset-clip>
+                            <asset-clip name="flight_of_apollo_11" lane="1" offset="249964715/60000s" ref="r1" duration="155155/30000s" start="28835807/30000s" audioRole="dialogue" format="r2" tcFormat="NDF">
+                                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                                <adjust-conform type="fill"/>
+                                <audio-channel-source role="dialogue.dialogue-1" srcCh="1, 2" active="0"/>
+                            </asset-clip>
+                            <title name="one we are unwilling to postpone" lane="2" offset="249980731/60000s" ref="r9" duration="155155/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts112">one we are unwilling to postpone</text-style>
+                                </text>
+                                <text-style-def id="ts112">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -43.2407"/>
+                            </title>
+                            <title name="and one which we intend to win and the others, too." lane="2" offset="25015991/6000s" ref="r9" duration="97097/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999185328/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts113">and one which we intend to win
+and the others, too.</text-style>
+                                </text>
+                                <text-style-def id="ts113">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -36.4815"/>
+                            </title>
+                        </asset-clip>
+                        <asset-clip name="JFK_Address_Excerpt_video" offset="8705616920/2400000s" ref="r5" duration="31431400/2400000s" start="248741493/60000s" audioRole="dialogue" tcFormat="NDF">
+                            <title name="We choose to go to the moon in this decade and do the other things" lane="1" offset="20731711/5000s" ref="r9" duration="260260/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999185270/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts114">We choose to go to the moon
+in this decade and do the other things</text-style>
+                                </text>
+                                <text-style-def id="ts114">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -36.4815"/>
+                            </title>
+                            <title name="not because they are easy but because they are hard" lane="1" offset="124521397/30000s" ref="r9" duration="216216/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999185280/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts115">not because they are easy
+but because they are hard</text-style>
+                                </text>
+                                <text-style-def id="ts115">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -36.4815"/>
+                            </title>
+                            <title name="because that goal will serve to organize and measure the best of our" lane="1" offset="49862813/12000s" ref="r9" duration="329329/60000s" start="1s" role="subtitle.subtitle-1">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999185290/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts116">because that goal will serve to 
+organize and measure the best of our</text-style>
+                                </text>
+                                <text-style-def id="ts116">
+                                    <text-style font="Helvetica" fontSize="60" fontFace="Regular" fontColor="0.999999 0.999974 0.999991 1" strokeColor="0.559719 0.559718 0.559719 1" strokeWidth="5" shadowColor="0 0 0 1" shadowOffset="8 230" shadowBlurRadius="8.21336" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="0 -36.4815"/>
+                            </title>
+                        </asset-clip>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+    </library>
+</fcpxml>

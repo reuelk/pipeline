@@ -1,0 +1,2231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <media id="r1" name="compound clip" uid="k8CzNeFzRxq0IICr9T4URA" modDate="2018-04-14 19:21:46 -0700">
+            <sequence duration="561561/60000s" format="r2" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <spine>
+                    <clip name="flight_of_apollo_11" offset="0s" duration="96096/30000s" start="4785781/7500s" format="r3" tcFormat="NDF">
+                        <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                        <adjust-conform type="fill"/>
+                        <video offset="0s" ref="r4" duration="51090039/30000s"/>
+                        <caption name="Compound clip" lane="1" offset="4798794/7500s" duration="120120/60000s" start="3600s" role="ITT?captionFormat=ITT.en">
+                            <text placement="bottom">
+                                <text-style ref="ts1">Compound clip</text-style>
+                            </text>
+                            <text-style-def id="ts1">
+                                <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <rating start="4377373/15000s" duration="170170/30000s" value="favorite"/>
+                        <rating start="213213/500s" duration="87087/30000s" value="favorite"/>
+                        <rating start="4785781/7500s" duration="96096/30000s" value="favorite"/>
+                        <rating start="28835807/30000s" duration="155155/30000s" value="favorite"/>
+                    </clip>
+                    <clip name="flight_of_apollo_11" offset="96096/30000s" duration="155155/30000s" start="28835807/30000s" format="r3" tcFormat="NDF">
+                        <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                        <adjust-conform type="fill"/>
+                        <video offset="0s" ref="r4" duration="51090039/30000s"/>
+                        <clip name="flight_of_apollo_11" lane="1" offset="57730673/60000s" duration="155155/30000s" start="28835807/30000s" tcFormat="NDF">
+                            <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                            <adjust-conform type="fill"/>
+                            <video offset="0s" ref="r4" duration="51090039/30000s"/>
+                            <caption name="Compound clip connected clip" lane="1" offset="57728671/60000s" duration="120120/60000s" start="3600s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts2">Compound clip connected clip</text-style>
+                                </text>
+                                <text-style-def id="ts2">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <rating start="4377373/15000s" duration="170170/30000s" value="favorite"/>
+                            <rating start="213213/500s" duration="87087/30000s" value="favorite"/>
+                            <rating start="4785781/7500s" duration="96096/30000s" value="favorite"/>
+                            <rating start="28835807/30000s" duration="155155/30000s" value="favorite"/>
+                        </clip>
+                        <rating start="4377373/15000s" duration="170170/30000s" value="favorite"/>
+                        <rating start="213213/500s" duration="87087/30000s" value="favorite"/>
+                        <rating start="4785781/7500s" duration="96096/30000s" value="favorite"/>
+                        <rating start="28835807/30000s" duration="155155/30000s" value="favorite"/>
+                    </clip>
+                </spine>
+            </sequence>
+        </media>
+        <format id="r2" name="FFVideoFormat1080p5994" frameDuration="1001/60000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <format id="r3" frameDuration="1001/30000s" width="320" height="240" paspH="220" paspV="219" colorSpace="6-1-6 (Rec. 601 (NTSC))"/>
+        <asset id="r4" name="flight_of_apollo_11_512kb" uid="CA1848FDCBC8449E93341A9A864C4646" src="file:///Users/reuelkim/Local%20Documents/JFK_Moon_Demo/media/flight_of_apollo_11_512kb.mp4" start="0s" duration="17030013/10000s" hasVideo="1" format="r3" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <bookmark>Ym9vaywDAAAAAAQQMAAAAP9p+WhNSkbY6+UAdCnqHBLJf3YXouthOOXBQ+xNZlKcKAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAHJldWVsa2ltDwAAAAEBAABMb2NhbCBEb2N1bWVudHMADQAAAAEBAABKRktfTW9vbl9EZW1vAAAABQAAAAEBAABtZWRpYQAAAB0AAAABAQAAZmxpZ2h0X29mX2Fwb2xsb18xMV81MTJrYi5tcDQAAAAYAAAAAQYAABAAAAAgAAAAMAAAAEgAAABgAAAAcAAAAAgAAAAEAwAAvQILAAAAAAAIAAAABAMAANfGCwAAAAAACAAAAAQDAACjZR0AAAAAAAgAAAAEAwAArGUdAAAAAAAIAAAABAMAANZtHQAAAAAACAAAAAQDAADabR0AAAAAABgAAAABBgAAuAAAAMgAAADYAAAA6AAAAPgAAAAIAQAACAAAAAAEAABBrbKLhAAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAMC0g98AAAAIAAAAAAQAAEG/6b3kAAAAJAAAAAEBAAAzQzhFOERFOC0wMDNFLTNEOEMtODhGOC03NEQ3QUQzMDA5RjcYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAmAAAAAAAAAAFEAAAGAEAAAAAAAAQEAAASAEAAAAAAABAEAAAOAEAAAAAAAACIAAAFAIAAAAAAAAFIAAAhAEAAAAAAAAQIAAAlAEAAAAAAAARIAAAyAEAAAAAAAASIAAAqAEAAAAAAAATIAAAuAEAAAAAAAAgIAAA9AEAAAAAAAAwIAAAIAIAAAAAAAABwAAAaAEAAAAAAAARwAAAIAAAAAAAAAASwAAAeAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>AAC</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2016-06-05 00:47:37 -0700"/>
+            </metadata>
+        </asset>
+        <media id="r5" name="JFK_Address_compound" uid="jmckchwOSre7lDcVDcZX7A" modDate="2017-01-16 00:23:15 -0800">
+            <sequence duration="40659619/60000s" format="r2" tcStart="216216000/60000s" tcFormat="NDF">
+                <spine>
+                    <asset-clip name="JFK_Address_Excerpt" offset="216216000/60000s" ref="r6" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <asset-clip name="JFK_Address_Excerpt_audio" lane="-1" offset="18018/5s" ref="r7" duration="40659619/60000s" audioRole="dialogue"/>
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </spine>
+            </sequence>
+        </media>
+        <asset id="r6" name="JFK_Address_Excerpt" uid="71332EF64D337FFE799D390E657DB221" src="file:///Users/reuelkim/Local%20Documents/JFK_Moon_Demo/media/JFK_Address_Excerpt.mov" start="216216000/60000s" duration="40659619/60000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQDAAAAAAQQMAAAAMr4UuAtyj2iP9FXm3ctfq1H4U4mHcbug5Qxet0ZYkgXIAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAHJldWVsa2ltDwAAAAEBAABMb2NhbCBEb2N1bWVudHMADQAAAAEBAABKRktfTW9vbl9EZW1vAAAABQAAAAEBAABtZWRpYQAAABcAAAABAQAASkZLX0FkZHJlc3NfRXhjZXJwdC5tb3YAGAAAAAEGAAAQAAAAIAAAADAAAABIAAAAYAAAAHAAAAAIAAAABAMAAL0CCwAAAAAACAAAAAQDAADXxgsAAAAAAAgAAAAEAwAAo2UdAAAAAAAIAAAABAMAAKxlHQAAAAAACAAAAAQDAADWbR0AAAAAAAgAAAAEAwAA4G0dAAAAAAAYAAAAAQYAALAAAADAAAAA0AAAAOAAAADwAAAAAAEAAAgAAAAABAAAQb4sugcAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAABAAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAADAtIPfAAAACAAAAAAEAABBv+m95AAAACQAAAABAQAAM0M4RThERTgtMDAzRS0zRDhDLTg4RjgtNzREN0FEMzAwOUY3GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAJAAAAAAAAAABRAAABABAAAAAAAAEBAAAEABAAAAAAAAQBAAADABAAAAAAAAAiAAAAwCAAAAAAAABSAAAHwBAAAAAAAAECAAAIwBAAAAAAAAESAAAMABAAAAAAAAEiAAAKABAAAAAAAAEyAAALABAAAAAAAAICAAAOwBAAAAAAAAMCAAABgCAAAAAAAAAcAAAGABAAAAAAAAEcAAACAAAAAAAAAAEsAAAHABAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>AAC</string>
+                        <string>H.264</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2017-01-16 00:22:08 -0800"/>
+            </metadata>
+        </asset>
+        <asset id="r7" name="JFK_Address_Excerpt_audio" uid="EF1A201E2DFF4F9029053B1FB1DAF4DF" src="file:///Users/reuelkim/Local%20Documents/JFK_Moon_Demo/media/JFK_Address_Excerpt_audio.m4a" start="0s" duration="29884821/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <bookmark>Ym9vaywDAAAAAAQQMAAAAKT3iq89ceFoBNy5iQeSIkTNbb2sCpNZ9yZ32kb0oT9GKAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAHJldWVsa2ltDwAAAAEBAABMb2NhbCBEb2N1bWVudHMADQAAAAEBAABKRktfTW9vbl9EZW1vAAAABQAAAAEBAABtZWRpYQAAAB0AAAABAQAASkZLX0FkZHJlc3NfRXhjZXJwdF9hdWRpby5tNGEAAAAYAAAAAQYAABAAAAAgAAAAMAAAAEgAAABgAAAAcAAAAAgAAAAEAwAAvQILAAAAAAAIAAAABAMAANfGCwAAAAAACAAAAAQDAACjZR0AAAAAAAgAAAAEAwAArGUdAAAAAAAIAAAABAMAANZtHQAAAAAACAAAAAQDAADtbR0AAAAAABgAAAABBgAAuAAAAMgAAADYAAAA6AAAAPgAAAAIAQAACAAAAAAEAABBviy0AwAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAMC0g98AAAAIAAAAAAQAAEG/6b3kAAAAJAAAAAEBAAAzQzhFOERFOC0wMDNFLTNEOEMtODhGOC03NEQ3QUQzMDA5RjcYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAmAAAAAAAAAAFEAAAGAEAAAAAAAAQEAAASAEAAAAAAABAEAAAOAEAAAAAAAACIAAAFAIAAAAAAAAFIAAAhAEAAAAAAAAQIAAAlAEAAAAAAAARIAAAyAEAAAAAAAASIAAAqAEAAAAAAAATIAAAuAEAAAAAAAAgIAAA9AEAAAAAAAAwIAAAIAIAAAAAAAABwAAAaAEAAAAAAAARwAAAIAAAAAAAAAASwAAAeAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2017-01-15 23:56:30 -0800"/>
+            </metadata>
+        </asset>
+        <format id="r8" name="FFVideoFormatRateUndefined"/>
+        <media id="r9" name="JFK_Address_multicam" uid="4y8bz6iGTmOTXzkpbEoHjA" modDate="2017-01-16 00:23:01 -0800">
+            <multicam format="r2" tcStart="0s" tcFormat="NDF">
+                <mc-angle name="JFK_Address_Excerpt" angleID="yn9JtKhvT/q5u/PkHzbgTA">
+                    <asset-clip name="JFK_Address_Excerpt" offset="0s" ref="r6" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </mc-angle>
+                <mc-angle name="JFK_Address_Excerpt_audio" angleID="Iu6372AJTEqJ4EAxzJVgXA">
+                    <asset-clip name="JFK_Address_Excerpt_audio" offset="0s" ref="r7" duration="40659619/60000s" audioRole="dialogue"/>
+                </mc-angle>
+            </multicam>
+        </media>
+        <media id="r10" name="JFK_Address_Excerpt_video + JFK_Address_Excerpt.srt" uid="S8zu2MV/RGaIRCVE26YZEg" modDate="2018-04-26 13:30:45 -0700">
+            <sequence duration="40659619/60000s" format="r2" tcStart="216216000/60000s" tcFormat="NDF">
+                <spine>
+                    <asset-clip name="JFK_Address_Excerpt_video" offset="216216000/60000s" ref="r6" duration="40658618/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <caption name="President Pitzer, Mr. Vice  President,  Governor, Congressman Thomas,  Senator" lane="1" offset="14447433/4000s" duration="542542/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts3">President Pitzer, Mr. Vice </text-style>
+                                <text-style ref="ts4">
+</text-style>
+                                <text-style ref="ts3">President, </text-style>
+                                <text-style ref="ts4">
+</text-style>
+                                <text-style ref="ts3">Governor, Congressman Thomas, </text-style>
+                                <text-style ref="ts4">
+</text-style>
+                                <text-style ref="ts3">Senator</text-style>
+                            </text>
+                            <text-style-def id="ts3">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts4">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Wiley, and Congressman Miller,  Mr. Webb,  Mr. Bell, scientists,  distinguished" lane="1" offset="217256039/60000s" duration="426426/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts5">Wiley, and Congressman Miller, </text-style>
+                                <text-style ref="ts6">
+</text-style>
+                                <text-style ref="ts5">Mr. Webb,</text-style>
+                                <text-style ref="ts6">
+</text-style>
+                                <text-style ref="ts5"> Mr. Bell, scientists, </text-style>
+                                <text-style ref="ts6">
+</text-style>
+                                <text-style ref="ts5">distinguished</text-style>
+                            </text>
+                            <text-style-def id="ts5">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts6">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="guests, and ladies and  gentlemen:" lane="1" offset="72561489/20000s" duration="77077/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts7">guests, and ladies and </text-style>
+                                <text-style ref="ts8">
+</text-style>
+                                <text-style ref="ts7">gentlemen:</text-style>
+                            </text>
+                            <text-style-def id="ts7">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts8">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="I appreciate your president  having made  me an honorary visiting  professor, and" lane="1" offset="10889879/3000s" duration="357357/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts9">I appreciate your president </text-style>
+                                <text-style ref="ts10">
+</text-style>
+                                <text-style ref="ts9">having made </text-style>
+                                <text-style ref="ts10">
+</text-style>
+                                <text-style ref="ts9">me an honorary visiting </text-style>
+                                <text-style ref="ts10">
+</text-style>
+                                <text-style ref="ts9">professor, and</text-style>
+                            </text>
+                            <text-style-def id="ts9">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts10">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="I will assure you that my first  lecture  will be very brief." lane="1" offset="36359323/10000s" duration="216216/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts11">I will assure you that my first </text-style>
+                                <text-style ref="ts12">
+</text-style>
+                                <text-style ref="ts11">lecture </text-style>
+                                <text-style ref="ts12">
+</text-style>
+                                <text-style ref="ts11">will be very brief.</text-style>
+                            </text>
+                            <text-style-def id="ts11">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts12">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="I am delighted to be here, and  I'm  particularly delighted to be  here on this occasion." lane="1" offset="43682639/12000s" duration="275275/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts13">I am delighted to be here, and </text-style>
+                                <text-style ref="ts14">
+</text-style>
+                                <text-style ref="ts13">I'm </text-style>
+                                <text-style ref="ts14">
+</text-style>
+                                <text-style ref="ts13">particularly delighted to be </text-style>
+                                <text-style ref="ts14">
+</text-style>
+                                <text-style ref="ts13">here on this occasion.</text-style>
+                            </text>
+                            <text-style-def id="ts13">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts14">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="We meet at a college noted for  knowledge, in a city noted for  progress," lane="1" offset="109358249/30000s" duration="421421/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts15">We meet at a college noted for </text-style>
+                                <text-style ref="ts16">
+</text-style>
+                                <text-style ref="ts15">knowledge, in a city noted for </text-style>
+                                <text-style ref="ts16">
+</text-style>
+                                <text-style ref="ts15">progress,</text-style>
+                            </text>
+                            <text-style-def id="ts15">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts16">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name=" in a State noted for strength,  and we  stand in need of all three, for  we meet" lane="1" offset="109592483/30000s" duration="357357/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts17"> in a State noted for strength, </text-style>
+                                <text-style ref="ts18">
+</text-style>
+                                <text-style ref="ts17">and we </text-style>
+                                <text-style ref="ts18">
+</text-style>
+                                <text-style ref="ts17">stand in need of all three, for </text-style>
+                                <text-style ref="ts18">
+</text-style>
+                                <text-style ref="ts17">we meet</text-style>
+                            </text>
+                            <text-style-def id="ts17">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts18">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="in an hour of change and  challenge, in  a decade of hope and fear, in an age of" lane="1" offset="7318311/2000s" duration="412412/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts19">in an hour of change and </text-style>
+                                <text-style ref="ts20">
+</text-style>
+                                <text-style ref="ts19">challenge, in </text-style>
+                                <text-style ref="ts20">
+</text-style>
+                                <text-style ref="ts19">a decade of hope and fear, in an</text-style>
+                                <text-style ref="ts20">
+</text-style>
+                                <text-style ref="ts19">age of</text-style>
+                            </text>
+                            <text-style-def id="ts19">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts20">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="both knowledge and ignorance.  The  greater our knowledge increases, the" lane="1" offset="109980871/30000s" duration="284284/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts21">both knowledge and ignorance. </text-style>
+                                <text-style ref="ts22">
+</text-style>
+                                <text-style ref="ts21">The </text-style>
+                                <text-style ref="ts22">
+</text-style>
+                                <text-style ref="ts21">greater our knowledge increases,</text-style>
+                                <text-style ref="ts22">
+</text-style>
+                                <text-style ref="ts21">the</text-style>
+                            </text>
+                            <text-style-def id="ts21">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts22">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="greater our ignorance unfolds." lane="1" offset="73424351/20000s" duration="134134/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts23">greater our ignorance unfolds.</text-style>
+                            </text>
+                            <text-style-def id="ts23">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Despite the striking fact that  most of  the scientists that the world  has ever" lane="1" offset="73494421/20000s" duration="276276/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts24">Despite the striking fact that </text-style>
+                                <text-style ref="ts25">
+</text-style>
+                                <text-style ref="ts24">most of </text-style>
+                                <text-style ref="ts25">
+</text-style>
+                                <text-style ref="ts24">the scientists that the world </text-style>
+                                <text-style ref="ts25">
+</text-style>
+                                <text-style ref="ts24">has ever</text-style>
+                            </text>
+                            <text-style-def id="ts24">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts25">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="known are alive and working  today,  despite the fact that this  Nation¹s own" lane="1" offset="110391281/30000s" duration="374374/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts26">known are alive and working </text-style>
+                                <text-style ref="ts27">
+</text-style>
+                                <text-style ref="ts26">today, </text-style>
+                                <text-style ref="ts27">
+</text-style>
+                                <text-style ref="ts26">despite the fact that this </text-style>
+                                <text-style ref="ts27">
+</text-style>
+                                <text-style ref="ts26">Nation¹s own</text-style>
+                            </text>
+                            <text-style-def id="ts26">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts27">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="scientific manpower is doubling  every  12 years in a rate of growth  more than" lane="1" offset="27646619/7500s" duration="457457/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts28">scientific manpower is doubling </text-style>
+                                <text-style ref="ts29">
+</text-style>
+                                <text-style ref="ts28">every </text-style>
+                                <text-style ref="ts29">
+</text-style>
+                                <text-style ref="ts28">12 years in a rate of growth </text-style>
+                                <text-style ref="ts29">
+</text-style>
+                                <text-style ref="ts28">more than</text-style>
+                            </text>
+                            <text-style-def id="ts28">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts29">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="three times that of our  population as a  whole, despite that, the vast  stretches" lane="1" offset="221644423/60000s" duration="432432/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts30">three times that of our </text-style>
+                                <text-style ref="ts31">
+</text-style>
+                                <text-style ref="ts30">population as a </text-style>
+                                <text-style ref="ts31">
+</text-style>
+                                <text-style ref="ts30">whole, despite that, the vast </text-style>
+                                <text-style ref="ts31">
+</text-style>
+                                <text-style ref="ts30">stretches</text-style>
+                            </text>
+                            <text-style-def id="ts30">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts31">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="of the unknown and the  unanswered and  the unfinished still far  outstrip our" lane="1" offset="222114893/60000s" duration="451451/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts32">of the unknown and the </text-style>
+                                <text-style ref="ts33">
+</text-style>
+                                <text-style ref="ts32">unanswered and </text-style>
+                                <text-style ref="ts33">
+</text-style>
+                                <text-style ref="ts32">the unfinished still far </text-style>
+                                <text-style ref="ts33">
+</text-style>
+                                <text-style ref="ts32">outstrip our</text-style>
+                            </text>
+                            <text-style-def id="ts32">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts33">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="collective comprehension." lane="1" offset="111290179/30000s" duration="80080/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts34">collective comprehension.</text-style>
+                            </text>
+                            <text-style-def id="ts34">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="No man can fully grasp how far  and how  fast we have come, but condense, if you" lane="1" offset="13920907/3750s" duration="455455/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts35">No man can fully grasp how far </text-style>
+                                <text-style ref="ts36">
+</text-style>
+                                <text-style ref="ts35">and how </text-style>
+                                <text-style ref="ts36">
+</text-style>
+                                <text-style ref="ts35">fast we have come, but condense,</text-style>
+                                <text-style ref="ts36">
+</text-style>
+                                <text-style ref="ts35">if you</text-style>
+                            </text>
+                            <text-style-def id="ts35">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts36">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="will, the 50,000 years of man¹s  recorded history in a time span  of but" lane="1" offset="27898871/7500s" duration="516516/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts37">will, the 50,000 years of man¹s </text-style>
+                                <text-style ref="ts38">
+</text-style>
+                                <text-style ref="ts37">recorded history in a time span </text-style>
+                                <text-style ref="ts38">
+</text-style>
+                                <text-style ref="ts37">of but</text-style>
+                            </text>
+                            <text-style-def id="ts37">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts38">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="a half-century. Stated in these  terms,  we know very little about the  first 40" lane="1" offset="55926871/15000s" duration="333333/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts39">a half-century. Stated in these </text-style>
+                                <text-style ref="ts40">
+</text-style>
+                                <text-style ref="ts39">terms, </text-style>
+                                <text-style ref="ts40">
+</text-style>
+                                <text-style ref="ts39">we know very little about the </text-style>
+                                <text-style ref="ts40">
+</text-style>
+                                <text-style ref="ts39">first 40</text-style>
+                            </text>
+                            <text-style-def id="ts39">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts40">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="years, except at the end of them  advanced man had learned to use  the" lane="1" offset="224040817/60000s" duration="350350/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts41">years, except at the end of them </text-style>
+                                <text-style ref="ts42">
+</text-style>
+                                <text-style ref="ts41">advanced man had learned to use </text-style>
+                                <text-style ref="ts42">
+</text-style>
+                                <text-style ref="ts41">the</text-style>
+                            </text>
+                            <text-style-def id="ts41">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts42">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="skins of animals to cover them.  Then  about 10 years ago, under this  standard," lane="1" offset="112203091/30000s" duration="321321/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts43">skins of animals to cover them. </text-style>
+                                <text-style ref="ts44">
+</text-style>
+                                <text-style ref="ts43">Then </text-style>
+                                <text-style ref="ts44">
+</text-style>
+                                <text-style ref="ts43">about 10 years ago, under this </text-style>
+                                <text-style ref="ts44">
+</text-style>
+                                <text-style ref="ts43">standard,</text-style>
+                            </text>
+                            <text-style-def id="ts43">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts44">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name=" man emerged from his caves to  construct other kinds of  shelter. Only" lane="1" offset="112371259/30000s" duration="362362/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts45"> man emerged from his caves to </text-style>
+                                <text-style ref="ts46">
+</text-style>
+                                <text-style ref="ts45">construct other kinds of </text-style>
+                                <text-style ref="ts46">
+</text-style>
+                                <text-style ref="ts45">shelter. Only</text-style>
+                            </text>
+                            <text-style-def id="ts45">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts46">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="five years ago man learned to  write and  use a cart with wheels.  Christianity" lane="1" offset="225105881/60000s" duration="417417/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts47">five years ago man learned to </text-style>
+                                <text-style ref="ts48">
+</text-style>
+                                <text-style ref="ts47">write and </text-style>
+                                <text-style ref="ts48">
+</text-style>
+                                <text-style ref="ts47">use a cart with wheels. </text-style>
+                                <text-style ref="ts48">
+</text-style>
+                                <text-style ref="ts47">Christianity</text-style>
+                            </text>
+                            <text-style-def id="ts47">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts48">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="began less than two years ago.  The  printing press came this year,  and then" lane="1" offset="112761649/30000s" duration="426426/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts49">began less than two years ago. </text-style>
+                                <text-style ref="ts50">
+</text-style>
+                                <text-style ref="ts49">The </text-style>
+                                <text-style ref="ts50">
+</text-style>
+                                <text-style ref="ts49">printing press came this year, </text-style>
+                                <text-style ref="ts50">
+</text-style>
+                                <text-style ref="ts49">and then</text-style>
+                            </text>
+                            <text-style-def id="ts49">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts50">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="less than two months ago, during this  whole 50-year span of human  history," lane="1" offset="225992767/60000s" duration="331331/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts51">less than two months ago, during</text-style>
+                                <text-style ref="ts52">
+</text-style>
+                                <text-style ref="ts51">this </text-style>
+                                <text-style ref="ts52">
+</text-style>
+                                <text-style ref="ts51">whole 50-year span of human </text-style>
+                                <text-style ref="ts52">
+</text-style>
+                                <text-style ref="ts51">history,</text-style>
+                            </text>
+                            <text-style-def id="ts51">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts52">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="the steam engine provided a new  source  of power." lane="1" offset="226355129/60000s" duration="203203/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts53">the steam engine provided a new </text-style>
+                                <text-style ref="ts54">
+</text-style>
+                                <text-style ref="ts53">source </text-style>
+                                <text-style ref="ts54">
+</text-style>
+                                <text-style ref="ts53">of power.</text-style>
+                            </text>
+                            <text-style-def id="ts53">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts54">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Newton explored the meaning of  gravity.  Last month electric lights and" lane="1" offset="226619393/60000s" duration="357357/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts55">Newton explored the meaning of </text-style>
+                                <text-style ref="ts56">
+</text-style>
+                                <text-style ref="ts55">gravity. </text-style>
+                                <text-style ref="ts56">
+</text-style>
+                                <text-style ref="ts55">Last month electric lights and</text-style>
+                            </text>
+                            <text-style-def id="ts55">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts56">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="telephones and automobiles and  airplanes became available. Only last" lane="1" offset="907907/240s" duration="294294/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts57">telephones and automobiles and </text-style>
+                                <text-style ref="ts58">
+</text-style>
+                                <text-style ref="ts57">airplanes became available. Only</text-style>
+                                <text-style ref="ts58">
+</text-style>
+                                <text-style ref="ts57">last</text-style>
+                            </text>
+                            <text-style-def id="ts57">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts58">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="week did we develop penicillin  and  television and nuclear power,  and now" lane="1" offset="56817761/15000s" duration="449449/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts59">week did we develop penicillin </text-style>
+                                <text-style ref="ts60">
+</text-style>
+                                <text-style ref="ts59">and </text-style>
+                                <text-style ref="ts60">
+</text-style>
+                                <text-style ref="ts59">television and nuclear power, </text-style>
+                                <text-style ref="ts60">
+</text-style>
+                                <text-style ref="ts59">and now</text-style>
+                            </text>
+                            <text-style-def id="ts59">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts60">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="if America's new spacecraft  succeeds in  reaching Venus, we will have  literally" lane="1" offset="113860747/30000s" duration="392392/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts61">if America's new spacecraft </text-style>
+                                <text-style ref="ts62">
+</text-style>
+                                <text-style ref="ts61">succeeds in </text-style>
+                                <text-style ref="ts62">
+</text-style>
+                                <text-style ref="ts61">reaching Venus, we will have </text-style>
+                                <text-style ref="ts62">
+</text-style>
+                                <text-style ref="ts61">literally</text-style>
+                            </text>
+                            <text-style-def id="ts61">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts62">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="reached the stars before  midnight  tonight." lane="1" offset="228114887/60000s" duration="182182/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts63">reached the stars before </text-style>
+                                <text-style ref="ts64">
+</text-style>
+                                <text-style ref="ts63">midnight </text-style>
+                                <text-style ref="ts64">
+</text-style>
+                                <text-style ref="ts63">tonight.</text-style>
+                            </text>
+                            <text-style-def id="ts63">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts64">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="This is a breathtaking pace, and such a  pace cannot help but create new  ills as" lane="1" offset="228367139/60000s" duration="411411/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts65">This is a breathtaking pace, and</text-style>
+                                <text-style ref="ts66">
+</text-style>
+                                <text-style ref="ts65">such a </text-style>
+                                <text-style ref="ts66">
+</text-style>
+                                <text-style ref="ts65">pace cannot help but create new </text-style>
+                                <text-style ref="ts66">
+</text-style>
+                                <text-style ref="ts65">ills as</text-style>
+                            </text>
+                            <text-style-def id="ts65">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts66">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="it dispels old, new ignorance,  new  problems, new dangers. Surely  the" lane="1" offset="4575571/1200s" duration="472472/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts67">it dispels old, new ignorance, </text-style>
+                                <text-style ref="ts68">
+</text-style>
+                                <text-style ref="ts67">new </text-style>
+                                <text-style ref="ts68">
+</text-style>
+                                <text-style ref="ts67">problems, new dangers. Surely </text-style>
+                                <text-style ref="ts68">
+</text-style>
+                                <text-style ref="ts67">the</text-style>
+                            </text>
+                            <text-style-def id="ts67">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts68">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="opening vistas of space promise  high  costs and hardships, as well as  high" lane="1" offset="76417341/20000s" duration="372372/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts69">opening vistas of space promise </text-style>
+                                <text-style ref="ts70">
+</text-style>
+                                <text-style ref="ts69">high </text-style>
+                                <text-style ref="ts70">
+</text-style>
+                                <text-style ref="ts69">costs and hardships, as well as </text-style>
+                                <text-style ref="ts70">
+</text-style>
+                                <text-style ref="ts69">high</text-style>
+                            </text>
+                            <text-style-def id="ts69">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts70">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="reward." lane="1" offset="15308293/4000s" duration="60060/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts71">reward.</text-style>
+                            </text>
+                            <text-style-def id="ts71">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="So it is not surprising that  some would  have us stay where we are a  little" lane="1" offset="57434377/15000s" duration="324324/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts72">So it is not surprising that </text-style>
+                                <text-style ref="ts73">
+</text-style>
+                                <text-style ref="ts72">some would </text-style>
+                                <text-style ref="ts73">
+</text-style>
+                                <text-style ref="ts72">have us stay where we are a </text-style>
+                                <text-style ref="ts73">
+</text-style>
+                                <text-style ref="ts72">little</text-style>
+                            </text>
+                            <text-style-def id="ts72">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts73">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="longer to rest, to wait. But  this city  of Houston, this State of Texas, this" lane="1" offset="28757729/7500s" duration="412412/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts74">longer to rest, to wait. But </text-style>
+                                <text-style ref="ts75">
+</text-style>
+                                <text-style ref="ts74">this city </text-style>
+                                <text-style ref="ts75">
+</text-style>
+                                <text-style ref="ts74">of Houston, this State of Texas,</text-style>
+                                <text-style ref="ts75">
+</text-style>
+                                <text-style ref="ts74">this</text-style>
+                            </text>
+                            <text-style-def id="ts74">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts75">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="country of the United States was not  built by those who waited and  rested" lane="1" offset="46095049/12000s" duration="355355/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts76">country of the United States was</text-style>
+                                <text-style ref="ts77">
+</text-style>
+                                <text-style ref="ts76">not </text-style>
+                                <text-style ref="ts77">
+</text-style>
+                                <text-style ref="ts76">built by those who waited and </text-style>
+                                <text-style ref="ts77">
+</text-style>
+                                <text-style ref="ts76">rested</text-style>
+                            </text>
+                            <text-style-def id="ts76">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts77">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="and wished to look behind them." lane="1" offset="1154153/300s" duration="83083/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts78">and wished to look behind them.</text-style>
+                            </text>
+                            <text-style-def id="ts78">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="This country was conquered by  those who" lane="1" offset="11574563/3000s" duration="170170/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts79">This country was conquered by </text-style>
+                                <text-style ref="ts80">
+</text-style>
+                                <text-style ref="ts79">those who</text-style>
+                            </text>
+                            <text-style-def id="ts79">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts80">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="moved forward--and so will  space." lane="1" offset="23166143/6000s" duration="170170/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts81">moved forward--and so will </text-style>
+                                <text-style ref="ts82">
+</text-style>
+                                <text-style ref="ts81">space.</text-style>
+                            </text>
+                            <text-style-def id="ts81">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts82">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="William Bradford, speaking in  1630 of  the founding of the Plymouth Bay Colony," lane="1" offset="28991963/7500s" duration="367367/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts83">William Bradford, speaking in </text-style>
+                                <text-style ref="ts84">
+</text-style>
+                                <text-style ref="ts83">1630 of </text-style>
+                                <text-style ref="ts84">
+</text-style>
+                                <text-style ref="ts83">the founding of the Plymouth Bay</text-style>
+                                <text-style ref="ts84">
+</text-style>
+                                <text-style ref="ts83">Colony,</text-style>
+                            </text>
+                            <text-style-def id="ts83">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts84">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name=" said that all great and  honorable  actions are accompanied with  great" lane="1" offset="232331099/60000s" duration="310310/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts85"> said that all great and </text-style>
+                                <text-style ref="ts86">
+</text-style>
+                                <text-style ref="ts85">honorable </text-style>
+                                <text-style ref="ts86">
+</text-style>
+                                <text-style ref="ts85">actions are accompanied with </text-style>
+                                <text-style ref="ts86">
+</text-style>
+                                <text-style ref="ts85">great</text-style>
+                            </text>
+                            <text-style-def id="ts85">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts86">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="difficulties, and both must be  enterprised and overcome with" lane="1" offset="232641409/60000s" duration="360360/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts87">difficulties, and both must be </text-style>
+                                <text-style ref="ts88">
+</text-style>
+                                <text-style ref="ts87">enterprised and overcome with</text-style>
+                            </text>
+                            <text-style-def id="ts87">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts88">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="answerable courage." lane="1" offset="233001769/60000s" duration="91091/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts89">answerable courage.</text-style>
+                            </text>
+                            <text-style-def id="ts89">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="If this capsule history of our  progress  teaches us anything, it is that  man, in" lane="1" offset="116563447/30000s" duration="336336/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts90">If this capsule history of our </text-style>
+                                <text-style ref="ts91">
+</text-style>
+                                <text-style ref="ts90">progress </text-style>
+                                <text-style ref="ts91">
+</text-style>
+                                <text-style ref="ts90">teaches us anything, it is that </text-style>
+                                <text-style ref="ts91">
+</text-style>
+                                <text-style ref="ts90">man, in</text-style>
+                            </text>
+                            <text-style-def id="ts90">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts91">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="his quest for knowledge and  progress,  is determined and cannot be  deterred." lane="1" offset="23346323/6000s" duration="251251/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts92">his quest for knowledge and </text-style>
+                                <text-style ref="ts93">
+</text-style>
+                                <text-style ref="ts92">progress, </text-style>
+                                <text-style ref="ts93">
+</text-style>
+                                <text-style ref="ts92">is determined and cannot be </text-style>
+                                <text-style ref="ts93">
+</text-style>
+                                <text-style ref="ts92">deterred.</text-style>
+                            </text>
+                            <text-style-def id="ts92">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts93">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="The exploration of space will go ahead,  whether we join in it or not,  and it is" lane="1" offset="77904827/20000s" duration="466466/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts94">The exploration of space will go</text-style>
+                                <text-style ref="ts95">
+</text-style>
+                                <text-style ref="ts94">ahead, </text-style>
+                                <text-style ref="ts95">
+</text-style>
+                                <text-style ref="ts94">whether we join in it or not, </text-style>
+                                <text-style ref="ts95">
+</text-style>
+                                <text-style ref="ts94">and it is</text-style>
+                            </text>
+                            <text-style-def id="ts94">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts95">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="one of the great adventures of  all time,  and no nation which expects to  be the" lane="1" offset="234232999/60000s" duration="385385/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts96">one of the great adventures of </text-style>
+                                <text-style ref="ts97">
+</text-style>
+                                <text-style ref="ts96">all time,</text-style>
+                                <text-style ref="ts97">
+</text-style>
+                                <text-style ref="ts96"> and no nation which expects to </text-style>
+                                <text-style ref="ts97">
+</text-style>
+                                <text-style ref="ts96">be the</text-style>
+                            </text>
+                            <text-style-def id="ts96">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts97">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="leader of other nations can  expect to  stay behind in the race for  space." lane="1" offset="23466443/6000s" duration="257257/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts98">leader of other nations can </text-style>
+                                <text-style ref="ts99">
+</text-style>
+                                <text-style ref="ts98">expect to </text-style>
+                                <text-style ref="ts99">
+</text-style>
+                                <text-style ref="ts98">stay behind in the race for </text-style>
+                                <text-style ref="ts99">
+</text-style>
+                                <text-style ref="ts98">space.</text-style>
+                            </text>
+                            <text-style-def id="ts98">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts99">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Those who came before us made  certain  that this country rode the first waves" lane="1" offset="7343336/1875s" duration="366366/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts100">Those who came before us made </text-style>
+                                <text-style ref="ts101">
+</text-style>
+                                <text-style ref="ts100">certain </text-style>
+                                <text-style ref="ts101">
+</text-style>
+                                <text-style ref="ts100">that this country rode the first</text-style>
+                                <text-style ref="ts101">
+</text-style>
+                                <text-style ref="ts100">waves</text-style>
+                            </text>
+                            <text-style-def id="ts100">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts101">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="of the industrial revolutions,  the  first waves of modern invention, and" lane="1" offset="117676559/30000s" duration="346346/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts102">of the industrial revolutions, </text-style>
+                                <text-style ref="ts103">
+</text-style>
+                                <text-style ref="ts102">the </text-style>
+                                <text-style ref="ts103">
+</text-style>
+                                <text-style ref="ts102">first waves of modern invention,</text-style>
+                                <text-style ref="ts103">
+</text-style>
+                                <text-style ref="ts102">and</text-style>
+                            </text>
+                            <text-style-def id="ts102">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts103">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="the first wave of nuclear power, and  this generation does not intend  to" lane="1" offset="47140093/12000s" duration="363363/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts104">the first wave of nuclear power,</text-style>
+                                <text-style ref="ts105">
+</text-style>
+                                <text-style ref="ts104">and </text-style>
+                                <text-style ref="ts105">
+</text-style>
+                                <text-style ref="ts104">this generation does not intend </text-style>
+                                <text-style ref="ts105">
+</text-style>
+                                <text-style ref="ts104">to</text-style>
+                            </text>
+                            <text-style-def id="ts104">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts105">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="founder in the backwash of the  coming  age of space. We mean to be a  part of" lane="1" offset="59015957/15000s" duration="333333/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts106">founder in the backwash of the </text-style>
+                                <text-style ref="ts107">
+</text-style>
+                                <text-style ref="ts106">coming </text-style>
+                                <text-style ref="ts107">
+</text-style>
+                                <text-style ref="ts106">age of space. We mean to be a </text-style>
+                                <text-style ref="ts107">
+</text-style>
+                                <text-style ref="ts106">part of</text-style>
+                            </text>
+                            <text-style-def id="ts106">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts107">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="it--we mean to lead it." lane="1" offset="118199081/30000s" duration="90090/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts108">it--we mean to lead it.</text-style>
+                            </text>
+                            <text-style-def id="ts108">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="For the eyes of the world now  look into space, to the" lane="1" offset="39520481/10000s" duration="344344/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts109">For the eyes of the world now </text-style>
+                                <text-style ref="ts110">
+</text-style>
+                                <text-style ref="ts109">look into</text-style>
+                                <text-style ref="ts110">
+</text-style>
+                                <text-style ref="ts109">space, to the</text-style>
+                            </text>
+                            <text-style-def id="ts109">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts110">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="moon and to the planets beyond,  and we  have vowed that we shall not see it" lane="1" offset="14841827/3750s" duration="420420/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts111">moon and to the planets beyond, </text-style>
+                                <text-style ref="ts112">
+</text-style>
+                                <text-style ref="ts111">and we </text-style>
+                                <text-style ref="ts112">
+</text-style>
+                                <text-style ref="ts111">have vowed that we shall not see</text-style>
+                                <text-style ref="ts112">
+</text-style>
+                                <text-style ref="ts111">it</text-style>
+                            </text>
+                            <text-style-def id="ts111">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts112">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="governed by a hostile flag of  conquest,  but by a banner of freedom and  peace." lane="1" offset="237904667/60000s" duration="461461/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts113">governed by a hostile flag of </text-style>
+                                <text-style ref="ts114">
+</text-style>
+                                <text-style ref="ts113">conquest, </text-style>
+                                <text-style ref="ts114">
+</text-style>
+                                <text-style ref="ts113">but by a banner of freedom and </text-style>
+                                <text-style ref="ts114">
+</text-style>
+                                <text-style ref="ts113">peace.</text-style>
+                            </text>
+                            <text-style-def id="ts113">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts114">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="We have vowed that we shall not  see  space filled with weapons of  mass" lane="1" offset="2979977/750s" duration="300300/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts115">We have vowed that we shall not </text-style>
+                                <text-style ref="ts116">
+</text-style>
+                                <text-style ref="ts115">see </text-style>
+                                <text-style ref="ts116">
+</text-style>
+                                <text-style ref="ts115">space filled with weapons of </text-style>
+                                <text-style ref="ts116">
+</text-style>
+                                <text-style ref="ts115">mass</text-style>
+                            </text>
+                            <text-style-def id="ts115">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts116">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="destruction, but with  instruments of  knowledge and understanding." lane="1" offset="11934923/3000s" duration="288288/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts117">destruction, but with </text-style>
+                                <text-style ref="ts118">
+</text-style>
+                                <text-style ref="ts117">instruments of </text-style>
+                                <text-style ref="ts118">
+</text-style>
+                                <text-style ref="ts117">knowledge and understanding.</text-style>
+                            </text>
+                            <text-style-def id="ts117">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts118">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Yet the vows of this Nation can  only be  fulfilled if we in this Nation  are" lane="1" offset="239039801/60000s" duration="429429/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts119">Yet the vows of this Nation can </text-style>
+                                <text-style ref="ts120">
+</text-style>
+                                <text-style ref="ts119">only be </text-style>
+                                <text-style ref="ts120">
+</text-style>
+                                <text-style ref="ts119">fulfilled if we in this Nation </text-style>
+                                <text-style ref="ts120">
+</text-style>
+                                <text-style ref="ts119">are</text-style>
+                            </text>
+                            <text-style-def id="ts119">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts120">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="first, and, therefore, we intend to be first." lane="1" offset="23946923/6000s" duration="217217/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts121">first, and, therefore, we intend</text-style>
+                                <text-style ref="ts122">
+</text-style>
+                                <text-style ref="ts121">to be first.</text-style>
+                            </text>
+                            <text-style-def id="ts121">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts122">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="In short, our leadership in" lane="1" offset="80028949/20000s" duration="192192/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts123">In short, our leadership in</text-style>
+                            </text>
+                            <text-style-def id="ts123">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="science and in industry, our  hopes for  peace and security, our  obligations to" lane="1" offset="40047007/10000s" duration="389389/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts124">science and in industry, our </text-style>
+                                <text-style ref="ts125">
+</text-style>
+                                <text-style ref="ts124">hopes for </text-style>
+                                <text-style ref="ts125">
+</text-style>
+                                <text-style ref="ts124">peace and security, our </text-style>
+                                <text-style ref="ts125">
+</text-style>
+                                <text-style ref="ts124">obligations to</text-style>
+                            </text>
+                            <text-style-def id="ts124">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts125">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="ourselves as well as others, all  require us to make this effort,  to" lane="1" offset="240671431/60000s" duration="346346/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts126">ourselves as well as others, all </text-style>
+                                <text-style ref="ts127">
+</text-style>
+                                <text-style ref="ts126">require us to make this effort, </text-style>
+                                <text-style ref="ts127">
+</text-style>
+                                <text-style ref="ts126">to</text-style>
+                            </text>
+                            <text-style-def id="ts126">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts127">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="solve these mysteries, to solve  them  for the good of all men, and to  become" lane="1" offset="120509389/30000s" duration="361361/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts128">solve these mysteries, to solve </text-style>
+                                <text-style ref="ts129">
+</text-style>
+                                <text-style ref="ts128">them </text-style>
+                                <text-style ref="ts129">
+</text-style>
+                                <text-style ref="ts128">for the good of all men, and to </text-style>
+                                <text-style ref="ts129">
+</text-style>
+                                <text-style ref="ts128">become</text-style>
+                            </text>
+                            <text-style-def id="ts128">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts129">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="the world's leading space-faring nation." lane="1" offset="241380139/60000s" duration="163163/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts130">the world's leading space-faring</text-style>
+                                <text-style ref="ts131">
+</text-style>
+                                <text-style ref="ts130">nation.</text-style>
+                            </text>
+                            <text-style-def id="ts130">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts131">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="We set sail on this new sea  because  there is new knowledge to be  gained," lane="1" offset="60403343/15000s" duration="336336/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts132">We set sail on this new sea </text-style>
+                                <text-style ref="ts133">
+</text-style>
+                                <text-style ref="ts132">because </text-style>
+                                <text-style ref="ts133">
+</text-style>
+                                <text-style ref="ts132">there is new knowledge to be </text-style>
+                                <text-style ref="ts133">
+</text-style>
+                                <text-style ref="ts132">gained,</text-style>
+                            </text>
+                            <text-style-def id="ts132">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts133">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="and new rights to be won, and  they must  be won and used for the progress of all" lane="1" offset="60487427/15000s" duration="438438/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts134">and new rights to be won, and </text-style>
+                                <text-style ref="ts135">
+</text-style>
+                                <text-style ref="ts134">they must </text-style>
+                                <text-style ref="ts135">
+</text-style>
+                                <text-style ref="ts134">be won and used for the progress</text-style>
+                                <text-style ref="ts135">
+</text-style>
+                                <text-style ref="ts134">of all</text-style>
+                            </text>
+                            <text-style-def id="ts134">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts135">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="people. For space science, like  nuclear  science and all technology, has  no" lane="1" offset="242391149/60000s" duration="373373/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts136">people. For space science, like </text-style>
+                                <text-style ref="ts137">
+</text-style>
+                                <text-style ref="ts136">nuclear </text-style>
+                                <text-style ref="ts137">
+</text-style>
+                                <text-style ref="ts136">science and all technology, has </text-style>
+                                <text-style ref="ts137">
+</text-style>
+                                <text-style ref="ts136">no</text-style>
+                            </text>
+                            <text-style-def id="ts136">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts137">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="conscience of its own. Whether  it will  become a force for good or ill  depends" lane="1" offset="80921841/20000s" duration="370370/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts138">conscience of its own. Whether </text-style>
+                                <text-style ref="ts139">
+</text-style>
+                                <text-style ref="ts138">it will </text-style>
+                                <text-style ref="ts139">
+</text-style>
+                                <text-style ref="ts138">become a force for good or ill </text-style>
+                                <text-style ref="ts139">
+</text-style>
+                                <text-style ref="ts138">depends</text-style>
+                            </text>
+                            <text-style-def id="ts138">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts139">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="on man, and only if the United  States  occupies a position of pre- eminence can" lane="1" offset="121568447/30000s" duration="457457/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts140">on man, and only if the United </text-style>
+                                <text-style ref="ts141">
+</text-style>
+                                <text-style ref="ts140">States </text-style>
+                                <text-style ref="ts141">
+</text-style>
+                                <text-style ref="ts140">occupies a position of pre-</text-style>
+                                <text-style ref="ts141">
+</text-style>
+                                <text-style ref="ts140">eminence can</text-style>
+                            </text>
+                            <text-style-def id="ts140">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts141">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="we help decide whether this new  ocean  will be a sea of peace or a new" lane="1" offset="649649/160s" duration="446446/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts142">we help decide whether this new </text-style>
+                                <text-style ref="ts143">
+</text-style>
+                                <text-style ref="ts142">ocean </text-style>
+                                <text-style ref="ts143">
+</text-style>
+                                <text-style ref="ts142">will be a sea of peace or a new</text-style>
+                            </text>
+                            <text-style-def id="ts142">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts143">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="terrifying theater of war. I do  not say  the we should or will go  unprotected" lane="1" offset="30509479/7500s" duration="440440/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts144">terrifying theater of war. I do </text-style>
+                                <text-style ref="ts145">
+</text-style>
+                                <text-style ref="ts144">not say </text-style>
+                                <text-style ref="ts145">
+</text-style>
+                                <text-style ref="ts144">the we should or will go </text-style>
+                                <text-style ref="ts145">
+</text-style>
+                                <text-style ref="ts144">unprotected</text-style>
+                            </text>
+                            <text-style-def id="ts144">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts145">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="against the hostile misuse of  space any  more than we go unprotected  against the" lane="1" offset="244517273/60000s" duration="420420/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts146">against the hostile misuse of </text-style>
+                                <text-style ref="ts147">
+</text-style>
+                                <text-style ref="ts146">space any </text-style>
+                                <text-style ref="ts147">
+</text-style>
+                                <text-style ref="ts146">more than we go unprotected </text-style>
+                                <text-style ref="ts147">
+</text-style>
+                                <text-style ref="ts146">against the</text-style>
+                            </text>
+                            <text-style-def id="ts146">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts147">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="hostile use of land or sea, but  I do  say that space can be explored  and" lane="1" offset="244937693/60000s" duration="392392/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts148">hostile use of land or sea, but </text-style>
+                                <text-style ref="ts149">
+</text-style>
+                                <text-style ref="ts148">I do </text-style>
+                                <text-style ref="ts149">
+</text-style>
+                                <text-style ref="ts148">say that space can be explored </text-style>
+                                <text-style ref="ts149">
+</text-style>
+                                <text-style ref="ts148">and</text-style>
+                            </text>
+                            <text-style-def id="ts148">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts149">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="mastered without feeding the  fires of  war, without repeating the  mistakes" lane="1" offset="16355339/4000s" duration="343343/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts150">mastered without feeding the </text-style>
+                                <text-style ref="ts151">
+</text-style>
+                                <text-style ref="ts150">fires of </text-style>
+                                <text-style ref="ts151">
+</text-style>
+                                <text-style ref="ts150">war, without repeating the </text-style>
+                                <text-style ref="ts151">
+</text-style>
+                                <text-style ref="ts150">mistakes</text-style>
+                            </text>
+                            <text-style-def id="ts150">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts151">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="that man has made in extending  his writ  around this globe of ours." lane="1" offset="61418357/15000s" duration="266266/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts152">that man has made in extending </text-style>
+                                <text-style ref="ts153">
+</text-style>
+                                <text-style ref="ts152">his writ </text-style>
+                                <text-style ref="ts153">
+</text-style>
+                                <text-style ref="ts152">around this globe of ours.</text-style>
+                            </text>
+                            <text-style-def id="ts152">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts153">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="There is no strife, no  prejudice, no  national conflict in outer space as yet." lane="1" offset="82000919/20000s" duration="375375/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts154">There is no strife, no </text-style>
+                                <text-style ref="ts155">
+</text-style>
+                                <text-style ref="ts154">prejudice, no </text-style>
+                                <text-style ref="ts155">
+</text-style>
+                                <text-style ref="ts154">national conflict in outer space</text-style>
+                                <text-style ref="ts155">
+</text-style>
+                                <text-style ref="ts154">as yet.</text-style>
+                            </text>
+                            <text-style-def id="ts154">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts155">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Its hazards are hostile to us  all. Its  conquest deserves the best of  all" lane="1" offset="246379133/60000s" duration="392392/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts156">Its hazards are hostile to us </text-style>
+                                <text-style ref="ts157">
+</text-style>
+                                <text-style ref="ts156">all. Its </text-style>
+                                <text-style ref="ts157">
+</text-style>
+                                <text-style ref="ts156">conquest deserves the best of </text-style>
+                                <text-style ref="ts157">
+</text-style>
+                                <text-style ref="ts156">all</text-style>
+                            </text>
+                            <text-style-def id="ts156">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts157">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="mankind, and its opportunity for  peaceful cooperation may never  come again." lane="1" offset="3290287/800s" duration="361361/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts158">mankind, and its opportunity for </text-style>
+                                <text-style ref="ts159">
+</text-style>
+                                <text-style ref="ts158">peaceful cooperation may never </text-style>
+                                <text-style ref="ts159">
+</text-style>
+                                <text-style ref="ts158">come again.</text-style>
+                            </text>
+                            <text-style-def id="ts158">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts159">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="But why, some say, the moon?" lane="1" offset="247217971/60000s" duration="95095/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts160">But why, some say, the moon?</text-style>
+                            </text>
+                            <text-style-def id="ts160">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Why choose this as our goal?" lane="1" offset="123686563/30000s" duration="116116/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts161">Why choose this as our goal?</text-style>
+                            </text>
+                            <text-style-def id="ts161">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="And they may well ask why climb the highest mountain?" lane="1" offset="24751727/6000s" duration="246246/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts162">And they may well ask</text-style>
+                                <text-style ref="ts163">
+</text-style>
+                                <text-style ref="ts162">why climb the highest mountain?</text-style>
+                            </text>
+                            <text-style-def id="ts162">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts163">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Why, 35 years ago, fly the  Atlantic?" lane="1" offset="123896773/30000s" duration="227227/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts164">Why, 35 years ago, fly the </text-style>
+                                <text-style ref="ts165">
+</text-style>
+                                <text-style ref="ts164">Atlantic?</text-style>
+                            </text>
+                            <text-style-def id="ts164">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts165">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="Why does Rice play Texas?" lane="1" offset="20671651/5000s" duration="94094/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts166">Why does Rice play Texas?</text-style>
+                            </text>
+                            <text-style-def id="ts166">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="We choose to go to the moon." lane="1" offset="10341331/2500s" duration="80080/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts167">We choose to go to the moon.</text-style>
+                            </text>
+                            <text-style-def id="ts167">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="We choose to go to the moon" lane="1" offset="10347337/2500s" duration="115115/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts168">We choose to go to the moon</text-style>
+                            </text>
+                            <text-style-def id="ts168">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="We choose to go to the moon in this decade and do the other  things" lane="1" offset="62203141/15000s" duration="260260/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts169">We choose to go to the moon</text-style>
+                                <text-style ref="ts170">
+</text-style>
+                                <text-style ref="ts169">in this decade and do the other </text-style>
+                                <text-style ref="ts170">
+</text-style>
+                                <text-style ref="ts169">things</text-style>
+                            </text>
+                            <text-style-def id="ts169">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts170">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="not because they are easy but because they are hard" lane="1" offset="249075827/60000s" duration="216216/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts171">not because they are easy</text-style>
+                                <text-style ref="ts172">
+</text-style>
+                                <text-style ref="ts171">but because they are hard</text-style>
+                            </text>
+                            <text-style-def id="ts171">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts172">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="because that goal will serve to  organize and measure the best of our" lane="1" offset="124673549/30000s" duration="329329/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts173">because that goal will serve to </text-style>
+                                <text-style ref="ts174">
+</text-style>
+                                <text-style ref="ts173">organize and measure the best of</text-style>
+                                <text-style ref="ts174">
+</text-style>
+                                <text-style ref="ts173">our</text-style>
+                            </text>
+                            <text-style-def id="ts173">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts174">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="energies and skills" lane="1" offset="62419357/15000s" duration="93093/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts175">energies and skills</text-style>
+                            </text>
+                            <text-style-def id="ts175">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="because that challenge is one that we are willing to accept" lane="1" offset="24977953/6000s" duration="209209/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts176">because that challenge is one</text-style>
+                                <text-style ref="ts177">
+</text-style>
+                                <text-style ref="ts176">that we are willing to accept</text-style>
+                            </text>
+                            <text-style-def id="ts176">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts177">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="one we are unwilling to postpone" lane="1" offset="62503441/15000s" duration="155155/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts178">one we are unwilling to postpone</text-style>
+                            </text>
+                            <text-style-def id="ts178">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="and one which we intend to win and the others, too." lane="1" offset="31274243/7500s" duration="176176/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts179">and one which we intend to win</text-style>
+                                <text-style ref="ts180">
+</text-style>
+                                <text-style ref="ts179">and the others, too.</text-style>
+                            </text>
+                            <text-style-def id="ts179">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts180">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="It is for these reasons that I  regard  the decision last year to shift  our" lane="1" offset="12541529/3000s" duration="331331/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts181">It is for these reasons that I </text-style>
+                                <text-style ref="ts182">
+</text-style>
+                                <text-style ref="ts181">regard </text-style>
+                                <text-style ref="ts182">
+</text-style>
+                                <text-style ref="ts181">the decision last year to shift </text-style>
+                                <text-style ref="ts182">
+</text-style>
+                                <text-style ref="ts181">our</text-style>
+                            </text>
+                            <text-style-def id="ts181">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts182">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="efforts in space from low to  high gear  as among the most important  decisions" lane="1" offset="83720637/20000s" duration="327327/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts183">efforts in space from low to </text-style>
+                                <text-style ref="ts184">
+</text-style>
+                                <text-style ref="ts183">high gear </text-style>
+                                <text-style ref="ts184">
+</text-style>
+                                <text-style ref="ts183">as among the most important </text-style>
+                                <text-style ref="ts184">
+</text-style>
+                                <text-style ref="ts183">decisions</text-style>
+                            </text>
+                            <text-style-def id="ts183">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts184">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="that will be made during my  incumbency  in the office of the Presidency." lane="1" offset="251490239/60000s" duration="253253/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts185">that will be made during my </text-style>
+                                <text-style ref="ts186">
+</text-style>
+                                <text-style ref="ts185">incumbency </text-style>
+                                <text-style ref="ts186">
+</text-style>
+                                <text-style ref="ts185">in the office of the Presidency.</text-style>
+                            </text>
+                            <text-style-def id="ts185">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts186">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="In the last 24 hours we have  seen  facilities now being created for the" lane="1" offset="7868861/1875s" duration="326326/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts187">In the last 24 hours we have </text-style>
+                                <text-style ref="ts188">
+</text-style>
+                                <text-style ref="ts187">seen </text-style>
+                                <text-style ref="ts188">
+</text-style>
+                                <text-style ref="ts187">facilities now being created for</text-style>
+                                <text-style ref="ts188">
+</text-style>
+                                <text-style ref="ts187">the</text-style>
+                            </text>
+                            <text-style-def id="ts187">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts188">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="greatest and most complex  exploration  in man's history. We have felt  the" lane="1" offset="126072947/30000s" duration="327327/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts189">greatest and most complex </text-style>
+                                <text-style ref="ts190">
+</text-style>
+                                <text-style ref="ts189">exploration </text-style>
+                                <text-style ref="ts190">
+</text-style>
+                                <text-style ref="ts189">in man's history. We have felt </text-style>
+                                <text-style ref="ts190">
+</text-style>
+                                <text-style ref="ts189">the</text-style>
+                            </text>
+                            <text-style-def id="ts189">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts190">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="ground shake and the air  shattered by  the testing of a Saturn C-1  booster" lane="1" offset="7889882/1875s" duration="346346/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts191">ground shake and the air </text-style>
+                                <text-style ref="ts192">
+</text-style>
+                                <text-style ref="ts191">shattered by </text-style>
+                                <text-style ref="ts192">
+</text-style>
+                                <text-style ref="ts191">the testing of a Saturn C-1 </text-style>
+                                <text-style ref="ts192">
+</text-style>
+                                <text-style ref="ts191">booster</text-style>
+                            </text>
+                            <text-style-def id="ts191">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts192">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="rocket, many times as powerful  as the  Atlas which launched John Glenn," lane="1" offset="252823571/60000s" duration="357357/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts193">rocket, many times as powerful </text-style>
+                                <text-style ref="ts194">
+</text-style>
+                                <text-style ref="ts193">as the </text-style>
+                                <text-style ref="ts194">
+</text-style>
+                                <text-style ref="ts193">Atlas which launched John Glenn,</text-style>
+                            </text>
+                            <text-style-def id="ts193">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts194">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="generating power equivalent to  10,000  automobiles with their  accelerators on" lane="1" offset="7911904/1875s" duration="355355/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts195">generating power equivalent to </text-style>
+                                <text-style ref="ts196">
+</text-style>
+                                <text-style ref="ts195">10,000 </text-style>
+                                <text-style ref="ts196">
+</text-style>
+                                <text-style ref="ts195">automobiles with their </text-style>
+                                <text-style ref="ts196">
+</text-style>
+                                <text-style ref="ts195">accelerators on</text-style>
+                            </text>
+                            <text-style-def id="ts195">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts196">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="the floor. We have seen the site where  the F-1 rocket engines, each one as" lane="1" offset="50709659/12000s" duration="341341/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts197">the floor. We have seen the site</text-style>
+                                <text-style ref="ts198">
+</text-style>
+                                <text-style ref="ts197">where </text-style>
+                                <text-style ref="ts198">
+</text-style>
+                                <text-style ref="ts197">the F-1 rocket engines, each one</text-style>
+                                <text-style ref="ts198">
+</text-style>
+                                <text-style ref="ts197">as</text-style>
+                            </text>
+                            <text-style-def id="ts197">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts198">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="powerful as all eight engines of the  Saturn combined, will be  clustered" lane="1" offset="84653569/20000s" duration="355355/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts199">powerful as all eight engines of</text-style>
+                                <text-style ref="ts200">
+</text-style>
+                                <text-style ref="ts199">the </text-style>
+                                <text-style ref="ts200">
+</text-style>
+                                <text-style ref="ts199">Saturn combined, will be </text-style>
+                                <text-style ref="ts200">
+</text-style>
+                                <text-style ref="ts199">clustered</text-style>
+                            </text>
+                            <text-style-def id="ts199">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts200">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="together to make the advanced  Saturn  missile, assembled in a new  building to" lane="1" offset="254341087/60000s" duration="362362/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts201">together to make the advanced </text-style>
+                                <text-style ref="ts202">
+</text-style>
+                                <text-style ref="ts201">Saturn </text-style>
+                                <text-style ref="ts202">
+</text-style>
+                                <text-style ref="ts201">missile, assembled in a new </text-style>
+                                <text-style ref="ts202">
+</text-style>
+                                <text-style ref="ts201">building to</text-style>
+                            </text>
+                            <text-style-def id="ts201">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts202">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="be built at Cape Canaveral as  tall as a  48 story structure, as wide as a city" lane="1" offset="3396393/800s" duration="412412/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts203">be built at Cape Canaveral as </text-style>
+                                <text-style ref="ts204">
+</text-style>
+                                <text-style ref="ts203">tall as a </text-style>
+                                <text-style ref="ts204">
+</text-style>
+                                <text-style ref="ts203">48 story structure, as wide as a</text-style>
+                                <text-style ref="ts204">
+</text-style>
+                                <text-style ref="ts203">city</text-style>
+                            </text>
+                            <text-style-def id="ts203">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts204">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                        <caption name="block, and as long as two  lengths of  this field." lane="1" offset="31892861/7500s" duration="255255/60000s" start="1s" role="subtitle?captionFormat=CEA608.en">
+                            <text position="1 1" display-style="pop-on">
+                                <text-style ref="ts205">block, and as long as two </text-style>
+                                <text-style ref="ts206">
+</text-style>
+                                <text-style ref="ts205">lengths of </text-style>
+                                <text-style ref="ts206">
+</text-style>
+                                <text-style ref="ts205">this field.</text-style>
+                            </text>
+                            <text-style-def id="ts205">
+                                <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                            </text-style-def>
+                            <text-style-def id="ts206">
+                                <text-style/>
+                            </text-style-def>
+                        </caption>
+                    </asset-clip>
+                </spine>
+            </sequence>
+        </media>
+    </resources>
+    <library location="file:///Users/reuelkim/Local%20Documents/JFK_Moon_Demo/JFK_Moon_Demo_START.fcpbundle/">
+        <event name="media" uid="D5CA0772-AE2F-49A5-94D5-704E95C81C0D">
+            <ref-clip name="compound clip" ref="r1" duration="561561/60000s" modDate="2018-04-14 19:21:46 -0700"/>
+            <asset-clip name="flight_of_apollo_11" ref="r4" duration="51090039/30000s" audioRole="dialogue" format="r3" tcFormat="NDF" modDate="2017-01-15 23:55:51 -0800">
+                <rating start="4377373/15000s" duration="170170/30000s" value="favorite"/>
+                <rating start="213213/500s" duration="87087/30000s" value="favorite"/>
+                <rating start="4785781/7500s" duration="96096/30000s" value="favorite"/>
+                <rating start="28835807/30000s" duration="155155/30000s" value="favorite"/>
+            </asset-clip>
+            <ref-clip name="JFK_Address_compound" ref="r5" duration="40659619/60000s" start="216216000/60000s" useAudioSubroles="1" modDate="2017-01-16 00:23:15 -0800"/>
+            <sync-clip name="JFK_Address_Excerpt - Synchronized Clip" duration="40839799/60000s" format="r2" tcFormat="NDF" modDate="2018-06-06 10:54:51 -0700">
+                <spine>
+                    <gap name="Gap" offset="0s" duration="180180/60000s" start="215999784/60000s"/>
+                    <asset-clip name="JFK_Address_Excerpt" offset="180180/60000s" ref="r6" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                        <asset-clip name="JFK_Address_Excerpt_audio" lane="-1" offset="2593393465/720000s" ref="r7" duration="487915444/720000s" audioRole="dialogue" format="r8"/>
+                        <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+                    </asset-clip>
+                </spine>
+                <sync-source sourceID="storyline">
+                    <audio-role-source role="dialogue.dialogue-1" active="0"/>
+                </sync-source>
+            </sync-clip>
+            <asset-clip name="JFK_Address_Excerpt_audio" ref="r7" duration="487915445/720000s" audioRole="dialogue" format="r8" modDate="2017-01-15 23:56:30 -0800"/>
+            <asset-clip name="JFK_Address_Excerpt_video" ref="r6" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" format="r2" tcFormat="NDF" modDate="2017-01-16 00:23:34 -0800">
+                <rating start="247736489/60000s" duration="2520518/60000s" value="favorite"/>
+            </asset-clip>
+            <mc-clip name="JFK_Address_multicam" ref="r9" duration="40659619/60000s" modDate="2017-01-16 00:23:01 -0800">
+                <mc-source angleID="yn9JtKhvT/q5u/PkHzbgTA" srcEnable="all"/>
+            </mc-clip>
+            <project name="JFK_Moon_Project" uid="213FF658-FDE3-431A-BF58-7FF7C0A3B7F2" modDate="2018-06-06 10:19:22 -0700">
+                <sequence duration="89889800/2400000s" format="r2" tcStart="8648640000/2400000s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <ref-clip name="JFK_Address_Excerpt_video + JFK_Address_Excerpt.srt" offset="8648640000/2400000s" ref="r10" duration="77877800/2400000s" start="9888718840/2400000s" useAudioSubroles="1">
+                            <caption name="Why choose this as our goal?" lane="1" offset="123686563/30000s" duration="116116/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts207">Why choose this as our goal?</text-style>
+                                </text>
+                                <text-style-def id="ts207">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <caption name="And they may well ask why climb the highest mountain?" lane="1" offset="24751727/6000s" duration="246246/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts208">And they may well ask why climb the highest mountain?</text-style>
+                                </text>
+                                <text-style-def id="ts208">
+                                    <text-style font=".SF NS Text" fontSize="13" fontColor="1 1 1 1" bold="1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <asset-clip name="flight_of_apollo_11" lane="1" offset="61881820/15000s" ref="r4" duration="170170/30000s" start="4377373/15000s" audioRole="dialogue" format="r3" tcFormat="NDF">
+                                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                                <adjust-conform type="fill"/>
+                                <adjust-volume amount="-17.3985dB"/>
+                            </asset-clip>
+                            <caption name="Why, 35 years ago, fly the  Atlantic?" lane="1" offset="123896773/30000s" duration="227227/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts209">Why, 35 years ago, fly the  Atlantic?</text-style>
+                                </text>
+                                <text-style-def id="ts209">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <asset-clip name="flight_of_apollo_11" lane="1" offset="4131127/1000s" ref="r4" duration="87087/30000s" start="213213/500s" audioRole="dialogue" format="r3" tcFormat="NDF">
+                                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                                <adjust-conform type="fill"/>
+                                <audio-channel-source role="dialogue.dialogue-1" srcCh="1, 2" active="0"/>
+                            </asset-clip>
+                            <ref-clip name="compound clip" lane="1" offset="41340299/10000s" ref="r1" duration="502502/60000s"/>
+                            <caption name="Why does Rice play Texas?" lane="1" offset="20671651/5000s" duration="94094/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts210">Why does Rice play Texas?</text-style>
+                                </text>
+                                <text-style-def id="ts210">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <caption name="We choose to go to the moon." lane="1" offset="10341331/2500s" duration="80080/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts211">We choose to go to the moon.</text-style>
+                                </text>
+                                <text-style-def id="ts211">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <caption name="We choose to go to the moon" lane="1" offset="10347337/2500s" duration="115115/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts212">We choose to go to the moon</text-style>
+                                </text>
+                                <text-style-def id="ts212">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <caption name="We choose to go to the moon in this decade and do the other  things" lane="1" offset="62203141/15000s" duration="260260/60000s" start="1s" role="ITT?captionFormat=ITT.en">
+                                <text placement="bottom">
+                                    <text-style ref="ts213">We choose to go to the moon in this decade and do the other  things</text-style>
+                                </text>
+                                <text-style-def id="ts213">
+                                    <text-style font=".SF NS Text" fontSize="13" fontFace="Regular" fontColor="1 1 1 1" backgroundColor="0 0 0 1"/>
+                                </text-style-def>
+                            </caption>
+                            <marker start="14447433/4000s" duration="1001/60000s" value="President Pitzer, Mr. Vice President, Governor, Congressman Thomas, Senator"/>
+                            <marker start="217256039/60000s" duration="1001/60000s" value="Wiley, and Congressman Miller, Mr. Webb, Mr. Bell, scientists, distinguished"/>
+                            <marker start="72561489/20000s" duration="1001/60000s" value="guests, and ladies and gentlemen:"/>
+                            <marker start="10889879/3000s" duration="1001/60000s" value="I appreciate your president having made me an honorary visiting professor, and"/>
+                            <marker start="36359323/10000s" duration="1001/60000s" value="I will assure you that my first lecture will be very brief."/>
+                            <marker start="43682639/12000s" duration="1001/60000s" value="I am delighted to be here, and I'm particularly delighted to be here on this occasion."/>
+                            <marker start="109358249/30000s" duration="1001/60000s" value="We meet at a college noted for knowledge, in a city noted for progress,"/>
+                            <marker start="109592483/30000s" duration="1001/60000s" value="in a State noted for strength, and we stand in need of all three, for we meet"/>
+                            <marker start="7318311/2000s" duration="1001/60000s" value="in an hour of change and challenge, in a decade of hope and fear, in an age of"/>
+                            <marker start="109980871/30000s" duration="1001/60000s" value="both knowledge and ignorance. The greater our knowledge increases, the"/>
+                            <marker start="73424351/20000s" duration="1001/60000s" value="greater our ignorance unfolds."/>
+                            <marker start="73494421/20000s" duration="1001/60000s" value="Despite the striking fact that most of the scientists that the world has ever"/>
+                            <marker start="110391281/30000s" duration="1001/60000s" value="known are alive and working today, despite the fact that this Nation¹s own"/>
+                            <marker start="27646619/7500s" duration="1001/60000s" value="scientific manpower is doubling every 12 years in a rate of growth more than"/>
+                            <marker start="221644423/60000s" duration="1001/60000s" value="three times that of our population as a whole, despite that, the vast stretches"/>
+                            <marker start="222114893/60000s" duration="1001/60000s" value="of the unknown and the unanswered and the unfinished still far outstrip our"/>
+                            <marker start="111290179/30000s" duration="1001/60000s" value="collective comprehension."/>
+                            <marker start="13920907/3750s" duration="1001/60000s" value="No man can fully grasp how far and how fast we have come, but condense, if you"/>
+                            <marker start="27898871/7500s" duration="1001/60000s" value="will, the 50,000 years of man¹s recorded history in a time span of but"/>
+                            <marker start="55926871/15000s" duration="1001/60000s" value="a half-century. Stated in these terms, we know very little about the first 40"/>
+                            <marker start="224040817/60000s" duration="1001/60000s" value="years, except at the end of them advanced man had learned to use the"/>
+                            <marker start="112203091/30000s" duration="1001/60000s" value="skins of animals to cover them. Then about 10 years ago, under this standard,"/>
+                            <marker start="112371259/30000s" duration="1001/60000s" value="man emerged from his caves to construct other kinds of shelter. Only"/>
+                            <marker start="225105881/60000s" duration="1001/60000s" value="five years ago man learned to write and use a cart with wheels. Christianity"/>
+                            <marker start="112761649/30000s" duration="1001/60000s" value="began less than two years ago. The printing press came this year, and then"/>
+                            <marker start="225992767/60000s" duration="1001/60000s" value="less than two months ago, during this whole 50-year span of human history,"/>
+                            <marker start="226355129/60000s" duration="1001/60000s" value="the steam engine provided a new source of power."/>
+                            <marker start="226619393/60000s" duration="1001/60000s" value="Newton explored the meaning of gravity. Last month electric lights and"/>
+                            <marker start="907907/240s" duration="1001/60000s" value="telephones and automobiles and airplanes became available. Only last"/>
+                            <marker start="56817761/15000s" duration="1001/60000s" value="week did we develop penicillin and television and nuclear power, and now"/>
+                            <marker start="113860747/30000s" duration="1001/60000s" value="if America's new spacecraft succeeds in reaching Venus, we will have literally"/>
+                            <marker start="228114887/60000s" duration="1001/60000s" value="reached the stars before midnight tonight."/>
+                            <marker start="228367139/60000s" duration="1001/60000s" value="This is a breathtaking pace, and such a pace cannot help but create new ills as"/>
+                            <marker start="4575571/1200s" duration="1001/60000s" value="it dispels old, new ignorance, new problems, new dangers. Surely the"/>
+                            <marker start="76417341/20000s" duration="1001/60000s" value="opening vistas of space promise high costs and hardships, as well as high"/>
+                            <marker start="15308293/4000s" duration="1001/60000s" value="reward."/>
+                            <marker start="57434377/15000s" duration="1001/60000s" value="So it is not surprising that some would have us stay where we are a little"/>
+                            <marker start="28757729/7500s" duration="1001/60000s" value="longer to rest, to wait. But this city of Houston, this State of Texas, this"/>
+                            <marker start="46095049/12000s" duration="1001/60000s" value="country of the United States was not built by those who waited and rested"/>
+                            <marker start="1154153/300s" duration="1001/60000s" value="and wished to look behind them."/>
+                            <marker start="11574563/3000s" duration="1001/60000s" value="This country was conquered by those who"/>
+                            <marker start="23166143/6000s" duration="1001/60000s" value="moved forward--and so will space."/>
+                            <marker start="28991963/7500s" duration="1001/60000s" value="William Bradford, speaking in 1630 of the founding of the Plymouth Bay Colony,"/>
+                            <marker start="232331099/60000s" duration="1001/60000s" value="said that all great and honorable actions are accompanied with great"/>
+                            <marker start="232641409/60000s" duration="1001/60000s" value="difficulties, and both must be enterprised and overcome with"/>
+                            <marker start="233001769/60000s" duration="1001/60000s" value="answerable courage."/>
+                            <marker start="116563447/30000s" duration="1001/60000s" value="If this capsule history of our progress teaches us anything, it is that man, in"/>
+                            <marker start="23346323/6000s" duration="1001/60000s" value="his quest for knowledge and progress, is determined and cannot be deterred."/>
+                            <marker start="77904827/20000s" duration="1001/60000s" value="The exploration of space will go ahead, whether we join in it or not, and it is"/>
+                            <marker start="234232999/60000s" duration="1001/60000s" value="one of the great adventures of all time, and no nation which expects to be the"/>
+                            <marker start="23466443/6000s" duration="1001/60000s" value="leader of other nations can expect to stay behind in the race for space."/>
+                            <marker start="7343336/1875s" duration="1001/60000s" value="Those who came before us made certain that this country rode the first waves"/>
+                            <marker start="117676559/30000s" duration="1001/60000s" value="of the industrial revolutions, the first waves of modern invention, and"/>
+                            <marker start="47140093/12000s" duration="1001/60000s" value="the first wave of nuclear power, and this generation does not intend to"/>
+                            <marker start="59015957/15000s" duration="1001/60000s" value="founder in the backwash of the coming age of space. We mean to be a part of"/>
+                            <marker start="118199081/30000s" duration="1001/60000s" value="it--we mean to lead it."/>
+                            <marker start="39520481/10000s" duration="1001/60000s" value="For the eyes of the world now look into space, to the"/>
+                            <marker start="14841827/3750s" duration="1001/60000s" value="moon and to the planets beyond, and we have vowed that we shall not see it"/>
+                            <marker start="237904667/60000s" duration="1001/60000s" value="governed by a hostile flag of conquest, but by a banner of freedom and peace."/>
+                            <marker start="2979977/750s" duration="1001/60000s" value="We have vowed that we shall not see space filled with weapons of mass"/>
+                            <marker start="11934923/3000s" duration="1001/60000s" value="destruction, but with instruments of knowledge and understanding."/>
+                            <marker start="239039801/60000s" duration="1001/60000s" value="Yet the vows of this Nation can only be fulfilled if we in this Nation are"/>
+                            <marker start="23946923/6000s" duration="1001/60000s" value="first, and, therefore, we intend to be first."/>
+                            <marker start="80028949/20000s" duration="1001/60000s" value="In short, our leadership in"/>
+                            <marker start="40047007/10000s" duration="1001/60000s" value="science and in industry, our hopes for peace and security, our obligations to"/>
+                            <marker start="240671431/60000s" duration="1001/60000s" value="ourselves as well as others, all require us to make this effort, to"/>
+                            <marker start="120509389/30000s" duration="1001/60000s" value="solve these mysteries, to solve them for the good of all men, and to become"/>
+                            <marker start="241380139/60000s" duration="1001/60000s" value="the world's leading space-faring nation."/>
+                            <marker start="60403343/15000s" duration="1001/60000s" value="We set sail on this new sea because there is new knowledge to be gained,"/>
+                            <marker start="60487427/15000s" duration="1001/60000s" value="and new rights to be won, and they must be won and used for the progress of all"/>
+                            <marker start="242391149/60000s" duration="1001/60000s" value="people. For space science, like nuclear science and all technology, has no"/>
+                            <marker start="80921841/20000s" duration="1001/60000s" value="conscience of its own. Whether it will become a force for good or ill depends"/>
+                            <marker start="121568447/30000s" duration="1001/60000s" value="on man, and only if the United States occupies a position of pre-eminence can"/>
+                            <marker start="649649/160s" duration="1001/60000s" value="we help decide whether this new ocean will be a sea of peace or a new"/>
+                            <marker start="30509479/7500s" duration="1001/60000s" value="terrifying theater of war. I do not say the we should or will go unprotected"/>
+                            <marker start="244517273/60000s" duration="1001/60000s" value="against the hostile misuse of space any more than we go unprotected against the"/>
+                            <marker start="244937693/60000s" duration="1001/60000s" value="hostile use of land or sea, but I do say that space can be explored and"/>
+                            <marker start="16355339/4000s" duration="1001/60000s" value="mastered without feeding the fires of war, without repeating the mistakes"/>
+                            <marker start="61418357/15000s" duration="1001/60000s" value="that man has made in extending his writ around this globe of ours."/>
+                            <marker start="82000919/20000s" duration="1001/60000s" value="There is no strife, no prejudice, no national conflict in outer space as yet."/>
+                            <marker start="246379133/60000s" duration="1001/60000s" value="Its hazards are hostile to us all. Its conquest deserves the best of all"/>
+                            <marker start="3290287/800s" duration="1001/60000s" value="mankind, and its opportunity for peaceful cooperation may never come again."/>
+                            <marker start="247217971/60000s" duration="1001/60000s" value="But why, some say, the moon?"/>
+                            <marker start="123686563/30000s" duration="1001/60000s" value="Why choose this as our goal?"/>
+                            <marker start="24751727/6000s" duration="1001/60000s" value="And they may well ask why climb the highest mountain?"/>
+                            <marker start="123896773/30000s" duration="1001/60000s" value="Why, 35 years ago, fly the Atlantic?"/>
+                            <marker start="20671651/5000s" duration="1001/60000s" value="Why does Rice play Texas?"/>
+                            <marker start="10341331/2500s" duration="1001/60000s" value="We choose to go to the moon."/>
+                            <marker start="10347337/2500s" duration="1001/60000s" value="We choose to go to the moon"/>
+                            <marker start="62203141/15000s" duration="1001/60000s" value="We choose to go to the moon in this decade and do the other things"/>
+                            <marker start="249075827/60000s" duration="1001/60000s" value="not because they are easy but because they are hard"/>
+                            <marker start="124673549/30000s" duration="1001/60000s" value="because that goal will serve to organize and measure the best of our"/>
+                            <marker start="62419357/15000s" duration="1001/60000s" value="energies and skills"/>
+                            <marker start="24977953/6000s" duration="1001/60000s" value="because that challenge is one that we are willing to accept"/>
+                            <marker start="62503441/15000s" duration="1001/60000s" value="one we are unwilling to postpone"/>
+                            <marker start="31274243/7500s" duration="1001/60000s" value="and one which we intend to win and the others, too."/>
+                            <marker start="12541529/3000s" duration="1001/60000s" value="It is for these reasons that I regard the decision last year to shift our"/>
+                            <marker start="83720637/20000s" duration="1001/60000s" value="efforts in space from low to high gear as among the most important decisions"/>
+                            <marker start="251490239/60000s" duration="1001/60000s" value="that will be made during my incumbency in the office of the Presidency."/>
+                            <marker start="7868861/1875s" duration="1001/60000s" value="In the last 24 hours we have seen facilities now being created for the"/>
+                            <marker start="126072947/30000s" duration="1001/60000s" value="greatest and most complex exploration in man's history. We have felt the"/>
+                            <marker start="7889882/1875s" duration="1001/60000s" value="ground shake and the air shattered by the testing of a Saturn C-1 booster"/>
+                            <marker start="252823571/60000s" duration="1001/60000s" value="rocket, many times as powerful as the Atlas which launched John Glenn,"/>
+                            <marker start="7911904/1875s" duration="1001/60000s" value="generating power equivalent to 10,000 automobiles with their accelerators on"/>
+                            <marker start="50709659/12000s" duration="1001/60000s" value="the floor. We have seen the site where the F-1 rocket engines, each one as"/>
+                            <marker start="84653569/20000s" duration="1001/60000s" value="powerful as all eight engines of the Saturn combined, will be clustered"/>
+                            <marker start="254341087/60000s" duration="1001/60000s" value="together to make the advanced Saturn missile, assembled in a new building to"/>
+                            <marker start="3396393/800s" duration="1001/60000s" value="be built at Cape Canaveral as tall as a 48 story structure, as wide as a city"/>
+                            <marker start="31892861/7500s" duration="1001/60000s" value="block, and as long as two lengths of this field."/>
+                        </ref-clip>
+                        <sync-clip name="JFK_Address_Excerpt - Synchronized Clip" offset="8726517800/2400000s" duration="300300/60000s" start="6686680/60000s" tcFormat="NDF">
+                            <asset-clip name="JFK_Address_Excerpt" offset="0s" ref="r6" duration="40659619/60000s" start="216216000/60000s" audioRole="dialogue" tcFormat="NDF">
+                                <asset-clip name="JFK_Address_Excerpt_audio" lane="-1" offset="18018/5s" ref="r7" duration="487915444/720000s" audioRole="dialogue" format="r8"/>
+                            </asset-clip>
+                            <sync-source sourceID="storyline">
+                                <audio-role-source role="dialogue.dialogue-1" active="0"/>
+                            </sync-source>
+                        </sync-clip>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+    </library>
+</fcpxml>

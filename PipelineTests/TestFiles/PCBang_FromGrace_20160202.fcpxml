@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.5">
+    <resources>
+        <media id="r1" name="A028C002_151208_R420" uid="Lp8E1ufRSxGlr6rxpGHoAQ">
+            <multicam format="r2" tcStart="333774441/4000s" tcFormat="NDF" renderFormat="FFRenderFormatProRes4444">
+                <mc-angle name="A028C002_151208_R420" angleID="angle1_580494">
+                    <gap name="Gap" offset="0s" duration="865865/24000s" start="333774441/4000s"/>
+                    <clip name="A028C002_151208_R420" offset="865865/24000s" duration="8409401/24000s" start="2003512511/24000s" tcFormat="NDF">
+                        <video offset="2003512511/24000s" ref="r3" duration="8409401/24000s" start="2003512511/24000s">
+                            <audio name="Camera" lane="-5" offset="60105375330/720000s" ref="r3" duration="252282030/720000s" start="60105375330/720000s" role="dialogue.Camera" srcCh="5"/>
+                            <audio name="Camera" lane="-4" offset="60105375330/720000s" ref="r3" duration="252282030/720000s" start="60105375330/720000s" role="dialogue.Camera" srcCh="4"/>
+                            <audio name="Camera" lane="-3" offset="60105375330/720000s" ref="r3" duration="252282030/720000s" start="60105375330/720000s" role="dialogue.Camera" srcCh="3"/>
+                            <audio name="Camera" lane="-2" offset="60105375330/720000s" ref="r3" duration="252282030/720000s" start="60105375330/720000s" role="dialogue.Camera" srcCh="2"/>
+                            <audio name="Camera" lane="-1" offset="60105375330/720000s" ref="r3" duration="252282030/720000s" start="60105375330/720000s" role="dialogue.Camera" srcCh="1"/>
+                        </video>
+                        <keyword start="2003512511/24000s" duration="8409401/24000s" value="2016, a028r420, December 7th"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="A028R420"/>
+                        </metadata>
+                    </clip>
+                </mc-angle>
+                <mc-angle name="DEC07018" angleID="angle2_495951">
+                    <gap name="Gap" offset="0s" duration="865865/24000s" start="86400314/24000s"/>
+                    <clip name="DEC07018" offset="1731730/48000s" duration="252282030/720000s" start="4007025566/48000s" format="r4" tcFormat="NDF">
+                        <audio name="BOOM" offset="60079407540/720000s" ref="r5" duration="379289760/720000s" start="60079407540/720000s" role="dialogue.BOOM" srcCh="1">
+                            <audio name="Translator" lane="-2" offset="60079407540/720000s" ref="r5" duration="379289760/720000s" start="60079407540/720000s" role="dialogue.Translator" srcCh="3"/>
+                            <audio name="INTERVIEWEE1" lane="-1" offset="60079407540/720000s" ref="r5" duration="379289760/720000s" start="60079407540/720000s" role="dialogue.INTERVIEWEE1" srcCh="2"/>
+                        </audio>
+                        <keyword start="1001323459/12000s" duration="25285984/48000s" value="2016, December 7th, sound rushes"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="DEC07"/>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                            <md key="com.apple.proapps.studio.shot" value="18"/>
+                        </metadata>
+                    </clip>
+                </mc-angle>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="A028R420; DEC07"/>
+                    <md key="com.apple.proapps.studio.scene" value="1"/>
+                    <md key="com.apple.proapps.studio.shot" value="18"/>
+                </metadata>
+            </multicam>
+        </media>
+        <format id="r2" name="FFVideoFormat2048x1152p2398" frameDuration="1001/24000s" width="2048" height="1152"/>
+        <asset id="r3" name="A028C002_151208_R420" uid="244F30F3CEC2FCC3502DF078825E5001" src="file:///Volumes/V10/Media/LivePlaySP/PC%20Bang/01_Originals/LOL_07_12_15/1207/Roll%20028/A028R420/A028C002_151208_R420.mov" start="2003512511/24000s" duration="8409401/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="5" audioRate="48000">
+            <bookmark>Ym9va2QEAAAAAAQQMAAAAPosVjqjPdPsLSSOkKbpNIII1spl38aP75bIu5nEEQ1weAMAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwADAAAAAQEAAFYxMAAFAAAAAQEAAE1lZGlhAAAACgAAAAEBAABMaXZlUGxheVNQAAAHAAAAAQEAAFBDIEJhbmcADAAAAAEBAAAwMV9PcmlnaW5hbHMMAAAAAQEAAExPTF8wN18xMl8xNQQAAAABAQAAMTIwNwgAAAABAQAAUm9sbCAwMjgIAAAAAQEAAEEwMjhSNDIwGAAAAAEBAABBMDI4QzAwMl8xNTEyMDhfUjQyMC5tb3YsAAAAAQYAABAAAAAgAAAALAAAADwAAABQAAAAYAAAAHQAAACIAAAAlAAAAKQAAAC0AAAACAAAAAQDAACZNQAAAAAAAAAAAAABCgAALAAAAAEGAAAIAQAAGAEAABgBAAAYAQAAGAEAABgBAAAYAQAAGAEAABgBAAAYAQAAGAEAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAgAAAAEAAAAAwMAAAkAAAAUAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9WMTAvCAAAAAQDAAAAtFBv7ogAABgAAAABAgAAAAAAAAAAAADvFwAAAQAIAAAAAAAAAAAADAAAAAEBAAAvVm9sdW1lcy9WMTAaAAAAAQkAAG5mczovLzEwLjI0MC4yMi4xMy9WMTAvVjEwAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACAnK3oAAAACAAAAAAEAABBudIpRwAAACQAAAABAQAAQ0U5MUMxNDktMjZDQi0zNkMwLTkxODEtRTBFNzNDOUZCRjQ5GAAAAAECAACBAAAAAQAIAO8XAAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACoAgAAAAAAAAUgAAAYAgAAAAAAABAgAAAoAgAAAAAAABEgAABcAgAAAAAAABIgAAA8AgAAAAAAABMgAABMAgAAAAAAACAgAACIAgAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAADAAAAABBgAAHAMAACgDAAA0AwAAKAMAACgDAAAoAwAAKAMAACgDAAAoAwAAKAMAACgDAAAoAwAAtAAAAP7///8BAAAAtAIAAA4AAAAEEAAA1AAAAAAAAAAFEAAAIAEAAAAAAAAQEAAAVAEAAAAAAABUEAAAfAEAAAAAAABVEAAAiAEAAAAAAABWEAAAdAEAAAAAAAAAIAAAQAMAAAAAAAACIAAA4AEAAAAAAAAFIAAAlAEAAAAAAAAQIAAAIAAAAAAAAAASIAAAsAEAAAAAAAAgIAAAwAEAAAAAAABQIAAA9AEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>Apple ProRes 4444</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD 1-1-1"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2016-01-05 16:54:15 -0800"/>
+            </metadata>
+        </asset>
+        <format id="r4" name="FFVideoFormat720p2398" frameDuration="1001/24000s" width="1280" height="720"/>
+        <asset id="r5" name="DEC07018" uid="A994EBB8EF75F144EB745E219EE0ED66" src="file:///Volumes/V10/Media/LivePlaySP/PC%20Bang/01_Originals/LOL_07_12_15/Sound%20Rushes/DEC07018.WAV" start="4005293836/48000s" duration="25285984/48000s" hasAudio="1" audioSources="1" audioChannels="3" audioRate="48000">
+            <bookmark>Ym9vaygEAAAAAAQQMAAAALpBxzDuYmsuo8WUDYtcQ3pjmEASMWmAnFvtboWL+tZcPAMAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwADAAAAAQEAAFYxMAAFAAAAAQEAAE1lZGlhAAAACgAAAAEBAABMaXZlUGxheVNQAAAHAAAAAQEAAFBDIEJhbmcADAAAAAEBAAAwMV9PcmlnaW5hbHMMAAAAAQEAAExPTF8wN18xMl8xNQwAAAABAQAAU291bmQgUnVzaGVzDAAAAAEBAABERUMwNzAxOC5XQVYkAAAAAQYAABAAAAAgAAAALAAAADwAAABQAAAAYAAAAHQAAACIAAAAnAAAAAgAAAAEAwAAmTUAAAAAAAAAAAAAAQoAACQAAAABBgAA3AAAAOwAAADsAAAA7AAAAOwAAADsAAAA7AAAAOwAAADsAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAADAwAACAAAAAQAAAADAwAABwAAABQAAAABCQAAZmlsZTovLy9Wb2x1bWVzL1YxMC8IAAAABAMAAAC0UG/uiAAAGAAAAAECAAAAAAAAAAAAAO8XAAABAAgAAAAAAAAAAAAMAAAAAQEAAC9Wb2x1bWVzL1YxMBoAAAABCQAAbmZzOi8vMTAuMjQwLjIyLjEzL1YxMC9WMTAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAICcregAAAAIAAAAAAQAAEG50ilHAAAAJAAAAAEBAABDRTkxQzE0OS0yNkNCLTM2QzAtOTE4MS1FMEU3M0M5RkJGNDkYAAAAAQIAAIEAAAABAAgA7xcAAAEACAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHQCAAAAAAAABSAAAOQBAAAAAAAAECAAAPQBAAAAAAAAESAAACgCAAAAAAAAEiAAAAgCAAAAAAAAEyAAABgCAAAAAAAAICAAAFQCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADoAgAA9AIAAAADAAD0AgAA9AIAAPQCAAD0AgAA9AIAAPQCAAD0AgAAtAAAAP7///8BAAAAgAIAAA4AAAAEEAAAsAAAAAAAAAAFEAAA9AAAAAAAAAAQEAAAIAEAAAAAAABUEAAASAEAAAAAAABVEAAAVAEAAAAAAABWEAAAQAEAAAAAAAAAIAAADAMAAAAAAAACIAAArAEAAAAAAAAFIAAAYAEAAAAAAAAQIAAAIAAAAAAAAAASIAAAfAEAAAAAAAAgIAAAjAEAAAAAAABQIAAAwAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2016-01-05 16:54:14 -0800"/>
+            </metadata>
+        </asset>
+        <media id="r6" name="A028C003_151208_R420" uid="ghonvcMuTbGXkLR3XF/2Ig">
+            <multicam format="r2" tcStart="201770569/2400s" tcFormat="NDF" renderFormat="FFRenderFormatProRes4444">
+                <mc-angle name="A028C003_151208_R420" angleID="angle1_901856">
+                    <clip name="A028C003_151208_R420" offset="0s" duration="34596562/24000s" start="2017705690/24000s" tcFormat="NDF">
+                        <video offset="2017705690/24000s" ref="r7" duration="34596562/24000s" start="2017705690/24000s">
+                            <audio name="Camera" lane="-5" offset="60531170700/720000s" ref="r7" duration="1037896860/720000s" start="60531170700/720000s" role="dialogue.Camera" srcCh="5"/>
+                            <audio name="Camera" lane="-4" offset="60531170700/720000s" ref="r7" duration="1037896860/720000s" start="60531170700/720000s" role="dialogue.Camera" srcCh="4"/>
+                            <audio name="Camera" lane="-3" offset="60531170700/720000s" ref="r7" duration="1037896860/720000s" start="60531170700/720000s" role="dialogue.Camera" srcCh="3"/>
+                            <audio name="Camera" lane="-2" offset="60531170700/720000s" ref="r7" duration="1037896860/720000s" start="60531170700/720000s" role="dialogue.Camera" srcCh="2"/>
+                            <audio name="Camera" lane="-1" offset="60531170700/720000s" ref="r7" duration="1037896860/720000s" start="60531170700/720000s" role="dialogue.Camera" srcCh="1"/>
+                        </video>
+                        <keyword start="201770569/2400s" duration="34596562/24000s" value="2016, a028r420, December 7th"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="A028R420"/>
+                        </metadata>
+                    </clip>
+                </mc-angle>
+                <mc-angle name="DEC07019" angleID="angle2_967355">
+                    <gap name="Gap" offset="0s" duration="41041/24000s" start="201770569/2400s"/>
+                    <clip name="DEC07019" offset="82082/48000s" duration="1036665630/720000s" start="4035494800/48000s" format="r4" tcFormat="NDF">
+                        <audio name="BOOM" offset="60532422000/720000s" ref="r8" duration="1063449600/720000s" start="60532422000/720000s" role="dialogue.BOOM" srcCh="1">
+                            <audio name="Translator" lane="-2" offset="60532422000/720000s" ref="r8" duration="1063449600/720000s" start="60532422000/720000s" role="dialogue.Translator" srcCh="3"/>
+                            <audio name="INTERVIEWEE1" lane="-1" offset="60532422000/720000s" ref="r8" duration="1063449600/720000s" start="60532422000/720000s" role="dialogue.INTERVIEWEE1" srcCh="2"/>
+                        </audio>
+                        <keyword start="10088737/120s" duration="70896640/48000s" value="2016, December 7th, sound rushes"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="DEC07"/>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                            <md key="com.apple.proapps.studio.shot" value="19"/>
+                        </metadata>
+                    </clip>
+                </mc-angle>
+                <metadata>
+                    <md key="com.apple.proapps.studio.reel" value="A028R420; DEC07"/>
+                    <md key="com.apple.proapps.studio.scene" value="1"/>
+                    <md key="com.apple.proapps.studio.shot" value="19"/>
+                </metadata>
+            </multicam>
+        </media>
+        <asset id="r7" name="A028C003_151208_R420" uid="3A035F9756E962CA5617929D0D64240C" src="file:///Volumes/V10/Media/LivePlaySP/PC%20Bang/01_Originals/LOL_07_12_15/1207/Roll%20028/A028R420/A028C003_151208_R420.mov" start="2017705690/24000s" duration="34596562/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="5" audioRate="48000">
+            <bookmark>Ym9va2QEAAAAAAQQMAAAANBLFQeKdyxGuKl7zYXFO+MbCR6wzuHPw6UlPgjMv7ZxeAMAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwADAAAAAQEAAFYxMAAFAAAAAQEAAE1lZGlhAAAACgAAAAEBAABMaXZlUGxheVNQAAAHAAAAAQEAAFBDIEJhbmcADAAAAAEBAAAwMV9PcmlnaW5hbHMMAAAAAQEAAExPTF8wN18xMl8xNQQAAAABAQAAMTIwNwgAAAABAQAAUm9sbCAwMjgIAAAAAQEAAEEwMjhSNDIwGAAAAAEBAABBMDI4QzAwM18xNTEyMDhfUjQyMC5tb3YsAAAAAQYAABAAAAAgAAAALAAAADwAAABQAAAAYAAAAHQAAACIAAAAlAAAAKQAAAC0AAAACAAAAAQDAACZNQAAAAAAAAAAAAABCgAALAAAAAEGAAAIAQAAGAEAABgBAAAYAQAAGAEAABgBAAAYAQAAGAEAABgBAAAYAQAAGAEAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAgAAAAEAAAAAwMAAAkAAAAUAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9WMTAvCAAAAAQDAAAAtFBv7ogAABgAAAABAgAAAAAAAAAAAADvFwAAAQAIAAAAAAAAAAAADAAAAAEBAAAvVm9sdW1lcy9WMTAaAAAAAQkAAG5mczovLzEwLjI0MC4yMi4xMy9WMTAvVjEwAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACAnK3oAAAACAAAAAAEAABBudIpRwAAACQAAAABAQAAQ0U5MUMxNDktMjZDQi0zNkMwLTkxODEtRTBFNzNDOUZCRjQ5GAAAAAECAACBAAAAAQAIAO8XAAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACoAgAAAAAAAAUgAAAYAgAAAAAAABAgAAAoAgAAAAAAABEgAABcAgAAAAAAABIgAAA8AgAAAAAAABMgAABMAgAAAAAAACAgAACIAgAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAADAAAAABBgAAHAMAACgDAAA0AwAAKAMAACgDAAAoAwAAKAMAACgDAAAoAwAAKAMAACgDAAAoAwAAtAAAAP7///8BAAAAtAIAAA4AAAAEEAAA1AAAAAAAAAAFEAAAIAEAAAAAAAAQEAAAVAEAAAAAAABUEAAAfAEAAAAAAABVEAAAiAEAAAAAAABWEAAAdAEAAAAAAAAAIAAAQAMAAAAAAAACIAAA4AEAAAAAAAAFIAAAlAEAAAAAAAAQIAAAIAAAAAAAAAASIAAAsAEAAAAAAAAgIAAAwAEAAAAAAABQIAAA9AEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>Apple ProRes 4444</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD 1-1-1"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2016-01-05 16:54:15 -0800"/>
+            </metadata>
+        </asset>
+        <asset id="r8" name="DEC07019" uid="2F4FFE0994310600CDD492908D5DDE13" src="file:///Volumes/V10/Media/LivePlaySP/PC%20Bang/01_Originals/LOL_07_12_15/Sound%20Rushes/DEC07019.WAV" start="4035494800/48000s" duration="70896640/48000s" hasAudio="1" audioSources="1" audioChannels="3" audioRate="48000">
+            <bookmark>Ym9vaygEAAAAAAQQMAAAANSqOePnFngHzVZ2VJ9hRmSZ0srRnJkc6id7i2eF8eeVPAMAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwADAAAAAQEAAFYxMAAFAAAAAQEAAE1lZGlhAAAACgAAAAEBAABMaXZlUGxheVNQAAAHAAAAAQEAAFBDIEJhbmcADAAAAAEBAAAwMV9PcmlnaW5hbHMMAAAAAQEAAExPTF8wN18xMl8xNQwAAAABAQAAU291bmQgUnVzaGVzDAAAAAEBAABERUMwNzAxOS5XQVYkAAAAAQYAABAAAAAgAAAALAAAADwAAABQAAAAYAAAAHQAAACIAAAAnAAAAAgAAAAEAwAAmTUAAAAAAAAAAAAAAQoAACQAAAABBgAA3AAAAOwAAADsAAAA7AAAAOwAAADsAAAA7AAAAOwAAADsAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAADAwAACAAAAAQAAAADAwAABwAAABQAAAABCQAAZmlsZTovLy9Wb2x1bWVzL1YxMC8IAAAABAMAAAC0UG/uiAAAGAAAAAECAAAAAAAAAAAAAO8XAAABAAgAAAAAAAAAAAAMAAAAAQEAAC9Wb2x1bWVzL1YxMBoAAAABCQAAbmZzOi8vMTAuMjQwLjIyLjEzL1YxMC9WMTAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAICcregAAAAIAAAAAAQAAEG50ilHAAAAJAAAAAEBAABDRTkxQzE0OS0yNkNCLTM2QzAtOTE4MS1FMEU3M0M5RkJGNDkYAAAAAQIAAIEAAAABAAgA7xcAAAEACAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHQCAAAAAAAABSAAAOQBAAAAAAAAECAAAPQBAAAAAAAAESAAACgCAAAAAAAAEiAAAAgCAAAAAAAAEyAAABgCAAAAAAAAICAAAFQCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADoAgAA9AIAAAADAAD0AgAA9AIAAPQCAAD0AgAA9AIAAPQCAAD0AgAAtAAAAP7///8BAAAAgAIAAA4AAAAEEAAAsAAAAAAAAAAFEAAA9AAAAAAAAAAQEAAAIAEAAAAAAABUEAAASAEAAAAAAABVEAAAVAEAAAAAAABWEAAAQAEAAAAAAAAAIAAADAMAAAAAAAACIAAArAEAAAAAAAAFIAAAYAEAAAAAAAAQIAAAIAAAAAAAAAASIAAAfAEAAAAAAAAgIAAAjAEAAAAAAABQIAAAwAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2016-01-05 16:54:16 -0800"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/V10/Workspaces/LivePlaySP/PC%20Bang/01_Project%20Files/PC%20Bang_AE.fcpbundle/">
+        <event name="For Subtitles_20160202" uid="FF8CC0C0-9350-4733-9409-55A63A867602">
+            <mc-clip name="A028C002_151208_R420" ref="r1" duration="9275266/24000s" start="333774441/4000s">
+                <mc-source angleID="angle1_580494" srcEnable="video"/>
+                <mc-source angleID="angle2_495951" srcEnable="audio"/>
+                <rating start="333774441/4000s" duration="866866/24000s" value="reject"/>
+                <keyword start="333774441/4000s" duration="9275266/24000s" value="Interview, Yoo In-ha"/>
+                <keyword start="1001323459/12000s" duration="25285984/48000s" value="December 7th"/>
+                <keyword start="2003512511/24000s" duration="8409401/24000s" value="December 7th, Multicam"/>
+            </mc-clip>
+            <mc-clip name="A028C003_151208_R420" ref="r6" duration="34596562/24000s" start="201770569/2400s">
+                <mc-source angleID="angle1_901856" srcEnable="video"/>
+                <mc-source angleID="angle2_967355" srcEnable="audio"/>
+                <keyword start="201770569/2400s" duration="34596562/24000s" value="December 7th, Interview, Lee Seong-hak"/>
+                <keyword start="2017746731/24000s" duration="11518507/8000s" value="Multicam"/>
+                <keyword start="10088737/120s" duration="70896640/48000s" value="December 7th"/>
+            </mc-clip>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>

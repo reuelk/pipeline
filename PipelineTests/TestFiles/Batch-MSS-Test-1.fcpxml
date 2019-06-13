@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.6">
+    <resources>
+        <media id="r1" name="Batch MSS Test 1" uid="qOOfrgGOREOIpUSdas1bqg" modDate="2017-04-12 17:57:03 -0600">
+            <multicam format="r2" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF">
+                <mc-angle name="7D 32GB-TRA" angleID="Q67UIPIqR+6H4hmwdA40Ew">
+                    <clip name="1-1" offset="0s" duration="2251249/24000s">
+                        <video name="2013-12-04 23:50:18 - v1" offset="0s" ref="r3" duration="2251249/24000s">
+                            <audio name="2013-12-04 23:50:18 - a1" lane="-1" offset="0s" ref="r3" duration="4502498/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="2251249/24000s" value="Test"/>
+                        <marker start="47047/4800s" duration="1001/24000s" value="22.49.10.04"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="2251249/24000s" duration="229229/24000s" start="86400314/24000s"/>
+                    <clip name="1-3" offset="2480478/24000s" duration="645645/24000s">
+                        <video name="2013-12-04 23:52:00 - v1" offset="0s" ref="r4" duration="645645/24000s">
+                            <audio name="2013-12-04 23:52:00 - a1" lane="-1" offset="0s" ref="r4" duration="1291290/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="645645/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                            <md key="com.apple.proapps.studio.shot" value="3"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="3126123/24000s" duration="42042/24000s" start="86400314/24000s"/>
+                    <clip name="1-4" offset="3168165/24000s" duration="834834/24000s">
+                        <video name="2013-12-04 23:52:30 - v1" offset="0s" ref="r5" duration="834834/24000s">
+                            <audio name="2013-12-04 23:52:30 - a1" lane="-1" offset="0s" ref="r5" duration="1669668/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="834834/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                            <md key="com.apple.proapps.studio.shot" value="4"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="4002999/24000s" duration="300300/24000s" start="86400314/24000s"/>
+                    <clip name="1-5" offset="4303299/24000s" duration="522522/24000s">
+                        <video name="2013-12-04 23:53:16 - v1" offset="0s" ref="r6" duration="522522/24000s">
+                            <audio name="2013-12-04 23:53:16 - a1" lane="-1" offset="0s" ref="r6" duration="1045044/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="522522/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                            <md key="com.apple.proapps.studio.shot" value="5"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="4825821/24000s" duration="7234227/24000s" start="86400314/24000s"/>
+                    <clip name="10-1" offset="12060048/24000s" duration="4402398/24000s">
+                        <video name="2013-12-04 23:58:40 - v1" offset="0s" ref="r7" duration="4402398/24000s">
+                            <audio name="2013-12-04 23:58:40 - a1" lane="-1" offset="0s" ref="r7" duration="8804796/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="4402398/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="16462446/24000s" duration="4357353/24000s" start="86400314/24000s"/>
+                    <clip name="10-5" offset="20819799/24000s" duration="1516515/24000s">
+                        <note>Circle</note>
+                        <video name="2013-12-05 00:04:44 - v1" offset="0s" ref="r8" duration="1516515/24000s">
+                            <audio name="2013-12-05 00:04:44 - a1" lane="-1" offset="0s" ref="r8" duration="3033030/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="1516515/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="5"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="22336314/24000s" duration="2936934/24000s" start="86400314/24000s"/>
+                    <clip name="10-6" offset="25273248/24000s" duration="1681680/24000s">
+                        <video name="2013-12-05 00:07:50 - v1" offset="0s" ref="r9" duration="1681680/24000s">
+                            <audio name="2013-12-05 00:07:50 - a1" lane="-1" offset="0s" ref="r9" duration="3363360/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="1681680/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="6"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="26954928/24000s" duration="1693692/24000s" start="86400314/24000s"/>
+                    <clip name="10-7" offset="28648620/24000s" duration="661661/24000s">
+                        <video name="2013-12-05 00:10:06 - v1" offset="0s" ref="r10" duration="661661/24000s">
+                            <audio name="2013-12-05 00:10:06 - a1" lane="-1" offset="0s" ref="r10" duration="1323322/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="661661/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="7"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="29310281/24000s" duration="132132/24000s" start="86400314/24000s"/>
+                    <clip name="10-8" offset="29442413/24000s" duration="1050049/24000s">
+                        <note>Cricle</note>
+                        <video name="2013-12-05 00:10:42 - v1" offset="0s" ref="r11" duration="1050049/24000s">
+                            <audio name="2013-12-05 00:10:42 - a1" lane="-1" offset="0s" ref="r11" duration="2100098/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="1050049/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="8"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="30492462/24000s" duration="2218216/24000s" start="86400314/24000s"/>
+                    <clip name="10a-1" offset="32710678/24000s" duration="828828/24000s">
+                        <video name="2013-12-05 00:12:54 - v1" offset="0s" ref="r12" duration="828828/24000s">
+                            <audio name="2013-12-05 00:12:54 - a1" lane="-1" offset="0s" ref="r12" duration="1657656/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="828828/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="33539506/24000s" duration="402402/24000s" start="86400314/24000s"/>
+                    <clip name="10a-2" offset="33941908/24000s" duration="833833/24000s">
+                        <note>Circle</note>
+                        <video name="2013-12-05 00:15:08 - v1" offset="0s" ref="r13" duration="833833/24000s">
+                            <audio name="2013-12-05 00:15:08 - a1" lane="-1" offset="0s" ref="r13" duration="1667666/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="833833/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="34775741/24000s" duration="2143141/24000s" start="87636549/24000s"/>
+                    <clip name="10a-3" offset="36918882/24000s" duration="956956/24000s">
+                        <video name="2013-12-05 00:15:50 - v1" offset="0s" ref="r14" duration="956956/24000s">
+                            <audio name="2013-12-05 00:15:50 - a1" lane="-1" offset="0s" ref="r14" duration="1913912/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="956956/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="3"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="37875838/24000s" duration="1091090/24000s" start="86400314/24000s"/>
+                    <clip name="10a-4" offset="38966928/24000s" duration="717717/24000s">
+                        <note>Circle</note>
+                        <video name="2013-12-05 00:17:20 - v1" offset="0s" ref="r15" duration="717717/24000s">
+                            <audio name="2013-12-05 00:17:20 - a1" lane="-1" offset="0s" ref="r15" duration="1435434/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="717717/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="4"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="39684645/24000s" duration="218218/24000s" start="86400314/24000s"/>
+                    <clip name="10a-5" offset="39902863/24000s" duration="830830/24000s">
+                        <note>Circle</note>
+                        <video name="2013-12-05 00:18:00 - v1" offset="0s" ref="r16" duration="830830/24000s">
+                            <audio name="2013-12-05 00:18:00 - a1" lane="-1" offset="0s" ref="r16" duration="1661660/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="830830/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="5"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="40733693/24000s" duration="5628623/24000s" start="86400314/24000s"/>
+                    <clip name="11-1" offset="46362316/24000s" duration="636636/24000s">
+                        <video name="2013-12-05 00:22:34 - v1" offset="0s" ref="r17" duration="636636/24000s">
+                            <audio name="2013-12-05 00:22:34 - a1" lane="-1" offset="0s" ref="r17" duration="1273272/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="636636/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="11"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="46998952/24000s" duration="2490488/24000s" start="86400314/24000s"/>
+                    <clip name="11-2" offset="49489440/24000s" duration="1061060/24000s">
+                        <note>Circle</note>
+                        <video name="2013-12-05 00:24:38 - v1" offset="0s" ref="r18" duration="1061060/24000s">
+                            <audio name="2013-12-05 00:24:38 - a1" lane="-1" offset="0s" ref="r18" duration="2122120/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="1061060/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="11"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                    <clip name="11-3" offset="50550500/24000s" duration="819819/24000s">
+                        <note>Cricle</note>
+                        <video name="2013-12-05 00:25:26 - v1" offset="0s" ref="r19" duration="819819/24000s">
+                            <audio name="2013-12-05 00:25:26 - a1" lane="-1" offset="0s" ref="r19" duration="1639638/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="819819/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="11"/>
+                            <md key="com.apple.proapps.studio.shot" value="3"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="51370319/24000s" duration="2199197/24000s" start="86400314/24000s"/>
+                    <clip name="12-1" offset="53569516/24000s" duration="597597/24000s">
+                        <note>Cricle</note>
+                        <video name="2013-12-05 00:27:26 - v1" offset="0s" ref="r20" duration="597597/24000s">
+                            <audio name="2013-12-05 00:27:26 - a1" lane="-1" offset="0s" ref="r20" duration="1195194/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="597597/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="12"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="54167113/24000s" duration="1372371/24000s" start="86400314/24000s"/>
+                    <clip name="12-2" offset="55539484/24000s" duration="452452/24000s">
+                        <note>Cricle</note>
+                        <video name="2013-12-05 00:28:48 - v1" offset="0s" ref="r21" duration="452452/24000s">
+                            <audio name="2013-12-05 00:28:48 - a1" lane="-1" offset="0s" ref="r21" duration="904904/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="452452/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="12"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="55991936/24000s" duration="1181180/24000s" start="86400314/24000s"/>
+                    <clip name="13-1" offset="57173116/24000s" duration="575575/24000s">
+                        <note>Cricle</note>
+                        <video name="2013-12-05 00:29:56 - v1" offset="0s" ref="r22" duration="575575/24000s">
+                            <audio name="2013-12-05 00:29:56 - a1" lane="-1" offset="0s" ref="r22" duration="1151150/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="575575/24000s" value="Cricle, Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="13"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="57748691/24000s" duration="5445440/24000s" start="86400314/24000s"/>
+                    <clip name="20-1" offset="63194131/24000s" duration="776776/24000s">
+                        <video name="2013-12-05 00:34:18 - v1" offset="0s" ref="r23" duration="776776/24000s">
+                            <audio name="2013-12-05 00:34:18 - a1" lane="-1" offset="0s" ref="r23" duration="1553552/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="776776/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="20"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="63970907/24000s" duration="601601/24000s" start="86400314/24000s"/>
+                    <clip name="20-2" offset="64572508/24000s" duration="574574/24000s">
+                        <video name="2013-12-05 00:35:04 - v1" offset="0s" ref="r24" duration="574574/24000s">
+                            <audio name="2013-12-05 00:35:04 - a1" lane="-1" offset="0s" ref="r24" duration="1149148/48000s" role="dialogue.dialogue-1" srcCh="1, 2" outCh="L, R"/>
+                        </video>
+                        <keyword start="0s" duration="574574/24000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.reel" value="7D 32GB-TRA"/>
+                            <md key="com.apple.proapps.studio.scene" value="20"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                </mc-angle>
+                <mc-angle name="H4N" angleID="tinaRWG0S/yIz3+T+aXCYQ">
+                    <gap name="Gap" offset="0s" duration="18018/24000s" start="86400314/24000s"/>
+                    <clip name="1-1 all scene 1" offset="36036/48000s" duration="66735243/720000s" start="85722s">
+                        <audio name="H4N 2013-12-04 131204-000 - audio" offset="85722s" ref="r25" duration="9782144/48000s" start="85722s" role="dialogue.dialogue-1"/>
+                        <keyword start="85722s" duration="9782144/48000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="67275783/720000s" duration="6426963/720000s" start="86400314/24000s"/>
+                    <clip name="1-1 all scene 1" offset="73702746/720000s" duration="20213833/720000s" start="61793002206/720000s">
+                        <audio name="H4N 2013-12-04 131204-000 - audio" offset="85722s" ref="r25" duration="9782144/48000s" start="85722s" role="dialogue.dialogue-1"/>
+                        <keyword start="85722s" duration="9782144/48000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="93916579/720000s" duration="1347589/720000s" start="86400314/24000s"/>
+                    <clip name="1-1 all scene 1" offset="95264168/720000s" duration="24982225/720000s" start="61814563628/720000s">
+                        <audio name="H4N 2013-12-04 131204-000 - audio" offset="85722s" ref="r25" duration="9782144/48000s" start="85722s" role="dialogue.dialogue-1"/>
+                        <keyword start="85722s" duration="9782144/48000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="120246393/720000s" duration="8189194/720000s" start="86400314/24000s"/>
+                    <clip name="1-1 all scene 1" offset="128435587/720000s" duration="18831533/720000s" start="61847735047/720000s">
+                        <audio name="H4N 2013-12-04 131204-000 - audio" offset="85722s" ref="r25" duration="9782144/48000s" start="85722s" role="dialogue.dialogue-1"/>
+                        <keyword start="85722s" duration="9782144/48000s" value="Test"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="147267120/720000s" duration="7132125/24000s" start="91309218/24000s"/>
+                    <clip name="10-1" offset="361230870/720000s" duration="4606602/24000s" start="53s">
+                        <audio name="H4N 2013-12-05 131205-000 - audio" offset="53s" ref="r26" duration="9213440/48000s" start="53s" role="dialogue.dialogue-1"/>
+                        <keyword start="53s" duration="9213440/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="499428930/720000s" duration="8354346/48000s" start="3600s"/>
+                    <clip name="10-5" offset="624744120/720000s" duration="1599598/24000s" start="419s">
+                        <note>Circle</note>
+                        <audio name="H4N 2013-12-05 131205-001 - audio" offset="419s" ref="r27" duration="3200384/48000s" start="419s" role="dialogue.dialogue-1"/>
+                        <keyword start="419s" duration="3200384/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="5"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="672732060/720000s" duration="5841836/48000s" start="3600s"/>
+                    <clip name="10-6" offset="760359600/720000s" duration="1672671/24000s" start="612s">
+                        <audio name="H4N 2013-12-05 131205-002 - audio" offset="612s" ref="r28" duration="3345344/48000s" start="612s" role="dialogue.dialogue-1"/>
+                        <keyword start="612s" duration="3345344/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="6"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="810539730/720000s" duration="3357354/48000s" start="3600s"/>
+                    <clip name="10-7" offset="860900040/720000s" duration="661661/24000s" start="747s">
+                        <audio name="H4N 2013-12-05 131205-003 - audio" offset="747s" ref="r29" duration="1324672/48000s" start="747s" role="dialogue.dialogue-1"/>
+                        <keyword start="747s" duration="1324672/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="7"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="880749870/720000s" duration="260260/48000s" start="3600s"/>
+                    <clip name="10-8" offset="884653770/720000s" duration="1081080/24000s" start="780s">
+                        <note>Cricle</note>
+                        <audio name="H4N 2013-12-05 131205-004 - audio" offset="780s" ref="r30" duration="2162688/48000s" start="780s" role="dialogue.dialogue-1"/>
+                        <keyword start="780s" duration="2162688/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10"/>
+                            <md key="com.apple.proapps.studio.shot" value="8"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="917086170/720000s" duration="4366362/48000s" start="3600s"/>
+                    <clip name="10a-1" offset="982581600/720000s" duration="841841/24000s" start="916s">
+                        <audio name="H4N 2013-12-05 131205-005 - audio" offset="916s" ref="r31" duration="1685120/48000s" start="916s" role="dialogue.dialogue-1"/>
+                        <keyword start="916s" duration="1685120/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1007836830/720000s" duration="10682790/720000s" start="3600s"/>
+                    <clip name="10a-2" offset="1018519620/720000s" duration="853853/24000s" start="959s">
+                        <note>Circle</note>
+                        <audio name="H4N 2013-12-05 131205-006 - audio" offset="959s" ref="r32" duration="1708672/48000s" start="959s" role="dialogue.dialogue-1"/>
+                        <keyword start="959s" duration="1708672/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1044135210/720000s" duration="64452270/720000s" start="2628298380/720000s"/>
+                    <clip name="10a-3" offset="1108587480/720000s" duration="961961/24000s" start="1091s">
+                        <audio name="H4N 2013-12-05 131205-007 - audio" offset="1091s" ref="r33" duration="1925696/48000s" start="1091s" role="dialogue.dialogue-1"/>
+                        <keyword start="1091s" duration="1925696/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="3"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1137446310/720000s" duration="2190188/48000s" start="3600s"/>
+                    <clip name="10a-4" offset="1170299130/720000s" duration="706706/24000s" start="1182s">
+                        <note>Circle</note>
+                        <audio name="H4N 2013-12-05 131205-008 - audio" offset="1182s" ref="r34" duration="1414592/48000s" start="1182s" role="dialogue.dialogue-1"/>
+                        <keyword start="1182s" duration="1414592/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="4"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1191500310/720000s" duration="424424/48000s" start="3600s"/>
+                    <clip name="10a-5" offset="1197866670/720000s" duration="832832/24000s" start="1215s">
+                        <note>Circle</note>
+                        <audio name="H4N 2013-12-05 131205-009 - audio" offset="1215s" ref="r35" duration="1666176/48000s" start="1215s" role="dialogue.dialogue-1"/>
+                        <keyword start="1215s" duration="1666176/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="10a"/>
+                            <md key="com.apple.proapps.studio.shot" value="5"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1222851630/720000s" duration="11247236/48000s" start="3600s"/>
+                    <clip name="11-1" offset="1391560170/720000s" duration="661661/24000s" start="1484s">
+                        <audio name="H4N 2013-12-05 131205-010 - audio" offset="1484s" ref="r36" duration="1325056/48000s" start="1484s" role="dialogue.dialogue-1"/>
+                        <keyword start="1484s" duration="1325056/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="11"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1411410000/720000s" duration="4964960/48000s" start="3600s"/>
+                    <clip name="11-2" offset="1485884400/720000s" duration="829829/24000s" start="1618s">
+                        <note>Circle</note>
+                        <audio name="H4N 2013-12-05 131205-011 - audio" offset="1618s" ref="r37" duration="1659840/48000s" start="1618s" role="dialogue.dialogue-1"/>
+                        <keyword start="1618s" duration="1659840/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="11"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1510779270/720000s" duration="258258/48000s" start="3600s"/>
+                    <clip name="11-3" offset="1514653140/720000s" duration="877877/24000s" start="1655s">
+                        <note>Cricle</note>
+                        <audio name="H4N 2013-12-05 131205-012 - audio" offset="1655s" ref="r38" duration="1757056/48000s" start="1655s" role="dialogue.dialogue-1"/>
+                        <keyword start="1655s" duration="1757056/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="11"/>
+                            <md key="com.apple.proapps.studio.shot" value="3"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1540989450/720000s" duration="4404400/48000s" start="3600s"/>
+                    <clip name="12-1" offset="1607055450/720000s" duration="592592/24000s" start="1786s">
+                        <note>Cricle</note>
+                        <audio name="H4N 2013-12-05 131205-013 - audio" offset="1786s" ref="r39" duration="1186304/48000s" start="1786s" role="dialogue.dialogue-1"/>
+                        <keyword start="1786s" duration="1186304/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="12"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1624833210/720000s" duration="2744742/48000s" start="3600s"/>
+                    <clip name="12-2" offset="1666004340/720000s" duration="444444/24000s" start="1869s">
+                        <note>Cricle</note>
+                        <audio name="H4N 2013-12-05 131205-014 - audio" offset="1869s" ref="r40" duration="890496/48000s" start="1869s" role="dialogue.dialogue-1"/>
+                        <keyword start="1869s" duration="890496/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="12"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1679337660/720000s" duration="2394392/48000s" start="3600s"/>
+                    <clip name="13-1" offset="1715253540/720000s" duration="558558/24000s" start="1937s">
+                        <note>Cricle</note>
+                        <audio name="H4N 2013-12-05 131205-015 - audio" offset="1937s" ref="r41" duration="1117760/48000s" start="1937s" role="dialogue.dialogue-1"/>
+                        <keyword start="1937s" duration="1117760/48000s" value="Cricle, Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="13"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1732010280/720000s" duration="10806796/48000s" start="3600s"/>
+                    <clip name="20-1" offset="1894112220/720000s" duration="822822/24000s" start="2182s">
+                        <audio name="H4N 2013-12-05 131205-016 - audio" offset="2182s" ref="r42" duration="1645760/48000s" start="2182s" role="dialogue.dialogue-1"/>
+                        <keyword start="2182s" duration="1645760/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="20"/>
+                            <md key="com.apple.proapps.studio.shot" value="1"/>
+                        </metadata>
+                    </clip>
+                    <gap name="Gap" offset="1918796880/720000s" duration="1221220/48000s" start="3600s"/>
+                    <clip name="20-2" offset="1937115180/720000s" duration="562562/24000s" start="2246s">
+                        <audio name="H4N 2013-12-05 131205-017 - audio" offset="2246s" ref="r43" duration="1125760/48000s" start="2246s" role="dialogue.dialogue-1"/>
+                        <keyword start="2246s" duration="1125760/48000s" value="Test"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="1"/>
+                        <audio-channel-source role="dialogue.dialogue-1" srcCh="2"/>
+                        <metadata>
+                            <md key="com.apple.proapps.studio.scene" value="20"/>
+                            <md key="com.apple.proapps.studio.shot" value="2"/>
+                        </metadata>
+                    </clip>
+                </mc-angle>
+            </multicam>
+        </media>
+        <format id="r2" name="FFVideoFormat1080p2398" frameDuration="1001/24000s" width="1920" height="1080"/>
+        <asset id="r3" name="2013-12-04 23_50_18 (id)" uid="D157A781FA11F2625DE9776854675BAA" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-04%2023_50_18%20(id).mov" start="0s" duration="2251249/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAI9RE+NQyRwSEj57EqyXcqb0MJbTjeN5Q2H6gOF24svCRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA0IDIzXzUwXzE4IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAiVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQWaoAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6252"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:47:08 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r4" name="2013-12-04 23_52_00 (id)" uid="14B0060172906A07003116F07DC86B7F" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-04%2023_52_00%20(id).mov" start="0s" duration="645645/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAACccnndAULSYA5WlEDWOTON56rTE9eueWnwhBojDyWKERAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA0IDIzXzUyXzAwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAATVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQWhAAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6253"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:47:17 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r5" name="2013-12-04 23_52_30 (id)" uid="971105C3085A9A2269FAD3D0AAD19D7D" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-04%2023_52_30%20(id).mov" start="0s" duration="834834/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAIV9yxf4mcLvC3ySshRZtitcQtJHyvrCpTLp16UTMXxLRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA0IDIzXzUyXzMwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAa1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQWi4AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6254"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:47:21 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r6" name="2013-12-04 23_53_16 (id)" uid="F89722B9C46918C3CD2E6C4516819B96" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-04%2023_53_16%20(id).mov" start="0s" duration="522522/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAOXayvOPnCqRwEK5qTHmzG0YI6JLoXzx1KoX+JdAA26QRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA0IDIzXzUzXzE2IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAA7VQ0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQWlwAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6255"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:47:34 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r7" name="2013-12-04 23_58_40 (id)" uid="74D96F0ADFD2890218D8D3A6B1D2BC30" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-04%2023_58_40%20(id).mov" start="0s" duration="4402398/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAHd6Jk/h8OOrkjL787JuS3tJZuqTsv5BWHpA6kq/bRE4RAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA0IDIzXzU4XzQwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAT1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQW6AAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6256"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:47:38 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r8" name="2013-12-05 00_04_44 (id)" uid="6F80DD8D019787839C2E8A7324DCB620" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_04_44%20(id).mov" start="0s" duration="1516515/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAPb8cBXnqyoBwFy9oMFw7RfXsiZmUr6HeOD5iST7vc7dRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzA0XzQ0IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAA/1Q0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQXQwAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6257"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:01 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r9" name="2013-12-05 00_07_50 (id)" uid="CD9FAF91028AABD9A9FC520B5672CEB0" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_07_50%20(id).mov" start="0s" duration="1681680/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAIMtWSbhBZA/ee908kPERxSeuL8leB1vRMi2aTrGR9b3RAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzA3XzUwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAQ1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQXcYAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6258"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:07 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r10" name="2013-12-05 00_10_06 (id)" uid="49E09D2669B625245CFA00802C21E63A" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_10_06%20(id).mov" start="0s" duration="661661/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAH8CzoagkgiuO01DH2zIBtX9qyftzxgFyTN/Hxh8UoVcRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzEwXzA2IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAUVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQXk4AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6259"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:14 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r11" name="2013-12-05 00_10_42 (id)" uid="EE1951264E75CD3173822EA17733BD4D" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_10_42%20(id).mov" start="0s" duration="1050049/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAABLKr1i3PzSciJwcXcMoxKiAMw8W9h5YcVV2R4KY/aP5RAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzEwXzQyIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAALVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQXnIAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6260"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:17 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r12" name="2013-12-05 00_12_54 (id)" uid="ADCE3CFF57324C9260F8D0E5D3D8BA77" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_12_54%20(id).mov" start="0s" duration="828828/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAOtQbMl9K1CRM+XJlaENN7xM92IwGiuToADjF6GRchDQRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzEyXzU0IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAU1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQXvYAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6261"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:21 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r13" name="2013-12-05 00_15_08 (id)" uid="499508781C7A26AD3C5791EDF9C04E2D" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_15_08%20(id).mov" start="0s" duration="833833/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAOjsw2KZtXPN54beAEdZQFmqNxmebAv9+In16gTjRRjGRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzE1XzA4IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAbVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQX3wAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6262"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:25 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r14" name="2013-12-05 00_15_50 (id)" uid="16868E900F3EA636D1A8477F0C25C8E7" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_15_50%20(id).mov" start="0s" duration="956956/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAALawurykkheBR3Dpd7+XGuXOi5wFAvBCoI/xDg5GJ2wORAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzE1XzUwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAA9VQ0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQX6YAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6263"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:32 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r15" name="2013-12-05 00_17_20 (id)" uid="A79668A39C54E7B3D40BB00ACDB631EB" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_17_20%20(id).mov" start="0s" duration="717717/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAMViGYU6YriFr4xoJnTidWUUQ8RJ9W3mlWPkvhIjbFOTRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzE3XzIwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAVVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYAAAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6264"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:36 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r16" name="2013-12-05 00_18_00 (id)" uid="63D91F95884808AF8C0172018FAF6FFC" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_18_00%20(id).mov" start="0s" duration="830830/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAIOSe+xS3b2B3jcnjkoAnjYLfJlvFBSHIGtTKk0HefQdRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzE4XzAwIChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAm1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYCgAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6265"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:39 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r17" name="2013-12-05 00_22_34 (id)" uid="92C219501537EDE4FB373E32925FAB30" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_22_34%20(id).mov" start="0s" duration="636636/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAO7hNFP+3aIc9tzl+wWihpR6VRFRIxZm+qMZICHlgg82RAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzIyXzM0IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAY1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYToAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6266"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:43 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r18" name="2013-12-05 00_24_38 (id)" uid="C45B915A607CDA84436DD57E85D71464" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_24_38%20(id).mov" start="0s" duration="1061060/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAOPYbOFCWp21BpLmFC45ZBwRc15OYK1QxrfyY9WEiz56RAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzI0XzM4IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAI1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYbYAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6267"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:46 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r19" name="2013-12-05 00_25_26 (id)" uid="A03D38FD4CF93F1E82278CB295969E06" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_25_26%20(id).mov" start="0s" duration="819819/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAAxiXIeb9fC2XcdkjsORXqGnEe0pkbrMNbML1gpRKnPCRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzI1XzI2IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAZVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYeYAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6268"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:51 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r20" name="2013-12-05 00_27_26 (id)" uid="9708860FC956D70B0A1A8BD456638232" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_27_26%20(id).mov" start="0s" duration="597597/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAMA2PfY2le+mypOF6iJJjvBNHO8J5uWmTVN3V2gdG+WNRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzI3XzI2IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAA+1Q0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYl4AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6269"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:54 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r21" name="2013-12-05 00_28_48 (id)" uid="C8165D34969950FB0055A7DA4C8C84B7" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_28_48%20(id).mov" start="0s" duration="452452/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAD/VWwe1kIQAJQkyd5tb2XK0vhwXsr3LiGQJCjnaIkleRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzI4XzQ4IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAA61Q0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYrAAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6270"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:56 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r22" name="2013-12-05 00_29_56 (id)" uid="36FC8FCC5707996A0C70A7089C9C53B0" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_29_56%20(id).mov" start="0s" duration="575575/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAE6C8H/GVSPhtvGI/wiPBj4AxSHmHZtNyvJz+Bh0ZsoyRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzI5XzU2IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAW1U0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQYvQAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6271"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:57 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r23" name="2013-12-05 00_34_18 (id)" uid="AD758862DF602AA32EA2CC8B81BC65C9" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_34_18%20(id).mov" start="0s" duration="776776/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAKmdr3kM9bV4yTWYztbHIN/DLJ9q1uSol2U5kXqgVNrVRAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzM0XzE4IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAzVQ0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQY/oAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6272"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:48:59 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r24" name="2013-12-05 00_35_04 (id)" uid="7A7F88B60DE77D4F6FB295108CF9BB1C" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/2013-12-05%2000_35_04%20(id).mov" start="0s" duration="574574/24000s" hasVideo="1" format="r2" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vayQFAAAAAAQQMAAAAL87FLYI7U+h6zjC27016qI3dB3LlzKjgFzCKZQCnsY5RAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHAAAAAEBAAAyMDEzLTEyLTA1IDAwXzM1XzA0IChpZCkubW92JAAAAAEGAAAQAAAAIAAAADgAAABcAAAAdAAAAJQAAAC8AAAA2AAAAPAAAAAIAAAABAMAAE0wAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAATjoAAAAAAAAIAAAABAMAAIA6AAAAAAAACAAAAAQDAAAUTTQAAAAAAAgAAAAEAwAAFU00AAAAAAAIAAAABAMAAERRNAAAAAAACAAAAAQDAADDVDQAAAAAAAgAAAAEAwAAfVU0AAAAAAAkAAAAAQYAAEABAABQAQAAYAEAAHABAACAAQAAkAEAAKABAACwAQAAwAEAAAgAAAAABAAAQbhQZCgAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAACUAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0NhbERpZ2l0JTIwVDMlMjAxMlRCLwAAAAgAAAAEAwAAAAD0RuoKAAAIAAAAAAQAAEG6W2gRAAAAJAAAAAEBAABENDE0NjRFMS02RTZDLTNGOTEtQTE4OS0xNDIwNjhEQkFFNTAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABkAAAABAQAAL1ZvbHVtZXMvQ2FsRGlnaXQgVDMgMTJUQgAAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAEBwN9MCAAAIAAAAAAQAAEG3cbVwAAAAJAAAAAEBAABEQ0EwMDVBMS1FQkVCLTNGRDMtQkY1RS1CRDA3ODE1RTNFOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAHwDAAAAAAAABSAAAOwCAAAAAAAAECAAAPwCAAAAAAAAESAAADADAAAAAAAAEiAAABADAAAAAAAAEyAAACADAAAAAAAAICAAAFwDAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAKAAAAAEGAADwAwAA/AMAAAgEAAD8AwAA/AMAAPwDAAD8AwAA/AMAAPwDAAD8AwAAqAAAAP7///8BAAAAiAMAAA0AAAAEEAAAFAEAAAAAAAAFEAAA0AEAAAAAAAAQEAAADAIAAAAAAABAEAAA/AEAAAAAAAAAIAAAFAQAAAAAAAACIAAAyAIAAAAAAAAFIAAALAIAAAAAAAAQIAAAIAAAAAAAAAARIAAAfAIAAAAAAAASIAAAXAIAAAAAAAATIAAAbAIAAAAAAAAgIAAAqAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="7D 32GB-TRA"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>'avc1'</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.pulldown" value="1E0"/>
+                <md key="com.apple.proapps.mio.shootingRate" value="24"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="(1-1-6)"/>
+                <md key="com.apple.proapps.mio.clipFileName" value="MVI_6273"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:49:03 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r25" name="H4N 2013-12-04 131204-000" uid="8CA8E888F7C03028E146B55E88E85326" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-04%20131204-000.wav" start="85722s" duration="9782144/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAABRlIK4pawJMy6ZTuhxQJSW5FYLr36QZl0mdZFf9MOocSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNCAxMzEyMDQtMDAwLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAGlVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r26" name="H4N 2013-12-05 131205-000" uid="88DC3D09B8A0B4D4FB515748FACCF8DF" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-000.wav" start="53s" duration="9213440/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAADf2SnY0Fmvs1OhAPI9hJZoBmq21QHmgd2E+d9LSxyUNSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDAwLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAADFVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r27" name="H4N 2013-12-05 131205-001" uid="573A93424E29D6F59116029A0FB8198E" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-001.wav" start="419s" duration="3200384/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAANise2Stm1YRZtX/ohbQph3wF2biAFx8cxMh0igQtmo+SAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDAxLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAABdVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r28" name="H4N 2013-12-05 131205-002" uid="3300ADD520E78B74B5E726BFCC697B21" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-002.wav" start="612s" duration="3345344/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAACE1OFxLm6Ot4dH3O3dPYcMohbf3ymM81DnA9pxog7KaSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDAyLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAHNVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r29" name="H4N 2013-12-05 131205-003" uid="2AC0DB08D9DF4CC541CFEA68C5726552" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-003.wav" start="747s" duration="1324672/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAI5EpgHiA/StkrcJpFE/4Fnx6sMFoH/U03f7pIWhr0p6SAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDAzLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAOFUNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r30" name="H4N 2013-12-05 131205-004" uid="D5B1082576DD78B408BF0670C72786DA" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-004.wav" start="780s" duration="2162688/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAMK8s2oZJ0yNT1nwCJo1S7ysErEWyKZ9rjTKHNj7tYdtSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDA0LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAAdVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r31" name="H4N 2013-12-05 131205-005" uid="31CFC48155624B28939908365C849185" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-005.wav" start="916s" duration="1685120/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAHhMJ+7gRjmsvoR0Bte9F/kKgPmmdDI6w/lxIyJOa+ooSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDA1LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAGdVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r32" name="H4N 2013-12-05 131205-006" uid="1D4437E458C9E6FF779D7AF43FE8F4DF" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-006.wav" start="959s" duration="1708672/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAB0TKL5NVcOyOM/Gx85s4SYoHK8vThBkBAVTOeMA9O9OSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDA2LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAACFVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r33" name="H4N 2013-12-05 131205-007" uid="7055C519DE08EB9E262532DB295C9F9A" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-007.wav" start="1091s" duration="1925696/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAFSMYcXH3bhQvBT+VraqUjnPChQO6h4uBFxfti1mlz13SAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDA3LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAAtVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r34" name="H4N 2013-12-05 131205-008" uid="A59015856030415671B2409030B2D567" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-008.wav" start="1182s" duration="1414592/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAGz2aBRwT6Z5a0Td8lbNyQKfp0N9A7QwWzI8xrAswzmdSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDA4LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAACdVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r35" name="H4N 2013-12-05 131205-009" uid="DDFCDC828D5226D4E9ABAB919F3811AB" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-009.wav" start="1215s" duration="1666176/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAOa5VAFaDWMukymjncOTTEzB0ArVBpXSTt4tpBTSEeGtSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDA5LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAJdVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r36" name="H4N 2013-12-05 131205-010" uid="C09FC9CCFBAAF0C2F66066A815AA571E" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-010.wav" start="1484s" duration="1325056/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAMRKZgrOGC09gCSTpGlCkB/SeCyzHJfF2JAz1DkMLuiPSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDEwLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAAVVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r37" name="H4N 2013-12-05 131205-011" uid="1C5C0C5A681F44F0303C8EAA1B3F273A" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-011.wav" start="1618s" duration="1659840/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAEjusyWlEWd4d+KphOdbMKlGVUk9ohGMwUDYw0d4O4X+SAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDExLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAANNUNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r38" name="H4N 2013-12-05 131205-012" uid="08C933E11453CCFA6E60C72FE66D962A" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-012.wav" start="1655s" duration="1757056/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAMdap+tafVaa+O8MNWGQP84rM/SHL8pvZ6bEX0/hhpkWSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDEyLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAO9UNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r39" name="H4N 2013-12-05 131205-013" uid="B916E3E779354E0A7405F0EF4B8CA553" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-013.wav" start="1786s" duration="1186304/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAOa7nhy0Q+pNkr7HBRCGjFDnZyT0Ugha6PVX/DGDJyUiSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDEzLndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAACVVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r40" name="H4N 2013-12-05 131205-014" uid="0AFAB327000FCEE8A5F8855E96214E6C" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-014.wav" start="1869s" duration="890496/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAD+0lGVyFwaNNBTpEBo49beyrRT0zlwS32w2wO9HV+OgSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDE0LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAMtUNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r41" name="H4N 2013-12-05 131205-015" uid="62ADF24F533584ECEF548856590A4E33" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-015.wav" start="1937s" duration="1117760/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAApSRdaUCx6F80NeXC7VkunBtpgW4/a0Ggz3G6mT1ywjSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDE1LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAB1VNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r42" name="H4N 2013-12-05 131205-016" uid="79A66F7DC6103ABCBDF4354777A90EDF" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-016.wav" start="2182s" duration="1645760/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAACBCVO2og37gDs//dDkafEItNrfajnTtdEQOENZ1wE+cSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDE2LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAAIVVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+        <asset id="r43" name="H4N 2013-12-05 131205-017" uid="D7DADD357118A761E0C591A2A7E93F24" src="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/4-12-17-Shot%20Notes%20X/Original%20Media/H4N%202013-12-05%20131205-017.wav" start="2246s" duration="1125760/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vaygFAAAAAAQQMAAAAAoKCX8W3AYS4+AO5rqTtMBzxkZl8M8ic8vH0emGpPbxSAQAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAQAAAAAQEAAENhbERpZ2l0IFQzIDEyVEIcAAAAAQEAACtPQyBWaWRlbyBDbGllbnQgV29yayBGb2xkZXINAAAAAQEAAHYgT25lQ3JlYXRpdmUAAAAVAAAAAQEAADE3LU9ORS00NDZfViBOQUIgMjAxNwAAAB8AAAABAQAAMTctT05FLTQ0Nl9MIE5BQiAyMDE3LmZjcGJ1bmRsZQAUAAAAAQEAADQtMTItMTctU2hvdCBOb3RlcyBYDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAHQAAAAEBAABINE4gMjAxMy0xMi0wNSAxMzEyMDUtMDE3LndhdgAAACQAAAABBgAAEAAAACAAAAA4AAAAXAAAAHQAAACUAAAAvAAAANgAAADwAAAACAAAAAQDAABNMAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAE46AAAAAAAACAAAAAQDAACAOgAAAAAAAAgAAAAEAwAAFE00AAAAAAAIAAAABAMAABVNNAAAAAAACAAAAAQDAABEUTQAAAAAAAgAAAAEAwAAw1Q0AAAAAAAIAAAABAMAABNVNAAAAAAAJAAAAAEGAABEAQAAVAEAAGQBAAB0AQAAhAEAAJQBAACkAQAAtAEAAMQBAAAIAAAAAAQAAMHNJ+RAAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAlAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9DYWxEaWdpdCUyMFQzJTIwMTJUQi8AAAAIAAAABAMAAAAA9EbqCgAACAAAAAAEAABBultoEQAAACQAAAABAQAARDQxNDY0RTEtNkU2Qy0zRjkxLUExODktMTQyMDY4REJBRTUwGAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAAZAAAAAQEAAC9Wb2x1bWVzL0NhbERpZ2l0IFQzIDEyVEIAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABAcDfTAgAACAAAAAAEAABBt3G1cAAAACQAAAABAQAARENBMDA1QTEtRUJFQi0zRkQzLUJGNUUtQkQwNzgxNUUzRTk4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAACAAwAAAAAAAAUgAADwAgAAAAAAABAgAAAAAwAAAAAAABEgAAA0AwAAAAAAABIgAAAUAwAAAAAAABMgAAAkAwAAAAAAACAgAABgAwAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACgAAAABBgAA9AMAAAAEAAAMBAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAKgAAAD+////AQAAAIwDAAANAAAABBAAABgBAAAAAAAABRAAANQBAAAAAAAAEBAAABACAAAAAAAAQBAAAAACAAAAAAAAACAAABgEAAAAAAAAAiAAAMwCAAAAAAAABSAAADACAAAAAAAAECAAACAAAAAAAAAAESAAAIACAAAAAAAAEiAAAGACAAAAAAAAEyAAAHACAAAAAAAAICAAAKwCAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="H4N"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2013-12-05 00:46:55 -0700"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/CalDigit%20T3%2012TB/+OC%20Video%20Client%20Work%20Folder/v%20OneCreative/17-ONE-446_V%20NAB%202017/17-ONE-446_L%20NAB%202017.fcpbundle/">
+        <event name="4-12-17-Shot Notes X" uid="0C8D3E62-F7AA-4852-B6DA-AE339C310EA1">
+            <mc-clip name="Batch MSS Test 1" ref="r1" duration="65147082/24000s" modDate="2017-04-12 17:57:03 -0600">
+                <mc-source angleID="WMkorOCqR++41fj/o/I0yw" srcEnable="all"/>
+                <keyword start="0s" duration="65147082/24000s" value="MC Batch"/>
+            </mc-clip>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>

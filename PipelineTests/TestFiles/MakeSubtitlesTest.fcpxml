@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.6">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p2398" frameDuration="1001/24000s" width="1920" height="1080"/>
+        <effect id="r2" name="Clouds" uid=".../Generators.localized/Backgrounds.localized/Clouds.localized/Clouds.motn"/>
+        <effect id="r3" name="Basic Title" uid=".../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti"/>
+        <media id="r4" name="CompoundClip" uid="uW56Miy8SvmQbd4o/rbYaQ" modDate="2017-10-19 16:32:30 -0700">
+            <sequence duration="108508400/1920000s" format="r1" renderColorSpace="Rec. 709" tcStart="13837824000/1920000s" tcFormat="NDF" audioLayout="surround">
+                <spine>
+                    <video name="Grey Scale" offset="13837824000/1920000s" ref="r5" duration="15695680/1920000s" start="6918912000/1920000s"/>
+                    <title name="Primary Storyline - Basic Title" offset="13853519680/1920000s" ref="r3" duration="1201200/120000s" start="86486400/24000s">
+                        <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                        <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                        <param name="Alignment" key="9999/999166631/999166633/2/354/999170019/401" value="1 (Center)"/>
+                        <text>
+                            <text-style ref="ts4">Primary Storyline
+CompoundClip</text-style>
+                        </text>
+                        <text-style-def id="ts4">
+                            <text-style font="Helvetica" fontSize="63" fontFace="Regular" fontColor="1 0.999974 0.999991 1" alignment="center"/>
+                        </text-style-def>
+                    </title>
+                    <video name="Grey Scale" offset="13872738880/1920000s" ref="r5" duration="679679/24000s" start="86486400/24000s">
+                        <title name="Attached to primary storyline - Basic Title" lane="1" offset="86543457/24000s" ref="r3" duration="1201200/120000s" start="86486400/24000s">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999170025/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts5">Attached to primary storyline
+CompoundClip</text-style>
+                            </text>
+                            <text-style-def id="ts5">
+                                <text-style font="Helvetica" fontSize="63" fontFace="Regular" fontColor="1 0.999974 0.999991 1" alignment="center"/>
+                            </text-style-def>
+                        </title>
+                        <spine lane="1" offset="86935849/24000s">
+                            <gap name="Gap" offset="0s" duration="72072/24000s" start="86400314/24000s"/>
+                            <title name="In secondary storyline - Basic Title" offset="72072/24000s" ref="r3" duration="1201200/120000s" start="86486400/24000s">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999170031/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts6">In secondary storyline
+CompoundClip</text-style>
+                                </text>
+                                <text-style-def id="ts6">
+                                    <text-style font="Helvetica" fontSize="63" fontFace="Regular" fontColor="1 0.999974 0.999991 1" alignment="center"/>
+                                </text-style-def>
+                            </title>
+                            <gap name="Gap" offset="1561560/120000s" duration="72072/24000s" start="86400314/24000s"/>
+                        </spine>
+                    </video>
+                    <video name="Grey Scale" offset="13927113200/1920000s" ref="r5" duration="1201200/120000s" start="86486400/24000s"/>
+                </spine>
+            </sequence>
+        </media>
+        <effect id="r5" name="Grey Scale" uid=".../Generators.localized/Solids.localized/Grey Scale.localized/Grey Scale.motn"/>
+    </resources>
+    <library location="file:///Users/reuelkim/Movies/Untitled.fcpbundle/">
+        <event name="10-17-17" uid="F8CC6988-230F-404B-8459-453EDCE92C20">
+            <project name="MakeSubtitlesTest" uid="310A2455-AA43-414B-83D2-35B184106A38" modDate="2017-10-19 16:32:30 -0700">
+                <sequence duration="219178960/1920000s" format="r1" renderColorSpace="Rec. 709" tcStart="6918912000/1920000s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video name="Clouds" offset="86486400/24000s" ref="r2" duration="1631630/120000s" start="86486400/24000s"/>
+                        <title name="Primary Storyline - Basic Title" offset="6945018080/1920000s" ref="r3" duration="1201200/120000s" start="86486400/24000s">
+                            <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                            <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                            <text>
+                                <text-style ref="ts1">Primary Storyline</text-style>
+                            </text>
+                            <text-style-def id="ts1">
+                                <text-style font="Helvetica" fontSize="63" fontFace="Regular" fontColor="1 0.999974 0.999991 1" alignment="center"/>
+                            </text-style-def>
+                        </title>
+                        <video name="Clouds" offset="6964237280/1920000s" ref="r2" duration="968968/24000s" start="86486400/24000s">
+                            <title name="Attached to primary storyline - Basic Title" lane="1" offset="86543457/24000s" ref="r3" duration="1201200/120000s" start="86486400/24000s">
+                                <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                <text>
+                                    <text-style ref="ts2">Attached to primary storyline</text-style>
+                                </text>
+                                <text-style-def id="ts2">
+                                    <text-style font="Helvetica" fontSize="63" fontFace="Regular" fontColor="1 0.999974 0.999991 1" alignment="center"/>
+                                </text-style-def>
+                            </title>
+                            <spine lane="1" offset="86935849/24000s">
+                                <gap name="Gap" offset="0s" duration="72072/24000s" start="86400314/24000s"/>
+                                <title name="In secondary storyline - Basic Title" offset="72072/24000s" ref="r3" duration="1201200/120000s" start="86486400/24000s">
+                                    <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>
+                                    <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>
+                                    <text>
+                                        <text-style ref="ts3">In s</text-style>
+                                    </text>
+                                    <text-style-def id="ts3">
+                                        <text-style font="Helvetica" fontSize="63" fontFace="Regular" fontColor="1 0.999974 0.999991 1" alignment="center"/>
+                                    </text-style-def>
+                                </title>
+                                <gap name="Gap" offset="1561560/120000s" duration="72072/24000s" start="86400314/24000s"/>
+                            </spine>
+                        </video>
+                        <ref-clip name="CompoundClip" offset="7041754720/1920000s" ref="r4" duration="27627600/1920000s" start="172972800/24000s" useAudioSubroles="1"/>
+                        <video name="Clouds" offset="7069382320/1920000s" ref="r2" duration="745745/24000s" start="86486400/24000s">
+                            <ref-clip name="CompoundClip" lane="1" offset="86543457/24000s" ref="r4" duration="345345/24000s" start="173300127/24000s" useAudioSubroles="1"/>
+                            <spine lane="1" offset="86999913/24000s">
+                                <ref-clip name="CompoundClip" offset="0s" ref="r4" duration="345345/24000s" start="173866693/24000s" useAudioSubroles="1"/>
+                            </spine>
+                        </video>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
