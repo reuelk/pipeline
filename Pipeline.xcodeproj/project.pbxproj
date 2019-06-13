@@ -14,19 +14,11 @@
 		0515A10F1E2AF84F00E7DEA9 /* FCPXMLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */; };
 		0515A1131E2AF84F00E7DEA9 /* XMLElementExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A1071E2AF84F00E7DEA9 /* XMLElementExtension.swift */; };
 		0515A1181E2AF9DF00E7DEA9 /* Pipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 0515A1051E2AF84F00E7DEA9 /* Pipeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0515A7D21E1DBE1F00C05F5F /* JFKmedia.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */; };
 		0531AB6B1E2B6BD8006F191F /* XMLDocumentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */; };
 		0567BA8A1D4334DC0039F518 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D79A1CF272B800DEE915 /* Cocoa.framework */; };
 		0567BA8B1D4334DC0039F518 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D7981CF272B100DEE915 /* CoreMedia.framework */; };
-		057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */; };
-		0580A0BA20C85788001D094C /* sync clip test.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 0580A0B920C85788001D094C /* sync clip test.fcpxml */; };
-		058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */; };
 		05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF395E1E1A3B6100319908 /* PipelineTests.swift */; };
 		05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567BA921D4334DC0039F518 /* Pipeline.framework */; };
-		05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */; };
-		05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */; };
-		76107172207D9728001795EA /* FCPXMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76107171207D9728001795EA /* FCPXMLDocument.swift */; };
-		7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */; };
 		7676560F1E36BADA0003D9E7 /* DTDs in Resources */ = {isa = PBXBuildFile; fileRef = 7676560E1E36BADA0003D9E7 /* DTDs */; };
 /* End PBXBuildFile section */
 
@@ -49,21 +41,13 @@
 		0515A1041E2AF84F00E7DEA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0515A1051E2AF84F00E7DEA9 /* Pipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pipeline.h; sourceTree = "<group>"; };
 		0515A1071E2AF84F00E7DEA9 /* XMLElementExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLElementExtension.swift; sourceTree = "<group>"; };
-		0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFKmedia.fcpxml; sourceTree = "<group>"; };
 		0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDocumentExtension.swift; sourceTree = "<group>"; };
 		0567BA921D4334DC0039F518 /* Pipeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pipeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MakeSubtitlesTest.fcpxml; sourceTree = "<group>"; };
-		0580A0B920C85788001D094C /* sync clip test.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sync clip test.fcpxml"; sourceTree = "<group>"; };
-		058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Batch-MSS-Test-1.fcpxml"; sourceTree = "<group>"; };
-		05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PCBang_FromGrace_20160202.fcpxml; sourceTree = "<group>"; };
 		05AF395C1E1A3B6100319908 /* PipelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AF395E1E1A3B6100319908 /* PipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineTests.swift; sourceTree = "<group>"; };
 		05AF39601E1A3B6100319908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C3D7981CF272B100DEE915 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		05C3D79A1CF272B800DEE915 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFK_Moon_Demo_START.fcpxml; sourceTree = "<group>"; };
-		76107171207D9728001795EA /* FCPXMLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCPXMLDocument.swift; path = Pipeline/Classes/FCPXMLDocument.swift; sourceTree = SOURCE_ROOT; };
-		7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "JFK_Moon_Demo_multicam with metadata.fcpxml"; sourceTree = "<group>"; };
 		7676560E1E36BADA0003D9E7 /* DTDs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DTDs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +85,6 @@
 		0515A1141E2AF87500E7DEA9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				76107171207D9728001795EA /* FCPXMLDocument.swift */,
 				0515A0FF1E2AF84F00E7DEA9 /* FCPXMLElementType.swift */,
 				0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */,
 			);
@@ -157,13 +140,6 @@
 		05AF395D1E1A3B6100319908 /* PipelineTests */ = {
 			isa = PBXGroup;
 			children = (
-				0580A0B920C85788001D094C /* sync clip test.fcpxml */,
-				057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */,
-				058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */,
-				7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */,
-				0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */,
-				05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */,
-				05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */,
 				05AF395E1E1A3B6100319908 /* PipelineTests.swift */,
 				05AF39601E1A3B6100319908 /* Info.plist */,
 			);
@@ -232,7 +208,7 @@
 				TargetAttributes = {
 					0567BA7E1D4334DC0039F518 = {
 						DevelopmentTeam = AZST45VKJQ;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					05AF395B1E1A3B6100319908 = {
@@ -243,10 +219,11 @@
 			};
 			buildConfigurationList = 0579E2541C70027A00D3E96F /* Build configuration list for PBXProject "Pipeline" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0579E2501C70027A00D3E96F;
 			productRefGroup = 0579E25B1C70027A00D3E96F /* Products */;
@@ -272,13 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0580A0BA20C85788001D094C /* sync clip test.fcpxml in Resources */,
-				05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */,
-				0515A7D21E1DBE1F00C05F5F /* JFKmedia.fcpxml in Resources */,
-				7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */,
-				05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */,
-				058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */,
-				057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76107172207D9728001795EA /* FCPXMLDocument.swift in Sources */,
 				0515A10B1E2AF84F00E7DEA9 /* FCPXMLElementType.swift in Sources */,
 				0515A1131E2AF84F00E7DEA9 /* XMLElementExtension.swift in Sources */,
 				0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */,
@@ -342,7 +311,8 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = debugging;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -369,7 +339,8 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = debugging;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = build;
 			};
 			name = Release;
 		};
@@ -425,6 +396,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = ../build;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -474,6 +446,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SYMROOT = ../build;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
