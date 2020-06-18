@@ -15,13 +15,13 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.6.7</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017 Reuel Kim. All rights reserved.</string>
+	<string>Copyright © 2017-2020 Reuel Kim. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>

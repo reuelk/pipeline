@@ -113,6 +113,26 @@ extension XMLDocument {
 		}
 	}
 	
+	/// The location of the referenced FCPX library as a URL.
+	public var fcpxLibraryLocation: URL? {
+		get {
+			guard let libraryLocationAttribute = self.fcpxLibraryElement?.attribute(forName: "location")?.stringValue else {
+				return nil
+			}
+			let libraryLocation = URL(string: libraryLocationAttribute)
+			return libraryLocation
+		}
+		set {
+			if newValue != nil {
+				let locationString = newValue!.absoluteString
+				let location = XMLNode.attribute(withName: "location", stringValue: locationString)
+				self.fcpxLibraryElement?.addAttribute(location as! XMLNode)
+			} else {
+				self.fcpxLibraryElement?.removeAttribute(forName: "location")
+			}
+		}
+	}
+	
 	/// An array of all event elements in the FCPXML document.
 	public var fcpxEvents: [XMLElement] {
 		get {

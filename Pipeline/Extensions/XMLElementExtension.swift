@@ -1650,7 +1650,7 @@ extension XMLElement {
 		}
 	}
 	
-	/// If this is a project element, this returns the clips contained within the project. Returns an empty array if there are no clips or if this is not a valid project element.
+	/// If this is a project element, this returns the clips on the project's primary storyline. Returns an empty array if there are no clips or if this is not a valid project element.
 	public var fcpxProjectClips: [XMLElement] {
 		get {
 			if self.fcpxType == .project {
@@ -3079,6 +3079,23 @@ extension XMLElement {
 
         return subElements[0]
     }
+	
+	
+	/// Returns every element nested under the hierarchy of this element.
+	public func nestedSubElements() -> [XMLElement] {
+		
+		var subElements: [XMLElement] = []
+		for subElement in self.subElements() {
+			
+			subElements.append(subElement)
+			
+			let nextLevelSubElements = subElement.nestedSubElements()
+			subElements.append(contentsOf: nextLevelSubElements)
+			
+		}
+		
+		return subElements
+	}
 	
 	
 	/// Returns the parent XMLElement.
