@@ -19,9 +19,13 @@
 		0567BA8B1D4334DC0039F518 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D7981CF272B100DEE915 /* CoreMedia.framework */; };
 		05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF395E1E1A3B6100319908 /* PipelineTests.swift */; };
 		05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567BA921D4334DC0039F518 /* Pipeline.framework */; };
+		761CD17524C276B700E56FF9 /* FCPXMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764146F322B2AF2A00D6B3A1 /* FCPXMLDocument.swift */; };
 		764146F222B2AF0F00D6B3A1 /* TestFiles in Resources */ = {isa = PBXBuildFile; fileRef = 764146F122B2AF0F00D6B3A1 /* TestFiles */; };
 		764146F422B2AF2A00D6B3A1 /* FCPXMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764146F322B2AF2A00D6B3A1 /* FCPXMLDocument.swift */; };
-		7676560F1E36BADA0003D9E7 /* DTDs in Resources */ = {isa = PBXBuildFile; fileRef = 7676560E1E36BADA0003D9E7 /* DTDs */; };
+		7661C5332644FC8B002C24A6 /* FCPXMLDTDs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 768BAB6E24C425F0003798F7 /* FCPXMLDTDs.bundle */; };
+		768BAB7724C425FC003798F7 /* FCPXMLv1_8.dtd in Resources */ = {isa = PBXBuildFile; fileRef = 768BAB7424C425FC003798F7 /* FCPXMLv1_8.dtd */; };
+		768BAB7824C425FC003798F7 /* FCPXMLv1_7.dtd in Resources */ = {isa = PBXBuildFile; fileRef = 768BAB7524C425FC003798F7 /* FCPXMLv1_7.dtd */; };
+		768BAB7924C425FC003798F7 /* FCPXMLv1_6.dtd in Resources */ = {isa = PBXBuildFile; fileRef = 768BAB7624C425FC003798F7 /* FCPXMLv1_6.dtd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		764146F122B2AF0F00D6B3A1 /* TestFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestFiles; sourceTree = "<group>"; };
 		764146F322B2AF2A00D6B3A1 /* FCPXMLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPXMLDocument.swift; sourceTree = "<group>"; };
 		7676560E1E36BADA0003D9E7 /* DTDs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DTDs; sourceTree = "<group>"; };
+		768BAB6E24C425F0003798F7 /* FCPXMLDTDs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCPXMLDTDs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		768BAB7024C425F0003798F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768BAB7424C425FC003798F7 /* FCPXMLv1_8.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FCPXMLv1_8.dtd; sourceTree = "<group>"; };
+		768BAB7524C425FC003798F7 /* FCPXMLv1_7.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FCPXMLv1_7.dtd; sourceTree = "<group>"; };
+		768BAB7624C425FC003798F7 /* FCPXMLv1_6.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FCPXMLv1_6.dtd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768BAB6B24C425F0003798F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +143,7 @@
 				050440B820C1BF3B00262F2A /* Delegates */,
 				0515A1171E2AF89E00E7DEA9 /* Other */,
 				05AF395D1E1A3B6100319908 /* PipelineTests */,
+				768BAB6F24C425F0003798F7 /* FCPXMLDTDs */,
 				0579E25B1C70027A00D3E96F /* Products */,
 				05C3D79A1CF272B800DEE915 /* Cocoa.framework */,
 				05C3D7981CF272B100DEE915 /* CoreMedia.framework */,
@@ -138,6 +155,7 @@
 			children = (
 				0567BA921D4334DC0039F518 /* Pipeline.framework */,
 				05AF395C1E1A3B6100319908 /* PipelineTests.xctest */,
+				768BAB6E24C425F0003798F7 /* FCPXMLDTDs.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +168,17 @@
 				05AF39601E1A3B6100319908 /* Info.plist */,
 			);
 			path = PipelineTests;
+			sourceTree = "<group>";
+		};
+		768BAB6F24C425F0003798F7 /* FCPXMLDTDs */ = {
+			isa = PBXGroup;
+			children = (
+				768BAB7624C425FC003798F7 /* FCPXMLv1_6.dtd */,
+				768BAB7524C425FC003798F7 /* FCPXMLv1_7.dtd */,
+				768BAB7424C425FC003798F7 /* FCPXMLv1_8.dtd */,
+				768BAB7024C425F0003798F7 /* Info.plist */,
+			);
+			path = FCPXMLDTDs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +231,23 @@
 			productReference = 05AF395C1E1A3B6100319908 /* PipelineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		768BAB6D24C425F0003798F7 /* FCPXMLDTDs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768BAB7124C425F0003798F7 /* Build configuration list for PBXNativeTarget "FCPXMLDTDs" */;
+			buildPhases = (
+				768BAB6A24C425F0003798F7 /* Sources */,
+				768BAB6B24C425F0003798F7 /* Frameworks */,
+				768BAB6C24C425F0003798F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCPXMLDTDs;
+			productName = FCPXMLDTDs;
+			productReference = 768BAB6E24C425F0003798F7 /* FCPXMLDTDs.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,6 +267,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					768BAB6D24C425F0003798F7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = AZST45VKJQ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0579E2541C70027A00D3E96F /* Build configuration list for PBXProject "Pipeline" */;
@@ -238,6 +289,7 @@
 			targets = (
 				0567BA7E1D4334DC0039F518 /* Pipeline */,
 				05AF395B1E1A3B6100319908 /* PipelineTests */,
+				768BAB6D24C425F0003798F7 /* FCPXMLDTDs */,
 			);
 		};
 /* End PBXProject section */
@@ -247,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7676560F1E36BADA0003D9E7 /* DTDs in Resources */,
+				7661C5332644FC8B002C24A6 /* FCPXMLDTDs.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +311,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		768BAB6C24C425F0003798F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768BAB7724C425FC003798F7 /* FCPXMLv1_8.dtd in Resources */,
+				768BAB7924C425FC003798F7 /* FCPXMLv1_6.dtd in Resources */,
+				768BAB7824C425FC003798F7 /* FCPXMLv1_7.dtd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -266,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761CD17524C276B700E56FF9 /* FCPXMLDocument.swift in Sources */,
 				0515A10B1E2AF84F00E7DEA9 /* FCPXMLElementType.swift in Sources */,
 				0515A1131E2AF84F00E7DEA9 /* XMLElementExtension.swift in Sources */,
 				0515A1091E2AF84F00E7DEA9 /* CMTimeExtension.swift in Sources */,
@@ -282,6 +345,13 @@
 			files = (
 				764146F422B2AF2A00D6B3A1 /* FCPXMLDocument.swift in Sources */,
 				05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768BAB6A24C425F0003798F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,12 +377,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Pipeline/Other/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.reuelkim.Pipeline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
@@ -336,12 +408,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Pipeline/Other/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.reuelkim.Pipeline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
@@ -404,7 +478,7 @@
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SYMROOT = ../build;
@@ -498,6 +572,57 @@
 			};
 			name = Release;
 		};
+		768BAB7224C425F0003798F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AZST45VKJQ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FCPXMLDTDs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reuelkim.FCPXMLDTDs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		768BAB7324C425F0003798F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AZST45VKJQ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FCPXMLDTDs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reuelkim.FCPXMLDTDs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,6 +649,15 @@
 			buildConfigurations = (
 				05AF39651E1A3B6100319908 /* Debug */,
 				05AF39661E1A3B6100319908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768BAB7124C425F0003798F7 /* Build configuration list for PBXNativeTarget "FCPXMLDTDs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768BAB7224C425F0003798F7 /* Debug */,
+				768BAB7324C425F0003798F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
